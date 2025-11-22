@@ -68,6 +68,64 @@
     }
     </script>
 
+    <!-- FAQ Schema Markup (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "FAQPage",
+      "mainEntity": [
+        {
+          "@type": "Question",
+          "name": "¿Cuánto cuesta el lavado por kilo en Breña?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El servicio de lavado por kilo en nuestra lavandería de Breña tiene un precio de S/ 4.00 por kilo. Incluye lavado, secado y doblado profesional de tu ropa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Hacen servicio de recojo y entrega a domicilio?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Sí, ofrecemos servicio de recojo y entrega a domicilio en Breña y distritos cercanos de Lima. Contáctanos por WhatsApp al 966 167 314 para coordinar el recojo de tu ropa."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Cuánto tiempo demora el servicio de lavandería?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "El servicio express está listo desde 4 horas para ropa simple (no incluye sábanas, edredones ni prendas especiales). Para pedidos especiales, el tiempo puede variar."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué incluye el servicio de lavado por kilo?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Nuestro servicio de lavado por kilo incluye lavado profesional, secado y doblado de ropa de uso diario. Para prendas delicadas, edredones o sábanas, consulta nuestros servicios especializados."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Dónde está ubicada la lavandería JP Pro Wash?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Estamos ubicados en Jr. Jorge Chávez 1154, Breña, Lima. Nuestro horario de atención es de lunes a sábado de 10:00 AM a 9:00 PM."
+          }
+        },
+        {
+          "@type": "Question",
+          "name": "¿Qué métodos de pago aceptan?",
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": "Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al momento del recojo o entrega de tu ropa."
+          }
+        }
+      ]
+    }
+    </script>
+
     <!-- Styles (Inlined for Performance) -->
     <style>
         :root {
@@ -506,6 +564,44 @@
             font-weight: 600;
             color: var(--color-primary-dark);
             text-align: right;
+        }
+
+        /* FAQ Section */
+        .faq {
+            background-color: var(--color-white);
+        }
+
+        .faq-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+            gap: var(--spacing-lg);
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .faq-item {
+            background: var(--color-bg-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            border-left: 4px solid var(--color-primary);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .faq-item:hover {
+            transform: translateY(-3px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .faq-question {
+            color: var(--color-text-dark);
+            margin-bottom: var(--spacing-sm);
+            font-size: 1.1rem;
+            font-weight: 600;
+        }
+
+        .faq-answer {
+            color: #444;
+            line-height: 1.6;
         }
 
         /* Contact Section Refactored */
@@ -971,6 +1067,48 @@
                     <div class="testimonial-card">
                         <p>"La atención por WhatsApp es súper rápida. Me encanta que recojan la ropa en mi casa."</p>
                         <h3>- Ana P.</h3>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- FAQ Section -->
+        <section class="section faq">
+            <div class="container">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <div class="faq-grid">
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cuánto cuesta el lavado por kilo en Breña?</h3>
+                        <p class="faq-answer">El servicio de lavado por kilo en nuestra lavandería de Breña tiene un
+                            precio de S/ 4.00 por kilo. Incluye lavado, secado y doblado profesional de tu ropa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Hacen servicio de recojo y entrega a domicilio?</h3>
+                        <p class="faq-answer">Sí, ofrecemos servicio de recojo y entrega a domicilio en Breña y
+                            distritos cercanos de Lima. Contáctanos por WhatsApp al 966 167 314 para coordinar el recojo
+                            de tu ropa.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Cuánto tiempo demora el servicio de lavandería?</h3>
+                        <p class="faq-answer">El servicio express está listo desde 4 horas para ropa simple (no incluye
+                            sábanas, edredones ni prendas especiales). Para pedidos especiales, el tiempo puede variar.
+                        </p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Qué incluye el servicio de lavado por kilo?</h3>
+                        <p class="faq-answer">Nuestro servicio de lavado por kilo incluye lavado profesional, secado y
+                            doblado de ropa de uso diario. Para prendas delicadas, edredones o sábanas, consulta
+                            nuestros servicios especializados.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Dónde está ubicada la lavandería JP Pro Wash?</h3>
+                        <p class="faq-answer">Estamos ubicados en Jr. Jorge Chávez 1154, Breña, Lima. Nuestro horario de
+                            atención es de lunes a sábado de 10:00 AM a 9:00 PM.</p>
+                    </div>
+                    <div class="faq-item">
+                        <h3 class="faq-question">¿Qué métodos de pago aceptan?</h3>
+                        <p class="faq-answer">Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al
+                            momento del recojo o entrega de tu ropa.</p>
                     </div>
                 </div>
             </div>
