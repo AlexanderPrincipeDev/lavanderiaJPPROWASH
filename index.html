@@ -11,9 +11,16 @@
     <!-- Google Fonts (Optimized) -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preload" as="style"
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap">
     <link
         href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
-        rel="stylesheet">
+        rel="stylesheet" media="print" onload="this.media='all'">
+    <noscript>
+        <link
+            href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+            rel="stylesheet">
+    </noscript>
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/images/LOGO/png/SIN FONDO/LOGO BASE (1).png">
@@ -260,8 +267,6 @@
             background: radial-gradient(circle, rgba(19, 153, 171, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
             border-radius: 50%;
             z-index: 0;
-            will-change: transform;
-            contain: layout style paint;
         }
 
         .hero-mobile-image,
