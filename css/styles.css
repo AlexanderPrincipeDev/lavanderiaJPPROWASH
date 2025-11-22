@@ -228,7 +228,8 @@ img {
 .hero-description {
     font-size: 1.2rem;
     margin-bottom: var(--spacing-lg);
-    color: #555;
+    color: #444;
+    /* Darker for better contrast */
     max-width: 500px;
 }
 
@@ -490,7 +491,8 @@ img {
 }
 
 .info-content p {
-    color: #666;
+    color: #444;
+    /* Improved contrast */
     font-size: 0.95rem;
     line-height: 1.4;
 }
