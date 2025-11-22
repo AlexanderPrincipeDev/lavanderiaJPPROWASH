@@ -199,6 +199,11 @@ img {
     z-index: 0;
 }
 
+.hero-mobile-image,
+.mobile-top-banner {
+    display: none;
+}
+
 .hero-container {
     display: grid;
     grid-template-columns: 1fr 1fr;
@@ -551,6 +556,20 @@ img {
         grid-template-columns: 1fr;
         text-align: center;
         gap: var(--spacing-lg);
+    }
+
+    .mobile-top-banner {
+        display: block;
+        width: 100%;
+        height: auto;
+        /* Natural height */
+        overflow: hidden;
+    }
+
+    .mobile-top-banner img {
+        width: 100%;
+        height: auto;
+        display: block;
     }
 
     .hero-buttons {
