@@ -225,6 +225,10 @@
             --shadow-md: 0 4px 6px rgba(28, 43, 75, 0.1);
             --shadow-lg: 0 10px 15px rgba(28, 43, 75, 0.1);
             --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.15);
+
+            /* Footer Colors */
+            --color-footer-bg: #1C2B4B;
+            --color-footer-text: #ffffff;
         }
 
         /* Dark Mode Variables */
@@ -266,6 +270,11 @@
             --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
             --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
             --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.5);
+
+            /* Footer Colors Dark Mode */
+            --color-footer-bg: #020617;
+            /* Slate 950 */
+            --color-footer-text: #f8fafc;
         }
 
         /* Reset & Base */
@@ -834,7 +843,7 @@
 
         .testimonial-card p {
             font-style: italic;
-            color: #444;
+            color: var(--color-text-body);
             flex-grow: 1;
         }
 
@@ -937,7 +946,7 @@
 
         .faq-answer p {
             padding: var(--spacing-md) var(--spacing-lg);
-            color: #444;
+            color: var(--color-text-body);
             line-height: 1.6;
             border-top: 1px solid rgba(0, 0, 0, 0.05);
         }
@@ -963,7 +972,7 @@
             display: flex;
             flex-direction: column;
             justify-content: center;
-            background-color: #f9fbfc;
+            background-color: var(--color-bg-secondary);
             gap: var(--spacing-lg);
             /* Use gap instead of margin-bottom */
         }
@@ -1002,7 +1011,7 @@
         }
 
         .info-content p {
-            color: #444;
+            color: var(--color-text-body);
             /* Improved contrast */
             font-size: 0.95rem;
             line-height: 1.4;
@@ -1426,8 +1435,8 @@
 
         /* Footer */
         .footer {
-            background-color: var(--color-text-dark);
-            color: var(--color-white);
+            background-color: var(--color-footer-bg);
+            color: var(--color-footer-text);
             padding: var(--spacing-xl) 0 var(--spacing-lg);
         }
 
@@ -1443,7 +1452,7 @@
         }
 
         .footer-column h3 {
-            color: var(--color-white);
+            color: var(--color-footer-text);
             font-size: 1.2rem;
             margin-bottom: var(--spacing-md);
             position: relative;
@@ -1496,7 +1505,7 @@
         }
 
         .social-links a {
-            color: var(--color-white);
+            color: var(--color-footer-text);
             font-weight: 500;
             opacity: 0.8;
             transition: opacity 0.3s ease;
