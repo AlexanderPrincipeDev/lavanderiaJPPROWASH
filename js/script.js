@@ -1,6 +1,37 @@
 document.addEventListener('DOMContentLoaded', () => {
     const navToggle = document.querySelector('.nav-toggle');
     const navList = document.querySelector('.nav-list');
+    const nav = document.querySelector('.nav');
+    const themeToggle = document.getElementById('theme-toggle');
+    const sunIcon = document.querySelector('.sun-icon');
+    const moonIcon = document.querySelector('.moon-icon');
+    const body = document.body;
+
+    // Theme Toggle Logic
+    const savedTheme = localStorage.getItem('theme');
+    if (savedTheme === 'dark') {
+        body.classList.add('dark-mode');
+        if (sunIcon) sunIcon.style.display = 'none';
+        if (moonIcon) moonIcon.style.display = 'block';
+    } else {
+        // Default to light mode if no preference or 'light' is saved
+        if (sunIcon) sunIcon.style.display = 'block';
+        if (moonIcon) moonIcon.style.display = 'none';
+    }
+
+    if (themeToggle) {
+        themeToggle.addEventListener('click', () => {
+            body.classList.toggle('dark-mode');
+            const isDark = body.classList.contains('dark-mode');
+
+            // Toggle Icons
+            if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
+            if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
+
+            // Save Preference
+            localStorage.setItem('theme', isDark ? 'dark' : 'light');
+        });
+    }
 
     if (navToggle) {
         navToggle.addEventListener('click', () => {
@@ -67,6 +98,11 @@ document.addEventListener('DOMContentLoaded', () => {
     const whatsappBtn = document.getElementById('whatsapp-order-btn');
 
     function updateCalculator() {
+        // Validate and prevent negative numbers
+        if (kilosInput.value < 0) kilosInput.value = '';
+        if (edredonesInput.value < 0) edredonesInput.value = '';
+        if (ternosInput.value < 0) ternosInput.value = '';
+
         const kilos = parseFloat(kilosInput.value) || 0;
         const edredones = parseFloat(edredonesInput.value) || 0;
         const ternos = parseFloat(ternosInput.value) || 0;
@@ -85,7 +121,12 @@ document.addEventListener('DOMContentLoaded', () => {
         totalAmount.textContent = total.toFixed(2);
 
         // Update WhatsApp Link
-        const message = `Hola JP Pro Wash, hice un cálculo en la web:%0A- Ropa: ${kilos}kg%0A- Edredones: ${edredones}%0A- Ternos: ${ternos}%0A*Total Estimado: S/ ${total.toFixed(2)}*%0A%0A¿Podrían programar mi recojo?`;
+        let message = '';
+        if (total > 0) {
+            message = `Hola JP Pro Wash, hice un cálculo en la web:%0A- Ropa: ${kilos}kg%0A- Edredones: ${edredones}%0A- Ternos: ${ternos}%0A*Total Estimado: S/ ${total.toFixed(2)}*%0A%0A¿Podrían programar mi recojo?`;
+        } else {
+            message = `Hola JP Pro Wash, estoy interesado en sus servicios de lavandería. ¿Podrían darme más información?`;
+        }
         whatsappBtn.href = `https://wa.me/51966167314?text=${message}`;
     }
 
@@ -93,6 +134,17 @@ document.addEventListener('DOMContentLoaded', () => {
         kilosInput.addEventListener('input', updateCalculator);
         edredonesInput.addEventListener('input', updateCalculator);
         ternosInput.addEventListener('input', updateCalculator);
+        // Initialize on load
+        updateCalculator();
+
+        // Prevent invalid characters (-, +, e)
+        [kilosInput, edredonesInput, ternosInput].forEach(input => {
+            input.addEventListener('keydown', (e) => {
+                if (['-', '+', 'e', 'E'].includes(e.key)) {
+                    e.preventDefault();
+                }
+            });
+        });
     }
 
     // Before/After Slider Logic

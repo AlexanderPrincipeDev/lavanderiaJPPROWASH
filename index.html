@@ -184,11 +184,24 @@
     <!-- Styles (Inlined for Performance) -->
     <style>
         :root {
-            /* Colors */
+            /* Colors - Light Mode (Default) */
             --color-bg-light: #E0F1F5;
+            --color-bg-white: #ffffff;
+            --color-bg-card: #ffffff;
+            --color-bg-secondary: #f8f9fa;
+
             --color-primary: #1399AB;
             --color-primary-dark: #0e7a8a;
+            --color-primary-light: #4CC9F0;
+
             --color-text-dark: #1C2B4B;
+            --color-text-body: #444444;
+            --color-text-light: #666666;
+            --color-text-muted: #888888;
+
+            --color-border: #e0e0e0;
+            --color-border-light: rgba(0, 0, 0, 0.05);
+
             --color-white: #ffffff;
             --color-gray-light: #f5f5f5;
 
@@ -211,6 +224,48 @@
             --shadow-sm: 0 2px 4px rgba(28, 43, 75, 0.05);
             --shadow-md: 0 4px 6px rgba(28, 43, 75, 0.1);
             --shadow-lg: 0 10px 15px rgba(28, 43, 75, 0.1);
+            --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.15);
+        }
+
+        /* Dark Mode Variables */
+        body.dark-mode {
+            --color-bg-light: #0f172a;
+            /* Slate 900 */
+            --color-bg-white: #1e293b;
+            /* Slate 800 */
+            --color-bg-card: #1e293b;
+            /* Slate 800 */
+            --color-bg-secondary: #334155;
+            /* Slate 700 */
+
+            --color-primary: #22d3ee;
+            /* Cyan 400 */
+            --color-primary-dark: #06b6d4;
+            /* Cyan 500 */
+            --color-primary-light: #67e8f9;
+            /* Cyan 300 */
+
+            --color-text-dark: #f8fafc;
+            /* Slate 50 */
+            --color-text-body: #cbd5e1;
+            /* Slate 300 */
+            --color-text-light: #94a3b8;
+            /* Slate 400 */
+            --color-text-muted: #64748b;
+            /* Slate 500 */
+
+            --color-border: #334155;
+            /* Slate 700 */
+            --color-border-light: rgba(255, 255, 255, 0.1);
+
+            --color-white: #1e293b;
+            /* Slate 800 for backgrounds that were white */
+            --color-gray-light: #0f172a;
+
+            --shadow-sm: 0 2px 4px rgba(0, 0, 0, 0.3);
+            --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.4);
+            --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.5);
+            --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.5);
         }
 
         /* Reset & Base */
@@ -228,7 +283,7 @@
             font-family: var(--font-body);
             color: var(--color-text-dark);
             line-height: 1.6;
-            background-color: var(--color-white);
+            background-color: var(--color-bg-white);
         }
 
         h1,
@@ -363,9 +418,25 @@
             cursor: pointer;
         }
 
+        .theme-toggle {
+            background: none;
+            border: none;
+            cursor: pointer;
+            padding: 0.5rem;
+            color: var(--color-text-dark);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: color 0.3s ease;
+        }
+
+        .theme-toggle:hover {
+            color: var(--color-primary);
+        }
+
         /* Hero Section */
         .hero {
-            background: linear-gradient(135deg, var(--color-bg-light) 0%, #ffffff 100%);
+            background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-white) 100%);
             padding: 8rem 0 6rem;
             /* Added top padding for header space */
             position: relative;
@@ -413,7 +484,7 @@
         .hero-description {
             font-size: 1.2rem;
             margin-bottom: var(--spacing-lg);
-            color: #444;
+            color: var(--color-text-body);
             /* Darker for better contrast */
             max-width: 500px;
         }
@@ -531,107 +602,146 @@
             color: var(--color-primary);
         }
 
-        /* Mini Calculator in Hero */
+        /* Mini Calculator in Hero - Premium Redesign */
         .mini-calculator {
-            background: rgba(255, 255, 255, 0.95);
-            padding: 1.5rem;
-            border-radius: var(--radius-lg);
-            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
-            backdrop-filter: blur(10px);
+            background: var(--color-bg-card);
+            padding: 2rem;
+            border-radius: 24px;
+            box-shadow:
+                var(--shadow-card),
+                0 0 0 1px var(--color-border-light) inset;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
             width: 100%;
-            max-width: 350px;
+            max-width: 380px;
             margin: 0 auto;
-            border: 1px solid rgba(255, 255, 255, 0.5);
             transform: translateY(0);
-            transition: transform 0.3s ease;
+            transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+            position: relative;
+            overflow: hidden;
         }
 
+        /* Removed top border ::before */
+
         .mini-calculator:hover {
-            transform: translateY(-5px);
+            transform: translateY(-8px);
+            box-shadow:
+                0 30px 60px rgba(0, 0, 0, 0.2),
+                0 0 0 1px rgba(255, 255, 255, 0.8) inset;
         }
 
         .mini-calculator h3 {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            color: var(--color-primary-dark);
+            font-size: 1.4rem;
+            margin-bottom: 1.5rem;
+            color: var(--color-text-dark);
             text-align: center;
+            font-weight: 800;
+            letter-spacing: -0.5px;
         }
 
         .mini-calc-grid {
             display: grid;
             grid-template-columns: 1fr 1fr 1fr;
-            gap: 0.5rem;
-            margin-bottom: 1rem;
+            gap: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .mini-input-group {
             display: flex;
             flex-direction: column;
-            gap: 0.3rem;
+            gap: 0.5rem;
         }
 
         .mini-input-group label {
-            font-size: 0.8rem;
-            font-weight: 600;
-            color: #666;
+            font-size: 0.85rem;
+            font-weight: 700;
+            color: var(--color-text-light);
             text-align: center;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
         }
 
         .mini-input-group input {
             width: 100%;
-            padding: 8px;
-            border: 1px solid #ddd;
-            border-radius: var(--radius-md);
+            padding: 12px 5px;
+            border: 2px solid transparent;
+            background: var(--color-bg-secondary);
+            border-radius: 12px;
             text-align: center;
-            font-weight: 600;
+            font-weight: 700;
+            font-size: 1.1rem;
+            color: var(--color-text-dark);
+            transition: all 0.3s ease;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.05);
         }
 
         .mini-input-group input:focus {
             border-color: var(--color-primary);
+            background: var(--color-bg-white);
             outline: none;
-            background: #f9fbfd;
+            box-shadow: 0 0 0 4px rgba(76, 201, 240, 0.15);
         }
 
         .mini-result {
             display: flex;
             justify-content: space-between;
             align-items: center;
-            background: #f0f9fa;
-            padding: 0.8rem;
-            border-radius: var(--radius-md);
-            margin-bottom: 1rem;
-            border: 1px solid #e0f1f5;
+            background: var(--color-bg-secondary);
+            padding: 1rem 1.5rem;
+            border-radius: 16px;
+            margin-bottom: 1.5rem;
+            border: 1px solid var(--color-border-light);
         }
 
         .mini-result span {
-            font-size: 0.9rem;
-            color: #555;
+            font-size: 0.95rem;
+            color: var(--color-text-light);
+            font-weight: 600;
         }
 
         .mini-total {
-            font-size: 1.4rem;
-            color: var(--color-primary);
+            font-size: 1.8rem;
+            color: var(--color-primary-dark);
             font-family: var(--font-heading);
+            text-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
 
         .mini-note {
-            font-size: 0.7rem;
+            font-size: 0.75rem;
             text-align: center;
-            color: #999;
-            margin-top: 0.5rem;
+            color: var(--color-text-muted);
+            margin-top: 0.8rem;
+            font-style: italic;
         }
 
-        .btn-block {
-            display: block;
-            width: 100%;
+        /* Button styling update for calculator */
+        .mini-calculator .btn-block {
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            border: none;
+            padding: 14px;
+            font-weight: 700;
+            letter-spacing: 0.5px;
+            box-shadow: 0 10px 20px rgba(37, 211, 102, 0.2);
+            /* Greenish shadow for WhatsApp */
+            transition: all 0.3s ease;
+            display: flex;
+            justify-content: center;
+            align-items: center;
             text-align: center;
+            width: 100%;
+        }
+
+        .mini-calculator .btn-block:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(37, 211, 102, 0.3);
         }
 
         @media (max-width: 768px) {
             .hero-visual {
-                margin-top: 2rem;
+                margin-top: 2.5rem;
                 display: flex;
                 justify-content: center;
+                padding: 0 1rem;
             }
 
             .mini-calculator {
@@ -1191,94 +1301,126 @@
             }
         }
 
-        /* Business Hours Widget */
+        /* Business Hours Widget Redesign */
         .business-hours-widget {
-            background: linear-gradient(135deg, #f0f9fa 0%, #ffffff 100%);
+            background: var(--color-bg-card);
             border-radius: var(--radius-lg);
-            padding: var(--spacing-lg);
-            margin-bottom: var(--spacing-xl);
-            box-shadow: var(--shadow-md);
-            max-width: 600px;
+            padding: 2rem;
+            margin-bottom: 3rem;
+            box-shadow: var(--shadow-lg);
+            border: 1px solid var(--color-border-light);
+            max-width: 500px;
             margin-left: auto;
             margin-right: auto;
+            position: relative;
+            overflow: hidden;
         }
+
+        /* Removed top border ::before */
 
         .business-hours-widget h3 {
             text-align: center;
-            margin-bottom: var(--spacing-md);
-            color: var(--color-primary-dark);
+            margin-bottom: 1.5rem;
+            color: var(--color-text-dark);
+            font-size: 1.5rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
         }
 
         .hours-grid {
             display: flex;
             flex-direction: column;
-            gap: 0.75rem;
-            margin-bottom: var(--spacing-md);
+            gap: 1rem;
+            margin-bottom: 1.5rem;
         }
 
         .hours-item {
             display: flex;
             justify-content: space-between;
-            padding: 0.75rem;
-            background: white;
-            border-radius: var(--radius-md);
-            border-left: 3px solid var(--color-primary);
+            align-items: center;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px dashed var(--color-border);
+        }
+
+        .hours-item:last-child {
+            border-bottom: none;
         }
 
         .hours-item .day {
             font-weight: 600;
-            color: var(--color-text-dark);
+            color: var(--color-text-light);
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
         }
 
         .hours-item .time {
-            color: #666;
+            color: var(--color-primary-dark);
+            font-weight: 500;
+            background: var(--color-bg-secondary);
+            padding: 0.2rem 0.6rem;
+            border-radius: 20px;
+            font-size: 0.9rem;
         }
 
         .status-badge {
             display: flex;
             align-items: center;
             justify-content: center;
-            gap: 0.5rem;
-            padding: 0.75rem;
-            border-radius: var(--radius-full);
-            font-weight: 600;
-            margin-top: var(--spacing-md);
+            gap: 0.6rem;
+            padding: 1rem;
+            border-radius: var(--radius-md);
+            font-weight: 700;
+            margin-top: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-size: 0.9rem;
+            transition: all 0.3s ease;
         }
 
         .status-badge.open {
-            background: #d4edda;
-            color: #155724;
+            background: rgba(40, 167, 69, 0.1);
+            color: #28a745;
+            border: 1px solid rgba(40, 167, 69, 0.2);
         }
 
         .status-badge.closed {
-            background: #f8d7da;
-            color: #721c24;
+            background: rgba(220, 53, 69, 0.1);
+            color: #dc3545;
+            border: 1px solid rgba(220, 53, 69, 0.2);
         }
 
         .status-dot {
-            width: 10px;
-            height: 10px;
+            width: 12px;
+            height: 12px;
             border-radius: 50%;
-            animation: pulse-dot 2s infinite;
+            position: relative;
         }
 
-        .status-badge.open .status-dot {
-            background: #28a745;
+        .status-dot::after {
+            content: '';
+            position: absolute;
+            top: -4px;
+            left: -4px;
+            right: -4px;
+            bottom: -4px;
+            border-radius: 50%;
+            border: 2px solid currentColor;
+            opacity: 0.5;
+            animation: ripple 1.5s infinite;
         }
 
-        .status-badge.closed .status-dot {
-            background: #dc3545;
-        }
-
-        @keyframes pulse-dot {
-
-            0%,
-            100% {
+        @keyframes ripple {
+            0% {
+                transform: scale(0.5);
                 opacity: 1;
             }
 
-            50% {
-                opacity: 0.5;
+            100% {
+                transform: scale(1.5);
+                opacity: 0;
             }
         }
 
@@ -1488,11 +1630,34 @@
                 <span class="hamburger"></span>
             </button>
             <nav class="nav">
-                <ul class="nav-list">
+                <ul class="nav-list" id="nav-links">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#servicios" class="nav-link">Servicios</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
-                    <li><a href="#contacto" class="nav-link btn btn-primary">Contacto</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                    <li>
+                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round">
+                                <circle cx="12" cy="12" r="5"></circle>
+                                <line x1="12" y1="1" x2="12" y2="3"></line>
+                                <line x1="12" y1="21" x2="12" y2="23"></line>
+                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                                <line x1="1" y1="12" x2="3" y2="12"></line>
+                                <line x1="21" y1="12" x2="23" y2="12"></line>
+                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                            </svg>
+                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
+                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                                stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                            </svg>
+                        </button>
+                    </li>
+                    <li><a href="https://wa.me/51966167314" class="btn btn-primary">Pedir Ahora</a></li>
                 </ul>
             </nav>
         </div>
@@ -1517,15 +1682,15 @@
                         <div class="mini-calc-grid">
                             <div class="mini-input-group">
                                 <label>Kilos</label>
-                                <input type="number" id="kilos" min="0" placeholder="0">
+                                <input type="number" id="kilos" min="0" placeholder="" inputmode="numeric">
                             </div>
                             <div class="mini-input-group">
                                 <label>Edredón</label>
-                                <input type="number" id="edredones" min="0" placeholder="0">
+                                <input type="number" id="edredones" min="0" placeholder="" inputmode="numeric">
                             </div>
                             <div class="mini-input-group">
                                 <label>Ternos</label>
-                                <input type="number" id="ternos" min="0" placeholder="0">
+                                <input type="number" id="ternos" min="0" placeholder="" inputmode="numeric">
                             </div>
                         </div>
                         <div class="mini-result">
@@ -1768,15 +1933,34 @@
 
                 <!-- Business Hours Widget -->
                 <div class="business-hours-widget">
-                    <h3>🕐 Horarios de Atención</h3>
+                    <h3><span style="font-size: 1.8rem;">🕒</span> Horarios de Atención</h3>
                     <div class="hours-grid">
                         <div class="hours-item">
-                            <span class="day">Lunes - Sábado</span>
+                            <span class="day">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
+                                    <line x1="16" y1="2" x2="16" y2="6"></line>
+                                    <line x1="8" y1="2" x2="8" y2="6"></line>
+                                    <line x1="3" y1="10" x2="21" y2="10"></line>
+                                </svg>
+                                Lunes - Sábado
+                            </span>
                             <span class="time">10:00 AM - 9:00 PM</span>
                         </div>
                         <div class="hours-item">
-                            <span class="day">Domingos</span>
-                            <span class="time">Cerrado</span>
+                            <span class="day">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <circle cx="12" cy="12" r="10"></circle>
+                                    <line x1="12" y1="8" x2="12" y2="12"></line>
+                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
+                                </svg>
+                                Domingos
+                            </span>
+                            <span class="time" style="background: #fff0f0; color: #dc3545;">Cerrado</span>
                         </div>
                     </div>
                     <div class="status-badge" id="status-badge">
