@@ -500,6 +500,11 @@
             gap: var(--spacing-lg);
         }
 
+        .service-card-link {
+            display: block;
+            height: 100%;
+        }
+
         .service-card {
             background: var(--color-white);
             padding: var(--spacing-lg);
@@ -926,24 +931,76 @@
         .footer {
             background-color: var(--color-text-dark);
             color: var(--color-white);
-            padding: var(--spacing-lg) 0;
-            text-align: center;
+            padding: var(--spacing-xl) 0 var(--spacing-lg);
         }
 
         .footer-container {
-            display: flex;
-            flex-direction: column;
-            gap: var(--spacing-md);
-            align-items: center;
+            display: block;
+        }
+
+        .footer-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: var(--spacing-xl);
+            margin-bottom: var(--spacing-xl);
+        }
+
+        .footer-column h3 {
+            color: var(--color-white);
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-md);
+            position: relative;
+            padding-bottom: var(--spacing-sm);
+        }
+
+        .footer-column h3::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 30px;
+            height: 2px;
+            background-color: var(--color-primary);
+        }
+
+        .footer-column p {
+            color: #ccc;
+            font-size: 0.9rem;
+            line-height: 1.6;
+        }
+
+        .footer-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .footer-links a {
+            color: #ccc;
+            font-size: 0.9rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-links a:hover {
+            color: var(--color-primary);
+            padding-left: 5px;
+        }
+
+        .footer-bottom {
+            border-top: 1px solid rgba(255, 255, 255, 0.1);
+            padding-top: var(--spacing-lg);
+            text-align: center;
+            font-size: 0.9rem;
+            color: #888;
         }
 
         .social-links {
             display: flex;
             gap: var(--spacing-md);
+            margin-top: var(--spacing-md);
         }
 
         .social-links a {
             color: var(--color-white);
+            font-weight: 500;
             opacity: 0.8;
             transition: opacity 0.3s ease;
         }
@@ -1105,26 +1162,34 @@
                 <h2 class="section-title">Servicios de Lavandería en Breña</h2>
                 <div class="services-grid">
                     <!-- Service 1 -->
-                    <div class="service-card">
-                        <div class="service-icon">🧺</div>
-                        <h3>Lavado por Kilo</h3>
-                        <p>Servicio de lavandería por kilo ideal para tu ropa de uso diario. Lavado, secado y doblado
-                            profesional en Breña, Lima.</p>
-                    </div>
+                    <a href="lavado-por-kilo.html" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">🧺</div>
+                            <h3>Lavado por Kilo</h3>
+                            <p>Servicio de lavandería por kilo ideal para tu ropa de uso diario. Lavado, secado y
+                                doblado
+                                profesional en Breña, Lima.</p>
+                        </div>
+                    </a>
                     <!-- Service 2 -->
-                    <div class="service-card">
-                        <div class="service-icon">👔</div>
-                        <h3>Lavado en Seco</h3>
-                        <p>Lavandería especializada en lavado en seco para prendas delicadas, trajes y vestidos. Cuidado
-                            profesional garantizado.</p>
-                    </div>
+                    <a href="lavado-en-seco.html" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">👔</div>
+                            <h3>Lavado en Seco</h3>
+                            <p>Lavandería especializada en lavado en seco para prendas delicadas, trajes y vestidos.
+                                Cuidado
+                                profesional garantizado.</p>
+                        </div>
+                    </a>
                     <!-- Service 3 -->
-                    <div class="service-card">
-                        <div class="service-icon">🛏️</div>
-                        <h3>Edredones y Mantas</h3>
-                        <p>Servicio de lavandería para ropa de cama de gran tamaño. Limpieza profunda de edredones y
-                            mantas en Lima.</p>
-                    </div>
+                    <a href="lavado-de-edredones.html" class="service-card-link">
+                        <div class="service-card">
+                            <div class="service-icon">🛏️</div>
+                            <h3>Edredones y Mantas</h3>
+                            <p>Servicio de lavandería para ropa de cama de gran tamaño. Limpieza profunda de edredones y
+                                mantas en Lima.</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </section>
@@ -1325,10 +1390,45 @@
 
     <footer class="footer">
         <div class="container footer-container">
-            <p>&copy; 2024 JP Pro Wash. Todos los derechos reservados.</p>
-            <div class="social-links">
-                <a href="#">Facebook</a>
-                <a href="#">Instagram</a>
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>JP Pro Wash</h3>
+                    <p>Tu lavandería de confianza en Breña. Expertos en cuidado de prendas, lavado por kilo y servicio a
+                        domicilio.</p>
+                </div>
+                <div class="footer-column">
+                    <h3>Servicios</h3>
+                    <ul class="footer-links">
+                        <li><a href="lavado-por-kilo.html">Lavado por Kilo</a></li>
+                        <li><a href="lavado-en-seco.html">Lavado en Seco</a></li>
+                        <li><a href="lavado-de-edredones.html">Lavado de Edredones</a></li>
+                        <li><a href="#servicios">Planchado Express</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Cobertura</h3>
+                    <ul class="footer-links">
+                        <li><a href="#">Lavandería en Breña</a></li>
+                        <li><a href="#">Lavandería en Pueblo Libre</a></li>
+                        <li><a href="#">Lavandería en Jesús María</a></li>
+                        <li><a href="#">Lavandería en Cercado de Lima</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>Contacto</h3>
+                    <ul class="footer-links">
+                        <li>📍 Jr. Jorge Chávez 1154, Breña</li>
+                        <li>📱 966 167 314</li>
+                        <li>✉️ contacto@jpprowash.com</li>
+                    </ul>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook">Facebook</a>
+                        <a href="#" aria-label="Instagram">Instagram</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 JP Pro Wash. Todos los derechos reservados.</p>
             </div>
         </div>
     </footer>
