@@ -24,8 +24,6 @@
             rel="stylesheet">
     </noscript>
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/images/LOGO/png/SIN FONDO/LOGO BASE (1).png">
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
@@ -34,37 +32,88 @@
     <meta property="og:description"
         content="Servicios de lavandería profesional. Lavado por kilo, lavado en seco y edredones. ¡Recogemos tu ropa!">
     <meta property="og:image" content="assets/images/BANNERS/LETRERO_mas-recortado.jpg">
+    <meta name="keywords"
+        content="lavandería Breña, lavandería Lima, lavado por kilo, lavado en seco, lavandería a domicilio, JP Pro Wash, lavandería cerca de mí">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/images/LOGO/png/SIN FONDO/LOGO_opt.png" type="image/png">
+
+    <!-- Google Fonts (Optimized) -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
 
     <!-- Schema Markup (JSON-LD) -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
-      "@type": "LocalBusiness",
-      "name": "JP Pro Wash",
-      "image": "assets/images/LOGO/png/SIN FONDO/LOGO BASE (1).png",
-      "telephone": "+51966167314",
-      "address": {
-        "@type": "PostalAddress",
-        "streetAddress": "Jr. Jorge Chávez 1154",
-        "addressLocality": "Breña",
-        "addressRegion": "Lima",
-        "postalCode": "15083",
-        "addressCountry": "PE"
-      },
-      "openingHoursSpecification": {
-        "@type": "OpeningHoursSpecification",
-        "dayOfWeek": [
-          "Monday",
-          "Tuesday",
-          "Wednesday",
-          "Thursday",
-          "Friday",
-          "Saturday"
-        ],
-        "opens": "10:00",
-        "closes": "21:00"
-      },
-      "url": "https://jpprowash.com/"
+      "@graph": [
+        {
+          "@type": "LocalBusiness",
+          "name": "JP Pro Wash",
+          "image": "https://jpprowash.com/assets/images/LOGO/png/SIN%20FONDO/LOGO_opt.png",
+          "@id": "https://jpprowash.com",
+          "url": "https://jpprowash.com",
+          "telephone": "+51966167314",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Jr. Jorge Chávez 1154",
+            "addressLocality": "Breña",
+            "addressRegion": "Lima",
+            "postalCode": "15083",
+            "addressCountry": "PE"
+          },
+          "geo": {
+            "@type": "GeoCoordinates",
+            "latitude": -12.0568,
+            "longitude": -77.0486
+          },
+          "openingHoursSpecification": {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": [
+              "Monday",
+              "Tuesday",
+              "Wednesday",
+              "Thursday",
+              "Friday",
+              "Saturday"
+            ],
+            "opens": "10:00",
+            "closes": "21:00"
+          },
+          "priceRange": "$$"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Inicio",
+          "url": "https://jpprowash.com/#inicio"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Servicios",
+          "url": "https://jpprowash.com/#servicios"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Nosotros",
+          "url": "https://jpprowash.com/#nosotros"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Preguntas Frecuentes",
+          "url": "https://jpprowash.com/#faq"
+        },
+        {
+          "@type": "SiteNavigationElement",
+          "name": "Contacto",
+          "url": "https://jpprowash.com/#contacto"
+        }
+      ]
     }
     </script>
 
@@ -549,27 +598,55 @@
             padding: var(--spacing-lg);
             border-radius: var(--radius-lg);
             box-shadow: var(--shadow-sm);
-            font-style: italic;
             position: relative;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-sm);
         }
 
-        .testimonial-card::before {
-            content: '"';
-            font-size: 4rem;
-            color: var(--color-primary);
-            opacity: 0.2;
-            position: absolute;
-            top: 0;
-            left: 10px;
-            font-family: serif;
+        .stars {
+            font-size: 1.2rem;
+            margin-bottom: var(--spacing-sm);
+        }
+
+        .testimonial-card p {
+            font-style: italic;
+            color: #444;
+            flex-grow: 1;
+        }
+
+        .reviewer-info {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-top: var(--spacing-md);
+            border-top: 1px solid #eee;
+            padding-top: var(--spacing-sm);
         }
 
         .testimonial-card h3 {
-            margin-top: var(--spacing-md);
             font-style: normal;
             font-weight: 600;
-            color: var(--color-primary-dark);
-            text-align: right;
+            color: var(--color-text-dark);
+            font-size: 1rem;
+            margin: 0;
+        }
+
+        .google-badge {
+            font-size: 0.8rem;
+            color: #777;
+            display: flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .google-badge::before {
+            content: 'G';
+            font-weight: bold;
+            color: #4285F4;
+            /* Google Blue */
+            font-family: sans-serif;
+            font-size: 1rem;
         }
 
         /* FAQ Section */
@@ -1097,19 +1174,31 @@
         <!-- Testimonials Section -->
         <section class="section testimonials">
             <div class="container">
-                <h2 class="section-title">Clientes Felices</h2>
+                <h2 class="section-title">Lo que dicen nuestros clientes</h2>
                 <div class="testimonials-grid">
                     <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
                         <p>"Excelente servicio, mi ropa quedó impecable y el olor es buenísimo. Muy recomendados."</p>
-                        <h3>- María G.</h3>
+                        <div class="reviewer-info">
+                            <h3>María G.</h3>
+                            <span class="google-badge">Google Review</span>
+                        </div>
                     </div>
                     <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
                         <p>"Me salvaron con mi terno para una reunión urgente. Rápido y profesional."</p>
-                        <h3>- Carlos R.</h3>
+                        <div class="reviewer-info">
+                            <h3>Carlos R.</h3>
+                            <span class="google-badge">Google Review</span>
+                        </div>
                     </div>
                     <div class="testimonial-card">
+                        <div class="stars">⭐⭐⭐⭐⭐</div>
                         <p>"La atención por WhatsApp es súper rápida. Me encanta que recojan la ropa en mi casa."</p>
-                        <h3>- Ana P.</h3>
+                        <div class="reviewer-info">
+                            <h3>Ana P.</h3>
+                            <span class="google-badge">Google Review</span>
+                        </div>
                     </div>
                 </div>
             </div>
