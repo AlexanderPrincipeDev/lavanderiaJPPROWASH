@@ -117,6 +117,43 @@ document.addEventListener('DOMContentLoaded', () => {
             promoBanner.style.display = 'none';
         });
     }
+
+    // Business Hours Status Checker
+    function checkBusinessHours() {
+        const statusBadge = document.getElementById('status-badge');
+        if (!statusBadge) return;
+
+        const now = new Date();
+        const day = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const currentTime = hour + minute / 60;
+
+        let isOpen = false;
+
+        // Monday-Saturday: 10:00 AM - 9:00 PM
+        if (day >= 1 && day <= 6) {
+            isOpen = currentTime >= 10 && currentTime < 21;
+        }
+        // Sunday: Closed
+        else {
+            isOpen = false;
+        }
+
+        if (isOpen) {
+            statusBadge.classList.add('open');
+            statusBadge.classList.remove('closed');
+            statusBadge.querySelector('.status-text').textContent = '¡Estamos Abiertos!';
+        } else {
+            statusBadge.classList.add('closed');
+            statusBadge.classList.remove('open');
+            statusBadge.querySelector('.status-text').textContent = 'Cerrado Ahora';
+        }
+    }
+
+    // Check on load and every minute
+    checkBusinessHours();
+    setInterval(checkBusinessHours, 60000);
 });
 
 // Add animation class styles dynamically or in CSS (better in CSS, but adding class logic here)

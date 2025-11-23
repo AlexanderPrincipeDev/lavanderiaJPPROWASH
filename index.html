@@ -1191,6 +1191,97 @@
             }
         }
 
+        /* Business Hours Widget */
+        .business-hours-widget {
+            background: linear-gradient(135deg, #f0f9fa 0%, #ffffff 100%);
+            border-radius: var(--radius-lg);
+            padding: var(--spacing-lg);
+            margin-bottom: var(--spacing-xl);
+            box-shadow: var(--shadow-md);
+            max-width: 600px;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .business-hours-widget h3 {
+            text-align: center;
+            margin-bottom: var(--spacing-md);
+            color: var(--color-primary-dark);
+        }
+
+        .hours-grid {
+            display: flex;
+            flex-direction: column;
+            gap: 0.75rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .hours-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 0.75rem;
+            background: white;
+            border-radius: var(--radius-md);
+            border-left: 3px solid var(--color-primary);
+        }
+
+        .hours-item .day {
+            font-weight: 600;
+            color: var(--color-text-dark);
+        }
+
+        .hours-item .time {
+            color: #666;
+        }
+
+        .status-badge {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.5rem;
+            padding: 0.75rem;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            margin-top: var(--spacing-md);
+        }
+
+        .status-badge.open {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-badge.closed {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-dot {
+            width: 10px;
+            height: 10px;
+            border-radius: 50%;
+            animation: pulse-dot 2s infinite;
+        }
+
+        .status-badge.open .status-dot {
+            background: #28a745;
+        }
+
+        .status-badge.closed .status-dot {
+            background: #dc3545;
+        }
+
+        @keyframes pulse-dot {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.5;
+            }
+        }
+
         /* Footer */
         .footer {
             background-color: var(--color-text-dark);
@@ -1505,7 +1596,7 @@
                             <!-- Image After (Clean) -->
                             <picture>
                                 <source srcset="assets/images/fotos/ropalimpia.webp" type="image/webp">
-                                <img src="assets/images/fotos/ropalimpia.png" alt="Ropa limpia y fresca"
+                                <img src="assets/images/fotos/ropalimpia.png" alt="Ropa limpia y fresca" loading="lazy"
                                     style="width: 100%; height: 100%; object-fit: cover;">
                             </picture>
                         </div>
@@ -1513,7 +1604,7 @@
                             <!-- Image Before (Dirty) -->
                             <picture>
                                 <source srcset="assets/images/fotos/ropasucia.webp" type="image/webp">
-                                <img src="assets/images/fotos/ropasucia.png" alt="Ropa sucia"
+                                <img src="assets/images/fotos/ropasucia.png" alt="Ropa sucia" loading="lazy"
                                     style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) brightness(0.8);">
                             </picture>
                         </div>
@@ -1674,6 +1765,26 @@
         <section id="contacto" class="section contact">
             <div class="container">
                 <h2 class="section-title">Visítanos en Breña, Lima</h2>
+
+                <!-- Business Hours Widget -->
+                <div class="business-hours-widget">
+                    <h3>🕐 Horarios de Atención</h3>
+                    <div class="hours-grid">
+                        <div class="hours-item">
+                            <span class="day">Lunes - Sábado</span>
+                            <span class="time">10:00 AM - 9:00 PM</span>
+                        </div>
+                        <div class="hours-item">
+                            <span class="day">Domingos</span>
+                            <span class="time">Cerrado</span>
+                        </div>
+                    </div>
+                    <div class="status-badge" id="status-badge">
+                        <span class="status-dot"></span>
+                        <span class="status-text">Verificando horario...</span>
+                    </div>
+                </div>
+
                 <div class="contact-layout">
                     <div class="contact-info-panel">
                         <div class="info-item">
