@@ -577,37 +577,74 @@
             background-color: var(--color-white);
         }
 
-        .faq-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-            gap: var(--spacing-lg);
-            max-width: 1000px;
+        .faq-accordion {
+            max-width: 800px;
             margin: 0 auto;
+            display: flex;
+            flex-direction: column;
+            gap: var(--spacing-md);
         }
 
         .faq-item {
             background: var(--color-bg-light);
-            padding: var(--spacing-lg);
-            border-radius: var(--radius-lg);
-            border-left: 4px solid var(--color-primary);
-            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            border-radius: var(--radius-md);
+            overflow: hidden;
+            transition: box-shadow 0.3s ease;
         }
 
         .faq-item:hover {
-            transform: translateY(-3px);
-            box-shadow: var(--shadow-md);
+            box-shadow: var(--shadow-sm);
         }
 
         .faq-question {
-            color: var(--color-text-dark);
-            margin-bottom: var(--spacing-sm);
+            width: 100%;
+            background: none;
+            border: none;
+            padding: var(--spacing-md) var(--spacing-lg);
+            text-align: left;
             font-size: 1.1rem;
             font-weight: 600;
+            color: var(--color-text-dark);
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-family: var(--font-heading);
+            transition: color 0.3s ease;
+        }
+
+        .faq-question:hover {
+            color: var(--color-primary);
+        }
+
+        .faq-icon {
+            font-size: 1.5rem;
+            font-weight: 400;
+            transition: transform 0.3s ease;
+            color: var(--color-primary);
+        }
+
+        .faq-item.active .faq-icon {
+            transform: rotate(45deg);
         }
 
         .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.3s ease-out;
+            background-color: var(--color-white);
+        }
+
+        .faq-answer p {
+            padding: var(--spacing-md) var(--spacing-lg);
             color: #444;
             line-height: 1.6;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .faq-item.active .faq-answer {
+            max-height: 200px;
+            /* Approximate max height */
         }
 
         /* Contact Section Refactored */
@@ -1082,39 +1119,67 @@
         <section class="section faq">
             <div class="container">
                 <h2 class="section-title">Preguntas Frecuentes</h2>
-                <div class="faq-grid">
+                <div class="faq-accordion">
                     <div class="faq-item">
-                        <h3 class="faq-question">¿Cuánto cuesta el lavado por kilo en Breña?</h3>
-                        <p class="faq-answer">El servicio de lavado por kilo en nuestra lavandería de Breña tiene un
-                            precio de S/ 4.00 por kilo. Incluye lavado, secado y doblado profesional de tu ropa.</p>
+                        <button class="faq-question" aria-expanded="false">
+                            ¿Cuánto cuesta el lavado por kilo en Breña?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El servicio de lavado por kilo en nuestra lavandería de Breña tiene un precio de S/ 4.00
+                                por kilo. Incluye lavado, secado y doblado profesional de tu ropa.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3 class="faq-question">¿Hacen servicio de recojo y entrega a domicilio?</h3>
-                        <p class="faq-answer">Sí, ofrecemos servicio de recojo y entrega a domicilio en Breña y
-                            distritos cercanos de Lima. Contáctanos por WhatsApp al 966 167 314 para coordinar el recojo
-                            de tu ropa.</p>
+                        <button class="faq-question" aria-expanded="false">
+                            ¿Hacen servicio de recojo y entrega a domicilio?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Sí, ofrecemos servicio de recojo y entrega a domicilio en Breña y distritos cercanos de
+                                Lima. Contáctanos por WhatsApp al 966 167 314 para coordinar el recojo de tu ropa.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3 class="faq-question">¿Cuánto tiempo demora el servicio de lavandería?</h3>
-                        <p class="faq-answer">El servicio express está listo desde 4 horas para ropa simple (no incluye
-                            sábanas, edredones ni prendas especiales). Para pedidos especiales, el tiempo puede variar.
-                        </p>
+                        <button class="faq-question" aria-expanded="false">
+                            ¿Cuánto tiempo demora el servicio de lavandería?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>El servicio express está listo desde 4 horas para ropa simple (no incluye sábanas,
+                                edredones ni prendas especiales). Para pedidos especiales, el tiempo puede variar.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3 class="faq-question">¿Qué incluye el servicio de lavado por kilo?</h3>
-                        <p class="faq-answer">Nuestro servicio de lavado por kilo incluye lavado profesional, secado y
-                            doblado de ropa de uso diario. Para prendas delicadas, edredones o sábanas, consulta
-                            nuestros servicios especializados.</p>
+                        <button class="faq-question" aria-expanded="false">
+                            ¿Qué incluye el servicio de lavado por kilo?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Nuestro servicio de lavado por kilo incluye lavado profesional, secado y doblado de ropa
+                                de uso diario. Para prendas delicadas, edredones o sábanas, consulta nuestros servicios
+                                especializados.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3 class="faq-question">¿Dónde está ubicada la lavandería JP Pro Wash?</h3>
-                        <p class="faq-answer">Estamos ubicados en Jr. Jorge Chávez 1154, Breña, Lima. Nuestro horario de
-                            atención es de lunes a sábado de 10:00 AM a 9:00 PM.</p>
+                        <button class="faq-question" aria-expanded="false">
+                            ¿Dónde está ubicada la lavandería JP Pro Wash?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Estamos ubicados en Jr. Jorge Chávez 1154, Breña, Lima. Nuestro horario de atención es de
+                                lunes a sábado de 10:00 AM a 9:00 PM.</p>
+                        </div>
                     </div>
                     <div class="faq-item">
-                        <h3 class="faq-question">¿Qué métodos de pago aceptan?</h3>
-                        <p class="faq-answer">Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al
-                            momento del recojo o entrega de tu ropa.</p>
+                        <button class="faq-question" aria-expanded="false">
+                            ¿Qué métodos de pago aceptan?
+                            <span class="faq-icon">+</span>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al momento del
+                                recojo o entrega de tu ropa.</p>
+                        </div>
                     </div>
                 </div>
             </div>

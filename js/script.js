@@ -35,6 +35,29 @@ document.addEventListener('DOMContentLoaded', () => {
         el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
         observer.observe(el);
     });
+
+    // FAQ Accordion
+    const faqQuestions = document.querySelectorAll('.faq-question');
+
+    faqQuestions.forEach(question => {
+        question.addEventListener('click', () => {
+            const item = question.parentElement;
+            const isActive = item.classList.contains('active');
+
+            // Close all other items
+            document.querySelectorAll('.faq-item').forEach(otherItem => {
+                if (otherItem !== item) {
+                    otherItem.classList.remove('active');
+                    const otherQuestion = otherItem.querySelector('.faq-question');
+                    if (otherQuestion) otherQuestion.setAttribute('aria-expanded', 'false');
+                }
+            });
+
+            // Toggle current item
+            item.classList.toggle('active');
+            question.setAttribute('aria-expanded', !isActive);
+        });
+    });
 });
 
 // Add animation class styles dynamically or in CSS (better in CSS, but adding class logic here)
