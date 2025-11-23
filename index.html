@@ -531,6 +531,114 @@
             color: var(--color-primary);
         }
 
+        /* Mini Calculator in Hero */
+        .mini-calculator {
+            background: rgba(255, 255, 255, 0.95);
+            padding: 1.5rem;
+            border-radius: var(--radius-lg);
+            box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+            backdrop-filter: blur(10px);
+            width: 100%;
+            max-width: 350px;
+            margin: 0 auto;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transform: translateY(0);
+            transition: transform 0.3s ease;
+        }
+
+        .mini-calculator:hover {
+            transform: translateY(-5px);
+        }
+
+        .mini-calculator h3 {
+            font-size: 1.2rem;
+            margin-bottom: 1rem;
+            color: var(--color-primary-dark);
+            text-align: center;
+        }
+
+        .mini-calc-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            gap: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .mini-input-group {
+            display: flex;
+            flex-direction: column;
+            gap: 0.3rem;
+        }
+
+        .mini-input-group label {
+            font-size: 0.8rem;
+            font-weight: 600;
+            color: #666;
+            text-align: center;
+        }
+
+        .mini-input-group input {
+            width: 100%;
+            padding: 8px;
+            border: 1px solid #ddd;
+            border-radius: var(--radius-md);
+            text-align: center;
+            font-weight: 600;
+        }
+
+        .mini-input-group input:focus {
+            border-color: var(--color-primary);
+            outline: none;
+            background: #f9fbfd;
+        }
+
+        .mini-result {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #f0f9fa;
+            padding: 0.8rem;
+            border-radius: var(--radius-md);
+            margin-bottom: 1rem;
+            border: 1px solid #e0f1f5;
+        }
+
+        .mini-result span {
+            font-size: 0.9rem;
+            color: #555;
+        }
+
+        .mini-total {
+            font-size: 1.4rem;
+            color: var(--color-primary);
+            font-family: var(--font-heading);
+        }
+
+        .mini-note {
+            font-size: 0.7rem;
+            text-align: center;
+            color: #999;
+            margin-top: 0.5rem;
+        }
+
+        .btn-block {
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .hero-visual {
+                margin-top: 2rem;
+                display: flex;
+                justify-content: center;
+            }
+
+            .mini-calculator {
+                max-width: 100%;
+            }
+        }
+
         /* About Section */
         .about {
             background-color: var(--color-bg-light);
@@ -927,6 +1035,162 @@
             }
         }
 
+        /* Promo Banner */
+        .promo-banner {
+            background-color: #FFD700;
+            /* Gold/Yellow */
+            color: #333;
+            text-align: center;
+            padding: 0.5rem;
+            position: relative;
+            font-size: 0.9rem;
+            z-index: 2000;
+            /* Above header */
+        }
+
+        .promo-banner a {
+            text-decoration: underline;
+            font-weight: bold;
+            color: #000;
+        }
+
+        .promo-banner button {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            transform: translateY(-50%);
+            background: none;
+            border: none;
+            font-size: 1.2rem;
+            cursor: pointer;
+            padding: 0 5px;
+        }
+
+        /* Comparison Slider */
+        .comparison-container {
+            max-width: 800px;
+            margin: 0 auto;
+            position: relative;
+            border-radius: var(--radius-lg);
+            overflow: hidden;
+            box-shadow: var(--shadow-lg);
+        }
+
+        .img-comp-container {
+            position: relative;
+            height: 400px;
+            /* Adjust height as needed */
+            overflow: hidden;
+        }
+
+        .img-comp-img {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .img-comp-before {
+            width: 50%;
+            /* Initial state */
+            z-index: 2;
+            border-right: 3px solid white;
+        }
+
+        .slider {
+            position: absolute;
+            -webkit-appearance: none;
+            appearance: none;
+            width: 100%;
+            height: 100%;
+            background: transparent;
+            z-index: 10;
+            top: 0;
+            left: 0;
+            margin: 0;
+            cursor: ew-resize;
+        }
+
+        .slider::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            width: 0;
+            /* Hide default thumb */
+            height: 0;
+        }
+
+        .slider::-moz-range-thumb {
+            width: 0;
+            height: 0;
+            border: 0;
+        }
+
+        /* Custom Slider Handle */
+        .slider-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 40px;
+            height: 40px;
+            background: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            color: var(--color-primary);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+            z-index: 5;
+            pointer-events: none;
+            /* Let clicks pass to input */
+        }
+
+        /* Sticky WhatsApp Button */
+        .whatsapp-float {
+            position: fixed;
+            width: 60px;
+            height: 60px;
+            bottom: 30px;
+            right: 30px;
+            background-color: #25d366;
+            color: #FFF;
+            border-radius: 50px;
+            text-align: center;
+            font-size: 30px;
+            box-shadow: 2px 2px 3px #999;
+            z-index: 1000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            transition: all 0.3s ease;
+            animation: pulse 2s infinite;
+        }
+
+        .whatsapp-float:hover {
+            background-color: #128C7E;
+            transform: scale(1.1);
+        }
+
+        .whatsapp-float svg {
+            width: 35px;
+            height: 35px;
+        }
+
+        @keyframes pulse {
+            0% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0.7);
+            }
+
+            70% {
+                box-shadow: 0 0 0 15px rgba(37, 211, 102, 0);
+            }
+
+            100% {
+                box-shadow: 0 0 0 0 rgba(37, 211, 102, 0);
+            }
+        }
+
         /* Footer */
         .footer {
             background-color: var(--color-text-dark);
@@ -1104,6 +1368,13 @@
 </head>
 
 <body>
+    <!-- Promo Banner -->
+    <div id="promo-banner" class="promo-banner">
+        <p>🎉 <strong>¡Oferta Especial!</strong> 10% de descuento en tu primer lavado de edredones. <a
+                href="#contacto">¡Aprovecha ya!</a></p>
+        <button id="close-banner" aria-label="Cerrar oferta">×</button>
+    </div>
+
     <!-- Mobile Top Banner -->
     <div class="mobile-top-banner">
         <picture>
@@ -1150,8 +1421,31 @@
                     </div>
                 </div>
                 <div class="hero-visual">
-                    <!-- CSS Graphic or Placeholder -->
-                    <div class="hero-circle"></div>
+                    <div class="mini-calculator">
+                        <h3>⚡ Cotiza al toque</h3>
+                        <div class="mini-calc-grid">
+                            <div class="mini-input-group">
+                                <label>Kilos</label>
+                                <input type="number" id="kilos" min="0" placeholder="0">
+                            </div>
+                            <div class="mini-input-group">
+                                <label>Edredón</label>
+                                <input type="number" id="edredones" min="0" placeholder="0">
+                            </div>
+                            <div class="mini-input-group">
+                                <label>Ternos</label>
+                                <input type="number" id="ternos" min="0" placeholder="0">
+                            </div>
+                        </div>
+                        <div class="mini-result">
+                            <span>Total Aprox:</span>
+                            <strong class="mini-total">S/ <span id="total-amount">0.00</span></strong>
+                        </div>
+                        <a href="#" id="whatsapp-order-btn" class="btn btn-primary btn-block">
+                            Pedir por WhatsApp
+                        </a>
+                        <p class="mini-note">*Precio referencial</p>
+                    </div>
                 </div>
             </div>
         </section>
@@ -1190,6 +1484,43 @@
                                 mantas en Lima.</p>
                         </div>
                     </a>
+                </div>
+            </div>
+        </section>
+
+
+
+        </section>
+
+        <!-- Before/After Comparison Section -->
+        <section class="section comparison">
+            <div class="container">
+                <h2 class="section-title">Resultados Impecables</h2>
+                <p class="section-subtitle" style="text-align: center; margin-bottom: 2rem;">Desliza para ver la magia
+                    de JP Pro Wash</p>
+
+                <div class="comparison-container">
+                    <div class="img-comp-container">
+                        <div class="img-comp-img img-comp-after">
+                            <!-- Image After (Clean) -->
+                            <picture>
+                                <source srcset="assets/images/fotos/ropalimpia.webp" type="image/webp">
+                                <img src="assets/images/fotos/ropalimpia.png" alt="Ropa limpia y fresca"
+                                    style="width: 100%; height: 100%; object-fit: cover;">
+                            </picture>
+                        </div>
+                        <div class="img-comp-img img-comp-before">
+                            <!-- Image Before (Dirty) -->
+                            <picture>
+                                <source srcset="assets/images/fotos/ropasucia.webp" type="image/webp">
+                                <img src="assets/images/fotos/ropasucia.png" alt="Ropa sucia"
+                                    style="width: 100%; height: 100%; object-fit: cover; filter: grayscale(100%) brightness(0.8);">
+                            </picture>
+                        </div>
+                        <input type="range" min="0" max="100" value="50" class="slider" id="comparison-slider">
+                        <div class="slider-line"></div>
+                        <div class="slider-button">↔</div>
+                    </div>
                 </div>
             </div>
         </section>
