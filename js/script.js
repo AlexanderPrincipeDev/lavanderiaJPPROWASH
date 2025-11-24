@@ -195,7 +195,7 @@ document.addEventListener('DOMContentLoaded', () => {
         if (isOpen) {
             statusBadge.classList.add('open');
             statusBadge.classList.remove('closed');
-            statusBadge.querySelector('.status-text').textContent = '¡Estamos Abiertos!';
+            statusBadge.querySelector('.status-text').textContent = '¡Estamos atendiendo!';
         } else {
             statusBadge.classList.add('closed');
             statusBadge.classList.remove('open');
@@ -206,6 +206,101 @@ document.addEventListener('DOMContentLoaded', () => {
     // Check on load and every minute
     checkBusinessHours();
     setInterval(checkBusinessHours, 60000);
+
+    // Chatbot Logic
+    const chatbotToggle = document.getElementById('chatbot-toggle');
+    const chatbotWidget = document.getElementById('chatbot-widget');
+    const chatbotClose = document.getElementById('chatbot-close');
+    const chatbotBody = document.getElementById('chatbot-body');
+
+    if (chatbotToggle && chatbotWidget && chatbotClose) {
+        chatbotToggle.addEventListener('click', () => {
+            chatbotWidget.style.display = 'flex';
+            chatbotToggle.style.display = 'none';
+        });
+
+        chatbotClose.addEventListener('click', () => {
+            chatbotWidget.style.display = 'none';
+            chatbotToggle.style.display = 'flex';
+        });
+    }
+
+    window.handleChatOption = function (option) {
+        // Add user message
+        const userMsg = document.createElement('div');
+        userMsg.className = 'chat-message user';
+        let userText = '';
+
+        switch (option) {
+            case 'precios': userText = '💰 Ver Precios'; break;
+            case 'cobertura': userText = '📍 Zona de Cobertura'; break;
+            case 'horario': userText = '⏰ Horarios de Atención'; break;
+            case 'contacto': userText = '👤 Hablar con un Humano'; break;
+        }
+
+        userMsg.innerHTML = `<div class="chat-bubble">${userText}</div>`;
+        chatbotBody.appendChild(userMsg);
+
+        // Scroll to bottom
+        chatbotBody.scrollTop = chatbotBody.scrollHeight;
+
+        // Simulate bot typing
+        setTimeout(() => {
+            const botMsg = document.createElement('div');
+            botMsg.className = 'chat-message bot';
+            let botContent = '';
+
+            switch (option) {
+                case 'precios':
+                    botContent = `
+                        <div class="chat-bubble">
+                            <strong>Nuestros precios base son:</strong><br>
+                            🧺 Lavado por Kilo: S/ 4.00<br>
+                            🛏️ Edredones: Desde S/ 15.00<br>
+                            👔 Ternos: Desde S/ 20.00<br>
+                            <br>
+                            ¿Quieres cotizar algo específico?
+                        </div>
+                        <div class="chat-options">
+                            <button class="chat-option-btn" onclick="handleChatOption('contacto')">Cotizar por WhatsApp</button>
+                        </div>
+                    `;
+                    break;
+                case 'cobertura':
+                    botContent = `
+                        <div class="chat-bubble">
+                            Llegamos a <strong>Breña, Pueblo Libre, Jesús María, Lince, San Isidro, Lima Cercado y La Victoria</strong>.<br>
+                            <br>
+                            El delivery es GRATIS a partir de 10 kilos en zonas cercanas.
+                        </div>
+                    `;
+                    break;
+                case 'horario':
+                    botContent = `
+                        <div class="chat-bubble">
+                            Nuestro horario de atención es:<br>
+                            📅 <strong>Lunes a Sábado:</strong> 10:00 AM - 9:00 PM<br>
+                            ❌ Domingos y Feriados: Cerrado
+                        </div>
+                    `;
+                    break;
+                case 'contacto':
+                    botContent = `
+                        <div class="chat-bubble">
+                            ¡Claro! Te conectaré con un asesor humano por WhatsApp ahora mismo.
+                        </div>
+                    `;
+                    setTimeout(() => {
+                        window.open('https://wa.me/51966167314?text=Hola,%20vengo%20del%20chat%20de%20la%20web', '_blank');
+                    }, 1500);
+                    break;
+            }
+
+            botMsg.innerHTML = botContent;
+            chatbotBody.appendChild(botMsg);
+            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        }, 600);
+    };
 });
 
 // Add animation class styles dynamically or in CSS (better in CSS, but adding class logic here)
