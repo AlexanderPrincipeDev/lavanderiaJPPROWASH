@@ -1956,6 +1956,99 @@
             font-weight: bold;
             border: 2px solid white;
         }
+
+        /* Sticky Business Hours Badge */
+        .sticky-status-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            z-index: 10000;
+            background: linear-gradient(135deg, #28a745, #20c997);
+            color: white;
+            padding: 12px 24px;
+            border-radius: 50px;
+            box-shadow: 0 4px 20px rgba(40, 167, 69, 0.4);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: slideInFromTop 0.5s ease, pulse 2s infinite;
+        }
+
+        .sticky-status-badge.closed {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+            box-shadow: 0 4px 20px rgba(220, 53, 69, 0.4);
+        }
+
+        .sticky-status-badge:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 25px rgba(40, 167, 69, 0.5);
+        }
+
+        .sticky-status-badge.closed:hover {
+            box-shadow: 0 6px 25px rgba(220, 53, 69, 0.5);
+        }
+
+        .sticky-status-badge .status-dot {
+            width: 10px;
+            height: 10px;
+            background: white;
+            border-radius: 50%;
+            animation: blink 1.5s infinite;
+        }
+
+        .sticky-status-badge .close-badge {
+            margin-left: 8px;
+            font-size: 1.2rem;
+            opacity: 0.8;
+            transition: opacity 0.2s;
+        }
+
+        .sticky-status-badge .close-badge:hover {
+            opacity: 1;
+        }
+
+        @keyframes slideInFromTop {
+            from {
+                opacity: 0;
+                transform: translateY(-100px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes blink {
+
+            0%,
+            100% {
+                opacity: 1;
+            }
+
+            50% {
+                opacity: 0.3;
+            }
+        }
+
+        .sticky-status-badge.hidden {
+            display: none;
+        }
+
+        @media (max-width: 768px) {
+            .sticky-status-badge {
+                top: 10px;
+                right: 10px;
+                left: 10px;
+                padding: 10px 16px;
+                font-size: 0.85rem;
+                justify-content: center;
+            }
+        }
     </style>
 </head>
 
@@ -1965,6 +2058,13 @@
         <p>🎉 <strong>¡Oferta Especial!</strong> 10% de descuento en tu primer lavado de edredones. <a
                 href="#contacto">¡Aprovecha ya!</a></p>
         <button id="close-banner" aria-label="Cerrar oferta">×</button>
+    </div>
+
+    <!-- Sticky Business Hours Badge -->
+    <div id="sticky-status-badge" class="sticky-status-badge">
+        <span class="status-dot"></span>
+        <span class="status-text">¡Estamos atendiendo!</span>
+        <span class="close-badge" onclick="closeStickyBadge()">×</span>
     </div>
 
     <!-- Mobile Top Banner -->

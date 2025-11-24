@@ -207,6 +207,38 @@ document.addEventListener('DOMContentLoaded', () => {
     checkBusinessHours();
     setInterval(checkBusinessHours, 60000);
 
+    // Sticky Status Badge Logic
+    const stickyBadge = document.getElementById('sticky-status-badge');
+
+    function updateStickyBadge() {
+        if (!stickyBadge) return;
+
+        const now = new Date();
+        const day = now.getDay();
+        const hour = now.getHours();
+        const minute = now.getMinutes();
+        const currentTime = hour + minute / 60;
+
+        let isOpen = false;
+
+        // Monday-Saturday: 10:00 AM - 9:00 PM
+        if (day >= 1 && day <= 6) {
+            isOpen = currentTime >= 10 && currentTime < 21;
+        }
+
+        if (isOpen) {
+            stickyBadge.classList.remove('closed');
+            stickyBadge.querySelector('.status-text').textContent = '¡Estamos atendiendo!';
+        } else {
+            stickyBadge.classList.add('closed');
+            stickyBadge.querySelector('.status-text').textContent = 'Cerrado ahora';
+        }
+    }
+
+    // Update sticky badge on load and every minute
+    updateStickyBadge();
+    setInterval(updateStickyBadge, 60000);
+
     // Chatbot Logic
     const chatbotToggle = document.getElementById('chatbot-toggle');
     const chatbotWidget = document.getElementById('chatbot-widget');
@@ -306,3 +338,20 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add animation class styles dynamically or in CSS (better in CSS, but adding class logic here)
 // We need to add the .animate-in class to CSS
 
+// Global function to close sticky badge
+function closeStickyBadge() {
+    const stickyBadge = document.getElementById('sticky-status-badge');
+    if (stickyBadge) {
+        stickyBadge.classList.add('hidden');
+        // Store in localStorage to remember user preference
+        localStorage.setItem('stickyBadgeClosed', 'true');
+    }
+}
+
+// Check if user previously closed the badge
+document.addEventListener('DOMContentLoaded', () => {
+    const stickyBadge = document.getElementById('sticky-status-badge');
+    if (stickyBadge && localStorage.getItem('stickyBadgeClosed') === 'true') {
+        stickyBadge.classList.add('hidden');
+    }
+});
