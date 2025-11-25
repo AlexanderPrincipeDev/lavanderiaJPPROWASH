@@ -1982,6 +1982,31 @@
             font-weight: bold;
             border: 2px solid white
         }
+
+        /* Dark Mode Chatbot Fixes */
+        body.dark-mode .chat-bubble {
+            background: var(--color-bg-secondary);
+            color: var(--color-text-dark);
+            border: 1px solid var(--color-border);
+        }
+
+        body.dark-mode .chat-message.user .chat-bubble {
+            background: var(--color-primary);
+            color: var(--color-bg-card);
+            /* Dark text on bright cyan */
+            border: none;
+        }
+
+        body.dark-mode .chat-option-btn {
+            background: transparent;
+            border-color: var(--color-primary);
+            color: var(--color-primary);
+        }
+
+        body.dark-mode .chat-option-btn:hover {
+            background: var(--color-primary);
+            color: var(--color-bg-card);
+        }
     </style>
 </head>
 
