@@ -173,7 +173,9 @@ document.addEventListener('DOMContentLoaded', () => {
     // Business Hours Status Checker
     function checkBusinessHours() {
         const statusBadge = document.getElementById('status-badge');
-        if (!statusBadge) return;
+        const floatingBadge = document.getElementById('floating-hours-badge');
+
+        if (!statusBadge && !floatingBadge) return;
 
         const now = new Date();
         const day = now.getDay(); // 0 = Sunday, 1 = Monday, etc.
@@ -182,24 +184,48 @@ document.addEventListener('DOMContentLoaded', () => {
         const currentTime = hour + minute / 60;
 
         let isOpen = false;
+        let closingTime = '';
 
         // Monday-Saturday: 10:00 AM - 9:00 PM
         if (day >= 1 && day <= 6) {
             isOpen = currentTime >= 10 && currentTime < 21;
+            closingTime = '9:00 PM';
         }
         // Sunday: Closed
         else {
             isOpen = false;
+            closingTime = '';
         }
 
-        if (isOpen) {
-            statusBadge.classList.add('open');
-            statusBadge.classList.remove('closed');
-            statusBadge.querySelector('.status-text').textContent = '¡Estamos atendiendo!';
-        } else {
-            statusBadge.classList.add('closed');
-            statusBadge.classList.remove('open');
-            statusBadge.querySelector('.status-text').textContent = 'Cerrado Ahora';
+        // Update status badge in contact section
+        if (statusBadge) {
+            if (isOpen) {
+                statusBadge.classList.add('open');
+                statusBadge.classList.remove('closed');
+                statusBadge.querySelector('.status-text').textContent = '¡Estamos atendiendo!';
+            } else {
+                statusBadge.classList.add('closed');
+                statusBadge.classList.remove('open');
+                statusBadge.querySelector('.status-text').textContent = 'Cerrado Ahora';
+            }
+        }
+
+        // Update floating badge
+        if (floatingBadge) {
+            const floatingStatusText = floatingBadge.querySelector('.floating-status-text');
+            const floatingClosingTime = floatingBadge.querySelector('.floating-closing-time');
+
+            if (isOpen) {
+                floatingBadge.classList.add('open');
+                floatingBadge.classList.remove('closed');
+                if (floatingStatusText) floatingStatusText.textContent = '¡Estamos atendiendo!';
+                if (floatingClosingTime) floatingClosingTime.textContent = `hasta las ${closingTime}`;
+            } else {
+                floatingBadge.classList.add('closed');
+                floatingBadge.classList.remove('open');
+                if (floatingStatusText) floatingStatusText.textContent = 'Cerrado ahora';
+                if (floatingClosingTime) floatingClosingTime.textContent = 'Abrimos lunes a sábado 10:00 AM';
+            }
         }
     }
 
@@ -207,37 +233,35 @@ document.addEventListener('DOMContentLoaded', () => {
     checkBusinessHours();
     setInterval(checkBusinessHours, 60000);
 
-    // Sticky Status Badge Logic
-    const stickyBadge = document.getElementById('sticky-status-badge');
+    // Floating Badge Logic
+    const floatingBadge = document.getElementById('floating-hours-badge');
+    const floatingBadgeClose = document.getElementById('floating-badge-close');
 
-    function updateStickyBadge() {
-        if (!stickyBadge) return;
+    if (floatingBadge && floatingBadgeClose) {
+        // Check if user has dismissed the badge in this session
+        const badgeDismissed = sessionStorage.getItem('floatingBadgeDismissed');
 
-        const now = new Date();
-        const day = now.getDay();
-        const hour = now.getHours();
-        const minute = now.getMinutes();
-        const currentTime = hour + minute / 60;
+        if (!badgeDismissed) {
+            // Show the badge after a short delay (1 second after page load)
+            setTimeout(() => {
+                floatingBadge.classList.add('show');
+            }, 1000);
 
-        let isOpen = false;
-
-        // Monday-Saturday: 10:00 AM - 9:00 PM
-        if (day >= 1 && day <= 6) {
-            isOpen = currentTime >= 10 && currentTime < 21;
+            // Auto-hide after 10 seconds
+            setTimeout(() => {
+                floatingBadge.classList.remove('show');
+                floatingBadge.classList.add('hide');
+            }, 11000);
         }
 
-        if (isOpen) {
-            stickyBadge.classList.remove('closed');
-            stickyBadge.querySelector('.status-text').textContent = '¡Estamos atendiendo!';
-        } else {
-            stickyBadge.classList.add('closed');
-            stickyBadge.querySelector('.status-text').textContent = 'Cerrado ahora';
-        }
+        // Close button handler
+        floatingBadgeClose.addEventListener('click', () => {
+            floatingBadge.classList.remove('show');
+            floatingBadge.classList.add('hide');
+            sessionStorage.setItem('floatingBadgeDismissed', 'true');
+        });
     }
 
-    // Update sticky badge on load and every minute
-    updateStickyBadge();
-    setInterval(updateStickyBadge, 60000);
 
     // Chatbot Logic
     const chatbotToggle = document.getElementById('chatbot-toggle');
@@ -338,20 +362,3 @@ document.addEventListener('DOMContentLoaded', () => {
 // Add animation class styles dynamically or in CSS (better in CSS, but adding class logic here)
 // We need to add the .animate-in class to CSS
 
-// Global function to close sticky badge
-function closeStickyBadge() {
-    const stickyBadge = document.getElementById('sticky-status-badge');
-    if (stickyBadge) {
-        stickyBadge.classList.add('hidden');
-        // Store in localStorage to remember user preference
-        localStorage.setItem('stickyBadgeClosed', 'true');
-    }
-}
-
-// Check if user previously closed the badge
-document.addEventListener('DOMContentLoaded', () => {
-    const stickyBadge = document.getElementById('sticky-status-badge');
-    if (stickyBadge && localStorage.getItem('stickyBadgeClosed') === 'true') {
-        stickyBadge.classList.add('hidden');
-    }
-});
