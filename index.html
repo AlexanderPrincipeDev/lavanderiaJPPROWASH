@@ -12,6 +12,11 @@
     <meta name="keywords"
         content="lavandería Breña, lavandería Lima, lavado por kilo, lavado al seco, lavandería a domicilio, JP Pro Wash, lavandería cerca de mí">
 
+    <!-- Hreflang tags for SEO -->
+    <link rel="alternate" hreflang="es" href="https://lavanderiajpprowash.com/">
+    <link rel="alternate" hreflang="es-PE" href="https://lavanderiajpprowash.com/">
+    <link rel="alternate" hreflang="x-default" href="https://lavanderiajpprowash.com/">
+
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://lavanderiajpprowash.com/">
@@ -79,6 +84,60 @@
           "priceRange": "$$"
         },
         {
+          "@type": "FAQPage",
+          "@id": "https://lavanderiajpprowash.com/#faq",
+          "mainEntity": [
+            {
+              "@type": "Question",
+              "name": "¿Cuánto cuesta el lavado por kilo en Breña?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El servicio de lavado por kilo en nuestra lavandería de Breña tiene un precio de S/ 4.00 por kilo. Incluye lavado, secado y doblado profesional de tu ropa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Hacen servicio de recojo y entrega a domicilio?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Sí, ofrecemos servicio de recojo y entrega a domicilio en Breña y distritos cercanos de Lima. Contáctanos por WhatsApp al 966 167 314 para coordinar el recojo de tu ropa."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Cuánto tiempo demora el servicio de lavandería?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "El servicio express está listo desde 4 horas para ropa simple (no incluye sábanas, edredones ni prendas especiales). Para pedidos especiales, el tiempo puede variar."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué incluye el servicio de lavado por kilo?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Nuestro servicio de lavado por kilo incluye lavado profesional, secado y doblado de ropa de uso diario. Para prendas delicadas, edredones o sábanas, consulta nuestros servicios especializados."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Dónde está ubicada la lavandería JP Pro Wash?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Estamos ubicados en Jr. Jorge Chávez 1154, Breña, Lima. Nuestro horario de atención es de lunes a sábado de 10:00 AM a 9:00 PM."
+              }
+            },
+            {
+              "@type": "Question",
+              "name": "¿Qué métodos de pago aceptan?",
+              "acceptedAnswer": {
+                "@type": "Answer",
+                "text": "Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al momento del recojo o entrega de tu ropa."
+              }
+            }
+          ]
+        },
+        {
           "@type": "SiteNavigationElement",
           "name": "Inicio",
           "url": "https://lavanderiajpprowash.com/#inicio"
@@ -102,64 +161,6 @@
           "@type": "SiteNavigationElement",
           "name": "Contacto",
           "url": "https://lavanderiajpprowash.com/#contacto"
-        }
-      ]
-    }
-    </script>
-
-    <!-- FAQ Schema Markup (JSON-LD) -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "FAQPage",
-      "mainEntity": [
-        {
-          "@type": "Question",
-          "name": "¿Cuánto cuesta el lavado por kilo en Breña?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El servicio de lavado por kilo en nuestra lavandería de Breña tiene un precio de S/ 4.00 por kilo. Incluye lavado, secado y doblado profesional de tu ropa."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Hacen servicio de recojo y entrega a domicilio?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Sí, ofrecemos servicio de recojo y entrega a domicilio en Breña y distritos cercanos de Lima. Contáctanos por WhatsApp al 966 167 314 para coordinar el recojo de tu ropa."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Cuánto tiempo demora el servicio de lavandería?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "El servicio express está listo desde 4 horas para ropa simple (no incluye sábanas, edredones ni prendas especiales). Para pedidos especiales, el tiempo puede variar."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué incluye el servicio de lavado por kilo?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Nuestro servicio de lavado por kilo incluye lavado profesional, secado y doblado de ropa de uso diario. Para prendas delicadas, edredones o sábanas, consulta nuestros servicios especializados."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Dónde está ubicada la lavandería JP Pro Wash?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Estamos ubicados en Jr. Jorge Chávez 1154, Breña, Lima. Nuestro horario de atención es de lunes a sábado de 10:00 AM a 9:00 PM."
-          }
-        },
-        {
-          "@type": "Question",
-          "name": "¿Qué métodos de pago aceptan?",
-          "acceptedAnswer": {
-            "@type": "Answer",
-            "text": "Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al momento del recojo o entrega de tu ropa."
-          }
         }
       ]
     }
@@ -375,7 +376,37 @@
             display: none;
             background: none;
             border: none;
-            cursor: pointer
+            cursor: pointer;
+            padding: 0.5rem;
+            z-index: 1001;
+        }
+
+        .hamburger {
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--color-text-dark);
+            position: relative;
+            transition: background-color 0.3s ease;
+        }
+
+        .hamburger::before,
+        .hamburger::after {
+            content: '';
+            display: block;
+            width: 25px;
+            height: 2px;
+            background-color: var(--color-text-dark);
+            position: absolute;
+            transition: transform 0.3s ease;
+        }
+
+        .hamburger::before {
+            top: -8px;
+        }
+
+        .hamburger::after {
+            top: 8px;
         }
 
         .theme-toggle {
@@ -1711,11 +1742,13 @@
                 background: var(--color-white);
                 flex-direction: column;
                 padding: var(--spacing-md);
-                box-shadow: var(--shadow-md)
+                box-shadow: var(--shadow-md);
+                z-index: 1000;
+                border-top: 1px solid var(--color-border-light);
             }
 
             .nav-list.active {
-                display: flex
+                display: flex !important;
             }
 
             .contact-wrapper {
