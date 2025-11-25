@@ -9,14 +9,28 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Theme Toggle Logic
     const savedTheme = localStorage.getItem('theme');
+    const logoImg = document.querySelector('.logo img');
+    const lightLogo = 'assets/images/LOGO/png/SIN FONDO/LOGO_opt.webp';
+    const darkLogo = 'assets/images/LOGO/png/SIN FONDO/LOGO-NEGATIVO_opt.webp';
+
+    function updateLogo(isDark) {
+        if (logoImg) {
+            const newLogo = isDark ? darkLogo : lightLogo;
+            logoImg.src = newLogo;
+            logoImg.srcset = `${newLogo} 1x`; // Simplified srcset for now as we might not have 2x for negative
+        }
+    }
+
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
         if (sunIcon) sunIcon.style.display = 'none';
         if (moonIcon) moonIcon.style.display = 'block';
+        updateLogo(true);
     } else {
         // Default to light mode if no preference or 'light' is saved
         if (sunIcon) sunIcon.style.display = 'block';
         if (moonIcon) moonIcon.style.display = 'none';
+        updateLogo(false);
     }
 
     if (themeToggle) {
@@ -27,6 +41,9 @@ document.addEventListener('DOMContentLoaded', () => {
             // Toggle Icons
             if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
             if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
+
+            // Update Logo
+            updateLogo(isDark);
 
             // Save Preference
             localStorage.setItem('theme', isDark ? 'dark' : 'light');
