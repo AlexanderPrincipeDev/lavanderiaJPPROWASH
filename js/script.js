@@ -391,7 +391,3 @@ document.addEventListener('DOMContentLoaded', () => {
         mapObserver.observe(coverageSection);
     }
 })();
-
-// Add animation class styles dynamically or in CSS (better in CSS, but adding class logic here)
-// We need to add the .animate-in class to CSS
-
