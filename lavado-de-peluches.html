@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lavado de Peluches en Breña | Desinfección Segura | JP Pro Wash</title>
+    <meta name="description"
+        content="Servicio de lavado de peluches en Breña. Limpieza delicada y desinfección para juguetes de niños. Eliminamos ácaros y bacterias de forma segura.">
+    <meta name="keywords"
+        content="lavado de peluches Breña, limpieza de juguetes Lima, desinfección de peluches, lavandería de peluches">
+
+    <!-- Favicons -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/favicon-192x192.png">
+    <link rel="icon" type="image/png" sizes="512x512" href="/favicon-512x512.png">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <link rel="shortcut icon" href="assets/images/LOGO/png/SIN FONDO/LOGO_opt.png" type="image/png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- Vercel Analytics -->
+    <script>
+        window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+    </script>
+    <script defer src="/_vercel/insights/script.js"></script>
+
+    <!-- Styles -->
+    <style>
+        /* Reusing main styles for consistency */
+        :root {
+            --color-bg-light: #E0F1F5;
+            --color-primary: #1399AB;
+            --color-primary-dark: #0e7a8a;
+            --color-text-dark: #1C2B4B;
+            --color-white: #ffffff;
+            --color-gray-light: #f5f5f5;
+            --font-heading: 'Poppins', sans-serif;
+            --font-body: 'Montserrat', sans-serif;
+            --spacing-sm: 0.5rem;
+            --spacing-md: 1rem;
+            --spacing-lg: 2rem;
+            --spacing-xl: 4rem;
+            --radius-md: 8px;
+            --radius-lg: 16px;
+            --radius-full: 50px;
+            --shadow-sm: 0 2px 4px rgba(28, 43, 75, 0.05);
+            --shadow-md: 0 4px 6px rgba(28, 43, 75, 0.1);
+            --shadow-lg: 0 10px 15px rgba(28, 43, 75, 0.1);
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: var(--font-body);
+            color: var(--color-text-dark);
+            line-height: 1.6;
+            background-color: var(--color-white);
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        main {
+            flex: 1;
+        }
+
+        h1,
+        h2,
+        h3 {
+            font-family: var(--font-heading);
+            color: var(--color-text-dark);
+            line-height: 1.2;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        ul {
+            list-style: none;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 var(--spacing-md);
+        }
+
+        .section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 28px;
+            border-radius: var(--radius-full);
+            font-weight: 600;
+            transition: all 0.3s ease;
+            cursor: pointer;
+            border: 2px solid transparent;
+            font-family: var(--font-heading);
+        }
+
+        .btn-primary {
+            background-color: var(--color-primary);
+            color: var(--color-white);
+        }
+
+        .btn-primary:hover {
+            background-color: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        /* Header */
+        .header {
+            background-color: var(--color-white);
+            box-shadow: var(--shadow-sm);
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            padding: var(--spacing-md) 0;
+        }
+
+        .header-container {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo img {
+            height: 50px;
+        }
+
+        .nav-list {
+            display: flex;
+            gap: var(--spacing-lg);
+            align-items: center;
+        }
+
+        .nav-link:hover {
+            color: var(--color-primary);
+        }
+
+        /* Page Specific */
+        .page-header {
+            background: linear-gradient(135deg, var(--color-bg-light) 0%, #ffffff 100%);
+            padding: 6rem 0 4rem;
+            text-align: center;
+        }
+
+        .page-title {
+            font-size: 3rem;
+            margin-bottom: var(--spacing-md);
+        }
+
+        .page-subtitle {
+            font-size: 1.2rem;
+            color: #444;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .content-section {
+            padding: var(--spacing-xl) 0;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: var(--spacing-xl);
+            align-items: center;
+        }
+
+        .price-box {
+            background: var(--color-bg-light);
+            padding: var(--spacing-lg);
+            border-radius: var(--radius-lg);
+            text-align: center;
+            border: 2px solid var(--color-primary);
+        }
+
+        .price-amount {
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--color-primary);
+            display: block;
+            margin: var(--spacing-sm) 0;
+        }
+
+        /* Footer (Simplified for subpages) */
+        .footer {
+            background-color: var(--color-text-dark);
+            color: var(--color-white);
+            padding: var(--spacing-lg) 0;
+            text-align: center;
+        }
+
+        @media (max-width: 768px) {
+            .content-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .page-title {
+                font-size: 2.5rem;
+            }
+
+            .nav-list {
+                display: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <picture>
+                    <source srcset="assets/images/LOGO/png/SIN FONDO/LOGO_opt.webp" type="image/webp">
+                    <img src="assets/images/LOGO/png/SIN FONDO/LOGO_opt.png" alt="JP Pro Wash Logo" width="150"
+                        height="54">
+                </picture>
+            </a>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="index.html" class="nav-link">Inicio</a></li>
+                    <li><a href="index.html#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="index.html#contacto" class="btn btn-primary">Contáctanos</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1 class="page-title">Lavado de Peluches en Breña</h1>
+                <p class="page-subtitle">Cuidamos a los compañeros de juego de tus hijos. Limpieza hipoalergénica y
+                    segura.</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="container">
+                <div class="content-grid">
+                    <div class="content-text">
+                        <h2>Seguridad y Limpieza</h2>
+                        <p>Los peluches son un foco de bacterias si no se lavan correctamente. Usamos productos suaves
+                            que no irritan la piel de los niños.</p>
+                        <ul style="margin-top: 1rem; list-style: disc; padding-left: 1.5rem; line-height: 2;">
+                            <li><strong>Lavado Delicado:</strong> Para no deformar el relleno ni dañar los
+                                ojos/accesorios.
+                            </li>
+                            <li><strong>Desinfección:</strong> Eliminación de virus y bacterias.</li>
+                            <li><strong>Secado Total:</strong> Prevenimos la formación de moho interno.</li>
+                            <li><strong>Aroma Suave:</strong> Opcional, ideal para pieles sensibles.</li>
+                        </ul>
+                    </div>
+                    <div class="price-box">
+                        <h3>Peluches Pequeños</h3>
+                        <span class="price-amount">Desde S/ 10.00</span>
+                        <p>Peluches gigantes consultar</p>
+                        <a href="https://wa.me/51966167314?text=Hola,%20quiero%20lavar%20unos%20peluches"
+                            class="btn btn-primary" style="margin-top: 1rem;">Cotizar Ahora</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 JP Pro Wash. <a href="index.html" style="color: var(--color-primary);">Volver al Inicio</a>
+            </p>
+        </div>
+    </footer>
+</body>
+
+</html>
