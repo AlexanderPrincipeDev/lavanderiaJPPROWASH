@@ -54,7 +54,7 @@
           "image": "https://lavanderiajpprowash.com/assets/images/LOGO/png/SIN%20FONDO/LOGO_opt.png",
           "@id": "https://lavanderiajpprowash.com",
           "url": "https://lavanderiajpprowash.com",
-          "telephone": "+51966167314",
+          "telephone": "+51978673626",
           "address": {
             "@type": "PostalAddress",
             "streetAddress": "Jr. Jorge Chávez 1154",
@@ -547,15 +547,41 @@
             background-color: var(--color-white)
         }
 
-        .services-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: var(--spacing-lg)
+        .services-carousel-wrapper {
+            overflow: hidden;
+            width: 100%;
+            position: relative;
+            padding: var(--spacing-lg) 0;
+            mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+            -webkit-mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+        }
+
+        .services-track {
+            display: flex;
+            gap: var(--spacing-lg);
+            width: max-content;
+            animation: scroll 40s linear infinite;
+        }
+
+        .services-track:hover {
+            animation-play-state: paused;
+        }
+
+        @keyframes scroll {
+            0% {
+                transform: translateX(0);
+            }
+
+            100% {
+                transform: translateX(calc(-50% - (var(--spacing-lg) / 2)));
+            }
         }
 
         .service-card-link {
-            display: block;
-            height: 100%
+            flex: 0 0 280px;
+            text-decoration: none;
+            color: inherit;
+            height: auto;
         }
 
         .service-card {
@@ -2104,7 +2130,7 @@
                             </svg>
                         </button>
                     </li>
-                    <li><a href="https://wa.me/51966167314" class="btn btn-primary">Pedir Ahora</a></li>
+                    <li><a href="https://wa.me/51978673626" class="btn btn-primary">Pedir Ahora</a></li>
                 </ul>
             </nav>
         </div>
@@ -2186,36 +2212,180 @@
         <section id="servicios" class="section services">
             <div class="container">
                 <h2 class="section-title">Servicios de Lavandería en Breña</h2>
-                <div class="services-grid">
-                    <!-- Service 1 -->
-                    <a href="lavado-por-kilo.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="service-icon">🧺</div>
-                            <h3>Lavado por Kilo</h3>
-                            <p>Servicio de lavandería por kilo ideal para tu ropa de uso diario. Lavado, secado y
-                                doblado
-                                profesional en Breña, Lima.</p>
-                        </div>
-                    </a>
-                    <!-- Service 2 -->
-                    <a href="lavado-al-seco.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="service-icon">👔</div>
-                            <h3>Lavado al Seco</h3>
-                            <p>Lavandería especializada en lavado al seco para prendas delicadas, trajes y vestidos.
-                                Cuidado
-                                profesional garantizado.</p>
-                        </div>
-                    </a>
-                    <!-- Service 3 -->
-                    <a href="lavado-de-edredones.html" class="service-card-link">
-                        <div class="service-card">
-                            <div class="service-icon">🛏️</div>
-                            <h3>Edredones y Mantas</h3>
-                            <p>Servicio de lavandería para ropa de cama de gran tamaño. Limpieza profunda de edredones y
-                                mantas en Lima.</p>
-                        </div>
-                    </a>
+                <div class="services-carousel-wrapper">
+                    <div class="services-track">
+                        <!-- Set 1 -->
+                        <a href="lavado-por-kilo.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🧺</div>
+                                <h3>Lavado por Kilo</h3>
+                                <p>Lavado, secado y doblado de ropa de uso diario.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-al-seco.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">👔</div>
+                                <h3>Lavado al Seco</h3>
+                                <p>Cuidado especial para prendas delicadas y trajes.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-edredones.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🛏️</div>
+                                <h3>Edredones</h3>
+                                <p>Limpieza profunda para ropa de cama de gran tamaño.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-zapatillas.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">👟</div>
+                                <h3>Zapatillas</h3>
+                                <p>Renueva tus zapatillas de cuero, lona y gamuza.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-alfombras.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🧶</div>
+                                <h3>Alfombras</h3>
+                                <p>Lavado y desinfección de alfombras decorativas.</p>
+                            </div>
+                        </a>
+                        <a href="planchado-express.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">♨️</div>
+                                <h3>Planchado</h3>
+                                <p>Servicio de planchado profesional y rápido.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-cortinas.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🪟</div>
+                                <h3>Cortinas</h3>
+                                <p>Limpieza y desinfección de cortinas y estores.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-peluches.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🧸</div>
+                                <h3>Peluches</h3>
+                                <p>Lavado delicado para peluches de todos los tamaños.</p>
+                            </div>
+                        </a>
+                        <a href="desmanchado-de-prendas.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">✨</div>
+                                <h3>Desmanchado</h3>
+                                <p>Tratamiento especial para manchas difíciles.</p>
+                            </div>
+                        </a>
+                        <a href="lavanderia-corporativa.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🏢</div>
+                                <h3>Corporativo</h3>
+                                <p>Soluciones de lavandería para empresas y hoteles.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-vestidos.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">👗</div>
+                                <h3>Vestidos</h3>
+                                <p>Limpieza experta para vestidos de fiesta y novia.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-ternos.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🤵</div>
+                                <h3>Ternos</h3>
+                                <p>Lavado y planchado impecable para tus trajes.</p>
+                            </div>
+                        </a>
+
+                        <!-- Set 2 (Duplicate for Infinite Scroll) -->
+                        <a href="lavado-por-kilo.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🧺</div>
+                                <h3>Lavado por Kilo</h3>
+                                <p>Lavado, secado y doblado de ropa de uso diario.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-al-seco.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">👔</div>
+                                <h3>Lavado al Seco</h3>
+                                <p>Cuidado especial para prendas delicadas y trajes.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-edredones.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🛏️</div>
+                                <h3>Edredones</h3>
+                                <p>Limpieza profunda para ropa de cama de gran tamaño.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-zapatillas.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">👟</div>
+                                <h3>Zapatillas</h3>
+                                <p>Renueva tus zapatillas de cuero, lona y gamuza.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-alfombras.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🧶</div>
+                                <h3>Alfombras</h3>
+                                <p>Lavado y desinfección de alfombras decorativas.</p>
+                            </div>
+                        </a>
+                        <a href="planchado-express.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">♨️</div>
+                                <h3>Planchado</h3>
+                                <p>Servicio de planchado profesional y rápido.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-cortinas.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🪟</div>
+                                <h3>Cortinas</h3>
+                                <p>Limpieza y desinfección de cortinas y estores.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-peluches.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🧸</div>
+                                <h3>Peluches</h3>
+                                <p>Lavado delicado para peluches de todos los tamaños.</p>
+                            </div>
+                        </a>
+                        <a href="desmanchado-de-prendas.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">✨</div>
+                                <h3>Desmanchado</h3>
+                                <p>Tratamiento especial para manchas difíciles.</p>
+                            </div>
+                        </a>
+                        <a href="lavanderia-corporativa.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🏢</div>
+                                <h3>Corporativo</h3>
+                                <p>Soluciones de lavandería para empresas y hoteles.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-vestidos.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">👗</div>
+                                <h3>Vestidos</h3>
+                                <p>Limpieza experta para vestidos de fiesta y novia.</p>
+                            </div>
+                        </a>
+                        <a href="lavado-de-ternos.html" class="service-card-link">
+                            <div class="service-card">
+                                <div class="service-icon">🤵</div>
+                                <h3>Ternos</h3>
+                                <p>Lavado y planchado impecable para tus trajes.</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
             </div>
         </section>
@@ -2439,7 +2609,7 @@
                             <div class="info-icon">📱</div>
                             <div class="info-content">
                                 <h3>WhatsApp</h3>
-                                <p><a href="https://wa.me/51966167314" target="_blank">+51 966 167 314</a></p>
+                                <p><a href="https://wa.me/51978673626" target="_blank">+51 966 167 314</a></p>
                             </div>
                         </div>
                         <div class="info-item">
@@ -2452,7 +2622,7 @@
 
                         <div class="cta-box">
                             <p>¿Ropa sucia acumulada?</p>
-                            <a href="https://wa.me/51966167314?text=Hola%20JP%20Pro%20Wash,%20quiero%20lavar%20mi%20ropa"
+                            <a href="https://wa.me/51978673626?text=Hola%20JP%20Pro%20Wash,%20quiero%20lavar%20mi%20ropa"
                                 class="btn btn-primary btn-block" target="_blank">
                                 ¡Solicitar Recojo!
                             </a>
@@ -2516,7 +2686,7 @@
         </div>
     </footer>
 
-    <a href="https://wa.me/51966167314?text=Hola%20lavander%C3%ADa%20JP%20PRO%20WASH" class="whatsapp-float"
+    <a href="https://wa.me/51978673626?text=Hola%20lavander%C3%ADa%20JP%20PRO%20WASH" class="whatsapp-float"
         target="_blank" rel="noopener noreferrer" aria-label="Chat en WhatsApp">
         <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="white">
             <path

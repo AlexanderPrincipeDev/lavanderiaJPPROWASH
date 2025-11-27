@@ -42,7 +42,7 @@ function initCoverageMap() {
                 <h3 style="margin: 0 0 8px 0; color: #0e7a8a; font-size: 16px;">JP Pro Wash</h3>
                 <p style="margin: 0 0 4px 0; font-size: 14px; color: #333;">Jr. Jorge Chávez 1154, Breña</p>
                 <p style="margin: 0; font-size: 13px; color: #555;">Lunes a Sábado: 10:00 AM - 9:00 PM</p>
-                <a href="https://wa.me/51966167314" target="_blank" style="display: inline-block; margin-top: 8px; color: #0e7a8a; text-decoration: none; font-weight: 600;">
+                <a href="https://wa.me/51978673626" target="_blank" style="display: inline-block; margin-top: 8px; color: #0e7a8a; text-decoration: none; font-weight: 600;">
                     📱 WhatsApp: 966 167 314
                 </a>
             </div>

@@ -144,7 +144,7 @@ document.addEventListener('DOMContentLoaded', () => {
         } else {
             message = `Hola JP Pro Wash, estoy interesado en sus servicios de lavandería. ¿Podrían darme más información?`;
         }
-        whatsappBtn.href = `https://wa.me/51966167314?text=${message}`;
+        whatsappBtn.href = `https://wa.me/51978673626?text=${message}`;
     }
 
     if (kilosInput && edredonesInput && ternosInput) {
@@ -364,7 +364,7 @@ document.addEventListener('DOMContentLoaded', () => {
                         </div>
                     `;
                     setTimeout(() => {
-                        window.open('https://wa.me/51966167314?text=Hola,%20vengo%20del%20chat%20de%20la%20web', '_blank');
+                        window.open('https://wa.me/51978673626?text=Hola,%20vengo%20del%20chat%20de%20la%20web', '_blank');
                     }, 1500);
                     break;
             }
