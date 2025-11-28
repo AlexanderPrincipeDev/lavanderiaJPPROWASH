@@ -3,8 +3,9 @@ document.addEventListener('DOMContentLoaded', () => {
     const navList = document.querySelector('.nav-list');
     const nav = document.querySelector('.nav');
     const themeToggle = document.getElementById('theme-toggle');
-    const sunIcon = document.querySelector('.sun-icon');
-    const moonIcon = document.querySelector('.moon-icon');
+    const themeToggleDesktop = document.getElementById('theme-toggle-desktop');
+    const sunIcons = document.querySelectorAll('.sun-icon');
+    const moonIcons = document.querySelectorAll('.moon-icon');
     const body = document.body;
 
     // Theme Toggle Logic
@@ -23,31 +24,37 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (savedTheme === 'dark') {
         body.classList.add('dark-mode');
-        if (sunIcon) sunIcon.style.display = 'none';
-        if (moonIcon) moonIcon.style.display = 'block';
+        sunIcons.forEach(icon => icon.style.display = 'none');
+        moonIcons.forEach(icon => icon.style.display = 'block');
         updateLogo(true);
     } else {
         // Default to light mode if no preference or 'light' is saved
-        if (sunIcon) sunIcon.style.display = 'block';
-        if (moonIcon) moonIcon.style.display = 'none';
+        sunIcons.forEach(icon => icon.style.display = 'block');
+        moonIcons.forEach(icon => icon.style.display = 'none');
         updateLogo(false);
     }
 
+    function toggleTheme() {
+        body.classList.toggle('dark-mode');
+        const isDark = body.classList.contains('dark-mode');
+
+        // Toggle Icons for all buttons
+        sunIcons.forEach(icon => icon.style.display = isDark ? 'none' : 'block');
+        moonIcons.forEach(icon => icon.style.display = isDark ? 'block' : 'none');
+
+        // Update Logo
+        updateLogo(isDark);
+
+        // Save Preference
+        localStorage.setItem('theme', isDark ? 'dark' : 'light');
+    }
+
     if (themeToggle) {
-        themeToggle.addEventListener('click', () => {
-            body.classList.toggle('dark-mode');
-            const isDark = body.classList.contains('dark-mode');
+        themeToggle.addEventListener('click', toggleTheme);
+    }
 
-            // Toggle Icons
-            if (sunIcon) sunIcon.style.display = isDark ? 'none' : 'block';
-            if (moonIcon) moonIcon.style.display = isDark ? 'block' : 'none';
-
-            // Update Logo
-            updateLogo(isDark);
-
-            // Save Preference
-            localStorage.setItem('theme', isDark ? 'dark' : 'light');
-        });
+    if (themeToggleDesktop) {
+        themeToggleDesktop.addEventListener('click', toggleTheme);
     }
 
     if (navToggle) {
