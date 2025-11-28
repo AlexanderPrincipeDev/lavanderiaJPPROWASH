@@ -383,8 +383,8 @@
 
         .hamburger {
             display: block;
-            width: 25px;
-            height: 2px;
+            width: 30px;
+            height: 3px;
             background-color: var(--color-text-dark);
             position: relative;
             transition: background-color 0.3s ease;
@@ -394,19 +394,33 @@
         .hamburger::after {
             content: '';
             display: block;
-            width: 25px;
-            height: 2px;
+            width: 30px;
+            height: 3px;
             background-color: var(--color-text-dark);
             position: absolute;
             transition: transform 0.3s ease;
         }
 
         .hamburger::before {
-            top: -8px;
+            top: -10px;
         }
 
         .hamburger::after {
-            top: 8px;
+            top: 10px;
+        }
+
+        .nav-toggle.active .hamburger {
+            background-color: transparent;
+        }
+
+        .nav-toggle.active .hamburger::before {
+            transform: rotate(45deg);
+            top: 0;
+        }
+
+        .nav-toggle.active .hamburger::after {
+            transform: rotate(-45deg);
+            top: 0;
         }
 
         .theme-toggle {
@@ -1082,7 +1096,7 @@
             }
 
             .hero {
-                padding: 6rem 0 3rem
+                padding: 6rem 0 6rem
             }
 
             .hero-container {
@@ -1092,7 +1106,8 @@
             }
 
             .hero-buttons {
-                justify-content: center
+                justify-content: center;
+                margin-bottom: 30px;
             }
 
             .hero-title {
@@ -1419,6 +1434,12 @@
             transform: translateX(400px);
             transition: all 0.5s cubic-bezier(0.68, -0.55, 0.265, 1.55);
             pointer-events: none
+        }
+
+        @media (max-width: 768px) {
+            .floating-hours-badge {
+                top: 190px;
+            }
         }
 
         .floating-hours-badge.show {
@@ -1865,6 +1886,26 @@
             box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
         }
 
+        @media (max-width: 768px) {
+            .trust-bar {
+                margin-top: 2rem;
+            }
+        }
+
+        body.dark-mode .trust-bar {
+            background: rgba(15, 23, 42, 0.8);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        body.dark-mode .trust-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.2);
+        }
+
+        body.dark-mode .trust-desc {
+            color: var(--color-text-body);
+        }
+
         .trust-grid {
             display: grid;
             grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -2136,37 +2177,38 @@
                             assets/images/LOGO/png/SIN FONDO/LOGO_2x.webp 2x" alt="JP Pro Wash Logo" width="150"
                     height="54" fetchpriority="high">
             </a>
-            <button class="nav-toggle" aria-label="Abrir menú">
-                <span class="hamburger"></span>
-            </button>
+            <div class="header-controls" style="display: flex; align-items: center; gap: 1.5rem;">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
+                    <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round">
+                        <circle cx="12" cy="12" r="5"></circle>
+                        <line x1="12" y1="1" x2="12" y2="3"></line>
+                        <line x1="12" y1="21" x2="12" y2="23"></line>
+                        <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+                        <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+                        <line x1="1" y1="12" x2="3" y2="12"></line>
+                        <line x1="21" y1="12" x2="23" y2="12"></line>
+                        <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+                        <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+                    </svg>
+                    <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round" style="display: none;">
+                        <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+                    </svg>
+                </button>
+                <button class="nav-toggle" aria-label="Abrir menú">
+                    <span class="hamburger"></span>
+                </button>
+            </div>
             <nav class="nav">
                 <ul class="nav-list" id="nav-links">
                     <li><a href="#inicio" class="nav-link">Inicio</a></li>
                     <li><a href="#servicios" class="nav-link">Servicios</a></li>
                     <li><a href="#nosotros" class="nav-link">Nosotros</a></li>
                     <li><a href="#contacto" class="nav-link">Contacto</a></li>
-                    <li>
-                        <button id="theme-toggle" class="theme-toggle" aria-label="Cambiar tema">
-                            <svg class="sun-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round">
-                                <circle cx="12" cy="12" r="5"></circle>
-                                <line x1="12" y1="1" x2="12" y2="3"></line>
-                                <line x1="12" y1="21" x2="12" y2="23"></line>
-                                <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
-                                <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
-                                <line x1="1" y1="12" x2="3" y2="12"></line>
-                                <line x1="21" y1="12" x2="23" y2="12"></line>
-                                <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
-                                <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
-                            </svg>
-                            <svg class="moon-icon" xmlns="http://www.w3.org/2000/svg" width="20" height="20"
-                                viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
-                                stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                                <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
-                            </svg>
-                        </button>
-                    </li>
+
                     <li><a href="https://wa.me/51978673626" class="btn btn-primary">Pedir Ahora</a></li>
                 </ul>
             </nav>
@@ -2959,7 +3001,15 @@
                         <li><a href="lavado-por-kilo.html">Lavado por Kilo</a></li>
                         <li><a href="lavado-al-seco.html">Lavado al Seco</a></li>
                         <li><a href="lavado-de-edredones.html">Lavado de Edredones</a></li>
-                        <li><a href="#servicios">Planchado Express</a></li>
+                        <li><a href="planchado-express.html">Planchado Express</a></li>
+                        <li><a href="desmanchado-de-prendas.html">Desmanchado de Prendas</a></li>
+                        <li><a href="lavado-de-alfombras.html">Lavado de Alfombras</a></li>
+                        <li><a href="lavado-de-cortinas.html">Lavado de Cortinas</a></li>
+                        <li><a href="lavado-de-peluches.html">Lavado de Peluches</a></li>
+                        <li><a href="lavado-de-ternos.html">Lavado de Ternos</a></li>
+                        <li><a href="lavado-de-vestidos.html">Lavado de Vestidos</a></li>
+                        <li><a href="lavado-de-zapatillas.html">Lavado de Zapatillas</a></li>
+                        <li><a href="lavanderia-corporativa.html">Lavandería Corporativa</a></li>
                     </ul>
                 </div>
                 <div class="footer-column">
