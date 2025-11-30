@@ -471,122 +471,147 @@
             }
         }
 
+        /* Hero Section Redesign */
         .hero {
             background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-bg-white) 100%);
-            padding: 8rem 0 6rem;
+            padding: 10rem 0 8rem;
             position: relative;
-            overflow: hidden
+            overflow: hidden;
         }
 
         .hero::before {
             content: '';
             position: absolute;
-            top: -50%;
-            right: -20%;
-            width: 800px;
-            height: 800px;
-            background: radial-gradient(circle, rgba(19, 153, 171, 0.1) 0%, rgba(255, 255, 255, 0) 70%);
+            top: -40%;
+            right: -10%;
+            width: 900px;
+            height: 900px;
+            background: radial-gradient(circle, rgba(19, 153, 171, 0.08) 0%, rgba(255, 255, 255, 0) 70%);
             border-radius: 50%;
-            z-index: 0
+            z-index: 0;
+            animation: pulse-glow 10s infinite alternate;
         }
 
         .hero-container {
             display: grid;
-            grid-template-columns: 1fr 1fr;
+            grid-template-columns: 1.2fr 1fr;
             gap: var(--spacing-xl);
             align-items: center;
             position: relative;
-            z-index: 1
+            z-index: 1;
+        }
+
+        .hero-content {
+            max-width: 650px;
         }
 
         .hero-title {
-            font-size: 3.5rem;
+            font-size: 4rem;
             margin-bottom: var(--spacing-md);
             color: var(--color-text-dark);
-            font-weight: 700;
-            line-height: 1.1
+            font-weight: 800;
+            line-height: 1.1;
+            letter-spacing: -1px;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out forwards;
         }
 
         .hero-title span {
-            color: var(--color-primary)
+            color: var(--color-primary);
+            background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-primary-dark) 100%);
+            -webkit-background-clip: text;
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .hero-description {
-            font-size: 1.2rem;
-            margin-bottom: var(--spacing-lg);
+            font-size: 1.25rem;
+            margin-bottom: 2.5rem;
             color: var(--color-text-body);
-            max-width: 500px
+            max-width: 550px;
+            line-height: 1.6;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.2s forwards;
         }
 
         .hero-buttons {
             display: flex;
-            gap: var(--spacing-md)
+            gap: 1rem;
+            opacity: 0;
+            animation: fadeInUp 0.8s ease-out 0.4s forwards;
+        }
+
+        .hero-buttons .btn {
+            padding: 16px 32px;
+            font-size: 1.1rem;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .hero-buttons .btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
         }
 
         .hero-visual {
             position: relative;
-            height: 400px;
+            height: 450px;
             display: flex;
             justify-content: center;
-            align-items: center
-        }
-
-        .hero-circle {
-            width: 350px;
-            height: 350px;
-            background: linear-gradient(135deg, var(--color-primary), #4CC9F0);
-            border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%;
-            position: relative;
-            box-shadow: var(--shadow-lg);
-            animation: morph 8s ease-in-out infinite;
-            display: flex;
             align-items: center;
-            justify-content: center;
-            overflow: hidden
+            opacity: 0;
+            animation: fadeInRight 1s ease-out 0.4s forwards;
         }
 
-        .hero-circle::after {
-            content: 'JP';
-            font-size: 8rem;
-            font-weight: 900;
-            color: rgba(255, 255, 255, 0.2);
-            font-family: var(--font-heading)
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0px)
+        /* Animations */
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
             }
 
-            50% {
-                transform: translateY(-20px)
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes fadeInRight {
+            from {
+                opacity: 0;
+                transform: translateX(30px);
+            }
+
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+
+        @keyframes pulse-glow {
+            0% {
+                transform: scale(1);
+                opacity: 0.5;
             }
 
             100% {
-                transform: translateY(0px)
+                transform: scale(1.1);
+                opacity: 0.8;
             }
         }
 
-        @keyframes morph {
-            0% {
-                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
-            }
+        /* Dark Mode Adjustments for Hero */
+        body.dark-mode .hero {
+            background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+        }
 
-            25% {
-                border-radius: 58% 42% 75% 25% / 76% 46% 54% 24%
-            }
+        body.dark-mode .hero::before {
+            background: radial-gradient(circle, rgba(34, 211, 238, 0.1) 0%, rgba(30, 41, 59, 0) 70%);
+        }
 
-            50% {
-                border-radius: 50% 50% 33% 67% / 55% 27% 73% 45%
-            }
-
-            75% {
-                border-radius: 33% 67% 58% 42% / 63% 68% 32% 37%
-            }
-
-            100% {
-                border-radius: 30% 70% 70% 30% / 30% 30% 70% 70%
-            }
+        body.dark-mode .hero-title span {
+            background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
         }
 
         .services {
@@ -870,68 +895,145 @@
         }
 
         .testimonials {
-            background-color: var(--color-bg-light)
+            background-color: var(--color-bg-light);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Decorative background element */
+        .testimonials::before {
+            content: '';
+            position: absolute;
+            top: -50px;
+            right: -50px;
+            width: 300px;
+            height: 300px;
+            background: radial-gradient(circle, rgba(19, 153, 171, 0.05) 0%, rgba(255, 255, 255, 0) 70%);
+            border-radius: 50%;
+            z-index: 0;
         }
 
         .testimonials-grid {
             display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: var(--spacing-lg)
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 2rem;
+            position: relative;
+            z-index: 1;
         }
 
         .testimonial-card {
-            background: var(--color-white);
-            padding: var(--spacing-lg);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-sm);
-            position: relative;
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 2.5rem;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.5);
             display: flex;
             flex-direction: column;
-            gap: var(--spacing-sm)
+            gap: 1.5rem;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 40px rgba(19, 153, 171, 0.1);
+            border-color: rgba(19, 153, 171, 0.2);
+        }
+
+        .quote-icon {
+            margin-bottom: -0.5rem;
+        }
+
+        .quote-icon svg {
+            color: rgba(19, 153, 171, 0.2);
+            transition: color 0.3s ease;
+        }
+
+        /* Dark Mode Overrides for Testimonials */
+        body.dark-mode .testimonial-card {
+            background: rgba(30, 41, 59, 0.8);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+        }
+
+        body.dark-mode .testimonial-card:hover {
+            box-shadow: 0 15px 40px rgba(0, 0, 0, 0.4);
+            border-color: rgba(34, 211, 238, 0.3);
+        }
+
+        body.dark-mode .quote-icon svg {
+            color: rgba(34, 211, 238, 0.2);
+        }
+
+        body.dark-mode .reviewer-meta {
+            border-top-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .testimonial-text {
+            font-size: 1.05rem;
+            line-height: 1.6;
+            color: var(--color-text-body);
+            font-style: italic;
+            flex-grow: 1;
+        }
+
+        .reviewer-meta {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 0.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .reviewer-avatar {
+            width: 48px;
+            height: 48px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            color: white;
+            font-size: 1.1rem;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .reviewer-details h3 {
+            margin: 0 0 4px 0;
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-text-dark);
+        }
+
+        .rating-badge {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            font-size: 0.85rem;
         }
 
         .stars {
-            font-size: 1.2rem;
-            margin-bottom: var(--spacing-sm)
+            color: #FFB703;
+            letter-spacing: 1px;
         }
 
-        .testimonial-card p {
-            font-style: italic;
-            color: var(--color-text-body);
-            flex-grow: 1
-        }
-
-        .reviewer-info {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            margin-top: var(--spacing-md);
-            border-top: 1px solid #eee;
-            padding-top: var(--spacing-sm)
-        }
-
-        .testimonial-card h3 {
-            font-style: normal;
-            font-weight: 600;
-            color: var(--color-text-dark);
-            font-size: 1rem;
-            margin: 0
-        }
-
-        .google-badge {
-            font-size: 0.8rem;
-            color: #555;
+        .platform {
+            color: #777;
             display: flex;
             align-items: center;
-            gap: 4px
+            gap: 4px;
         }
 
-        .google-badge::before {
-            content: 'G';
-            font-weight: bold;
-            color: #4285F4;
-            font-family: sans-serif;
-            font-size: 1rem
+        .platform::before {
+            content: '';
+            display: inline-block;
+            width: 14px;
+            height: 14px;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 48 48'%3E%3Cpath fill='%23EA4335' d='M24 9.5c3.54 0 6.71 1.22 9.21 3.6l6.85-6.85C35.9 2.38 30.47 0 24 0 14.62 0 6.51 5.38 2.56 13.22l7.98 6.19C12.43 13.72 17.74 9.5 24 9.5z'/%3E%3Cpath fill='%234285F4' d='M46.98 24.55c0-1.57-.15-3.09-.38-4.55H24v9.02h12.94c-.58 2.96-2.26 5.48-4.78 7.18l7.73 6c4.51-4.18 7.09-10.36 7.09-17.65z'/%3E%3Cpath fill='%23FBBC05' d='M10.53 28.59c-.48-1.45-.76-2.99-.76-4.59s.27-3.14.76-4.59l-7.98-6.19C.92 16.46 0 20.12 0 24c0 3.88.92 7.54 2.56 10.78l7.97-6.19z'/%3E%3Cpath fill='%2334A853' d='M24 48c6.48 0 11.93-2.13 15.89-5.81l-7.73-6c-2.15 1.45-4.92 2.3-8.16 2.3-6.26 0-11.57-4.22-13.47-9.91l-7.98 6.19C6.51 42.62 14.62 48 24 48z'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: center;
         }
 
         .faq {
@@ -2955,32 +3057,80 @@
         </section>
 
         <!-- Testimonials Section -->
+        <!-- Testimonials Section (Redesigned) -->
         <section class="section testimonials">
             <div class="container">
                 <h2 class="section-title">Lo que dicen nuestros clientes</h2>
                 <div class="testimonials-grid">
+                    <!-- Testimonial 1 -->
                     <div class="testimonial-card">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Excelente servicio, mi ropa quedó impecable y el olor es buenísimo. Muy recomendados."</p>
-                        <div class="reviewer-info">
-                            <h3>María G.</h3>
-                            <span class="google-badge">Google Review</span>
+                        <div class="quote-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V3H19.017C20.6739 3 22.017 4.34315 22.017 6V15C22.017 16.6569 20.6739 18 19.017 18H16.017V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 7.55228 5.0166 7V3H10.0166C11.6735 3 13.0166 4.34315 13.0166 6V15C13.0166 16.6569 11.6735 18 10.0166 18H7.0166V21H5.0166Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Excelente servicio, mi ropa quedó impecable y el olor es buenísimo.
+                            Muy recomendados."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar" style="background: #FFD166;">MG</div>
+                            <div class="reviewer-details">
+                                <h3>María G.</h3>
+                                <div class="rating-badge">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="platform">Google Review</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Testimonial 2 -->
                     <div class="testimonial-card">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p>"Me salvaron con mi terno para una reunión urgente. Rápido y profesional."</p>
-                        <div class="reviewer-info">
-                            <h3>Carlos R.</h3>
-                            <span class="google-badge">Google Review</span>
+                        <div class="quote-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V3H19.017C20.6739 3 22.017 4.34315 22.017 6V15C22.017 16.6569 20.6739 18 19.017 18H16.017V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 7.55228 5.0166 7V3H10.0166C11.6735 3 13.0166 4.34315 13.0166 6V15C13.0166 16.6569 11.6735 18 10.0166 18H7.0166V21H5.0166Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"Me salvaron con mi terno para una reunión urgente. Rápido y
+                            profesional."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar" style="background: #06D6A0;">CR</div>
+                            <div class="reviewer-details">
+                                <h3>Carlos R.</h3>
+                                <div class="rating-badge">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="platform">Google Review</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
+
+                    <!-- Testimonial 3 -->
                     <div class="testimonial-card">
-                        <div class="stars">⭐⭐⭐⭐⭐</div>
-                        <p>"La atención por WhatsApp es súper rápida. Me encanta que recojan la ropa en mi casa."</p>
-                        <div class="reviewer-info">
-                            <h3>Ana P.</h3>
-                            <span class="google-badge">Google Review</span>
+                        <div class="quote-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24"
+                                fill="currentColor">
+                                <path
+                                    d="M14.017 21L14.017 18C14.017 16.8954 14.9124 16 16.017 16H19.017C19.5693 16 20.017 15.5523 20.017 15V9C20.017 8.44772 19.5693 8 19.017 8H15.017C14.4647 8 14.017 7.55228 14.017 7V3H19.017C20.6739 3 22.017 4.34315 22.017 6V15C22.017 16.6569 20.6739 18 19.017 18H16.017V21H14.017ZM5.0166 21L5.0166 18C5.0166 16.8954 5.91203 16 7.0166 16H10.0166C10.5689 16 11.0166 15.5523 11.0166 15V9C11.0166 8.44772 10.5689 8 10.0166 8H6.0166C5.46432 8 5.0166 7.55228 5.0166 7V3H10.0166C11.6735 3 13.0166 4.34315 13.0166 6V15C13.0166 16.6569 11.6735 18 10.0166 18H7.0166V21H5.0166Z">
+                                </path>
+                            </svg>
+                        </div>
+                        <p class="testimonial-text">"La atención por WhatsApp es súper rápida. Me encanta que recojan la
+                            ropa en mi casa."</p>
+                        <div class="reviewer-meta">
+                            <div class="reviewer-avatar" style="background: #118AB2;">AP</div>
+                            <div class="reviewer-details">
+                                <h3>Ana P.</h3>
+                                <div class="rating-badge">
+                                    <span class="stars">★★★★★</span>
+                                    <span class="platform">Google Review</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
