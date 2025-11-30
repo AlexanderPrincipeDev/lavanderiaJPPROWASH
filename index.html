@@ -1717,144 +1717,209 @@
             opacity: 1
         }
 
-        .coverage-container {
-            display: grid;
-            grid-template-columns: 1.5fr 1fr;
-            gap: var(--spacing-xl);
-            align-items: center
-        }
-
-        .coverage-map {
-            border-radius: var(--radius-lg);
+        /* New Coverage Section Styles */
+        .coverage-section {
+            background-color: var(--color-bg-secondary);
+            position: relative;
             overflow: hidden;
-            box-shadow: var(--shadow-lg);
-            height: 400px;
-            border: 4px solid var(--color-white);
-            position: relative
         }
 
-        .map-directions-btn {
-            position: absolute;
-            bottom: 20px;
-            left: 50%;
-            transform: translateX(-50%);
-            background: var(--color-primary-dark);
-            color: white;
-            border: none;
-            padding: 14px 28px;
-            border-radius: var(--radius-full);
-            font-weight: 600;
-            font-size: 15px;
-            cursor: pointer;
-            box-shadow: 0 4px 12px rgba(19, 153, 171, 0.4);
-            transition: all 0.3s ease;
-            z-index: 1000;
-            min-height: 48px
-        }
-
-        .map-directions-btn:hover {
-            background: var(--color-primary-dark);
-            transform: translateX(-50%) translateY(-2px);
-            box-shadow: 0 6px 16px rgba(19, 153, 171, 0.5)
-        }
-
-        .coverage-map iframe {
-            width: 100%;
-            height: 100%;
-            border: 0
-        }
-
-        .coverage-list {
-            background: var(--color-bg-card);
-            padding: var(--spacing-xl);
-            border-radius: var(--radius-lg);
-            box-shadow: var(--shadow-card);
-            border: 1px solid var(--color-border-light)
-        }
-
-        .coverage-list h3 {
-            margin-bottom: var(--spacing-md);
-            color: var(--color-primary);
-            font-size: 1.8rem
-        }
-
-        .coverage-list p {
-            margin-bottom: var(--spacing-md);
-            color: var(--color-text-body)
-        }
-
-        .coverage-districts {
-            margin-bottom: var(--spacing-lg);
+        .coverage-grid {
             display: grid;
-            grid-template-columns: 1fr 1fr;
-            gap: 1rem
+            grid-template-columns: 1fr 1.2fr;
+            gap: 4rem;
+            align-items: center;
         }
 
-        .coverage-districts li {
+        .coverage-info-card {
+            padding-right: 2rem;
+        }
+
+        .coverage-desc {
+            font-size: 1.1rem;
+            color: var(--color-text-body);
+            margin-bottom: 2rem;
+            line-height: 1.6;
+        }
+
+        .districts-title {
+            font-size: 1rem;
+            font-weight: 700;
+            color: var(--color-text-dark);
+            margin-bottom: 1rem;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+
+        .district-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 0.8rem;
+            margin-bottom: 2.5rem;
+        }
+
+        .district-pill {
+            background: var(--color-white);
+            padding: 0.6rem 1.2rem;
+            border-radius: 50px;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: var(--color-text-dark);
+            box-shadow: var(--shadow-sm);
             display: flex;
             align-items: center;
             gap: 0.5rem;
+            border: 1px solid transparent;
+            transition: all 0.3s ease;
+        }
+
+        .district-pill:hover {
+            border-color: var(--color-primary);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-md);
+        }
+
+        .check-icon {
+            color: var(--color-primary);
+            font-weight: 800;
+        }
+
+        .coverage-cta {
+            background: rgba(19, 153, 171, 0.05);
+            padding: 1.5rem;
+            border-radius: var(--radius-md);
+            border-left: 4px solid var(--color-primary);
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            gap: 1rem;
+        }
+
+        .coverage-cta p {
+            font-weight: 600;
             color: var(--color-text-dark);
-            font-weight: 500
+            margin: 0;
         }
 
-        .coverage-districts li::before {
-            content: '';
-            display: inline-block;
-            width: 8px;
-            height: 8px;
-            background-color: var(--color-primary);
-            border-radius: 50%
+        .btn-sm {
+            padding: 8px 20px;
+            font-size: 0.9rem;
         }
 
-        @media (max-width:768px) {
-            .coverage-container {
-                grid-template-columns: 1fr
-            }
+        .coverage-map-wrapper {
+            position: relative;
+        }
 
-            .coverage-map {
-                height: 300px
-            }
+        .map-frame {
+            height: 500px;
+            border-radius: 24px;
+            overflow: hidden;
+            box-shadow: var(--shadow-card);
+            position: relative;
+            border: 8px solid var(--color-white);
+        }
 
-            .hero-container {
+        .map-overlay-card {
+            position: absolute;
+            bottom: 30px;
+            left: 30px;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            padding: 1.2rem;
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.15);
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            max-width: 300px;
+            border: 1px solid rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease;
+        }
+
+        .map-overlay-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .overlay-icon {
+            width: 48px;
+            height: 48px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 1.5rem;
+            flex-shrink: 0;
+        }
+
+        .overlay-content h4 {
+            margin: 0 0 0.2rem 0;
+            font-size: 1rem;
+            color: var(--color-text-dark);
+        }
+
+        .overlay-content p {
+            margin: 0 0 0.5rem 0;
+            font-size: 0.85rem;
+            color: var(--color-text-body);
+        }
+
+        .directions-link {
+            font-size: 0.85rem;
+            color: var(--color-primary);
+            font-weight: 600;
+            text-decoration: none;
+            display: inline-flex;
+            align-items: center;
+            gap: 4px;
+        }
+
+        .directions-link:hover {
+            text-decoration: underline;
+        }
+
+        @media (max-width: 900px) {
+            .coverage-grid {
                 grid-template-columns: 1fr;
-                text-align: center
+                gap: 2rem;
             }
 
-            .hero-buttons {
-                justify-content: center
+            .coverage-info-card {
+                padding-right: 0;
+                text-align: center;
             }
 
-            .hero-title {
-                font-size: 2.5rem
+            .section-title {
+                text-align: center !important;
             }
 
-            .nav-toggle {
-                display: block
+            .district-pills {
+                justify-content: center;
             }
 
-            .nav-list {
-                display: none;
-                position: absolute;
-                top: 100%;
-                left: 0;
-                width: 100%;
-                background: var(--color-white);
+            .coverage-cta {
                 flex-direction: column;
-                padding: var(--spacing-md);
-                box-shadow: var(--shadow-md);
-                z-index: 1000;
-                border-top: 1px solid var(--color-border-light);
+                text-align: center;
             }
 
-            .nav-list.active {
-                display: flex !important;
+            .map-frame {
+                height: 350px;
             }
 
-            .contact-wrapper {
-                grid-template-columns: 1fr
+            .map-overlay-card {
+                left: 50%;
+                transform: translateX(-50%);
+                bottom: 20px;
+                width: 90%;
+            }
+
+            .map-overlay-card:hover {
+                transform: translateX(-50%) translateY(-5px);
             }
         }
+
 
         .whatsapp-float {
             position: fixed;
@@ -2791,32 +2856,71 @@
         </section>
 
         <!-- Coverage Map Section -->
-        <section id="cobertura" class="section">
+        <!-- Coverage Map Section (Redesigned) -->
+        <section id="cobertura" class="section coverage-section">
             <div class="container">
-                <h2 class="section-title">Zona de Cobertura</h2>
-                <div class="coverage-container">
-                    <div class="coverage-map">
-                        <div id="coverage-map-canvas" style="width: 100%; height: 100%;"></div>
-                        <button id="get-directions-btn" class="map-directions-btn" style="display: none;">
-                            📍 Cómo llegar desde mi ubicación
-                        </button>
-                    </div>
-                    <div class="coverage-list">
-                        <h3>Servicio a Domicilio</h3>
-                        <p>Ofrecemos recojo y entrega de ropa en los siguientes distritos de Lima:</p>
-                        <ul class="coverage-districts">
-                            <li>Breña</li>
-                            <li>Pueblo Libre</li>
-                            <li>Jesús María</li>
-                            <li>Lince</li>
-                            <li>San Isidro</li>
-                            <li>Lima Cercado</li>
-                            <li>La Victoria</li>
-                        </ul>
-                        <p style="font-size: 0.9rem; color: #555555; margin-top: 1rem;">
-                            <strong>¿Tu distrito no está en la lista?</strong> Contáctanos por WhatsApp y coordinamos tu
-                            servicio.
+                <div class="coverage-grid">
+                    <div class="coverage-info-card">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Zona de Cobertura
+                        </h2>
+                        <p class="coverage-desc">
+                            Llegamos a donde tú estés. Nuestro servicio de recojo y entrega cubre los principales
+                            distritos
+                            de Lima Moderna.
                         </p>
+
+                        <div class="districts-container">
+                            <h3 class="districts-title">Distritos que atendemos:</h3>
+                            <div class="district-pills">
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> Breña
+                                </div>
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> Pueblo Libre
+                                </div>
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> Jesús María
+                                </div>
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> Lince
+                                </div>
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> San Isidro
+                                </div>
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> Lima Cercado
+                                </div>
+                                <div class="district-pill">
+                                    <span class="check-icon">✓</span> La Victoria
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="coverage-cta">
+                            <p>¿No ves tu distrito?</p>
+                            <a href="https://wa.me/51978673626?text=Hola,%20quisiera%20saber%20si%20llegan%20a%20mi%20distrito"
+                                class="btn btn-outline btn-sm" target="_blank">
+                                Consultar Cobertura
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="coverage-map-wrapper">
+                        <div class="map-frame">
+                            <div id="coverage-map-canvas" style="width: 100%; height: 100%;"></div>
+                            <!-- Overlay Card -->
+                            <div class="map-overlay-card">
+                                <div class="overlay-icon">📍</div>
+                                <div class="overlay-content">
+                                    <h4>Sede Principal</h4>
+                                    <p>Jr. Jorge Chávez 1154, Breña</p>
+                                    <a href="https://maps.google.com/?q=Jr.+Jorge+Chávez+1154,+Breña" target="_blank"
+                                        class="directions-link">
+                                        Cómo llegar →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -2953,88 +3057,113 @@
             </div>
         </section>
 
-        <!-- Contact Section (Refactored) -->
-        <section id="contacto" class="section contact">
+        <!-- Contact Section (Redesigned) -->
+        <section id="contacto" class="section coverage-section" style="background-color: var(--color-white);">
             <div class="container">
-                <h2 class="section-title">Visítanos en Breña, Lima</h2>
+                <div class="coverage-grid">
+                    <div class="coverage-info-card">
+                        <h2 class="section-title" style="text-align: left; margin-bottom: 1.5rem;">Visítanos en Breña
+                        </h2>
+                        <p class="coverage-desc">
+                            Estamos ubicados en el corazón de Breña. Ven a dejarnos tus prendas o coordina el recojo
+                            desde la comodidad de tu hogar.
+                        </p>
 
-                <!-- Business Hours Widget -->
-                <div class="business-hours-widget">
-                    <h3><span style="font-size: 1.8rem;">🕒</span> Horarios de Atención</h3>
-                    <div class="hours-grid">
-                        <div class="hours-item">
-                            <span class="day">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <rect x="3" y="4" width="18" height="18" rx="2" ry="2"></rect>
-                                    <line x1="16" y1="2" x2="16" y2="6"></line>
-                                    <line x1="8" y1="2" x2="8" y2="6"></line>
-                                    <line x1="3" y1="10" x2="21" y2="10"></line>
-                                </svg>
-                                Lunes - Sábado
-                            </span>
-                            <span class="time">10:00 AM - 9:00 PM</span>
-                        </div>
-                        <div class="hours-item">
-                            <span class="day">
-                                <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24"
-                                    fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
-                                    stroke-linejoin="round">
-                                    <circle cx="12" cy="12" r="10"></circle>
-                                    <line x1="12" y1="8" x2="12" y2="12"></line>
-                                    <line x1="12" y1="16" x2="12.01" y2="16"></line>
-                                </svg>
-                                Domingos
-                            </span>
-                            <span class="time" style="background: #fff0f0; color: #b91c1c;">Cerrado</span>
-                        </div>
-                    </div>
-                    <div class="status-badge" id="status-badge">
-                        <span class="status-dot"></span>
-                        <span class="status-text">Verificando horario...</span>
-                    </div>
-                </div>
+                        <!-- Contact Details Grid -->
+                        <div style="display: grid; grid-template-columns: 1fr; gap: 1.5rem; margin-bottom: 2rem;">
+                            <!-- Address -->
+                            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <div
+                                    style="background: var(--color-bg-light); padding: 12px; border-radius: 12px; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+                                        <circle cx="12" cy="10" r="3"></circle>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin: 0 0 4px 0; color: var(--color-text-dark); font-size: 1rem;">
+                                        Dirección</h4>
+                                    <p style="margin: 0; color: var(--color-text-body); font-size: 0.9rem;">Jr. Jorge
+                                        Chávez 1154, Breña 15083</p>
+                                </div>
+                            </div>
 
-                <div class="contact-layout">
-                    <div class="contact-info-panel">
-                        <div class="info-item">
-                            <div class="info-icon">📍</div>
-                            <div class="info-content">
-                                <h3>Dirección</h3>
-                                <p>Jr. Jorge Chávez 1154, Breña 15083</p>
+                            <!-- WhatsApp -->
+                            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <div
+                                    style="background: var(--color-bg-light); padding: 12px; border-radius: 12px; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <path
+                                            d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z">
+                                        </path>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin: 0 0 4px 0; color: var(--color-text-dark); font-size: 1rem;">
+                                        WhatsApp</h4>
+                                    <p style="margin: 0; color: var(--color-text-body); font-size: 0.9rem;"><a
+                                            href="https://wa.me/51978673626" target="_blank"
+                                            style="color: var(--color-primary); font-weight: 600;">+51 978 673 626</a>
+                                    </p>
+                                </div>
+                            </div>
+
+                            <!-- Hours (Integrated) -->
+                            <div style="display: flex; gap: 1rem; align-items: flex-start;">
+                                <div
+                                    style="background: var(--color-bg-light); padding: 12px; border-radius: 12px; color: var(--color-primary); display: flex; align-items: center; justify-content: center; flex-shrink: 0;">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                        stroke-linejoin="round">
+                                        <circle cx="12" cy="12" r="10"></circle>
+                                        <polyline points="12 6 12 12 16 14"></polyline>
+                                    </svg>
+                                </div>
+                                <div>
+                                    <h4 style="margin: 0 0 4px 0; color: var(--color-text-dark); font-size: 1rem;">
+                                        Horario de Atención</h4>
+                                    <p style="margin: 0; color: var(--color-text-body); font-size: 0.9rem;">Lunes a
+                                        Sábado: 10:00 AM - 9:00 PM</p>
+                                    <p style="margin: 0; color: #b91c1c; font-size: 0.85rem; font-weight: 500;">
+                                        Domingos: Cerrado</p>
+                                </div>
                             </div>
                         </div>
-                        <div class="info-item">
-                            <div class="info-icon">📱</div>
-                            <div class="info-content">
-                                <h3>WhatsApp</h3>
-                                <p><a href="https://wa.me/51978673626" target="_blank">+51 978 673 626</a></p>
-                            </div>
-                        </div>
-                        <div class="info-item">
-                            <div class="info-icon">⏰</div>
-                            <div class="info-content">
-                                <h3>Horario</h3>
-                                <p>Lunes a Sábado: 10:00 AM - 9:00 PM</p>
-                            </div>
-                        </div>
 
-                        <div class="cta-box">
+                        <div class="coverage-cta">
                             <p>¿Ropa sucia acumulada?</p>
                             <a href="https://wa.me/51978673626?text=Hola%20JP%20Pro%20Wash,%20quiero%20lavar%20mi%20ropa"
-                                class="btn btn-primary btn-block" target="_blank">
+                                class="btn btn-primary btn-sm" target="_blank">
                                 ¡Solicitar Recojo!
                             </a>
                         </div>
                     </div>
 
-                    <div class="map-wrapper">
-                        <iframe
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.752338446433!2d-77.04893129999999!3d-12.0605538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8dc48b76c27%3A0x312e2258ca7c40fa!2sJr.%20Jorge%20Ch%C3%A1vez%201154%2C%20Bre%C3%B1a%2015083!5e0!3m2!1ses!2spe!4v1763835440985!5m2!1ses!2spe"
-                            width="100%" height="100%" style="border:0; min-height: 400px;" allowfullscreen=""
-                            loading="lazy" referrerpolicy="no-referrer-when-downgrade"
-                            title="Ubicación de JP Pro Wash en Google Maps"></iframe>
+                    <div class="coverage-map-wrapper">
+                        <div class="map-frame">
+                            <iframe
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3901.752338446433!2d-77.04893129999999!3d-12.0605538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9105c8dc48b76c27%3A0x312e2258ca7c40fa!2sJr.%20Jorge%20Ch%C3%A1vez%201154%2C%20Bre%C3%B1a%2015083!5e0!3m2!1ses!2spe!4v1763835440985!5m2!1ses!2spe"
+                                width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"
+                                referrerpolicy="no-referrer-when-downgrade"
+                                title="Ubicación de JP Pro Wash en Google Maps"></iframe>
+
+                            <!-- Overlay Card -->
+                            <div class="map-overlay-card">
+                                <div class="overlay-icon">📍</div>
+                                <div class="overlay-content">
+                                    <h4>Sede Principal</h4>
+                                    <p>Jr. Jorge Chávez 1154, Breña</p>
+                                    <a href="https://maps.google.com/?q=Jr.+Jorge+Chávez+1154,+Breña" target="_blank"
+                                        class="directions-link">
+                                        Cómo llegar →
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
