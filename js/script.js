@@ -85,9 +85,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, observerOptions);
 
     document.querySelectorAll('.service-card, .section-title, .hero-content, .hero-visual, .info-item').forEach(el => {
-        el.style.opacity = '0';
-        el.style.transform = 'translateY(20px)';
-        el.style.transition = 'opacity 0.6s ease-out, transform 0.6s ease-out';
+        el.classList.add('animate-prepare');
         observer.observe(el);
     });
 
@@ -321,8 +319,10 @@ document.addEventListener('DOMContentLoaded', () => {
         userMsg.innerHTML = `<div class="chat-bubble">${userText}</div>`;
         chatbotBody.appendChild(userMsg);
 
-        // Scroll to bottom
-        chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        // Scroll to bottom - use requestAnimationFrame to avoid forced reflow
+        requestAnimationFrame(() => {
+            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+        });
 
         // Simulate bot typing
         setTimeout(() => {
@@ -378,7 +378,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
             botMsg.innerHTML = botContent;
             chatbotBody.appendChild(botMsg);
-            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            requestAnimationFrame(() => {
+                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            });
         }, 600);
     };
 });
