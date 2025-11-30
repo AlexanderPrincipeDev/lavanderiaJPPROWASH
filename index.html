@@ -266,7 +266,8 @@
             font-family: var(--font-body);
             color: var(--color-text-dark);
             line-height: 1.6;
-            background-color: var(--color-bg-white)
+            background-color: var(--color-bg-white);
+            overflow-x: hidden;
         }
 
         h1,
@@ -499,6 +500,16 @@
             border-radius: 50%;
             z-index: 0;
             animation: pulse-glow 10s infinite alternate;
+        }
+
+        @media (max-width: 768px) {
+            .hero::before {
+                width: 100%;
+                height: 100%;
+                right: 0;
+                top: 0;
+                border-radius: 0;
+            }
         }
 
         .hero-container {
@@ -1236,29 +1247,6 @@
 
             .section {
                 padding: 3rem 0
-            }
-
-            .hero {
-                padding: 6rem 0 6rem
-            }
-
-            .hero-container {
-                grid-template-columns: 1fr;
-                text-align: center;
-                gap: var(--spacing-lg)
-            }
-
-            .hero-buttons {
-                justify-content: center;
-                margin-bottom: 30px;
-            }
-
-            .hero-title {
-                font-size: 2.5rem
-            }
-
-            .hero-visual {
-                height: 300px
             }
 
             .hero-circle {
@@ -2014,10 +2002,48 @@
             color: var(--color-primary-dark);
         }
 
-        @media (max-width: 900px) {
-            .coverage-grid {
+        @media (max-width:768px) {
+            .hero {
+                padding: 6rem 0 4rem;
+            }
+
+            .hero-container {
                 grid-template-columns: 1fr;
                 gap: 2rem;
+                text-align: center;
+            }
+
+            .hero-content {
+                max-width: 100%;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .hero-title {
+                font-size: 2.5rem;
+                text-align: center;
+            }
+
+            .hero-description {
+                max-width: 100%;
+                text-align: center;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .hero-buttons {
+                flex-direction: column;
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .hero-buttons .btn {
+                width: 100%;
+            }
+
+            .hero-visual {
+                height: 300px;
             }
 
             .coverage-info-card {
