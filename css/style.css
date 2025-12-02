@@ -139,7 +139,7 @@ img {
 
 .btn-primary {
     background-color: var(--color-primary);
-    color: var(--color-white)
+    color: #000000
 }
 
 .btn-primary:hover {
@@ -1444,7 +1444,7 @@ img {
 }
 
 .footer-column p {
-    color: #e0e0e0;
+    color: #ffffff;
     font-size: 0.9rem;
     line-height: 1.6
 }
@@ -1454,7 +1454,7 @@ img {
 }
 
 .footer-links a {
-    color: #e0e0e0;
+    color: #ffffff;
     font-size: 0.9rem;
     transition: color 0.3s ease
 }
@@ -1469,7 +1469,7 @@ img {
     padding-top: var(--spacing-lg);
     text-align: center;
     font-size: 0.9rem;
-    color: #b0b0b0
+    color: #ffffff
 }
 
 .social-links {
