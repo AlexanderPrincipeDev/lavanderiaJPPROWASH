@@ -2446,7 +2446,7 @@
     </div>
 
     <!-- Promo Banner -->
-    <div id="promo-banner" class="promo-banner">
+    <div id="promo-banner" class="promo-banner" style="display: none;">
         <p>🎉 <strong>¡Oferta Especial!</strong> 10% de descuento en tu primer lavado de edredones. <a
                 href="#contacto">¡Aprovecha ya!</a></p>
         <button id="close-banner" aria-label="Cerrar oferta">×</button>
@@ -3446,6 +3446,25 @@
                         📍 <strong>Lugar:</strong> Lavandería JP PRO WASH<br>
                         <span class="raffle-address-small">Jr. Jorge Chávez 1154, Breña</span>
                     </p>
+
+                    <div id="raffle-countdown" class="raffle-countdown">
+                        <div class="countdown-item">
+                            <span id="days">00</span>
+                            <span class="label">Días</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="hours">00</span>
+                            <span class="label">Hrs</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="minutes">00</span>
+                            <span class="label">Min</span>
+                        </div>
+                        <div class="countdown-item">
+                            <span id="seconds">00</span>
+                            <span class="label">Seg</span>
+                        </div>
+                    </div>
                     <p class="raffle-thanks">
                         ¡Gracias por confiar en JP Pro Wash! 🧺✨
                     </p>
@@ -3698,37 +3717,110 @@
             margin-top: 2px;
         }
 
+        .raffle-countdown {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .countdown-item {
+            background: rgba(255, 255, 255, 0.9);
+            padding: 8px 12px;
+            border-radius: 8px;
+            text-align: center;
+            min-width: 60px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            border: 1px solid #ffcdd2;
+        }
+
+        .countdown-item span {
+            display: block;
+            color: #c41e3a;
+            font-weight: 800;
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+
+        .countdown-item .label {
+            font-size: 0.75rem;
+            color: #555;
+            text-transform: uppercase;
+            margin-top: 4px;
+            font-weight: 600;
+        }
+
         /* Dark mode adjustments */
         body.dark-mode .raffle-modal-content {
             background: linear-gradient(145deg, #0f2818 0%, #1a3a28 50%, #0f2818 100%);
         }
 
-        /* Mobile responsive */
+        /* Mobile adjustment */
         @media (max-width: 480px) {
-            .raffle-modal-content {
-                width: 95%;
-                margin: 10px;
+            .raffle-floating-btn {
+                top: 90px;
+                right: 15px;
+                bottom: auto;
+                padding: 10px 20px;
+            }
+        }
+
+        .raffle-floating-btn {
+            position: absolute;
+            top: 100px;
+            right: 20px;
+            bottom: auto;
+            z-index: 999;
+            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            color: white;
+            border: none;
+            border-radius: 50px;
+            padding: 8px 20px;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.4);
+            cursor: pointer;
+            transition: all 0.3s ease;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .raffle-floating-btn:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.6);
+        }
+
+        .raffle-floating-icon {
+            font-size: 1.5rem;
+        }
+
+        .raffle-floating-content {
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+            line-height: 1.2;
+        }
+
+        .raffle-floating-text {
+            font-weight: 700;
+            font-size: 1rem;
+        }
+
+        .raffle-floating-timer {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #ffd700;
+        }
+
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
             }
 
-            .raffle-modal-header h2 {
-                font-size: 1.4rem;
-            }
-
-            .raffle-image {
-                max-height: 180px;
-            }
-
-            .raffle-main-text {
-                font-size: 1.1rem;
-            }
-
-            .raffle-detail-text {
-                font-size: 0.95rem;
-            }
-
-            .raffle-modal-btn {
-                font-size: 1rem;
-                padding: 0.9rem 1.5rem;
+            50% {
+                transform: translateY(-10px);
             }
         }
     </style>
@@ -3780,7 +3872,62 @@
                 closeRaffleModal();
             }
         });
+
+        // Countdown Timer Logic
+        function updateCountdown() {
+            // Set the date we're counting down to: Dec 23, 2025 19:00:00
+            const targetDate = new Date('December 23, 2025 19:00:00').getTime();
+            const now = new Date().getTime();
+            const distance = targetDate - now;
+
+            const countdownElement = document.getElementById('raffle-countdown');
+            if (!countdownElement) return;
+
+            if (distance < 0) {
+                countdownElement.innerHTML = "<div style='width:100%; text-align:center; font-weight:bold; color:#c41e3a; font-size:1.2rem;'>¡El sorteo ha comenzado! 🎉</div>";
+                return;
+            }
+
+            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+            const daysEl = document.getElementById('days');
+            const hoursEl = document.getElementById('hours');
+            const minutesEl = document.getElementById('minutes');
+            const secondsEl = document.getElementById('seconds');
+
+            if (daysEl) daysEl.innerText = String(days).padStart(2, '0');
+            if (hoursEl) hoursEl.innerText = String(hours).padStart(2, '0');
+            if (minutesEl) minutesEl.innerText = String(minutes).padStart(2, '0');
+            if (secondsEl) secondsEl.innerText = String(seconds).padStart(2, '0');
+
+            // Update Floating Button Countdown
+            const floatingCountdown = document.getElementById('floating-countdown');
+            if (floatingCountdown) {
+                if (distance < 0) {
+                    floatingCountdown.innerText = "¡Ya empezó!";
+                } else {
+                    floatingCountdown.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+                }
+            }
+        }
+
+        // Update the count down every 1 second
+        setInterval(updateCountdown, 1000);
+        // Initial call to avoid 1s delay
+        updateCountdown();
     </script>
+
+    <!-- Floating Raffle Button -->
+    <button class="raffle-floating-btn" onclick="showRaffleModal()" aria-label="Ver Sorteo Navideño">
+        <span class="raffle-floating-icon">🎁</span>
+        <div class="raffle-floating-content">
+            <span class="raffle-floating-text">Ver Sorteo Navideño</span>
+            <span id="floating-countdown" class="raffle-floating-timer">00d 00h 00m 00s</span>
+        </div>
+    </button>
 
     <footer class="footer">
         <div class="container footer-container">
