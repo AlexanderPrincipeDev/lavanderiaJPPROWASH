@@ -3441,7 +3441,7 @@
 
                     <p class="raffle-date-highlight">
                         📅 <strong>Fecha del Sorteo:</strong><br>
-                        <span class="raffle-date-big">23 de Diciembre - 7:00 PM</span>
+                        <span class="raffle-date-big">23 de Diciembre - 8:00 PM</span>
                         <br>
                         📍 <strong>Lugar:</strong> Lavandería JP PRO WASH<br>
                         <span class="raffle-address-small">Jr. Jorge Chávez 1154, Breña</span>
@@ -3468,6 +3468,19 @@
                     <p class="raffle-thanks">
                         ¡Gracias por confiar en JP Pro Wash! 🧺✨
                     </p>
+
+                    <!-- Términos y Condiciones -->
+                    <div class="raffle-terms">
+                        <p class="raffle-terms-title">📜 Términos y Condiciones</p>
+                        <ul class="raffle-terms-list">
+                            <li>Los vales de S/50 son exclusivamente para lavado al seco (sacos, ternos, vestidos, etc.)
+                            </li>
+                            <li>Cada persona solo puede ganar un premio; ganadores previos no pueden participar
+                                nuevamente.</li>
+                            <li>Los vales tienen vigencia de un mes a partir de la fecha del sorteo.</li>
+                            <li>Cualquier otra regla o situación queda a disposición de la lavandería.</li>
+                        </ul>
+                    </div>
                 </div>
             </div>
             <button class="raffle-modal-btn" onclick="closeRaffleModal()">
@@ -3661,6 +3674,46 @@
             font-size: 1rem;
             color: #90caf9;
             font-style: italic;
+        }
+
+        .raffle-terms {
+            background: rgba(255, 255, 255, 0.1);
+            border-radius: 12px;
+            padding: 12px 15px;
+            margin-top: 15px;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+
+        .raffle-terms-title {
+            color: #ffd700;
+            font-weight: 700;
+            font-size: 0.95rem;
+            margin: 0 0 10px 0;
+            text-align: center;
+        }
+
+        .raffle-terms-list {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+            text-align: left;
+        }
+
+        .raffle-terms-list li {
+            color: #e8f5e9;
+            font-size: 0.85rem;
+            line-height: 1.4;
+            padding: 5px 0;
+            padding-left: 20px;
+            position: relative;
+        }
+
+        .raffle-terms-list li::before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #4caf50;
+            font-weight: bold;
         }
 
         .raffle-modal-btn {
