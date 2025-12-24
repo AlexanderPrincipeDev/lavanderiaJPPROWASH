@@ -634,6 +634,7 @@
         body.dark-mode .hero-title span {
             background: linear-gradient(135deg, #22d3ee 0%, #06b6d4 100%);
             -webkit-background-clip: text;
+            background-clip: text;
             -webkit-text-fill-color: transparent;
         }
 
@@ -3420,77 +3421,63 @@
         <div class="raffle-modal-content">
             <button class="raffle-modal-close" aria-label="Cerrar modal">&times;</button>
             <div class="raffle-modal-header">
-                <span class="raffle-snowflakes">❄️</span>
-                <h2>🎄 ¡Sorteo Navideño! 🎄</h2>
-                <span class="raffle-snowflakes">❄️</span>
+                <h2>🎉 ¡Felicidades a los Ganadores! 🎉</h2>
             </div>
             <div class="raffle-modal-body">
-                <div class="raffle-image-container">
-                    <img src="assets/images/fotos/canastas.webp" alt="Canastas Navideñas del Sorteo"
-                        class="raffle-image">
-                </div>
-                <div class="raffle-description">
-                    <p class="raffle-main-text">
-                        <strong>🎁 ¡Ya estás participando!</strong>
-                    </p>
-                    <p class="raffle-detail-text">
-                        Si trajiste tu ropa a nuestra lavandería en el mes de <strong>DICIEMBRE</strong>,
-                        automáticamente estás participando en el sorteo de
-                        <strong>2 canastas navideñas</strong>.
-                    </p>
+                <p class="raffle-subtitle">Gracias a todos por participar en nuestro Sorteo Navideño. ¡Aquí están los
+                    afortunados ganadores!</p>
 
-                    <p class="raffle-date-highlight">
-                        📅 <strong>Fecha del Sorteo:</strong><br>
-                        <span class="raffle-date-big">23 de Diciembre - 8:00 PM</span>
-                        <br>
-                        📍 <strong>Lugar:</strong> Lavandería JP PRO WASH<br>
-                        <span class="raffle-address-small">Jr. Jorge Chávez 1154, Breña</span>
-                    </p>
-
-                    <div id="raffle-countdown" class="raffle-countdown">
-                        <div class="countdown-item">
-                            <span id="days">00</span>
-                            <span class="label">Días</span>
+                <div class="winners-section">
+                    <h3 class="winners-category-title">🎁 Vales de S/50 (Lavado al Seco)</h3>
+                    <div class="winners-grid">
+                        <div class="winner-card">
+                            <div class="winner-avatar">
+                                <img src="assets/images/fotos/JorgeGuillen.jpeg" alt="Jorge Guillen">
+                            </div>
+                            <p class="winner-name">Jorge Guillen</p>
                         </div>
-                        <div class="countdown-item">
-                            <span id="hours">00</span>
-                            <span class="label">Hrs</span>
+                        <div class="winner-card">
+                            <div class="winner-avatar">
+                                <img src="assets/images/fotos/MaricarmenHuamani.jpeg" alt="Maricarmen Huamani">
+                            </div>
+                            <p class="winner-name">Maricarmen Huamani</p>
                         </div>
-                        <div class="countdown-item">
-                            <span id="minutes">00</span>
-                            <span class="label">Min</span>
-                        </div>
-                        <div class="countdown-item">
-                            <span id="seconds">00</span>
-                            <span class="label">Seg</span>
+                        <div class="winner-card">
+                            <div class="winner-avatar">
+                                <img src="assets/images/fotos/BerthaZavala.jpeg" alt="Bertha Zavala">
+                            </div>
+                            <p class="winner-name">Bertha Zavala</p>
                         </div>
                     </div>
-                    <p class="raffle-thanks">
-                        ¡Gracias por confiar en JP Pro Wash! 🧺✨
-                    </p>
+                </div>
 
-                    <!-- Términos y Condiciones -->
-                    <div class="raffle-terms">
-                        <p class="raffle-terms-title">📜 Términos y Condiciones</p>
-                        <ul class="raffle-terms-list">
-                            <li>Los vales de S/50 son exclusivamente para lavado al seco (sacos, ternos, vestidos, etc.)
-                            </li>
-                            <li>Cada persona solo puede ganar un premio; ganadores previos no pueden participar
-                                nuevamente.</li>
-                            <li>Los vales tienen vigencia de un mes a partir de la fecha del sorteo.</li>
-                            <li>Cualquier otra regla o situación queda a disposición de la lavandería.</li>
-                        </ul>
+                <div class="winners-section highlight">
+                    <h3 class="winners-category-title">🎄 Canastas Navideñas</h3>
+                    <div class="winners-grid">
+                        <div class="winner-card grand-prize">
+                            <div class="winner-avatar">
+                                <img src="assets/images/fotos/AlexTantarico.jpeg" alt="Alex Tantarico">
+                            </div>
+                            <p class="winner-name">Alex Tantarico</p>
+                        </div>
+                        <div class="winner-card grand-prize">
+                            <div class="winner-avatar">
+                                <img src="assets/images/fotos/SegundoTaminchi.jpeg" alt="Segundo Taminchi">
+                            </div>
+                            <p class="winner-name">Segundo Taminchi</p>
+                        </div>
                     </div>
                 </div>
             </div>
             <button class="raffle-modal-btn" onclick="closeRaffleModal()">
-                <span>🎅</span> ¡Entendido, quiero participar!
+                ¡Genial!
             </button>
         </div>
     </div>
 
     <style>
         /* Raffle Modal Styles */
+        /* Winners Modal Styles */
         .raffle-modal {
             position: fixed;
             top: 0;
@@ -3517,376 +3504,210 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.7);
-            backdrop-filter: blur(5px);
+            background: rgba(0, 0, 0, 0.6);
+            backdrop-filter: blur(4px);
         }
 
         .raffle-modal-content {
             position: relative;
-            background: linear-gradient(145deg, #1a472a 0%, #2d5a3f 50%, #1a472a 100%);
+            background: var(--color-bg-white);
             border-radius: 24px;
-            max-width: 500px;
+            max-width: 550px;
             width: 90%;
             max-height: 90vh;
             overflow-y: auto;
-            box-shadow:
-                0 25px 60px rgba(0, 0, 0, 0.5),
-                0 0 40px rgba(255, 215, 0, 0.3),
-                inset 0 1px 0 rgba(255, 255, 255, 0.2);
-            border: 3px solid #c41e3a;
-            animation: modalBounce 0.5s ease-out;
+            box-shadow: var(--shadow-card);
+            border: 1px solid var(--color-border);
+            animation: modalSlideUp 0.5s ease-out;
+            color: var(--color-text-dark);
         }
 
-        @keyframes modalBounce {
-            0% {
-                transform: scale(0.8) translateY(-50px);
+        @keyframes modalSlideUp {
+            from {
+                transform: translateY(20px);
                 opacity: 0;
             }
 
-            50% {
-                transform: scale(1.02);
-            }
-
-            100% {
-                transform: scale(1) translateY(0);
+            to {
+                transform: translateY(0);
                 opacity: 1;
             }
         }
 
         .raffle-modal-close {
             position: absolute;
-            top: 10px;
+            top: 15px;
             right: 15px;
-            background: rgba(255, 255, 255, 0.1);
+            background: var(--color-bg-secondary);
             border: none;
-            color: #fff;
-            font-size: 2rem;
+            color: var(--color-text-light);
+            font-size: 1.5rem;
             cursor: pointer;
-            width: 40px;
-            height: 40px;
+            width: 36px;
+            height: 36px;
             border-radius: 50%;
             display: flex;
             align-items: center;
             justify-content: center;
-            transition: all 0.3s ease;
+            transition: all 0.2s ease;
             z-index: 10;
         }
 
         .raffle-modal-close:hover {
-            background: rgba(255, 255, 255, 0.2);
-            transform: rotate(90deg);
+            background: var(--color-primary);
+            color: white;
         }
 
         .raffle-modal-header {
             text-align: center;
-            padding: 1.5rem 1.5rem 1rem;
-            background: linear-gradient(to bottom, rgba(196, 30, 58, 0.3), transparent);
-            border-radius: 20px 20px 0 0;
+            padding: 2rem 1.5rem 1rem;
+            background: linear-gradient(135deg, var(--color-bg-light) 0%, var(--color-white) 100%);
+            border-radius: 24px 24px 0 0;
         }
 
         .raffle-modal-header h2 {
-            color: #ffd700;
+            color: var(--color-primary-dark);
             font-size: 1.8rem;
             font-weight: 800;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
             margin: 0;
-            display: inline-block;
-            animation: shimmer 2s ease-in-out infinite;
-        }
-
-        @keyframes shimmer {
-
-            0%,
-            100% {
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 20px rgba(255, 215, 0, 0.5);
-            }
-
-            50% {
-                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5), 0 0 40px rgba(255, 215, 0, 0.8);
-            }
-        }
-
-        .raffle-snowflakes {
-            font-size: 1.5rem;
-            animation: snowfall 3s ease-in-out infinite;
-        }
-
-        @keyframes snowfall {
-
-            0%,
-            100% {
-                opacity: 0.7;
-                transform: translateY(0);
-            }
-
-            50% {
-                opacity: 1;
-                transform: translateY(-5px);
-            }
+            line-height: 1.2;
         }
 
         .raffle-modal-body {
-            padding: 1rem 1.5rem;
+            padding: 1.5rem 2rem;
         }
 
-        .raffle-image-container {
-            display: flex;
-            justify-content: center;
-            align-items: center;
+        .raffle-subtitle {
             text-align: center;
-            margin-bottom: 1rem;
-        }
-
-        .raffle-image {
-            max-width: 100%;
-            height: auto;
-            max-height: 250px;
-            object-fit: contain;
-            border-radius: 16px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
-            border: 4px solid #ffd700;
-        }
-
-        .raffle-description {
-            text-align: center;
-            color: #fff;
-        }
-
-        .raffle-main-text {
-            font-size: 1.3rem;
-            margin-bottom: 0.8rem;
-            color: #ffd700;
-        }
-
-        .raffle-detail-text {
-            font-size: 1.05rem;
-            line-height: 1.6;
-            margin-bottom: 0.8rem;
-            color: #e8f5e9;
-        }
-
-        .raffle-detail-text strong {
-            color: #ff6b6b;
-            font-size: 1.15rem;
-        }
-
-        .raffle-thanks {
-            font-size: 1rem;
-            color: #90caf9;
-            font-style: italic;
-        }
-
-        .raffle-terms {
-            background: rgba(255, 255, 255, 0.1);
-            border-radius: 12px;
-            padding: 12px 15px;
-            margin-top: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.2);
-        }
-
-        .raffle-terms-title {
-            color: #ffd700;
-            font-weight: 700;
+            color: var(--color-text-body);
+            margin-bottom: 2rem;
             font-size: 0.95rem;
-            margin: 0 0 10px 0;
+        }
+
+        .winners-section {
+            margin-bottom: 2rem;
+        }
+
+        .winners-category-title {
             text-align: center;
+            color: var(--color-text-dark);
+            font-size: 1.1rem;
+            margin-bottom: 1rem;
+            font-weight: 700;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 8px;
         }
 
-        .raffle-terms-list {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-            text-align: left;
+        .winners-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+            gap: 1rem;
+            justify-content: center;
         }
 
-        .raffle-terms-list li {
-            color: #e8f5e9;
-            font-size: 0.85rem;
-            line-height: 1.4;
-            padding: 5px 0;
-            padding-left: 20px;
-            position: relative;
+        .winner-card {
+            background: var(--color-bg-secondary);
+            padding: 1rem;
+            border-radius: 16px;
+            text-align: center;
+            transition: transform 0.3s ease;
+            border: 1px solid transparent;
         }
 
-        .raffle-terms-list li::before {
-            content: "✓";
-            position: absolute;
-            left: 0;
-            color: #4caf50;
-            font-weight: bold;
+        .winner-card:hover {
+            transform: translateY(-3px);
+            border-color: var(--color-primary-light);
+            background: var(--color-white);
+            box-shadow: var(--shadow-sm);
+        }
+
+        .winner-avatar {
+            width: 50px;
+            height: 50px;
+            background: var(--color-primary);
+            color: white;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin: 0 auto 0.5rem;
+            font-weight: 700;
+            font-size: 1.1rem;
+            border: 2px solid white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .winner-avatar img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .winner-card.grand-prize .winner-avatar {
+            background: linear-gradient(135deg, #ffd700 0%, #ffa000 100%);
+            width: 60px;
+            height: 60px;
+            font-size: 1.3rem;
+        }
+
+        .winner-name {
+            font-size: 0.9rem;
+            font-weight: 600;
+            color: var(--color-text-dark);
+            line-height: 1.3;
         }
 
         .raffle-modal-btn {
             display: block;
-            width: calc(100% - 3rem);
-            margin: 1rem 1.5rem 1.5rem;
-            padding: 1rem 2rem;
-            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
-            color: #fff;
+            width: calc(100% - 4rem);
+            margin: 0 auto 2rem;
+            padding: 1rem;
+            background: var(--color-primary);
+            color: white;
             border: none;
             border-radius: 50px;
-            font-size: 1.1rem;
+            font-size: 1rem;
             font-weight: 700;
             cursor: pointer;
             transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(196, 30, 58, 0.4);
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
+            box-shadow: var(--shadow-md);
         }
 
         .raffle-modal-btn:hover {
-            transform: translateY(-3px);
-            box-shadow: 0 10px 30px rgba(196, 30, 58, 0.6);
-            background: linear-gradient(135deg, #e53935 0%, #c41e3a 100%);
+            background: var(--color-primary-dark);
+            transform: translateY(-2px);
+            box-shadow: var(--shadow-lg);
         }
 
-        .raffle-modal-btn span {
-            font-size: 1.3rem;
-            margin-right: 8px;
-        }
-
-        .raffle-date-highlight {
-            background-color: #ffebee;
-            color: #c62828;
-            padding: 12px;
-            border-radius: 12px;
-            margin: 15px 0;
-            border: 2px dashed #ef5350;
-            font-size: 1.1rem;
-        }
-
-        .raffle-date-big {
-            font-size: 1.4rem;
-            font-weight: 800;
-            display: block;
-            margin-top: 5px;
-            color: #d32f2f;
-        }
-
-        .raffle-address-small {
-            font-size: 0.95rem;
-            color: #d32f2f;
-            display: block;
-            margin-top: 2px;
-        }
-
-        .raffle-countdown {
-            display: flex;
-            justify-content: center;
-            gap: 15px;
-            margin-top: 15px;
-        }
-
-        .countdown-item {
-            background: rgba(255, 255, 255, 0.9);
-            padding: 8px 12px;
-            border-radius: 8px;
-            text-align: center;
-            min-width: 60px;
-            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-            border: 1px solid #ffcdd2;
-        }
-
-        .countdown-item span {
-            display: block;
-            color: #c41e3a;
-            font-weight: 800;
-            font-size: 1.5rem;
-            line-height: 1;
-        }
-
-        .countdown-item .label {
-            font-size: 0.75rem;
-            color: #555;
-            text-transform: uppercase;
-            margin-top: 4px;
-            font-weight: 600;
-        }
-
-        /* Dark mode adjustments */
+        /* Dark mode support */
         body.dark-mode .raffle-modal-content {
-            background: linear-gradient(145deg, #0f2818 0%, #1a3a28 50%, #0f2818 100%);
+            background: var(--color-bg-card);
+            border-color: var(--color-border);
         }
 
-        /* Mobile adjustment */
-        @media (max-width: 480px) {
-            .raffle-modal {
-                align-items: center;
-                padding: 10px;
-            }
-
-            .raffle-modal-content {
-                width: 100%;
-                max-height: 85vh;
-                margin: auto;
-                overflow-y: auto;
-                overscroll-behavior: contain;
-                border-radius: 16px;
-            }
-
-            .raffle-floating-btn {
-                top: 90px;
-                right: 15px;
-                bottom: auto;
-                padding: 10px 20px;
-            }
-
-            /* Restore image but make it smaller */
-            .raffle-image-container {
-                display: flex;
-                margin-bottom: 0.5rem;
-            }
-
-            .raffle-image {
-                max-height: 120px;
-            }
-
-            /* Reduce title size */
-            .raffle-modal-header h2 {
-                font-size: 1.2rem;
-                white-space: nowrap;
-            }
-
-            /* Compact countdown */
-            .raffle-countdown {
-                gap: 8px;
-            }
-
-            .countdown-item {
-                min-width: 45px;
-                padding: 5px;
-            }
-
-            .countdown-item span {
-                font-size: 1.1rem;
-            }
-
-            .countdown-item .label {
-                font-size: 0.6rem;
-            }
-
-            /* Reduce vertical spacing */
-            .raffle-modal-body {
-                padding: 0.5rem 1rem;
-            }
-
-            .raffle-date-highlight {
-                padding: 8px;
-                margin: 10px 0;
-            }
-
-            .raffle-date-big {
-                font-size: 1.1rem;
-            }
+        body.dark-mode .raffle-modal-header {
+            background: linear-gradient(135deg, var(--color-bg-secondary) 0%, var(--color-bg-card) 100%);
         }
 
+        body.dark-mode .winner-card {
+            background: var(--color-bg-secondary);
+        }
+
+        body.dark-mode .winner-card:hover {
+            background: var(--color-bg-light);
+        }
+
+        /* Floating Button Styles */
         .raffle-floating-btn {
-            position: absolute;
+            position: fixed;
             top: 100px;
             right: 20px;
             bottom: auto;
             z-index: 999;
-            background: linear-gradient(135deg, #c41e3a 0%, #8b0000 100%);
+            background: var(--color-primary);
             color: white;
             border: none;
             border-radius: 50px;
@@ -3894,7 +3715,7 @@
             display: flex;
             align-items: center;
             gap: 10px;
-            box-shadow: 0 4px 15px rgba(196, 30, 58, 0.4);
+            box-shadow: var(--shadow-lg);
             cursor: pointer;
             transition: all 0.3s ease;
             animation: float 3s ease-in-out infinite;
@@ -3902,7 +3723,8 @@
 
         .raffle-floating-btn:hover {
             transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(196, 30, 58, 0.6);
+            background: var(--color-primary-dark);
+            box-shadow: var(--shadow-card);
         }
 
         .raffle-floating-icon {
@@ -3918,13 +3740,13 @@
 
         .raffle-floating-text {
             font-weight: 700;
-            font-size: 1rem;
+            font-size: 0.95rem;
         }
 
-        .raffle-floating-timer {
-            font-size: 0.85rem;
+        .raffle-floating-subtext {
+            font-size: 0.75rem;
             font-weight: 400;
-            color: #ffd700;
+            color: rgba(255, 255, 255, 0.9);
         }
 
         @keyframes float {
@@ -3936,6 +3758,35 @@
 
             50% {
                 transform: translateY(-10px);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .raffle-floating-btn {
+                top: 85px;
+                right: 10px;
+                padding: 6px 14px;
+            }
+
+            .raffle-floating-text {
+                font-size: 0.85rem;
+            }
+
+            .raffle-floating-subtext {
+                display: none;
+            }
+        }
+
+
+
+        @media (max-width: 480px) {
+            .raffle-modal-content {
+                width: 95%;
+                margin: 10px;
+            }
+
+            .winners-grid {
+                grid-template-columns: repeat(2, 1fr);
             }
         }
     </style>
@@ -3956,7 +3807,7 @@
                 modal.classList.remove('show');
                 document.body.style.overflow = '';
                 // Save that user has seen the modal this session
-                sessionStorage.setItem('raffleModalSeen', 'true');
+                sessionStorage.setItem('raffleWinnersSeen', 'true');
             }
         }
 
@@ -3974,9 +3825,7 @@
             }
 
             // Show modal after a short delay if not seen in this session
-            // NOTA: Para probar, limpiamos sessionStorage primero (QUITAR EN PRODUCCIÓN)
-            sessionStorage.removeItem('raffleModalSeen');
-            if (!sessionStorage.getItem('raffleModalSeen')) {
+            if (!sessionStorage.getItem('raffleWinnersSeen')) {
                 setTimeout(showRaffleModal, 1000);
             }
         });
@@ -3987,62 +3836,18 @@
                 closeRaffleModal();
             }
         });
-
-        // Countdown Timer Logic
-        function updateCountdown() {
-            // Set the date we're counting down to: Dec 23, 2025 20:00:00
-            const targetDate = new Date('December 23, 2025 20:00:00').getTime();
-            const now = new Date().getTime();
-            const distance = targetDate - now;
-
-            const countdownElement = document.getElementById('raffle-countdown');
-            if (!countdownElement) return;
-
-            if (distance < 0) {
-                countdownElement.innerHTML = "<div style='width:100%; text-align:center; font-weight:bold; color:#c41e3a; font-size:1.2rem;'>¡El sorteo ha comenzado! 🎉</div>";
-                return;
-            }
-
-            const days = Math.floor(distance / (1000 * 60 * 60 * 24));
-            const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-            const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-            const seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-            const daysEl = document.getElementById('days');
-            const hoursEl = document.getElementById('hours');
-            const minutesEl = document.getElementById('minutes');
-            const secondsEl = document.getElementById('seconds');
-
-            if (daysEl) daysEl.innerText = String(days).padStart(2, '0');
-            if (hoursEl) hoursEl.innerText = String(hours).padStart(2, '0');
-            if (minutesEl) minutesEl.innerText = String(minutes).padStart(2, '0');
-            if (secondsEl) secondsEl.innerText = String(seconds).padStart(2, '0');
-
-            // Update Floating Button Countdown
-            const floatingCountdown = document.getElementById('floating-countdown');
-            if (floatingCountdown) {
-                if (distance < 0) {
-                    floatingCountdown.innerText = "¡Ya empezó!";
-                } else {
-                    floatingCountdown.innerText = `${days}d ${hours}h ${minutes}m ${seconds}s`;
-                }
-            }
-        }
-
-        // Update the count down every 1 second
-        setInterval(updateCountdown, 1000);
-        // Initial call to avoid 1s delay
-        updateCountdown();
     </script>
 
-    <!-- Floating Raffle Button -->
-    <button class="raffle-floating-btn" onclick="showRaffleModal()" aria-label="Ver Sorteo Navideño">
-        <span class="raffle-floating-icon">🎁</span>
+    <!-- Floating Winners Button -->
+    <button class="raffle-floating-btn" onclick="showRaffleModal()" aria-label="Ver Ganadores del Sorteo">
+        <span class="raffle-floating-icon">🏆</span>
         <div class="raffle-floating-content">
-            <span class="raffle-floating-text">Ver Sorteo Navideño</span>
-            <span id="floating-countdown" class="raffle-floating-timer">00d 00h 00m 00s</span>
+            <span class="raffle-floating-text">Ganadores Sorteo</span>
+            <span class="raffle-floating-subtext">¡Mira quién ganó!</span>
         </div>
     </button>
+
+
 
     <footer class="footer">
         <div class="container footer-container">
