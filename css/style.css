@@ -106,7 +106,15 @@ img {
 }
 
 .section {
-    padding: var(--spacing-xl) 0
+    padding: var(--spacing-xl) 0;
+}
+
+#servicios,
+#contacto,
+#nosotros,
+#faq {
+    scroll-margin-top: 110px;
+    /* Adjusted offset for sticky header */
 }
 
 .section-title {
