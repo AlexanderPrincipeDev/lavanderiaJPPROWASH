@@ -153,7 +153,7 @@
               "name": "¿Qué métodos de pago aceptan?",
               "acceptedAnswer": {
                 "@type": "Answer",
-                "text": "Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al momento del recojo o entrega de tu ropa."
+                "text": "Aceptamos efectivo, transferencias bancarias, Yape, Plin y todas las tarjetas de crédito o débito."
               }
             }
           ]
@@ -1756,6 +1756,88 @@
             margin-bottom: var(--spacing-xl)
         }
 
+        .payment-badge-hero {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+            margin-top: 1.5rem;
+            padding: 0.75rem 1rem;
+            background: rgba(19, 153, 171, 0.1);
+            border-radius: 12px;
+            border: 1px solid rgba(19, 153, 171, 0.2);
+            width: fit-content;
+        }
+
+        body.dark-mode .payment-badge-hero {
+            background: rgba(34, 211, 238, 0.05);
+            border-color: rgba(34, 211, 238, 0.1);
+        }
+
+        .payment-badge-hero span.badge-label {
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: var(--color-primary-text);
+        }
+
+        .payment-logos-hero {
+            display: flex;
+            gap: 8px;
+            align-items: center;
+        }
+
+        .bank-logo {
+            font-size: 0.65rem;
+            font-weight: 800;
+            padding: 2px 6px;
+            border-radius: 4px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            font-family: sans-serif;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 20px;
+        }
+
+        .logo-visa {
+            background: #1a1f71;
+            color: white;
+        }
+
+        .logo-master {
+            background: #eb001b;
+            color: white;
+        }
+
+        .logo-amex {
+            background: #016fd0;
+            color: white;
+        }
+
+        .logo-diners {
+            background: #004a97;
+            color: white;
+        }
+
+        .logo-yape {
+            background: #7422b2;
+            color: white;
+        }
+
+        .logo-plin {
+            background: #00d1ce;
+            color: #1a1a1a;
+        }
+
+        @media (max-width: 768px) {
+            .payment-badge-hero {
+                flex-direction: column;
+                align-items: flex-start;
+                gap: 0.75rem;
+                width: 100%;
+            }
+        }
+
         .footer-column h3 {
             color: var(--color-footer-text);
             font-size: 1.2rem;
@@ -2531,6 +2613,17 @@
                         <a href="#contacto" class="btn btn-primary">Contáctanos</a>
                         <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
                     </div>
+                    <div class="payment-badge-hero animate-prepare" style="opacity: 1; transform: none;">
+                        <span class="badge-label">💳 Aceptamos todas las tarjetas</span>
+                        <div class="payment-logos-hero">
+                            <div class="bank-logo logo-visa">VISA</div>
+                            <div class="bank-logo logo-master">Mastercard</div>
+                            <div class="bank-logo logo-amex">AMEX</div>
+                            <div class="bank-logo logo-diners">Diners</div>
+                            <div class="bank-logo logo-yape">Yape</div>
+                            <div class="bank-logo logo-plin">Plin</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="hero-visual">
                     <div class="mini-calculator">
@@ -2557,7 +2650,7 @@
                         <a href="#" id="whatsapp-order-btn" class="btn btn-primary btn-block">
                             Pedir por WhatsApp
                         </a>
-                        <p class="mini-note">*Precio referencial</p>
+                        <p class="mini-note">*Precio referencial • Aceptamos todas las tarjetas</p>
                     </div>
                 </div>
             </div>
@@ -2614,7 +2707,7 @@
                             </svg>
                         </div>
                         <h3 class="trust-title">Pago Flexible</h3>
-                        <p class="trust-desc">Yape, Plin y Efectivo</p>
+                        <p class="trust-desc">Efectivo, Yape, Plin y todas las Tarjetas</p>
                     </div>
                 </div>
             </div>
@@ -3271,8 +3364,8 @@
                             <span class="faq-icon">+</span>
                         </button>
                         <div class="faq-answer">
-                            <p>Aceptamos efectivo, transferencias bancarias y Yape/Plin. Puedes pagar al momento del
-                                recojo o entrega de tu ropa.</p>
+                            <p>Aceptamos efectivo, transferencias bancarias, Yape/Plin y todas las tarjetas de crédito o
+                                débito. Aceptamos diversas opciones de pago para tu mayor comodidad!</p>
                         </div>
                     </div>
                 </div>
@@ -3878,11 +3971,28 @@
                         <li>📍 Jr. Jorge Chávez 1154, Breña</li>
                         <li>📱 978 673 626</li>
                         <li>✉️ lavanderiajpprowash@gmail.com</li>
+                        <li>💳 Aceptamos todas las tarjetas</li>
                     </ul>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook">Facebook</a>
                         <a href="#" aria-label="Instagram">Instagram</a>
                     </div>
+                </div>
+                <div class="footer-column">
+                    <h3>Medios de Pago</h3>
+                    <div style="display: flex; gap: 8px; flex-wrap: wrap; margin-bottom: 1rem;">
+                        <span
+                            style="background: #1a1f71; color: white; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); font-family: sans-serif;">VISA</span>
+                        <span
+                            style="background: #eb001b; color: white; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); font-family: sans-serif;">Mastercard</span>
+                        <span
+                            style="background: #7422b2; color: white; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); font-family: sans-serif;">Yape</span>
+                        <span
+                            style="background: #00d1ce; color: #1a1a1a; padding: 2px 8px; border-radius: 4px; font-weight: bold; font-size: 0.75rem; border: 1px solid rgba(255,255,255,0.1); font-family: sans-serif;">Plin</span>
+                    </div>
+                    <p style="font-size: 0.9rem; opacity: 0.8;">Aceptamos efectivo, transferencias y todas las tarjetas
+                        de
+                        crédito o débito.</p>
                 </div>
             </div>
             <div class="footer-bottom">
