@@ -3911,15 +3911,18 @@
 
         // Close modal when clicking overlay
         document.addEventListener('DOMContentLoaded', function () {
-            const overlay = document.querySelector('.raffle-modal-overlay');
-            const closeBtn = document.querySelector('.raffle-modal-close');
+            const raffleModal = document.getElementById('raffle-modal');
+            if (raffleModal) {
+                const overlay = raffleModal.querySelector('.raffle-modal-overlay');
+                const closeBtn = raffleModal.querySelector('.raffle-modal-close');
 
-            if (overlay) {
-                overlay.addEventListener('click', closeRaffleModal);
-            }
+                if (overlay) {
+                    overlay.addEventListener('click', closeRaffleModal);
+                }
 
-            if (closeBtn) {
-                closeBtn.addEventListener('click', closeRaffleModal);
+                if (closeBtn) {
+                    closeBtn.addEventListener('click', closeRaffleModal);
+                }
             }
 
             // Show modal after a short delay if not seen in this session
