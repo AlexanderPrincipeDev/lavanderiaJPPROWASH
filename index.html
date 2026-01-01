@@ -3488,6 +3488,28 @@
         </section>
     </main>
 
+    <!-- Happy New Year Modal -->
+    <div id="new-year-modal" class="raffle-modal">
+        <div class="raffle-modal-overlay"></div>
+        <div class="raffle-modal-content">
+            <button class="raffle-modal-close" aria-label="Cerrar modal">&times;</button>
+            <div class="raffle-modal-header">
+                <h2>¡Feliz Año Nuevo 2026! 🎉</h2>
+            </div>
+            <div class="raffle-modal-body">
+                <div class="raffle-prize-img" style="font-size: 4rem; margin-bottom: 1rem; text-align: center;">
+                    ✨🎊🥂
+                </div>
+                <p style="font-size: 1.1rem; margin-bottom: 1.5rem; line-height: 1.6; text-align: center;">
+                    Queremos agradecer profundamente tu confianza en <strong>JP Pro Wash</strong> durante este año.
+                    <br><br>
+                    ¡Les deseamos un año lleno de éxitos, alegría y ropa siempre impecable!
+                </p>
+                <button class="raffle-modal-btn" onclick="closeNewYearModal()">¡Gracias!</button>
+            </div>
+        </div>
+    </div>
+
     <!-- Modal del Sorteo Navideño -->
     <div id="raffle-modal" class="raffle-modal">
         <div class="raffle-modal-overlay"></div>
@@ -3901,9 +3923,11 @@
             }
 
             // Show modal after a short delay if not seen in this session
+            /* 
             if (!sessionStorage.getItem('raffleWinnersSeen')) {
                 setTimeout(showRaffleModal, 1000);
             }
+            */
         });
 
         // Close modal with Escape key
@@ -3912,6 +3936,36 @@
                 closeRaffleModal();
             }
         });
+    </script>
+    <script>
+        // New Year Modal Logic
+        const newYearModal = document.getElementById('new-year-modal');
+        const newYearCloseBtn = newYearModal?.querySelector('.raffle-modal-close');
+        const newYearOverlay = newYearModal?.querySelector('.raffle-modal-overlay');
+
+        function openNewYearModal() {
+            if (newYearModal) {
+                newYearModal.classList.add('show');
+                document.body.style.overflow = 'hidden';
+            }
+        }
+
+        function closeNewYearModal() {
+            if (newYearModal) {
+                newYearModal.classList.remove('show');
+                document.body.style.overflow = '';
+            }
+        }
+
+        if (newYearModal) {
+            // Always show on load
+            window.addEventListener('load', () => {
+                setTimeout(openNewYearModal, 1000);
+            });
+
+            if (newYearCloseBtn) newYearCloseBtn.addEventListener('click', closeNewYearModal);
+            if (newYearOverlay) newYearOverlay.addEventListener('click', closeNewYearModal);
+        }
     </script>
 
     <!-- Floating Winners Button -->
