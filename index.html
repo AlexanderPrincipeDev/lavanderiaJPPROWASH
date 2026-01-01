@@ -1758,64 +1758,106 @@
 
         .payment-badge-hero {
             display: flex;
-            align-items: center;
-            gap: 1rem;
-            margin-top: 1.5rem;
-            padding: 0.75rem 1rem;
-            background: rgba(19, 153, 171, 0.1);
-            border-radius: 12px;
-            border: 1px solid rgba(19, 153, 171, 0.2);
+            flex-direction: column;
+            align-items: flex-start;
+            gap: 12px;
+            margin-top: 2rem;
+            padding: 1.25rem;
+            background: rgba(255, 255, 255, 0.7);
+            backdrop-filter: blur(12px);
+            -webkit-backdrop-filter: blur(12px);
+            border-radius: 20px;
+            border: 1px solid rgba(255, 255, 255, 0.8);
             width: fit-content;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05), inset 0 0 0 1px rgba(255, 255, 255, 0.5);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .payment-badge-hero:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 35px rgba(0, 0, 0, 0.08), inset 0 0 0 1px rgba(255, 255, 255, 0.6);
         }
 
         body.dark-mode .payment-badge-hero {
-            background: rgba(34, 211, 238, 0.05);
-            border-color: rgba(34, 211, 238, 0.1);
+            background: rgba(30, 41, 59, 0.6);
+            border-color: rgba(255, 255, 255, 0.1);
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2), inset 0 0 0 1px rgba(255, 255, 255, 0.05);
+        }
+
+        .badge-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .badge-icon {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: var(--color-primary);
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            flex-shrink: 0;
+            box-shadow: 0 2px 5px rgba(19, 153, 171, 0.3);
         }
 
         .payment-badge-hero span.badge-label {
-            font-size: 0.85rem;
-            font-weight: 600;
-            color: var(--color-primary-text);
+            font-size: 0.95rem;
+            font-weight: 700;
+            color: var(--color-text-dark);
+            letter-spacing: -0.01em;
+        }
+
+        body.dark-mode .payment-badge-hero span.badge-label {
+            color: var(--color-white);
         }
 
         .payment-logos-hero {
             display: flex;
-            gap: 8px;
+            gap: 12px;
             align-items: center;
+            flex-wrap: wrap;
         }
 
         .bank-logo {
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 35px;
-            /* Increased height for better visibility */
+            height: 32px;
             width: auto;
             transition: transform 0.3s ease;
+            filter: grayscale(0%);
+            opacity: 0.9;
         }
 
         .bank-logo img {
             height: 100%;
             width: auto;
             object-fit: contain;
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.1));
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.05));
         }
 
         .bank-logo:hover {
-            transform: scale(1.1);
+            transform: scale(1.15);
+            opacity: 1;
+            filter: grayscale(0%) !important;
         }
 
         body.dark-mode .bank-logo img {
-            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3)) brightness(1.1);
+            filter: drop-shadow(0 2px 4px rgba(0, 0, 0, 0.3));
         }
 
         @media (max-width: 768px) {
             .payment-badge-hero {
-                flex-direction: column;
-                align-items: flex-start;
-                gap: 0.75rem;
                 width: 100%;
+                align-items: center;
+            }
+
+            .payment-logos-hero {
+                justify-content: center;
+                gap: 10px;
             }
         }
 
@@ -2595,7 +2637,16 @@
                         <a href="#servicios" class="btn btn-outline">Ver Servicios</a>
                     </div>
                     <div class="payment-badge-hero animate-prepare" style="opacity: 1; transform: none;">
-                        <span class="badge-label">Aceptamos todas las tarjetas</span>
+                        <div class="badge-header">
+                            <span class="badge-icon">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24"
+                                    fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round"
+                                    stroke-linejoin="round">
+                                    <polyline points="20 6 9 17 4 12"></polyline>
+                                </svg>
+                            </span>
+                            <span class="badge-label">Aceptamos todas las tarjetas</span>
+                        </div>
                         <div class="payment-logos-hero">
                             <div class="bank-logo logo-visa">
                                 <img src="assets/images/fotos/visa.png" alt="Visa" width="56" height="35">
@@ -3926,12 +3977,7 @@
                 }
             }
 
-            // Show modal after a short delay if not seen in this session
-            /* 
-            if (!sessionStorage.getItem('raffleWinnersSeen')) {
-                setTimeout(showRaffleModal, 1000);
-            }
-            */
+
         });
 
         // Close modal with Escape key
