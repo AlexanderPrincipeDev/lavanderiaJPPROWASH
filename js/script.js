@@ -84,7 +84,7 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     }, observerOptions);
 
-    document.querySelectorAll('.service-card, .section-title, .hero-content, .hero-visual, .info-item').forEach(el => {
+    document.querySelectorAll('.service-card, .section-title, .info-item').forEach(el => {
         el.classList.add('animate-prepare');
         observer.observe(el);
     });
