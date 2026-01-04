@@ -319,9 +319,9 @@ document.addEventListener('DOMContentLoaded', () => {
         userMsg.innerHTML = `<div class="chat-bubble">${userText}</div>`;
         chatbotBody.appendChild(userMsg);
 
-        // Scroll to bottom - use requestAnimationFrame to avoid forced reflow
+        // Scroll to latest message without forcing layout reads
         requestAnimationFrame(() => {
-            chatbotBody.scrollTop = chatbotBody.scrollHeight;
+            userMsg.scrollIntoView({ block: 'end', behavior: 'auto' });
         });
 
         // Simulate bot typing
@@ -379,7 +379,7 @@ document.addEventListener('DOMContentLoaded', () => {
             botMsg.innerHTML = botContent;
             chatbotBody.appendChild(botMsg);
             requestAnimationFrame(() => {
-                chatbotBody.scrollTop = chatbotBody.scrollHeight;
+                botMsg.scrollIntoView({ block: 'end', behavior: 'auto' });
             });
         }, 600);
     };
