@@ -56,6 +56,9 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
     <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="icon" href="https://lavanderiajpprowash.com/favicon.ico" sizes="any">
+    <link rel="icon" type="image/png" sizes="96x96" href="https://lavanderiajpprowash.com/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="48x48" href="https://lavanderiajpprowash.com/android-icon-48x48.png">
     <link rel="manifest" href="/manifest.json">
     <meta name="msapplication-TileColor" content="#ffffff">
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
@@ -86,6 +89,9 @@
           "image": "https://lavanderiajpprowash.com/assets/images/LOGO/png/SIN%20FONDO/LOGO_opt.png",
           "@id": "https://lavanderiajpprowash.com/",
           "url": "https://lavanderiajpprowash.com/",
+          "publisher": {
+            "@id": "https://lavanderiajpprowash.com/#organization"
+          },
           "telephone": "+51978673626",
           "address": {
             "@type": "PostalAddress",
@@ -116,13 +122,27 @@
           "priceRange": "$$"
         },
         {
+          "@type": "Organization",
+          "@id": "https://lavanderiajpprowash.com/#organization",
+          "name": "Lavandería JP Pro Wash",
+          "url": "https://lavanderiajpprowash.com/",
+          "logo": "https://lavanderiajpprowash.com/assets/images/LOGO/png/SIN%20FONDO/LOGO_opt.png",
+          "sameAs": [
+            "https://www.instagram.com/lavanderiajpprowash?igsh=MXd1eGxrOWRzYzA3cQ=="
+          ]
+        },
+        {
           "@type": "DryCleaningOrLaundry",
           "@id": "https://lavanderiajpprowash.com/#business",
           "name": "Lavandería JP Pro Wash",
           "image": "https://lavanderiajpprowash.com/assets/images/LOGO/png/SIN%20FONDO/LOGO_opt.png",
+          "logo": "https://lavanderiajpprowash.com/assets/images/LOGO/png/SIN%20FONDO/LOGO_opt.png",
           "url": "https://lavanderiajpprowash.com/",
           "telephone": "+51978673626",
           "priceRange": "$$",
+          "sameAs": [
+            "https://www.instagram.com/lavanderiajpprowash?igsh=MXd1eGxrOWRzYzA3cQ=="
+          ],
           "paymentAccepted": [
             "Cash",
             "Yape",
@@ -3877,7 +3897,7 @@
             width: calc(100% - 4rem);
             margin: 0 auto 2rem;
             padding: 1rem;
-            background: var(--color-primary);
+            background: var(--color-primary-dark);
             color: white;
             border: none;
             border-radius: 50px;
@@ -3889,7 +3909,7 @@
         }
 
         .raffle-modal-btn:hover {
-            background: var(--color-primary-dark);
+            background: #0b5d6a;
             transform: translateY(-2px);
             box-shadow: var(--shadow-lg);
         }
@@ -3919,7 +3939,7 @@
             right: 20px;
             bottom: auto;
             z-index: 999;
-            background: var(--color-primary);
+            background: var(--color-primary-dark);
             color: white;
             border: none;
             border-radius: 50px;
@@ -3935,7 +3955,7 @@
 
         .raffle-floating-btn:hover {
             transform: translateY(-5px);
-            background: var(--color-primary-dark);
+            background: #0b5d6a;
             box-shadow: var(--shadow-card);
         }
 

@@ -23,7 +23,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const title = document.createElement('h3');
     title.textContent = '¿Te gustó este servicio? ¡Compártelo!';
     title.style.marginBottom = '1.5rem';
-    title.style.color = 'var(--color-primary)';
+    title.style.color = 'var(--color-text-dark)';
 
     const buttonsContainer = document.createElement('div');
     buttonsContainer.style.display = 'flex';
@@ -35,14 +35,14 @@ document.addEventListener('DOMContentLoaded', function () {
     const waBtn = createShareButton(
         'WhatsApp',
         `https://api.whatsapp.com/send?text=${pageTitle}%20${currentUrl}`,
-        '#25D366'
+        '#1A6F3C'
     );
 
     // Facebook
     const fbBtn = createShareButton(
         'Facebook',
         `https://www.facebook.com/sharer/sharer.php?u=${currentUrl}`,
-        '#1877F2'
+        '#0F5FA8'
     );
 
     // X (Twitter)
