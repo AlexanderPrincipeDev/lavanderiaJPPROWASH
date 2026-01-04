@@ -11,14 +11,23 @@ document.addEventListener('DOMContentLoaded', () => {
     // Theme Toggle Logic
     const savedTheme = localStorage.getItem('theme');
     const logoImg = document.querySelector('.logo img');
+    const modalLogoImg = document.querySelector('.modal-logo');
     const lightLogo = 'assets/images/LOGO/png/SIN FONDO/LOGO_opt.webp';
+    const lightLogo2x = 'assets/images/LOGO/png/SIN FONDO/LOGO_2x.webp';
     const darkLogo = 'assets/images/LOGO/png/SIN FONDO/LOGO-NEGATIVO_opt.webp';
 
     function updateLogo(isDark) {
         if (logoImg) {
             const newLogo = isDark ? darkLogo : lightLogo;
+            const srcset = isDark ? `${darkLogo} 1x` : `${lightLogo} 1x, ${lightLogo2x} 2x`;
             logoImg.src = newLogo;
-            logoImg.srcset = `${newLogo} 1x`; // Simplified srcset for now as we might not have 2x for negative
+            logoImg.srcset = srcset;
+        }
+        if (modalLogoImg) {
+            const newModalLogo = isDark ? darkLogo : lightLogo;
+            const modalSrcset = isDark ? `${darkLogo} 1x` : `${lightLogo} 1x, ${lightLogo2x} 2x`;
+            modalLogoImg.src = newModalLogo;
+            modalLogoImg.srcset = modalSrcset;
         }
     }
 
