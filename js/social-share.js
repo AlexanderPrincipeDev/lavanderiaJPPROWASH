@@ -3,7 +3,7 @@
  * Adds social sharing buttons to the page
  */
 
-document.addEventListener('DOMContentLoaded', function () {
+function initSocialShare() {
     // Only add if not already present
     if (document.querySelector('.social-share-section')) return;
 
@@ -52,6 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
         '#000000'
     );
 
+    const fragment = document.createDocumentFragment();
     buttonsContainer.appendChild(waBtn);
     buttonsContainer.appendChild(fbBtn);
     buttonsContainer.appendChild(xBtn);
@@ -59,11 +60,20 @@ document.addEventListener('DOMContentLoaded', function () {
     container.appendChild(title);
     container.appendChild(buttonsContainer);
     shareSection.appendChild(container);
+    fragment.appendChild(shareSection);
 
     // Insert before footer
     const footer = document.querySelector('footer');
-    if (footer) {
-        footer.parentNode.insertBefore(shareSection, footer);
+    if (footer && footer.parentNode) {
+        footer.parentNode.insertBefore(fragment, footer);
+    }
+}
+
+window.addEventListener('load', () => {
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(initSocialShare);
+    } else {
+        setTimeout(initSocialShare, 0);
     }
 });
 

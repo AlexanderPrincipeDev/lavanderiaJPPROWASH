@@ -70,24 +70,32 @@ document.addEventListener('DOMContentLoaded', () => {
         });
     });
 
-    // Scroll Animation
-    const observerOptions = {
-        threshold: 0.1
-    };
+    // Scroll Animation (defer to idle to avoid layout work on initial load)
+    function initScrollAnimations() {
+        const observerOptions = {
+            threshold: 0.1
+        };
 
-    const observer = new IntersectionObserver((entries) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('animate-in');
-                observer.unobserve(entry.target);
-            }
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('animate-in');
+                    observer.unobserve(entry.target);
+                }
+            });
+        }, observerOptions);
+
+        document.querySelectorAll('.service-card, .section-title, .info-item').forEach(el => {
+            el.classList.add('animate-prepare');
+            observer.observe(el);
         });
-    }, observerOptions);
+    }
 
-    document.querySelectorAll('.service-card, .section-title, .info-item').forEach(el => {
-        el.classList.add('animate-prepare');
-        observer.observe(el);
-    });
+    if ('requestIdleCallback' in window) {
+        requestIdleCallback(initScrollAnimations);
+    } else {
+        setTimeout(initScrollAnimations, 0);
+    }
 
     // FAQ Accordion
     const faqQuestions = document.querySelectorAll('.faq-question');
