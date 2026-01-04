@@ -100,7 +100,14 @@
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const script = document.createElement('script');
+            script.src = '/_vercel/insights/script.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        });
+    </script>
 
     <!-- Styles -->
     <!-- Styles -->
@@ -260,8 +267,8 @@
             </p>
         </div>
     </footer>
-    <script src="js/script.js"></script>
-    <script src="js/social-share.js"></script>
+    <script defer src="js/script.js"></script>
+    <script defer src="js/social-share.js"></script>
 </body>
 
 </html>

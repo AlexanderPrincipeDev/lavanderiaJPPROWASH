@@ -268,7 +268,14 @@
     <script>
         window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
     </script>
-    <script defer src="/_vercel/insights/script.js"></script>
+    <script>
+        window.addEventListener('load', () => {
+            const script = document.createElement('script');
+            script.src = '/_vercel/insights/script.js';
+            script.defer = true;
+            document.head.appendChild(script);
+        });
+    </script>
 
     <!-- Google Maps API - Loaded lazily via script.js -->
 
@@ -4233,8 +4240,8 @@
     </div>
 
     <script src="js/coverage-map.js" defer></script>
-    <script src="js/script.js"></script>
-    <script src="js/social-share.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/social-share.js" defer></script>
 </body>
 
 </html>
