@@ -4113,10 +4113,16 @@
         }
 
         if (newYearModal) {
-            // Always show on load
-            window.addEventListener('load', () => {
-                setTimeout(openNewYearModal, 1000);
-            });
+            // Show after first user interaction to avoid delaying LCP
+            let newYearModalOpened = false;
+            const triggerNewYearModal = () => {
+                if (newYearModalOpened) return;
+                newYearModalOpened = true;
+                setTimeout(openNewYearModal, 300);
+            };
+
+            window.addEventListener('scroll', triggerNewYearModal, { once: true, passive: true });
+            window.addEventListener('click', triggerNewYearModal, { once: true });
 
             if (newYearCloseBtn) newYearCloseBtn.addEventListener('click', closeNewYearModal);
             if (newYearOverlay) newYearOverlay.addEventListener('click', closeNewYearModal);
