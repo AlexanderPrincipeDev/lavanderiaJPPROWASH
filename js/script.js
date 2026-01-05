@@ -344,13 +344,34 @@ document.addEventListener('DOMContentLoaded', () => {
         return typing;
     }
 
-    function appendBackToMenu() {
+    function smoothScrollWithBounce() {
+        if (!chatbotBody) return;
+        chatbotBody.scrollTo({ top: chatbotBody.scrollHeight, behavior: 'smooth' });
+        chatbotBody.classList.remove('chat-scroll-bounce');
+        requestAnimationFrame(() => {
+            chatbotBody.classList.add('chat-scroll-bounce');
+        });
+    }
+
+    function appendBackToMenu(container) {
+        const menuButton = `
+            <button class=\"chat-option-btn\" data-chat-option=\"menu\">
+                <svg class=\"chat-option-icon\" xmlns=\"http://www.w3.org/2000/svg\" viewBox=\"0 0 24 24\" fill=\"none\"
+                    stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\">
+                    <path d=\"M4 6h16M4 12h16M4 18h16\"></path>
+                </svg>
+                Menú
+            </button>
+        `;
+        if (container) {
+            container.insertAdjacentHTML('beforeend', menuButton);
+            return;
+        }
         const back = document.createElement('div');
         back.className = 'chat-message bot';
         back.innerHTML = `
-            <div class=\"chat-bubble\">¿Quieres volver al menú?</div>
             <div class=\"chat-options\">
-                <button class=\"chat-option-btn\" data-chat-option=\"menu\">↩️ Volver al menú</button>
+                ${menuButton}
             </div>
         `;
         chatbotBody.appendChild(back);
@@ -405,11 +426,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let userText = '';
 
         switch (option) {
-            case 'precios': userText = '💰 Ver Precios'; break;
-            case 'cobertura': userText = '📍 Zona de Cobertura'; break;
-            case 'horario': userText = '⏰ Horarios de Atención'; break;
-            case 'contacto': userText = '👤 Hablar con un Humano'; break;
-            case 'menu': userText = '↩️ Volver al menú'; break;
+            case 'precios': userText = 'Ver Precios'; break;
+            case 'cobertura': userText = 'Zona de Cobertura'; break;
+            case 'horario': userText = 'Horarios de Atención'; break;
+            case 'contacto': userText = 'Hablar con un Humano'; break;
+            case 'menu': userText = 'Menú'; break;
         }
 
         simulateInput(userText).then(() => {
@@ -421,6 +442,7 @@ document.addEventListener('DOMContentLoaded', () => {
                 // Scroll to latest message without forcing layout reads
                 requestAnimationFrame(() => {
                     userMsg.scrollIntoView({ block: 'end', behavior: 'auto' });
+                    smoothScrollWithBounce();
                 });
             }, 250);
         });
@@ -434,28 +456,57 @@ document.addEventListener('DOMContentLoaded', () => {
             botMsg.className = 'chat-message bot';
             let responseText = '';
             let responseOptions = '';
+            const iconPrice = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                    <line x1="2" y1="10" x2="22" y2="10"></line>
+                    <line x1="6" y1="15" x2="10" y2="15"></line>
+                </svg>
+            `;
+            const iconMap = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M20 10c0 4.5-8 11-8 11s-8-6.5-8-11a8 8 0 1 1 16 0Z"></path>
+                    <circle cx="12" cy="10" r="3"></circle>
+                </svg>
+            `;
+            const iconClock = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 6v6l4 2"></path>
+                </svg>
+            `;
+            const iconUser = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="8" r="4"></circle>
+                    <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
+                </svg>
+            `;
 
             switch (option) {
                 case 'menu':
                     responseText = '¿En qué puedo ayudarte?';
                     responseOptions = `
-                        <button class="chat-option-btn" data-chat-option="precios">💰 Ver Precios</button>
-                        <button class="chat-option-btn" data-chat-option="cobertura">📍 Zona de Cobertura</button>
-                        <button class="chat-option-btn" data-chat-option="horario">⏰ Horarios de Atención</button>
-                        <button class="chat-option-btn" data-chat-option="contacto">👤 Hablar con un Humano</button>
+                        <button class="chat-option-btn" data-chat-option="precios">${iconPrice}Ver Precios</button>
+                        <button class="chat-option-btn" data-chat-option="cobertura">${iconMap}Zona de Cobertura</button>
+                        <button class="chat-option-btn" data-chat-option="horario">${iconClock}Horarios de Atención</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Hablar con un Humano</button>
                     `;
                     break;
                 case 'precios':
-                    responseText = 'Nuestros precios base son:\n🧺 Lavado por Kilo: S/ 4.00\n🛏️ Edredones: Desde S/ 15.00\n👔 Ternos: Desde S/ 20.00\n\n¿Quieres cotizar algo específico?';
+                    responseText = 'Nuestros precios base son:\n- Lavado por Kilo: S/ 4.00\n- Edredones: Desde S/ 15.00\n- Ternos: Desde S/ 20.00\n\n¿Quieres cotizar algo específico?';
                     responseOptions = `
-                        <button class="chat-option-btn" data-chat-option="contacto">Cotizar por WhatsApp</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
                     `;
                     break;
                 case 'cobertura':
                     responseText = 'Llegamos a Breña, Pueblo Libre, Jesús María, Lince, San Isidro, Lima Cercado y La Victoria.\n\nEl delivery es GRATIS a partir de 10 kilos en zonas cercanas.';
                     break;
                 case 'horario':
-                    responseText = 'Nuestro horario de atención es:\n📅 Lunes a Sábado: 10:00 AM - 9:00 PM\n❌ Domingos y Feriados: Cerrado';
+                    responseText = 'Nuestro horario de atención es:\nLunes a Sábado: 10:00 AM - 9:00 PM\nDomingos y Feriados: Cerrado';
                     break;
                 case 'contacto':
                     responseText = '¡Claro! Te conectaré con un asesor humano por WhatsApp ahora mismo.';
@@ -473,6 +524,7 @@ document.addEventListener('DOMContentLoaded', () => {
             requestAnimationFrame(() => {
                 userMsg.scrollIntoView({ block: 'start', behavior: 'auto' });
                 botMsg.classList.add('chat-bounce');
+                smoothScrollWithBounce();
             });
             typeBubble(bubble, responseText).then(() => {
                 if (responseOptions) {
@@ -480,9 +532,13 @@ document.addEventListener('DOMContentLoaded', () => {
                     optionsWrap.className = 'chat-options';
                     optionsWrap.innerHTML = responseOptions;
                     botMsg.appendChild(optionsWrap);
-                }
-                if (option !== 'menu') {
+                    if (option !== 'menu') {
+                        appendBackToMenu(optionsWrap);
+                    }
+                    smoothScrollWithBounce();
+                } else if (option !== 'menu') {
                     appendBackToMenu();
+                    smoothScrollWithBounce();
                 }
                 setOptionsDisabled(false);
             });

@@ -2590,6 +2590,28 @@
             color: white;
             border-color: transparent
         }
+
+        .chat-options .chat-option-btn {
+            background: linear-gradient(135deg, rgba(76, 201, 240, 0.2), rgba(19, 153, 171, 0.12));
+            border: 1px solid rgba(19, 153, 171, 0.3);
+            box-shadow: 0 6px 12px rgba(19, 153, 171, 0.12);
+        }
+
+        .chat-options .chat-option-btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 10px 18px rgba(19, 153, 171, 0.2);
+        }
+
+        body.dark-mode .chat-options .chat-option-btn {
+            background: linear-gradient(135deg, rgba(34, 211, 238, 0.2), rgba(14, 116, 144, 0.14));
+            border-color: rgba(34, 211, 238, 0.3);
+        }
+
+        .chat-option-icon {
+            width: 16px;
+            height: 16px;
+            flex-shrink: 0;
+        }
         body.dark-mode .chat-option-btn {
             background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
             border-color: rgba(148, 163, 184, 0.2);
@@ -4440,13 +4462,39 @@
                     ¡Hola! 👋 Soy el asistente virtual de JP Pro Wash. ¿En qué puedo ayudarte hoy?
                 </div>
                 <div class="chat-options">
-                    <button class="chat-option-btn" data-chat-option="precios">💰 Ver Precios</button>
-                    <button class="chat-option-btn" data-chat-option="cobertura">📍 Zona de
-                        Cobertura</button>
-                    <button class="chat-option-btn" data-chat-option="horario">⏰ Horarios de
-                        Atención</button>
-                    <button class="chat-option-btn" data-chat-option="contacto">👤 Hablar con un
-                        Humano</button>
+                    <button class="chat-option-btn" data-chat-option="precios">
+                        <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <rect x="2" y="5" width="20" height="14" rx="2"></rect>
+                            <line x1="2" y1="10" x2="22" y2="10"></line>
+                            <line x1="6" y1="15" x2="10" y2="15"></line>
+                        </svg>
+                        Ver Precios
+                    </button>
+                    <button class="chat-option-btn" data-chat-option="cobertura">
+                        <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="M20 10c0 4.5-8 11-8 11s-8-6.5-8-11a8 8 0 1 1 16 0Z"></path>
+                            <circle cx="12" cy="10" r="3"></circle>
+                        </svg>
+                        Zona de Cobertura
+                    </button>
+                    <button class="chat-option-btn" data-chat-option="horario">
+                        <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="12" r="10"></circle>
+                            <path d="M12 6v6l4 2"></path>
+                        </svg>
+                        Horarios de Atención
+                    </button>
+                    <button class="chat-option-btn" data-chat-option="contacto">
+                        <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <circle cx="12" cy="8" r="4"></circle>
+                            <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
+                        </svg>
+                        Hablar con un Humano
+                    </button>
                 </div>
             </div>
         </div>
