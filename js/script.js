@@ -401,36 +401,3 @@ document.addEventListener('DOMContentLoaded', () => {
         }, 600);
     };
 });
-
-// Lazy Load Google Maps
-(function () {
-    let mapsLoaded = false;
-
-    function loadGoogleMaps() {
-        if (mapsLoaded) return;
-        mapsLoaded = true;
-
-        const script = document.createElement('script');
-        script.src = 'https://maps.googleapis.com/maps/api/js?key=AIzaSyCjP1f5K5-EAwxZTYhQ5sXf6n_ZO7A3cMk&callback=initCoverageMap';
-        script.async = true;
-        script.defer = true;
-        document.head.appendChild(script);
-    }
-
-    // Load maps when user scrolls near the coverage section
-    const coverageSection = document.getElementById('cobertura');
-    if (coverageSection) {
-        const mapObserver = new IntersectionObserver((entries) => {
-            entries.forEach(entry => {
-                if (entry.isIntersecting) {
-                    loadGoogleMaps();
-                    mapObserver.unobserve(entry.target);
-                }
-            });
-        }, {
-            rootMargin: '200px' // Load 200px before section is visible
-        });
-
-        mapObserver.observe(coverageSection);
-    }
-})();
