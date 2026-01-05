@@ -448,7 +448,6 @@ document.addEventListener('DOMContentLoaded', () => {
         });
 
         setOptionsDisabled(true);
-        const typingIndicator = appendTypingIndicator();
 
         // Simulate bot typing
         setTimeout(() => {
@@ -516,7 +515,6 @@ document.addEventListener('DOMContentLoaded', () => {
                     break;
             }
 
-            typingIndicator.remove();
             const bubble = document.createElement('div');
             bubble.className = 'chat-bubble';
             botMsg.appendChild(bubble);

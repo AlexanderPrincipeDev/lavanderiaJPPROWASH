@@ -2638,6 +2638,40 @@
             transition: transform 0.3s
         }
 
+        @media (max-width: 420px) {
+            .chatbot-widget {
+                left: 12px;
+                right: 12px;
+                width: auto;
+                bottom: 96px;
+            }
+
+            .chatbot-body {
+                max-height: 320px;
+                padding: 14px 12px 52px;
+            }
+
+            .chat-options {
+                grid-template-columns: 1fr;
+                gap: 8px;
+            }
+
+            .chat-option-btn {
+                min-width: 100%;
+            }
+
+            .chatbot-input {
+                padding: 10px 12px;
+            }
+
+            .chatbot-toggle {
+                left: 16px;
+                bottom: 24px;
+                width: 52px;
+                height: 52px;
+            }
+        }
+
         .chatbot-toggle:hover {
             transform: scale(1.1)
         }
