@@ -307,20 +307,98 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatbotWidget = document.getElementById('chatbot-widget');
     const chatbotClose = document.getElementById('chatbot-close');
     const chatbotBody = document.getElementById('chatbot-body');
+    const chatOptions = document.querySelectorAll('[data-chat-option]');
+    const chatbotInputText = document.querySelector('.chatbot-input-text');
 
     if (chatbotToggle && chatbotWidget && chatbotClose) {
         chatbotToggle.addEventListener('click', () => {
             chatbotWidget.style.display = 'flex';
             chatbotToggle.style.display = 'none';
+            chatbotToggle.setAttribute('aria-expanded', 'true');
+            chatbotWidget.setAttribute('aria-hidden', 'false');
+            const firstOption = chatbotBody?.querySelector('[data-chat-option]');
+            if (firstOption) firstOption.focus();
         });
 
         chatbotClose.addEventListener('click', () => {
             chatbotWidget.style.display = 'none';
             chatbotToggle.style.display = 'flex';
+            chatbotToggle.setAttribute('aria-expanded', 'false');
+            chatbotWidget.setAttribute('aria-hidden', 'true');
+            chatbotToggle.focus();
         });
     }
 
-    window.handleChatOption = function (option) {
+    function setOptionsDisabled(isDisabled) {
+        chatOptions.forEach(btn => {
+            btn.disabled = isDisabled;
+            btn.setAttribute('aria-disabled', String(isDisabled));
+        });
+    }
+
+    function appendTypingIndicator() {
+        const typing = document.createElement('div');
+        typing.className = 'chat-message bot typing-indicator';
+        typing.innerHTML = '<div class=\"chat-bubble\">Escribiendo<span class=\"typing-dots\">...</span></div>';
+        chatbotBody.appendChild(typing);
+        return typing;
+    }
+
+    function appendBackToMenu() {
+        const back = document.createElement('div');
+        back.className = 'chat-message bot';
+        back.innerHTML = `
+            <div class=\"chat-bubble\">¿Quieres volver al menú?</div>
+            <div class=\"chat-options\">
+                <button class=\"chat-option-btn\" data-chat-option=\"menu\">↩️ Volver al menú</button>
+            </div>
+        `;
+        chatbotBody.appendChild(back);
+    }
+
+    function typeBubble(bubbleEl, text, speed = 26) {
+        return new Promise((resolve) => {
+            bubbleEl.textContent = '';
+            let index = 0;
+            const timer = setInterval(() => {
+                const char = text[index];
+                if (char === '\n') {
+                    bubbleEl.appendChild(document.createElement('br'));
+                } else {
+                    bubbleEl.append(char);
+                }
+                index += 1;
+                if (index >= text.length) {
+                    clearInterval(timer);
+                    resolve();
+                }
+            }, speed);
+        });
+    }
+
+    function simulateInput(text) {
+        return new Promise((resolve) => {
+            if (!chatbotInputText) return resolve();
+            chatbotInputText.textContent = '';
+            let index = 0;
+            const interval = setInterval(() => {
+                chatbotInputText.textContent += text[index];
+                index += 1;
+                if (index >= text.length) {
+                    clearInterval(interval);
+                    resolve();
+                }
+            }, 40);
+        });
+    }
+
+    function resetInput() {
+        if (chatbotInputText) {
+            chatbotInputText.textContent = '';
+        }
+    }
+
+    function handleChatOption(option) {
         // Add user message
         const userMsg = document.createElement('div');
         userMsg.className = 'chat-message user';
@@ -331,73 +409,100 @@ document.addEventListener('DOMContentLoaded', () => {
             case 'cobertura': userText = '📍 Zona de Cobertura'; break;
             case 'horario': userText = '⏰ Horarios de Atención'; break;
             case 'contacto': userText = '👤 Hablar con un Humano'; break;
+            case 'menu': userText = '↩️ Volver al menú'; break;
         }
 
-        userMsg.innerHTML = `<div class="chat-bubble">${userText}</div>`;
-        chatbotBody.appendChild(userMsg);
+        simulateInput(userText).then(() => {
+            setTimeout(() => {
+                userMsg.innerHTML = `<div class="chat-bubble">${userText}</div>`;
+                chatbotBody.appendChild(userMsg);
+                resetInput();
 
-        // Scroll to latest message without forcing layout reads
-        requestAnimationFrame(() => {
-            userMsg.scrollIntoView({ block: 'end', behavior: 'auto' });
+                // Scroll to latest message without forcing layout reads
+                requestAnimationFrame(() => {
+                    userMsg.scrollIntoView({ block: 'end', behavior: 'auto' });
+                });
+            }, 250);
         });
+
+        setOptionsDisabled(true);
+        const typingIndicator = appendTypingIndicator();
 
         // Simulate bot typing
         setTimeout(() => {
             const botMsg = document.createElement('div');
             botMsg.className = 'chat-message bot';
-            let botContent = '';
+            let responseText = '';
+            let responseOptions = '';
 
             switch (option) {
+                case 'menu':
+                    responseText = '¿En qué puedo ayudarte?';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="precios">💰 Ver Precios</button>
+                        <button class="chat-option-btn" data-chat-option="cobertura">📍 Zona de Cobertura</button>
+                        <button class="chat-option-btn" data-chat-option="horario">⏰ Horarios de Atención</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">👤 Hablar con un Humano</button>
+                    `;
+                    break;
                 case 'precios':
-                    botContent = `
-                        <div class="chat-bubble">
-                            <strong>Nuestros precios base son:</strong><br>
-                            🧺 Lavado por Kilo: S/ 4.00<br>
-                            🛏️ Edredones: Desde S/ 15.00<br>
-                            👔 Ternos: Desde S/ 20.00<br>
-                            <br>
-                            ¿Quieres cotizar algo específico?
-                        </div>
-                        <div class="chat-options">
-                            <button class="chat-option-btn" onclick="handleChatOption('contacto')">Cotizar por WhatsApp</button>
-                        </div>
+                    responseText = 'Nuestros precios base son:\n🧺 Lavado por Kilo: S/ 4.00\n🛏️ Edredones: Desde S/ 15.00\n👔 Ternos: Desde S/ 20.00\n\n¿Quieres cotizar algo específico?';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">Cotizar por WhatsApp</button>
                     `;
                     break;
                 case 'cobertura':
-                    botContent = `
-                        <div class="chat-bubble">
-                            Llegamos a <strong>Breña, Pueblo Libre, Jesús María, Lince, San Isidro, Lima Cercado y La Victoria</strong>.<br>
-                            <br>
-                            El delivery es GRATIS a partir de 10 kilos en zonas cercanas.
-                        </div>
-                    `;
+                    responseText = 'Llegamos a Breña, Pueblo Libre, Jesús María, Lince, San Isidro, Lima Cercado y La Victoria.\n\nEl delivery es GRATIS a partir de 10 kilos en zonas cercanas.';
                     break;
                 case 'horario':
-                    botContent = `
-                        <div class="chat-bubble">
-                            Nuestro horario de atención es:<br>
-                            📅 <strong>Lunes a Sábado:</strong> 10:00 AM - 9:00 PM<br>
-                            ❌ Domingos y Feriados: Cerrado
-                        </div>
-                    `;
+                    responseText = 'Nuestro horario de atención es:\n📅 Lunes a Sábado: 10:00 AM - 9:00 PM\n❌ Domingos y Feriados: Cerrado';
                     break;
                 case 'contacto':
-                    botContent = `
-                        <div class="chat-bubble">
-                            ¡Claro! Te conectaré con un asesor humano por WhatsApp ahora mismo.
-                        </div>
-                    `;
+                    responseText = '¡Claro! Te conectaré con un asesor humano por WhatsApp ahora mismo.';
                     setTimeout(() => {
                         window.open('https://wa.me/51978673626?text=Hola,%20vengo%20del%20chat%20de%20la%20web', '_blank');
                     }, 1500);
                     break;
             }
 
-            botMsg.innerHTML = botContent;
+            typingIndicator.remove();
+            const bubble = document.createElement('div');
+            bubble.className = 'chat-bubble';
+            botMsg.appendChild(bubble);
             chatbotBody.appendChild(botMsg);
             requestAnimationFrame(() => {
-                botMsg.scrollIntoView({ block: 'end', behavior: 'auto' });
+                userMsg.scrollIntoView({ block: 'start', behavior: 'auto' });
+                botMsg.classList.add('chat-bounce');
             });
-        }, 600);
-    };
+            typeBubble(bubble, responseText).then(() => {
+                if (responseOptions) {
+                    const optionsWrap = document.createElement('div');
+                    optionsWrap.className = 'chat-options';
+                    optionsWrap.innerHTML = responseOptions;
+                    botMsg.appendChild(optionsWrap);
+                }
+                if (option !== 'menu') {
+                    appendBackToMenu();
+                }
+                setOptionsDisabled(false);
+            });
+        }, 1500);
+    }
+
+    document.addEventListener('click', (event) => {
+        const target = event.target;
+        if (target && target.matches('[data-chat-option]')) {
+            handleChatOption(target.getAttribute('data-chat-option'));
+        }
+    });
+
+    document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape' && chatbotWidget && chatbotWidget.style.display === 'flex') {
+            chatbotWidget.style.display = 'none';
+            chatbotToggle.style.display = 'flex';
+            chatbotToggle.setAttribute('aria-expanded', 'false');
+            chatbotWidget.setAttribute('aria-hidden', 'true');
+            chatbotToggle.focus();
+        }
+    });
 });

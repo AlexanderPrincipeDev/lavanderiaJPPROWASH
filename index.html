@@ -1209,8 +1209,8 @@
             overflow: hidden;
             opacity: 0;
             transform: translateY(-8px);
-            transition: max-height 0.6s ease, opacity 0.45s ease,
-                transform 0.6s cubic-bezier(0.34, 1.56, 0.64, 1);
+            transition: max-height 0.75s ease, opacity 0.5s ease,
+                transform 0.75s cubic-bezier(0.2, 1.8, 0.2, 1);
             background-color: var(--color-white)
         }
 
@@ -2462,15 +2462,15 @@
             position: fixed;
             bottom: 110px;
             left: 30px;
-            width: 320px;
+            width: 340px;
             background: var(--color-bg-card);
-            border-radius: 20px;
-            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            border-radius: 22px;
+            box-shadow: 0 12px 34px rgba(0, 0, 0, 0.22);
             z-index: 9999;
             overflow: hidden;
             display: none;
             flex-direction: column;
-            border: 1px solid rgba(0, 0, 0, 0.1);
+            border: 1px solid rgba(0, 0, 0, 0.08);
             font-family: var(--font-body);
             animation: slideInUp 0.3s ease
         }
@@ -2516,17 +2516,23 @@
         }
 
         .chatbot-body {
-            padding: 20px;
-            max-height: 400px;
+            padding: 16px 16px 56px;
+            max-height: 360px;
             overflow-y: auto;
             background: var(--color-bg-secondary);
             display: flex;
             flex-direction: column;
-            gap: 15px
+            gap: 12px
+        }
+
+        .chatbot-body::after {
+            content: '';
+            display: block;
+            height: 40px
         }
 
         .chat-message {
-            max-width: 85%;
+            max-width: 90%;
             animation: fadeIn 0.3s ease
         }
 
@@ -2540,12 +2546,13 @@
 
         .chat-bubble {
             background: white;
-            padding: 12px 16px;
+            padding: 10px 12px;
             border-radius: 15px 15px 15px 0;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
-            font-size: 0.95rem;
+            font-size: 0.85rem;
             color: var(--color-text-dark);
-            line-height: 1.4
+            line-height: 1.35;
+            max-width: 240px
         }
 
         .chat-message.user .chat-bubble {
@@ -2555,28 +2562,38 @@
         }
 
         .chat-options {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            margin-top: 5px
+            display: grid;
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+            gap: 10px;
+            margin-top: 8px
         }
 
         .chat-option-btn {
-            background: white;
-            border: 1px solid var(--color-primary);
-            color: var(--color-primary);
-            padding: 8px 15px;
-            border-radius: 20px;
+            background: linear-gradient(135deg, rgba(255, 255, 255, 0.95), rgba(248, 250, 252, 0.95));
+            border: 1px solid var(--color-border-light);
+            color: var(--color-text-dark);
+            padding: 10px 12px;
+            border-radius: 12px;
             cursor: pointer;
-            font-size: 0.9rem;
-            transition: all 0.2s;
+            font-size: 0.82rem;
+            transition: all 0.2s ease;
             text-align: left;
-            font-weight: 500
+            font-weight: 600;
+            min-height: 54px;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start
         }
 
         .chat-option-btn:hover {
             background: var(--color-primary);
-            color: white
+            color: white;
+            border-color: transparent
+        }
+        body.dark-mode .chat-option-btn {
+            background: linear-gradient(135deg, rgba(30, 41, 59, 0.9), rgba(15, 23, 42, 0.9));
+            border-color: rgba(148, 163, 184, 0.2);
+            color: var(--color-text-dark);
         }
 
         .chatbot-toggle {
@@ -2618,6 +2635,63 @@
             justify-content: center;
             font-weight: bold;
             border: 2px solid white
+        }
+
+        .chatbot-input {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+            padding: 12px 16px;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+            background: var(--color-bg-card);
+        }
+
+        .chatbot-input-field {
+            flex: 1;
+            background: var(--color-bg-white);
+            border: 1px solid var(--color-border-light);
+            border-radius: 999px;
+            padding: 10px 14px;
+            color: var(--color-text-light);
+            font-size: 0.9rem;
+            min-height: 38px;
+            display: flex;
+            align-items: center;
+        }
+
+        .chatbot-input-text {
+            white-space: nowrap;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        .chatbot-input-send {
+            width: 38px;
+            height: 38px;
+            border-radius: 50%;
+            border: none;
+            background: var(--color-primary);
+            color: white;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            box-shadow: var(--shadow-sm);
+        }
+
+        .chatbot-input-send svg {
+            width: 16px;
+            height: 16px;
+        }
+
+        body.dark-mode .chatbot-input {
+            border-top-color: rgba(255, 255, 255, 0.08);
+            background: var(--color-bg-secondary);
+        }
+
+        body.dark-mode .chatbot-input-field {
+            background: var(--color-bg-card);
+            border-color: var(--color-border);
+            color: var(--color-text-body);
         }
 
         /* Dark Mode Chatbot Fixes */
@@ -4349,32 +4423,44 @@
         </svg>
     </a>
     <!-- Chatbot Widget -->
-    <button id="chatbot-toggle" class="chatbot-toggle">
+    <button id="chatbot-toggle" class="chatbot-toggle" aria-expanded="false" aria-controls="chatbot-widget">
         🤖
         <span class="badge">1</span>
     </button>
 
-    <div id="chatbot-widget" class="chatbot-widget">
+    <div id="chatbot-widget" class="chatbot-widget" role="dialog" aria-modal="true" aria-hidden="true">
         <div class="chatbot-header">
             <h3>🤖 Asistente JP Pro Wash</h3>
             <button id="chatbot-close" class="chatbot-close">×</button>
         </div>
-        <div id="chatbot-body" class="chatbot-body">
+        <div id="chatbot-body" class="chatbot-body" role="log" aria-live="polite" aria-relevant="additions">
             <!-- Initial Message -->
             <div class="chat-message bot">
                 <div class="chat-bubble">
                     ¡Hola! 👋 Soy el asistente virtual de JP Pro Wash. ¿En qué puedo ayudarte hoy?
                 </div>
                 <div class="chat-options">
-                    <button class="chat-option-btn" onclick="handleChatOption('precios')">💰 Ver Precios</button>
-                    <button class="chat-option-btn" onclick="handleChatOption('cobertura')">📍 Zona de
+                    <button class="chat-option-btn" data-chat-option="precios">💰 Ver Precios</button>
+                    <button class="chat-option-btn" data-chat-option="cobertura">📍 Zona de
                         Cobertura</button>
-                    <button class="chat-option-btn" onclick="handleChatOption('horario')">⏰ Horarios de
+                    <button class="chat-option-btn" data-chat-option="horario">⏰ Horarios de
                         Atención</button>
-                    <button class="chat-option-btn" onclick="handleChatOption('contacto')">👤 Hablar con un
+                    <button class="chat-option-btn" data-chat-option="contacto">👤 Hablar con un
                         Humano</button>
                 </div>
             </div>
+        </div>
+        <div class="chatbot-input" aria-hidden="true">
+            <div class="chatbot-input-field">
+                <span class="chatbot-input-text"></span>
+            </div>
+            <button class="chatbot-input-send" type="button" aria-hidden="true">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor"
+                    stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M22 2 11 13"></path>
+                    <path d="M22 2 15 22 11 13 2 9 22 2"></path>
+                </svg>
+            </button>
         </div>
     </div>
 
