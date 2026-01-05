@@ -307,7 +307,6 @@ document.addEventListener('DOMContentLoaded', () => {
     const chatbotWidget = document.getElementById('chatbot-widget');
     const chatbotClose = document.getElementById('chatbot-close');
     const chatbotBody = document.getElementById('chatbot-body');
-    const chatOptions = document.querySelectorAll('[data-chat-option]');
     const chatbotInputText = document.querySelector('.chatbot-input-text');
 
     if (chatbotToggle && chatbotWidget && chatbotClose) {
@@ -330,7 +329,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     function setOptionsDisabled(isDisabled) {
-        chatOptions.forEach(btn => {
+        document.querySelectorAll('[data-chat-option]').forEach((btn) => {
             btn.disabled = isDisabled;
             btn.setAttribute('aria-disabled', String(isDisabled));
         });
@@ -419,6 +418,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
+    const chatState = {
+        flow: null,
+        district: null,
+        currentService: null,
+        name: null
+    };
+
+    function getServiceContext() {
+        const path = window.location.pathname || '';
+        if (path.includes('lavado-de-edredones')) return 'servicio_edredones';
+        if (path.includes('lavado-al-seco')) return 'servicio_seco';
+        if (path.includes('lavado-por-kilo')) return 'servicio_kilo';
+        if (path.includes('lavado-de-ternos')) return 'servicio_ternos';
+        if (path.includes('lavado-de-vestidos')) return 'servicio_vestidos';
+        if (path.includes('lavado-de-zapatillas')) return 'servicio_zapatillas';
+        if (path.includes('lavado-de-alfombras')) return 'servicio_alfombras';
+        if (path.includes('lavado-de-cortinas')) return 'servicio_cortinas';
+        if (path.includes('lavado-de-peluches')) return 'servicio_peluches';
+        if (path.includes('planchado-express')) return 'servicio_planchado';
+        if (path.includes('desmanchado-de-prendas')) return 'servicio_desmanchado';
+        if (path.includes('lavanderia-corporativa')) return 'servicio_corporativo';
+        return null;
+    }
+
+    function getHoursMessage() {
+        const now = new Date();
+        const day = now.getDay();
+        const hour = now.getHours();
+        if (day === 0) return 'Hoy estamos cerrados. Atendemos de lunes a sábado, 10:00 AM - 9:00 PM.';
+        if (hour < 10) return 'Aún no abrimos. Hoy atendemos desde las 10:00 AM.';
+        if (hour >= 21) return 'Ya cerramos por hoy. Atendemos de lunes a sábado, 10:00 AM - 9:00 PM.';
+        return 'Estamos atendiendo ahora. Hoy hasta las 9:00 PM.';
+    }
+
     function handleChatOption(option) {
         // Add user message
         const userMsg = document.createElement('div');
@@ -427,10 +460,45 @@ document.addEventListener('DOMContentLoaded', () => {
 
         switch (option) {
             case 'precios': userText = 'Ver Precios'; break;
+            case 'cotizar': userText = 'Cotizar Rápido'; break;
+            case 'cotizar_kilos': userText = 'Cotizar por kilos'; break;
+            case 'mas': userText = 'Más opciones'; break;
+            case 'seguimiento': userText = 'Estado de pedido'; break;
+            case 'cotizar_foto': userText = 'Cotizar con Foto'; break;
+            case 'recomendar': userText = 'Recomendación de servicio'; break;
+            case 'tips_cuidado': userText = 'Consejos de cuidado'; break;
+            case 'servicios': userText = 'Ver Servicios'; break;
             case 'cobertura': userText = 'Zona de Cobertura'; break;
+            case 'entrega': userText = 'Tiempo de Entrega'; break;
+            case 'recojo': userText = 'Programar Recojo'; break;
             case 'horario': userText = 'Horarios de Atención'; break;
+            case 'llegar': userText = 'Cómo Llegar'; break;
+            case 'pagos': userText = 'Métodos de Pago'; break;
             case 'contacto': userText = 'Hablar con un Humano'; break;
             case 'menu': userText = 'Menú'; break;
+            case 'servicio_kilo': userText = 'Lavado por Kilo'; break;
+            case 'servicio_seco': userText = 'Lavado al Seco'; break;
+            case 'servicio_edredones': userText = 'Lavado de Edredones'; break;
+            case 'cotizar_kilo': userText = 'Cotizar por Kilo'; break;
+            case 'cotizar_edredon': userText = 'Cotizar Edredón'; break;
+            case 'cotizar_terno': userText = 'Cotizar Terno'; break;
+            case 'kilos_5': userText = '5 kilos aprox'; break;
+            case 'kilos_8': userText = '8 kilos aprox'; break;
+            case 'kilos_12': userText = '12 kilos aprox'; break;
+            case 'kilos_mas': userText = 'Más de 12 kilos'; break;
+            case 'prenda_diaria': userText = 'Ropa diaria'; break;
+            case 'prenda_terno': userText = 'Ternos y trajes'; break;
+            case 'prenda_edredon': userText = 'Edredones'; break;
+            case 'prenda_zapatillas': userText = 'Zapatillas'; break;
+            case 'prenda_cortinas': userText = 'Cortinas'; break;
+            case 'distrito_brena': userText = 'Breña'; break;
+            case 'distrito_pueblolibre': userText = 'Pueblo Libre'; break;
+            case 'distrito_jesusmaria': userText = 'Jesús María'; break;
+            case 'distrito_lince': userText = 'Lince'; break;
+            case 'horario_hoy': userText = 'Hoy (tarde)'; break;
+            case 'horario_manana_am': userText = 'Mañana (mañana)'; break;
+            case 'horario_manana_pm': userText = 'Mañana (tarde)'; break;
+            case 'maps_link': userText = 'Abrir Google Maps'; break;
         }
 
         simulateInput(userText).then(() => {
@@ -484,14 +552,89 @@ document.addEventListener('DOMContentLoaded', () => {
                     <path d="M6 20c0-3.3 2.7-6 6-6s6 2.7 6 6"></path>
                 </svg>
             `;
+            const iconGrid = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="3" y="3" width="8" height="8" rx="2"></rect>
+                    <rect x="13" y="3" width="8" height="8" rx="2"></rect>
+                    <rect x="3" y="13" width="8" height="8" rx="2"></rect>
+                    <rect x="13" y="13" width="8" height="8" rx="2"></rect>
+                </svg>
+            `;
+            const iconCalc = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="4" y="3" width="16" height="18" rx="2"></rect>
+                    <line x1="8" y1="7" x2="16" y2="7"></line>
+                    <line x1="8" y1="11" x2="12" y2="11"></line>
+                    <line x1="12" y1="15" x2="16" y2="15"></line>
+                </svg>
+            `;
+            const iconPencil = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 20h9"></path>
+                    <path d="M16.5 3.5a2.1 2.1 0 0 1 3 3L7 19l-4 1 1-4Z"></path>
+                </svg>
+            `;
+            const iconTruck = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M3 7h11v10H3z"></path>
+                    <path d="M14 10h4l3 3v4h-7z"></path>
+                    <circle cx="7" cy="19" r="2"></circle>
+                    <circle cx="18" cy="19" r="2"></circle>
+                </svg>
+            `;
+            const iconMore = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <circle cx="12" cy="12" r="10"></circle>
+                    <path d="M12 8v8"></path>
+                    <path d="M8 12h8"></path>
+                </svg>
+            `;
+            const iconCamera = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M4 7h3l2-3h6l2 3h3a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V9a2 2 0 0 1 2-2Z"></path>
+                    <circle cx="12" cy="14" r="3"></circle>
+                </svg>
+            `;
+            const iconClipboard = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <rect x="9" y="2" width="6" height="4" rx="1"></rect>
+                    <path d="M9 4H7a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V6a2 2 0 0 0-2-2h-2"></path>
+                </svg>
+            `;
+            const iconStar = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="m12 3 2.5 5 5.5.8-4 3.9.9 5.6-4.9-2.6-4.9 2.6.9-5.6-4-3.9 5.5-.8Z"></path>
+                </svg>
+            `;
+            const iconShield = `
+                <svg class="chat-option-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                    stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <path d="M12 3 20 7v6c0 4.4-3.1 7.8-8 9-4.9-1.2-8-4.6-8-9V7l8-4Z"></path>
+                </svg>
+            `;
 
             switch (option) {
                 case 'menu':
                     responseText = '¿En qué puedo ayudarte?';
                     responseOptions = `
                         <button class="chat-option-btn" data-chat-option="precios">${iconPrice}Ver Precios</button>
+                        <button class="chat-option-btn" data-chat-option="cotizar">${iconCalc}Cotizar Rápido</button>
+                        <button class="chat-option-btn" data-chat-option="servicios">${iconGrid}Ver Servicios</button>
                         <button class="chat-option-btn" data-chat-option="cobertura">${iconMap}Zona de Cobertura</button>
+                        <button class="chat-option-btn" data-chat-option="entrega">${iconClock}Tiempo de Entrega</button>
+                        <button class="chat-option-btn" data-chat-option="recojo">${iconTruck}Programar Recojo</button>
                         <button class="chat-option-btn" data-chat-option="horario">${iconClock}Horarios de Atención</button>
+                        <button class="chat-option-btn" data-chat-option="llegar">${iconMap}Cómo Llegar</button>
+                        <button class="chat-option-btn" data-chat-option="pagos">${iconPrice}Métodos de Pago</button>
+                        <button class="chat-option-btn" data-chat-option="mas">${iconMore}Más opciones</button>
                         <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Hablar con un Humano</button>
                     `;
                     break;
@@ -501,11 +644,225 @@ document.addEventListener('DOMContentLoaded', () => {
                         <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
                     `;
                     break;
+                case 'cotizar':
+                    responseText = 'Elige qué deseas cotizar:';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="cotizar_kilo">${iconCalc}Cotizar por Kilo</button>
+                        <button class="chat-option-btn" data-chat-option="cotizar_edredon">${iconCalc}Cotizar Edredón</button>
+                        <button class="chat-option-btn" data-chat-option="cotizar_terno">${iconCalc}Cotizar Terno</button>
+                        <button class="chat-option-btn" data-chat-option="cotizar_kilos">${iconCalc}Cotizar por kilos</button>
+                        <button class="chat-option-btn" data-chat-option="cotizar_foto">${iconCamera}Cotizar con Foto</button>
+                    `;
+                    break;
+                case 'cotizar_kilo':
+                    responseText = 'Lavado por kilo desde S/ 4.00. Incluye lavado, secado y doblado.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'cotizar_edredon':
+                    responseText = 'Edredones desde S/ 15.00 según tamaño y material.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'cotizar_terno':
+                    responseText = 'Ternos desde S/ 20.00 con planchado incluido.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'cotizar_kilos':
+                    responseText = '¿Cuántos kilos aprox necesitas lavar?';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="kilos_5">${iconCalc}5 kilos aprox</button>
+                        <button class="chat-option-btn" data-chat-option="kilos_8">${iconCalc}8 kilos aprox</button>
+                        <button class="chat-option-btn" data-chat-option="kilos_12">${iconCalc}12 kilos aprox</button>
+                        <button class="chat-option-btn" data-chat-option="kilos_mas">${iconCalc}Más de 12 kilos</button>
+                    `;
+                    break;
+                case 'kilos_5':
+                case 'kilos_8':
+                case 'kilos_12':
+                case 'kilos_mas': {
+                    const kiloLabelMap = {
+                        kilos_5: '5 kilos aprox',
+                        kilos_8: '8 kilos aprox',
+                        kilos_12: '12 kilos aprox',
+                        kilos_mas: 'más de 12 kilos'
+                    };
+                    const kilosLabel = kiloLabelMap[option] || 'varios kilos';
+                    responseText = `Perfecto, ${kilosLabel}. Te llevo a WhatsApp para cotizar.`;
+                    setTimeout(() => {
+                        const message = `Hola JP Pro Wash, quiero cotizar ${kilosLabel} de lavado por kilo.`;
+                        window.open(`https://wa.me/51978673626?text=${encodeURIComponent(message)}`, '_blank');
+                    }, 1200);
+                    break;
+                }
+                case 'servicios':
+                    responseText = 'Elige el servicio que te interesa:';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="servicio_kilo">${iconPrice}Lavado por Kilo</button>
+                        <button class="chat-option-btn" data-chat-option="servicio_seco">${iconGrid}Lavado al Seco</button>
+                        <button class="chat-option-btn" data-chat-option="servicio_edredones">${iconGrid}Lavado de Edredones</button>
+                    `;
+                    break;
+                case 'servicio_kilo':
+                    responseText = 'Lavado por kilo desde S/ 4.00. Incluye lavado, secado y doblado.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'servicio_seco':
+                    responseText = 'Lavado al seco para prendas delicadas y ternos. Evaluamos cada prenda.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'servicio_edredones':
+                    responseText = 'Lavado de edredones desde S/ 15.00. Entrega estimada 24–48h.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
                 case 'cobertura':
                     responseText = 'Llegamos a Breña, Pueblo Libre, Jesús María, Lince, San Isidro, Lima Cercado y La Victoria.\n\nEl delivery es GRATIS a partir de 10 kilos en zonas cercanas.';
                     break;
+                case 'entrega':
+                    responseText = `Entrega estimada: 24–48 horas según el servicio.\nExpress desde 4 horas para ropa simple.\n${getHoursMessage()}`;
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Consultar disponibilidad</button>
+                    `;
+                    break;
+                case 'recojo':
+                    chatState.flow = 'recojo';
+                    chatState.district = null;
+                    responseText = '¿En qué distrito estás?';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="distrito_brena">${iconMap}Breña</button>
+                        <button class="chat-option-btn" data-chat-option="distrito_pueblolibre">${iconMap}Pueblo Libre</button>
+                        <button class="chat-option-btn" data-chat-option="distrito_jesusmaria">${iconMap}Jesús María</button>
+                        <button class="chat-option-btn" data-chat-option="distrito_lince">${iconMap}Lince</button>
+                    `;
+                    break;
+                case 'distrito_brena':
+                case 'distrito_pueblolibre':
+                case 'distrito_jesusmaria':
+                case 'distrito_lince':
+                    chatState.flow = 'recojo';
+                    chatState.district = userText;
+                    responseText = `Perfecto. ¿En qué horario prefieres el recojo en ${userText}?`;
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="horario_hoy">${iconClock}Hoy (tarde)</button>
+                        <button class="chat-option-btn" data-chat-option="horario_manana_am">${iconClock}Mañana (mañana)</button>
+                        <button class="chat-option-btn" data-chat-option="horario_manana_pm">${iconClock}Mañana (tarde)</button>
+                    `;
+                    break;
+                case 'horario_hoy':
+                case 'horario_manana_am':
+                case 'horario_manana_pm':
+                    if (chatState.flow === 'recojo') {
+                        const horario = userText;
+                        const distrito = chatState.district || 'mi distrito';
+                        responseText = `Listo. Registraré tu recojo en ${distrito} para ${horario}. Te envío a WhatsApp para confirmar.`;
+                        setTimeout(() => {
+                            const message = `Hola JP Pro Wash, quiero programar recojo. Distrito: ${distrito}. Horario: ${horario}.`;
+                            window.open(`https://wa.me/51978673626?text=${encodeURIComponent(message)}`, '_blank');
+                        }, 1200);
+                    }
+                    break;
                 case 'horario':
-                    responseText = 'Nuestro horario de atención es:\nLunes a Sábado: 10:00 AM - 9:00 PM\nDomingos y Feriados: Cerrado';
+                    responseText = `Nuestro horario de atención es:\nLunes a Sábado: 10:00 AM - 9:00 PM\nDomingos y Feriados: Cerrado.\n${getHoursMessage()}`;
+                    break;
+                case 'llegar':
+                    responseText = 'Estamos en Jr. Jorge Chávez 1154, Breña.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="maps_link">${iconMap}Abrir Google Maps</button>
+                    `;
+                    break;
+                case 'maps_link':
+                    responseText = 'Abriendo Google Maps.';
+                    setTimeout(() => {
+                        window.open('https://maps.google.com/?q=Jr.+Jorge+Chávez+1154,+Breña', '_blank');
+                    }, 600);
+                    break;
+                case 'pagos':
+                    responseText = 'Aceptamos efectivo, transferencias, Yape/Plin y todas las tarjetas de crédito o débito.';
+                    break;
+                case 'mas':
+                    responseText = 'Aquí tienes más opciones útiles:';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="seguimiento">${iconClipboard}Estado de Pedido</button>
+                        <button class="chat-option-btn" data-chat-option="cotizar_foto">${iconCamera}Cotizar con Foto</button>
+                        <button class="chat-option-btn" data-chat-option="recomendar">${iconStar}Recomendación de Servicio</button>
+                        <button class="chat-option-btn" data-chat-option="tips_cuidado">${iconShield}Consejos de Cuidado</button>
+                    `;
+                    break;
+                case 'seguimiento':
+                    responseText = 'Te llevo a WhatsApp para revisar el estado de tu pedido.';
+                    setTimeout(() => {
+                        const message = 'Hola JP Pro Wash, quiero conocer el estado de mi pedido.';
+                        window.open(`https://wa.me/51978673626?text=${encodeURIComponent(message)}`, '_blank');
+                    }, 1200);
+                    break;
+                case 'cotizar_foto':
+                    responseText = 'Envíanos una foto de la prenda y te damos un precio exacto.';
+                    setTimeout(() => {
+                        const message = 'Hola JP Pro Wash, quiero cotizar con foto. Te envío la prenda.';
+                        window.open(`https://wa.me/51978673626?text=${encodeURIComponent(message)}`, '_blank');
+                    }, 1200);
+                    break;
+                case 'recomendar':
+                    responseText = '¿Qué prenda necesitas lavar?';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="prenda_diaria">${iconStar}Ropa diaria</button>
+                        <button class="chat-option-btn" data-chat-option="prenda_terno">${iconStar}Ternos y trajes</button>
+                        <button class="chat-option-btn" data-chat-option="prenda_edredon">${iconStar}Edredones</button>
+                        <button class="chat-option-btn" data-chat-option="prenda_zapatillas">${iconStar}Zapatillas</button>
+                        <button class="chat-option-btn" data-chat-option="prenda_cortinas">${iconStar}Cortinas</button>
+                    `;
+                    break;
+                case 'prenda_diaria':
+                    responseText = 'Para ropa diaria te conviene Lavado por Kilo. Incluye lavado, secado y doblado.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="cotizar">${iconCalc}Cotizar Rápido</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'prenda_terno':
+                    responseText = 'Para ternos recomendamos Lavado al Seco con planchado incluido.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="servicios">${iconGrid}Ver Servicios</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'prenda_edredon':
+                    responseText = 'Para edredones ofrecemos lavado especializado con entrega estimada 24–48h.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="servicios">${iconGrid}Ver Servicios</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                    `;
+                    break;
+                case 'prenda_zapatillas':
+                    responseText = 'Para zapatillas usamos limpieza profunda y secado controlado.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                        <button class="chat-option-btn" data-chat-option="servicios">${iconGrid}Ver Servicios</button>
+                    `;
+                    break;
+                case 'prenda_cortinas':
+                    responseText = 'Para cortinas recomendamos lavado especializado con cuidado de fibras.';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Cotizar por WhatsApp</button>
+                        <button class="chat-option-btn" data-chat-option="servicios">${iconGrid}Ver Servicios</button>
+                    `;
+                    break;
+                case 'tips_cuidado':
+                    responseText = 'Tips rápidos:\n- Separa colores y revisa etiquetas.\n- Vacía bolsillos y cierra cremalleras.\n- Prendas delicadas: lavado al seco.\n\n¿Quieres que te recomiende un servicio?';
+                    responseOptions = `
+                        <button class="chat-option-btn" data-chat-option="recomendar">${iconStar}Recomendar Servicio</button>
+                        <button class="chat-option-btn" data-chat-option="contacto">${iconUser}Hablar con un Humano</button>
+                    `;
                     break;
                 case 'contacto':
                     responseText = '¡Claro! Te conectaré con un asesor humano por WhatsApp ahora mismo.';
