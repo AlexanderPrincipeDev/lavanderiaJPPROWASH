@@ -928,7 +928,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchInput = document.getElementById('pricing-search');
         const emptyEl = document.getElementById('pricing-empty');
 
-        if (!featuredEl || !featuredBlockEl || !resultsEl || !categoriesEl || !searchInput || !emptyEl) return;
+        if (!resultsEl || !categoriesEl || !searchInput || !emptyEl) return;
 
         const paths = {
             featured: 'assets/images/Precios/servicios_principales.json',
@@ -942,6 +942,8 @@ document.addEventListener('DOMContentLoaded', () => {
             category: 'all',
             query: ''
         };
+
+        const isFullPricingPage = document.body?.dataset?.pricingMode === 'full';
 
         function normalizeText(value) {
             return value
@@ -1011,24 +1013,40 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function updateResults(allItems, categoryMap) {
-            const hasQuery = state.query.length >= 3;
+            const minChars = isFullPricingPage ? 1 : 3;
+            const hasQuery = state.query.length >= minChars;
             let items = [];
-            if (hasQuery) {
+            if (isFullPricingPage) {
+                if (state.category === 'all') {
+                    items = allItems;
+                } else {
+                    items = categoryMap[state.category] || [];
+                }
+            } else if (hasQuery) {
                 items = allItems;
             } else if (state.category === 'all') {
                 items = [];
             } else {
                 items = categoryMap[state.category] || [];
             }
-            const filtered = hasQuery ? filterItems(items) : items;
+
+            const shouldFilter = isFullPricingPage ? state.query.length > 0 : hasQuery;
+            const filtered = shouldFilter ? filterItems(items) : items;
             renderCards(filtered, resultsEl);
-            if (!hasQuery && state.category === 'all') {
+            if (!isFullPricingPage && !hasQuery && state.category === 'all') {
                 emptyEl.textContent = 'Escribe al menos 3 letras para buscar servicios.';
+                renderEmpty(true);
             } else {
                 emptyEl.textContent = 'No se encontraron servicios.';
+                renderEmpty(filtered.length === 0);
             }
-            renderEmpty(filtered.length === 0);
-            featuredBlockEl.style.display = !hasQuery && state.category === 'all' ? '' : 'none';
+            if (featuredBlockEl) {
+                if (isFullPricingPage) {
+                    featuredBlockEl.style.display = state.query.length ? 'none' : '';
+                } else {
+                    featuredBlockEl.style.display = !hasQuery && state.category === 'all' ? '' : 'none';
+                }
+            }
         }
 
         function injectJsonLd(path, id) {
@@ -1045,13 +1063,19 @@ document.addEventListener('DOMContentLoaded', () => {
                 .catch(() => {});
         }
 
+        const featuredPromise = featuredEl
+            ? fetch(paths.featured).then((response) => response.json())
+            : Promise.resolve([]);
+
         Promise.all([
-            fetch(paths.featured).then((response) => response.json()),
+            featuredPromise,
             fetch(paths.all).then((response) => response.json()),
             fetch(paths.categories).then((response) => response.json())
         ])
             .then(([featured, allItems, categoryMap]) => {
-                renderCards(featured, featuredEl);
+                if (featuredEl) {
+                    renderCards(featured, featuredEl);
+                }
                 buildCategoryButtons(Object.keys(categoryMap).sort());
                 updateResults(allItems, categoryMap);
 
@@ -1065,7 +1089,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 searchInput.addEventListener('input', (event) => {
                     state.query = event.target.value.trim();
-                    if (state.query.length >= 3) {
+                    if ((isFullPricingPage && state.query.length >= 1) || (!isFullPricingPage && state.query.length >= 3)) {
                         state.category = 'all';
                         setActiveCategory('all');
                     }
