@@ -539,14 +539,6 @@
       "priceFormatted": "S/ 13,00"
     },
     {
-      "id": "FOR-36602294",
-      "name": "FORRO DE MUEBLE MEDIANO",
-      "category": "Hogar",
-      "price": 13.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 13,00"
-    },
-    {
       "id": "FOR-36146905",
       "name": "FORRO DE MUEBLE MEDIANOS TELA GRUESA",
       "category": "Hogar",
@@ -763,22 +755,6 @@
       "price": 12.0,
       "currency": "PEN",
       "priceFormatted": "S/ 12,00"
-    },
-    {
-      "id": "CAS-41033867",
-      "name": "CASACA LAVADO AL SECO",
-      "category": "Lavado",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
-      "id": "CAS-94580734",
-      "name": "CASACA LAVADO AL SECO",
-      "category": "Lavado",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
     },
     {
       "id": "CAS-11746869",
@@ -1045,14 +1021,6 @@
       "priceFormatted": "S/ 4,50"
     },
     {
-      "id": "LAV-77938316",
-      "name": "LAVADO DE INDUMENTARIA DE PERSONAL",
-      "category": "Lavado",
-      "price": 4.5,
-      "currency": "PEN",
-      "priceFormatted": "S/ 4,50"
-    },
-    {
       "id": "LAV-08771869",
       "name": "LAVADO DE INDUMENTARIAS AL PERSONAL",
       "category": "Lavado",
@@ -1155,14 +1123,6 @@
       "price": 8.0,
       "currency": "PEN",
       "priceFormatted": "S/ 8,00"
-    },
-    {
-      "id": "PAN-94281830",
-      "name": "PANTALON DE VESTIR MARRON DE DAMA LAVADO AL SECO",
-      "category": "Lavado",
-      "price": 7.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 7,00"
     },
     {
       "id": "PAN-44797868",
@@ -1318,22 +1278,6 @@
     },
     {
       "id": "SAC-94647581",
-      "name": "SACO DE DAMA LAVADO AL SECO",
-      "category": "Lavado",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
-      "id": "SAC-86590312",
-      "name": "SACO DE DAMA LAVADO AL SECO",
-      "category": "Lavado",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
-      "id": "SAC-40831976",
       "name": "SACO DE DAMA LAVADO AL SECO",
       "category": "Lavado",
       "price": 10.0,
@@ -1721,14 +1665,6 @@
       "price": 10.0,
       "currency": "PEN",
       "priceFormatted": "S/ 10,00"
-    },
-    {
-      "id": "ROP-74361275",
-      "name": "ROPA DE MASCOTA",
-      "category": "Mascotas",
-      "price": 4.5,
-      "currency": "PEN",
-      "priceFormatted": "S/ 4,50"
     }
   ],
   "Mochilas": [
@@ -1879,28 +1815,12 @@
       "priceFormatted": "S/ 9,00"
     },
     {
-      "id": "CAR-66974845",
-      "name": "CARTERA",
-      "category": "Otros",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
       "id": "CAS-64143080",
       "name": "CASACA",
       "category": "Otros",
       "price": 10.0,
       "currency": "PEN",
       "priceFormatted": "S/ 10,00"
-    },
-    {
-      "id": "CAS-78679694",
-      "name": "CASACA",
-      "category": "Otros",
-      "price": 12.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 12,00"
     },
     {
       "id": "CAS-86019236",
@@ -2015,14 +1935,6 @@
       "priceFormatted": "S/ 10,00"
     },
     {
-      "id": "CAS-86495512",
-      "name": "CASACA DE PELUCHE",
-      "category": "Otros",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
       "id": "CAS-75437019",
       "name": "CASACA DE POLICIA",
       "category": "Otros",
@@ -2040,14 +1952,6 @@
     },
     {
       "id": "CAS-90267235",
-      "name": "CASACA DEPORTIVA",
-      "category": "Otros",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
-      "id": "CAS-08651527",
       "name": "CASACA DEPORTIVA",
       "category": "Otros",
       "price": 10.0,
@@ -2319,14 +2223,6 @@
       "priceFormatted": "S/ 22,00"
     },
     {
-      "id": "CUB-61959274",
-      "name": "CUBRECAMA QUEEN",
-      "category": "Otros",
-      "price": 25.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 25,00"
-    },
-    {
       "id": "CUB-23045738",
       "name": "CUBRECAMA SIMPLE",
       "category": "Otros",
@@ -2439,14 +2335,6 @@
       "priceFormatted": "S/ 6,00"
     },
     {
-      "id": "KEP-48670224",
-      "name": "KEPI",
-      "category": "Otros",
-      "price": 6.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 6,00"
-    },
-    {
       "id": "MAL-45031392",
       "name": "MALETA",
       "category": "Otros",
@@ -2535,14 +2423,6 @@
       "priceFormatted": "S/ 8,00"
     },
     {
-      "id": "MAN-53457089",
-      "name": "MANTA DELGADA",
-      "category": "Otros",
-      "price": 8.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 8,00"
-    },
-    {
       "id": "MAN-30931068",
       "name": "MANTA GRANDE 2.5 PLAZAS",
       "category": "Otros",
@@ -2589,14 +2469,6 @@
       "price": 14.0,
       "currency": "PEN",
       "priceFormatted": "S/ 14,00"
-    },
-    {
-      "id": "MAN-03562808",
-      "name": "MANTA POLAR 2 PLZ.",
-      "category": "Otros",
-      "price": 12.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 12,00"
     },
     {
       "id": "MAN-72549816",
@@ -2768,14 +2640,6 @@
     },
     {
       "id": "PAN-04958613",
-      "name": "PANTALON DAMA AL SECO",
-      "category": "Otros",
-      "price": 7.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 7,00"
-    },
-    {
-      "id": "PAN-27296478",
       "name": "PANTALON DAMA AL SECO",
       "category": "Otros",
       "price": 7.0,
@@ -3023,14 +2887,6 @@
       "priceFormatted": "S/ 10,00"
     },
     {
-      "id": "SAC-37290806",
-      "name": "SACO CORTO DELGADO DAMA",
-      "category": "Otros",
-      "price": 10.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 10,00"
-    },
-    {
       "id": "SAC-06891547",
       "name": "SACO CORTO DRILL",
       "category": "Otros",
@@ -3144,14 +3000,6 @@
     },
     {
       "id": "SAC-95718430",
-      "name": "SACO DE PELUCHE",
-      "category": "Otros",
-      "price": 15.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 15,00"
-    },
-    {
-      "id": "SAC-76591710",
       "name": "SACO DE PELUCHE",
       "category": "Otros",
       "price": 15.0,
@@ -3693,14 +3541,6 @@
       "priceFormatted": "S/ 36,00"
     },
     {
-      "id": "EDR-93794712",
-      "name": "EDREDON DE PLUMAS QUEEN",
-      "category": "Ropa de cama",
-      "price": 32.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 32,00"
-    },
-    {
       "id": "EDR-37893948",
       "name": "EDREDON DELGADO",
       "category": "Ropa de cama",
@@ -3811,14 +3651,6 @@
       "price": 25.0,
       "currency": "PEN",
       "priceFormatted": "S/ 25,00"
-    },
-    {
-      "id": "EDR-69711893",
-      "name": "EDREDON QUEEN CON FORRO DE CARNERO",
-      "category": "Ropa de cama",
-      "price": 24.0,
-      "currency": "PEN",
-      "priceFormatted": "S/ 24,00"
     },
     {
       "id": "FOR-79238531",

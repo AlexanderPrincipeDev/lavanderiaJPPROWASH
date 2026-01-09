@@ -488,13 +488,13 @@
       "position": 31,
       "item": {
         "@type": "Service",
-        "name": "CARTERA",
+        "name": "CASACA",
         "category": "Otros",
         "offers": {
           "@type": "Offer",
           "priceCurrency": "PEN",
           "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#cartera",
+          "url": "https://lavanderiajpprowash.com/servicios#casaca",
           "availability": "https://schema.org/InStock"
         }
       }
@@ -502,38 +502,6 @@
     {
       "@type": "ListItem",
       "position": 32,
-      "item": {
-        "@type": "Service",
-        "name": "CASACA",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#casaca",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 33,
-      "item": {
-        "@type": "Service",
-        "name": "CASACA",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 12.0,
-          "url": "https://lavanderiajpprowash.com/servicios#casaca",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 34,
       "item": {
         "@type": "Service",
         "name": "CASACA BLANCA DE ENFERMERA",
@@ -549,7 +517,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 35,
+      "position": 33,
       "item": {
         "@type": "Service",
         "name": "CASACA BOMBER MUJER",
@@ -565,7 +533,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 36,
+      "position": 34,
       "item": {
         "@type": "Service",
         "name": "CASACA CON CAPUCHA LAVADO AL SECO",
@@ -581,7 +549,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 37,
+      "position": 35,
       "item": {
         "@type": "Service",
         "name": "CASACA CON DESCUENTO",
@@ -597,7 +565,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 38,
+      "position": 36,
       "item": {
         "@type": "Service",
         "name": "CASACA CON FORRO POLAR",
@@ -613,7 +581,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 39,
+      "position": 37,
       "item": {
         "@type": "Service",
         "name": "CASACA CON PELUCHE",
@@ -629,7 +597,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 40,
+      "position": 38,
       "item": {
         "@type": "Service",
         "name": "CASACA CORDELINA CON FORRO DE PELUCHE CABALLERO",
@@ -645,7 +613,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 41,
+      "position": 39,
       "item": {
         "@type": "Service",
         "name": "CASACA CORDUROY HOMBRE",
@@ -661,7 +629,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 42,
+      "position": 40,
       "item": {
         "@type": "Service",
         "name": "CASACA CUERINA CON CARNERO",
@@ -677,7 +645,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 43,
+      "position": 41,
       "item": {
         "@type": "Service",
         "name": "CASACA CUERINA CON FORRO SIMPLE",
@@ -693,7 +661,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 44,
+      "position": 42,
       "item": {
         "@type": "Service",
         "name": "CASACA DE  MARCA O DE FORRO DE CARNERO",
@@ -709,7 +677,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 45,
+      "position": 43,
       "item": {
         "@type": "Service",
         "name": "CASACA DE CUERINA CON FORRO DE CARNERO",
@@ -725,7 +693,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 46,
+      "position": 44,
       "item": {
         "@type": "Service",
         "name": "CASACA DE CUERINA DAMA",
@@ -741,7 +709,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 47,
+      "position": 45,
       "item": {
         "@type": "Service",
         "name": "CASACA DE CUERINA LARGA",
@@ -757,7 +725,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 48,
+      "position": 46,
       "item": {
         "@type": "Service",
         "name": "CASACA DE CUERO HOMBRE",
@@ -773,7 +741,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 49,
+      "position": 47,
       "item": {
         "@type": "Service",
         "name": "CASACA DE CUERO MANTENIMIENTO",
@@ -789,7 +757,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 50,
+      "position": 48,
       "item": {
         "@type": "Service",
         "name": "CASACA DE ENFERMERA",
@@ -805,7 +773,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 51,
+      "position": 49,
       "item": {
         "@type": "Service",
         "name": "CASACA DE GALA LAVADO AL SECO",
@@ -821,7 +789,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 52,
+      "position": 50,
       "item": {
         "@type": "Service",
         "name": "CASACA DE HOMBRE LARGE O EXTRA LARGE",
@@ -837,7 +805,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 53,
+      "position": 51,
       "item": {
         "@type": "Service",
         "name": "CASACA DE HOMBRE LAVADO AL SECO",
@@ -853,7 +821,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 54,
+      "position": 52,
       "item": {
         "@type": "Service",
         "name": "CASACA DE MARCA DELICADA",
@@ -869,7 +837,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 55,
+      "position": 53,
       "item": {
         "@type": "Service",
         "name": "CASACA DE MUJER",
@@ -885,7 +853,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 56,
+      "position": 54,
       "item": {
         "@type": "Service",
         "name": "CASACA DE PAÑO DE DAMA",
@@ -901,7 +869,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 57,
+      "position": 55,
       "item": {
         "@type": "Service",
         "name": "CASACA DE PAÑO DE DAMA LAVADO AL SECO",
@@ -917,7 +885,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 58,
+      "position": 56,
       "item": {
         "@type": "Service",
         "name": "CASACA DE PELUCHE",
@@ -933,23 +901,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 59,
-      "item": {
-        "@type": "Service",
-        "name": "CASACA DE PELUCHE",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#casaca-de-peluche",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 60,
+      "position": 57,
       "item": {
         "@type": "Service",
         "name": "CASACA DE POLICIA",
@@ -965,7 +917,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 61,
+      "position": 58,
       "item": {
         "@type": "Service",
         "name": "CASACA DE TELA DRILL",
@@ -981,7 +933,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 62,
+      "position": 59,
       "item": {
         "@type": "Service",
         "name": "CASACA DE TELA Y APLICACION IMPERMEABLE",
@@ -997,7 +949,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 63,
+      "position": 60,
       "item": {
         "@type": "Service",
         "name": "CASACA DEPORTIVA",
@@ -1013,23 +965,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 64,
-      "item": {
-        "@type": "Service",
-        "name": "CASACA DEPORTIVA",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#casaca-deportiva",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 65,
+      "position": 61,
       "item": {
         "@type": "Service",
         "name": "CASACA DEPORTIVA DELGADA AL AGUA",
@@ -1045,7 +981,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 66,
+      "position": 62,
       "item": {
         "@type": "Service",
         "name": "CASACA DRILL",
@@ -1061,7 +997,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 67,
+      "position": 63,
       "item": {
         "@type": "Service",
         "name": "CASACA FORRO POLAR",
@@ -1077,7 +1013,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 68,
+      "position": 64,
       "item": {
         "@type": "Service",
         "name": "CASACA GRUESA C CAPUCHA",
@@ -1093,7 +1029,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 69,
+      "position": 65,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE  LAVADO AL SECO",
@@ -1109,7 +1045,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 70,
+      "position": 66,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE BLANCO LAVADO AL SECO",
@@ -1125,7 +1061,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 71,
+      "position": 67,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE CON CAPUCHA",
@@ -1141,7 +1077,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 72,
+      "position": 68,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE CON CAPUCHA CABALLERO LAVADO AL SECO",
@@ -1157,7 +1093,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 73,
+      "position": 69,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE CON FORRO",
@@ -1173,7 +1109,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 74,
+      "position": 70,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE DEPORTIVA LAVADO AL SECO",
@@ -1189,7 +1125,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 75,
+      "position": 71,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE FORRO SIMPLE",
@@ -1205,7 +1141,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 76,
+      "position": 72,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE GRANDE CON CAPUCHA",
@@ -1221,7 +1157,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 77,
+      "position": 73,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE GRUESA LAVADO AL SECO",
@@ -1237,7 +1173,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 78,
+      "position": 74,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE NEGRO CON FORRO DE CARNERO",
@@ -1253,7 +1189,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 79,
+      "position": 75,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE ROSADO LAVADO AL SECO",
@@ -1269,7 +1205,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 80,
+      "position": 76,
       "item": {
         "@type": "Service",
         "name": "CASACA IMPERMEABLE TIPO PARKA",
@@ -1285,7 +1221,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 81,
+      "position": 77,
       "item": {
         "@type": "Service",
         "name": "CASACA JEAN",
@@ -1301,7 +1237,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 82,
+      "position": 78,
       "item": {
         "@type": "Service",
         "name": "CASACA JEAN AZUL DE DAMA LAVADO AL SECO",
@@ -1317,7 +1253,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 83,
+      "position": 79,
       "item": {
         "@type": "Service",
         "name": "CASACA JEAN CON CORREA NEGRA DE DAMA LAVADO AL SECO",
@@ -1333,7 +1269,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 84,
+      "position": 80,
       "item": {
         "@type": "Service",
         "name": "CASACA JEAN CON FORRO DE CARNERO CABALLERO",
@@ -1349,7 +1285,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 85,
+      "position": 81,
       "item": {
         "@type": "Service",
         "name": "CASACA JEAN LAVADO AL SECO",
@@ -1365,7 +1301,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 86,
+      "position": 82,
       "item": {
         "@type": "Service",
         "name": "CASACA JEANS DAMA",
@@ -1381,7 +1317,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 87,
+      "position": 83,
       "item": {
         "@type": "Service",
         "name": "CASACA JEANS SIMPLE",
@@ -1397,7 +1333,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 88,
+      "position": 84,
       "item": {
         "@type": "Service",
         "name": "CASACA LARGA CON CAPUCHA",
@@ -1413,7 +1349,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 89,
+      "position": 85,
       "item": {
         "@type": "Service",
         "name": "CASACA LARGA CON CAPUCHA LAVADO AL SECO",
@@ -1429,7 +1365,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 90,
+      "position": 86,
       "item": {
         "@type": "Service",
         "name": "CASACA LARGA IMPERMEABLE CON CAPUCHA Y PELUCHE",
@@ -1445,7 +1381,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 91,
+      "position": 87,
       "item": {
         "@type": "Service",
         "name": "CASACA LAVADO AL AGUA",
@@ -1461,7 +1397,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 92,
+      "position": 88,
       "item": {
         "@type": "Service",
         "name": "CASACA LAVADO AL SECO",
@@ -1477,39 +1413,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 93,
-      "item": {
-        "@type": "Service",
-        "name": "CASACA LAVADO AL SECO",
-        "category": "Lavado",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#casaca-lavado-al-seco",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 94,
-      "item": {
-        "@type": "Service",
-        "name": "CASACA LAVADO AL SECO",
-        "category": "Lavado",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#casaca-lavado-al-seco",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 95,
+      "position": 89,
       "item": {
         "@type": "Service",
         "name": "CASACA PARCA CON FORRO DE CARNERO LAVADO AL SECO",
@@ -1525,7 +1429,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 96,
+      "position": 90,
       "item": {
         "@type": "Service",
         "name": "CASACA PLUSH NIÑA",
@@ -1541,7 +1445,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 97,
+      "position": 91,
       "item": {
         "@type": "Service",
         "name": "CASACA POLAR LAVADO AL SECO",
@@ -1557,7 +1461,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 98,
+      "position": 92,
       "item": {
         "@type": "Service",
         "name": "CASACA PUMA",
@@ -1573,7 +1477,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 99,
+      "position": 93,
       "item": {
         "@type": "Service",
         "name": "CASACA REVERSIBLE",
@@ -1589,7 +1493,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 100,
+      "position": 94,
       "item": {
         "@type": "Service",
         "name": "CASACA SIMPLE",
@@ -1605,7 +1509,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 101,
+      "position": 95,
       "item": {
         "@type": "Service",
         "name": "CASACA SOLO LAVADO",
@@ -1621,7 +1525,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 102,
+      "position": 96,
       "item": {
         "@type": "Service",
         "name": "CASACON DAMA",
@@ -1637,7 +1541,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 103,
+      "position": 97,
       "item": {
         "@type": "Service",
         "name": "CHALECO CON FORRO DE HOMBRE LAVADO AL SECO",
@@ -1653,7 +1557,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 104,
+      "position": 98,
       "item": {
         "@type": "Service",
         "name": "CHALECO CON FORRO POLAR",
@@ -1669,7 +1573,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 105,
+      "position": 99,
       "item": {
         "@type": "Service",
         "name": "CHALECO DAMA LAVADO AL SECO",
@@ -1685,7 +1589,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 106,
+      "position": 100,
       "item": {
         "@type": "Service",
         "name": "CHALECO DE LANA",
@@ -1701,7 +1605,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 107,
+      "position": 101,
       "item": {
         "@type": "Service",
         "name": "CHALECO DE PAÑO",
@@ -1717,7 +1621,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 108,
+      "position": 102,
       "item": {
         "@type": "Service",
         "name": "CHALECO DE TELA",
@@ -1733,7 +1637,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 109,
+      "position": 103,
       "item": {
         "@type": "Service",
         "name": "CHALECO FORRO SIMPLE LAVADO AL SECO",
@@ -1749,7 +1653,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 110,
+      "position": 104,
       "item": {
         "@type": "Service",
         "name": "CHALECO IMPERMEABLE CABALLERO",
@@ -1765,7 +1669,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 111,
+      "position": 105,
       "item": {
         "@type": "Service",
         "name": "CHAQUETA LAVADO AL SECO",
@@ -1781,7 +1685,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 112,
+      "position": 106,
       "item": {
         "@type": "Service",
         "name": "CHAQUETA MANGA CORTA BLANCO LAVADO AL SECO",
@@ -1797,7 +1701,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 113,
+      "position": 107,
       "item": {
         "@type": "Service",
         "name": "CHOMPA AL AGUA",
@@ -1813,7 +1717,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 114,
+      "position": 108,
       "item": {
         "@type": "Service",
         "name": "CHOMPA DE LANA LAVADO AL SECO",
@@ -1829,7 +1733,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 115,
+      "position": 109,
       "item": {
         "@type": "Service",
         "name": "CHOMPA DE PELUCHE DAMA LAVADO AL SECO",
@@ -1845,7 +1749,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 116,
+      "position": 110,
       "item": {
         "@type": "Service",
         "name": "CHOMPA LAVADO AL SECO",
@@ -1861,7 +1765,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 117,
+      "position": 111,
       "item": {
         "@type": "Service",
         "name": "CHOMPITAS DELGADAS",
@@ -1877,7 +1781,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 118,
+      "position": 112,
       "item": {
         "@type": "Service",
         "name": "COBERTOR ATIGRADO",
@@ -1893,7 +1797,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 119,
+      "position": 113,
       "item": {
         "@type": "Service",
         "name": "COJIN EXTRA GRANDE",
@@ -1909,7 +1813,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 120,
+      "position": 114,
       "item": {
         "@type": "Service",
         "name": "COJIN LAVADO AL SECO",
@@ -1925,7 +1829,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 121,
+      "position": 115,
       "item": {
         "@type": "Service",
         "name": "COLCHA 1 1/2 PLZ. LAVADO Y SECADO",
@@ -1941,7 +1845,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 122,
+      "position": 116,
       "item": {
         "@type": "Service",
         "name": "COLCHA 1 PLZ",
@@ -1957,7 +1861,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 123,
+      "position": 117,
       "item": {
         "@type": "Service",
         "name": "COLCHA 2 PLAZAS",
@@ -1973,7 +1877,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 124,
+      "position": 118,
       "item": {
         "@type": "Service",
         "name": "COLCHA CON POLAR",
@@ -1989,7 +1893,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 125,
+      "position": 119,
       "item": {
         "@type": "Service",
         "name": "COLCHON CON ALMOHADA",
@@ -2005,7 +1909,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 126,
+      "position": 120,
       "item": {
         "@type": "Service",
         "name": "CONJUNTO BUSO LAVADO AL SECO",
@@ -2021,7 +1925,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 127,
+      "position": 121,
       "item": {
         "@type": "Service",
         "name": "CONJUNTO DAMA DOS PIEZAS SACO LARGO",
@@ -2037,7 +1941,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 128,
+      "position": 122,
       "item": {
         "@type": "Service",
         "name": "CONJUNTO SACO Y FALDA LAVADO AL SECO",
@@ -2053,7 +1957,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 129,
+      "position": 123,
       "item": {
         "@type": "Service",
         "name": "CONJUNTO SACO Y PANTALON LAVADO AL SECO",
@@ -2069,7 +1973,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 130,
+      "position": 124,
       "item": {
         "@type": "Service",
         "name": "CONJUNTO SACO, PANTALON Y CHALECO DAMA",
@@ -2085,7 +1989,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 131,
+      "position": 125,
       "item": {
         "@type": "Service",
         "name": "CORBATA LAVADO ALSECO",
@@ -2101,7 +2005,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 132,
+      "position": 126,
       "item": {
         "@type": "Service",
         "name": "CORTINA BEGUI",
@@ -2117,7 +2021,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 133,
+      "position": 127,
       "item": {
         "@type": "Service",
         "name": "CORTINA DELGADA",
@@ -2133,7 +2037,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 134,
+      "position": 128,
       "item": {
         "@type": "Service",
         "name": "CORTINA GRANDE LABRADA",
@@ -2149,7 +2053,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 135,
+      "position": 129,
       "item": {
         "@type": "Service",
         "name": "CORTINA LAVADO Y SECADO",
@@ -2165,7 +2069,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 136,
+      "position": 130,
       "item": {
         "@type": "Service",
         "name": "CORTINA ONCE PAÑOS",
@@ -2181,7 +2085,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 137,
+      "position": 131,
       "item": {
         "@type": "Service",
         "name": "CORTINAS CON BORDADO",
@@ -2197,7 +2101,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 138,
+      "position": 132,
       "item": {
         "@type": "Service",
         "name": "CORTINAS MEDIANA",
@@ -2213,7 +2117,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 139,
+      "position": 133,
       "item": {
         "@type": "Service",
         "name": "CORTINAS PESADAS DE TECHO A PISO 1.5 M",
@@ -2229,7 +2133,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 140,
+      "position": 134,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 1 PLZ LAVADO Y SECADO",
@@ -2245,7 +2149,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 141,
+      "position": 135,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 1 PLZ. SOLO LAVADO",
@@ -2261,7 +2165,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 142,
+      "position": 136,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 1.5 PLAZAS",
@@ -2277,7 +2181,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 143,
+      "position": 137,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 1.5 PLAZAS CON FORRO",
@@ -2293,7 +2197,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 144,
+      "position": 138,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 1.5 PLAZAS SOLO LAVADO",
@@ -2309,7 +2213,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 145,
+      "position": 139,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 1.5 PLZ.",
@@ -2325,7 +2229,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 146,
+      "position": 140,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 11/2 PLZ. SOLO LAVADO",
@@ -2341,7 +2245,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 147,
+      "position": 141,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 2 PLAZAS",
@@ -2357,23 +2261,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 148,
-      "item": {
-        "@type": "Service",
-        "name": "CUBRECAMA 2 PLAZAS",
-        "category": "Ropa de cama",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 18.0,
-          "url": "https://lavanderiajpprowash.com/servicios#cubrecama-2-plazas",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 149,
+      "position": 142,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 2 PLAZAS CON FORRO",
@@ -2389,7 +2277,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 150,
+      "position": 143,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 2 PLZ",
@@ -2405,7 +2293,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 151,
+      "position": 144,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 2.5 PLAZAS",
@@ -2421,7 +2309,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 152,
+      "position": 145,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 2PLAZA CON FORRO DE CARNERO",
@@ -2437,7 +2325,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 153,
+      "position": 146,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA 2PLZ SOLO LAVADO",
@@ -2453,7 +2341,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 154,
+      "position": 147,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA CARNERO 1.5 PLAZAS",
@@ -2469,7 +2357,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 155,
+      "position": 148,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA CON FORRO DE CARNERO 2 PLZ.",
@@ -2485,7 +2373,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 156,
+      "position": 149,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA CON PELUCHE",
@@ -2501,7 +2389,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 157,
+      "position": 150,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA CUNA",
@@ -2517,7 +2405,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 158,
+      "position": 151,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA DELGADA DOBLE CARA 11/2 PLZ.",
@@ -2533,7 +2421,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 159,
+      "position": 152,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA DELGADA SOLO SECADO",
@@ -2549,7 +2437,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 160,
+      "position": 153,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA DELGADO 2 PLZ",
@@ -2565,7 +2453,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 161,
+      "position": 154,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA DELGADO SIMPLE",
@@ -2581,7 +2469,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 162,
+      "position": 155,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA DELGADO Y SABANAS SOLO SECADO",
@@ -2597,7 +2485,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 163,
+      "position": 156,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA POLAR",
@@ -2613,7 +2501,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 164,
+      "position": 157,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA POLAR 11/2 PLZ SOLO LAVADO",
@@ -2629,7 +2517,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 165,
+      "position": 158,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA POLAR C/FORRO DE CARNERO",
@@ -2645,7 +2533,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 166,
+      "position": 159,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA POLAR CON FORRO DE CARNERO 2 PLZ.",
@@ -2661,7 +2549,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 167,
+      "position": 160,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA QUEEN",
@@ -2677,23 +2565,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 168,
-      "item": {
-        "@type": "Service",
-        "name": "CUBRECAMA QUEEN",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 25.0,
-          "url": "https://lavanderiajpprowash.com/servicios#cubrecama-queen",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 169,
+      "position": 161,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA QUEEN CON FORRO DE CARNERO",
@@ -2709,7 +2581,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 170,
+      "position": 162,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA SIMPLE",
@@ -2725,7 +2597,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 171,
+      "position": 163,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA SIMPLE DELGADO",
@@ -2741,7 +2613,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 172,
+      "position": 164,
       "item": {
         "@type": "Service",
         "name": "CUBRECAMA SOLO SECADO",
@@ -2757,7 +2629,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 173,
+      "position": 165,
       "item": {
         "@type": "Service",
         "name": "Cama de mascota pequeña",
@@ -2773,7 +2645,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 174,
+      "position": 166,
       "item": {
         "@type": "Service",
         "name": "Casaca amarilla",
@@ -2789,7 +2661,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 175,
+      "position": 167,
       "item": {
         "@type": "Service",
         "name": "Casaca de corduroy",
@@ -2805,7 +2677,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 176,
+      "position": 168,
       "item": {
         "@type": "Service",
         "name": "Casaca de plumas",
@@ -2821,7 +2693,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 177,
+      "position": 169,
       "item": {
         "@type": "Service",
         "name": "DESMANCHADO",
@@ -2837,7 +2709,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 178,
+      "position": 170,
       "item": {
         "@type": "Service",
         "name": "EDREDON  DOBLE CARA 1.5 PLZ",
@@ -2853,7 +2725,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 179,
+      "position": 171,
       "item": {
         "@type": "Service",
         "name": "EDREDON 1 1/2 PLZ POLAR",
@@ -2869,7 +2741,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 180,
+      "position": 172,
       "item": {
         "@type": "Service",
         "name": "EDREDON 1.1/2 PLZ. NIÑO",
@@ -2885,7 +2757,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 181,
+      "position": 173,
       "item": {
         "@type": "Service",
         "name": "EDREDON 1.5 PLAZ ENJUAGUE Y SECADO",
@@ -2901,7 +2773,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 182,
+      "position": 174,
       "item": {
         "@type": "Service",
         "name": "EDREDON 1.5 PLAZAS DELGADO CON FORRO DE CARNERO",
@@ -2917,7 +2789,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 183,
+      "position": 175,
       "item": {
         "@type": "Service",
         "name": "EDREDON 1.5 PLAZAS SOLO LAVADO",
@@ -2933,7 +2805,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 184,
+      "position": 176,
       "item": {
         "@type": "Service",
         "name": "EDREDON 2 PLZ LAVADO Y SECADO",
@@ -2949,7 +2821,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 185,
+      "position": 177,
       "item": {
         "@type": "Service",
         "name": "EDREDON 2PLAZAS PLUSH",
@@ -2965,7 +2837,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 186,
+      "position": 178,
       "item": {
         "@type": "Service",
         "name": "EDREDON 2PLZ +",
@@ -2981,7 +2853,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 187,
+      "position": 179,
       "item": {
         "@type": "Service",
         "name": "EDREDON 2PLZ SOLO LAVADO",
@@ -2997,7 +2869,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 188,
+      "position": 180,
       "item": {
         "@type": "Service",
         "name": "EDREDON C/FORRO POLAR 2 PLAZAS",
@@ -3013,7 +2885,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 189,
+      "position": 181,
       "item": {
         "@type": "Service",
         "name": "EDREDON CARNERO 2 PLAZAS",
@@ -3029,7 +2901,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 190,
+      "position": 182,
       "item": {
         "@type": "Service",
         "name": "EDREDON CON FORRO  2PLZ.",
@@ -3045,7 +2917,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 191,
+      "position": 183,
       "item": {
         "@type": "Service",
         "name": "EDREDON CON FORRO DE CARNERO 1 1/2 PLZ.",
@@ -3061,7 +2933,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 192,
+      "position": 184,
       "item": {
         "@type": "Service",
         "name": "EDREDON CON FORRO DE CARNERO 2 PLAZAS",
@@ -3077,7 +2949,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 193,
+      "position": 185,
       "item": {
         "@type": "Service",
         "name": "EDREDON CON FORRO DE CARNERO 2 PLZ.",
@@ -3093,7 +2965,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 194,
+      "position": 186,
       "item": {
         "@type": "Service",
         "name": "EDREDON CON FORRO POLAR 2 PLAZAS",
@@ -3109,7 +2981,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 195,
+      "position": 187,
       "item": {
         "@type": "Service",
         "name": "EDREDON CON FORRO POLAR 2 PLZ. LAVADO AL SECO",
@@ -3125,7 +2997,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 196,
+      "position": 188,
       "item": {
         "@type": "Service",
         "name": "EDREDON DE PELUCHE 2 PLAZAS",
@@ -3141,7 +3013,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 197,
+      "position": 189,
       "item": {
         "@type": "Service",
         "name": "EDREDON DE PELUCHE CON FORRO POLAR",
@@ -3157,7 +3029,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 198,
+      "position": 190,
       "item": {
         "@type": "Service",
         "name": "EDREDON DE PLUMAS QUEEN",
@@ -3173,23 +3045,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 199,
-      "item": {
-        "@type": "Service",
-        "name": "EDREDON DE PLUMAS QUEEN",
-        "category": "Ropa de cama",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 32.0,
-          "url": "https://lavanderiajpprowash.com/servicios#edredon-de-plumas-queen",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 200,
+      "position": 191,
       "item": {
         "@type": "Service",
         "name": "EDREDON DELGADO",
@@ -3205,7 +3061,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 201,
+      "position": 192,
       "item": {
         "@type": "Service",
         "name": "EDREDON DELGADO 1.5 PLAZA",
@@ -3221,7 +3077,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 202,
+      "position": 193,
       "item": {
         "@type": "Service",
         "name": "EDREDON DELGADO 2 PLAZAS CON FORRO DE CARNERO",
@@ -3237,7 +3093,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 203,
+      "position": 194,
       "item": {
         "@type": "Service",
         "name": "EDREDON DOBLE CARA 2 PLZ.",
@@ -3253,7 +3109,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 204,
+      "position": 195,
       "item": {
         "@type": "Service",
         "name": "EDREDON FORRO DE CARNERO 1.5plz",
@@ -3269,7 +3125,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 205,
+      "position": 196,
       "item": {
         "@type": "Service",
         "name": "EDREDON GRUESO 2 PLZ +",
@@ -3285,7 +3141,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 206,
+      "position": 197,
       "item": {
         "@type": "Service",
         "name": "EDREDON KING",
@@ -3301,7 +3157,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 207,
+      "position": 198,
       "item": {
         "@type": "Service",
         "name": "EDREDON MORADO",
@@ -3317,7 +3173,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 208,
+      "position": 199,
       "item": {
         "@type": "Service",
         "name": "EDREDON PLUSH 1.5 PLAZA",
@@ -3333,7 +3189,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 209,
+      "position": 200,
       "item": {
         "@type": "Service",
         "name": "EDREDON PLUSH 2 PLZ",
@@ -3349,7 +3205,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 210,
+      "position": 201,
       "item": {
         "@type": "Service",
         "name": "EDREDON PLUSH CON FORRO",
@@ -3365,7 +3221,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 211,
+      "position": 202,
       "item": {
         "@type": "Service",
         "name": "EDREDON PLUSH CON FORRO DE CARNERO 1.5 PLAZ.",
@@ -3381,7 +3237,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 212,
+      "position": 203,
       "item": {
         "@type": "Service",
         "name": "EDREDON PLUSH CON FORRO DE CARNERO 2 PLAZ.",
@@ -3397,7 +3253,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 213,
+      "position": 204,
       "item": {
         "@type": "Service",
         "name": "EDREDON POLAR 1.5 PLZ",
@@ -3413,7 +3269,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 214,
+      "position": 205,
       "item": {
         "@type": "Service",
         "name": "EDREDON POLAR 2    PLZ.",
@@ -3429,7 +3285,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 215,
+      "position": 206,
       "item": {
         "@type": "Service",
         "name": "EDREDON POLAR CON FORRO DE CARNERO 1.5PLZ",
@@ -3445,7 +3301,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 216,
+      "position": 207,
       "item": {
         "@type": "Service",
         "name": "EDREDON QUEEN CON FORRO DE CARNERO",
@@ -3461,39 +3317,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 217,
-      "item": {
-        "@type": "Service",
-        "name": "EDREDON QUEEN CON FORRO DE CARNERO",
-        "category": "Ropa de cama",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 24.0,
-          "url": "https://lavanderiajpprowash.com/servicios#edredon-queen-con-forro-de-carnero",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 218,
-      "item": {
-        "@type": "Service",
-        "name": "EDREDON QUEEN CON FORRO DE CARNERO",
-        "category": "Edredones",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 25.0,
-          "url": "https://lavanderiajpprowash.com/servicios#edredon-queen-con-forro-de-carnero",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 219,
+      "position": 208,
       "item": {
         "@type": "Service",
         "name": "ENTERIZO LAVADO AL SECO",
@@ -3509,7 +3333,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 220,
+      "position": 209,
       "item": {
         "@type": "Service",
         "name": "ENTERIZO SOLO LAVADO",
@@ -3525,7 +3349,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 221,
+      "position": 210,
       "item": {
         "@type": "Service",
         "name": "Edredon de plumas 1.5plz",
@@ -3541,7 +3365,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 222,
+      "position": 211,
       "item": {
         "@type": "Service",
         "name": "Edredon de plumas 2plz",
@@ -3557,7 +3381,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 223,
+      "position": 212,
       "item": {
         "@type": "Service",
         "name": "FALDA CORTA",
@@ -3573,7 +3397,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 224,
+      "position": 213,
       "item": {
         "@type": "Service",
         "name": "FALDA DE MESA",
@@ -3589,7 +3413,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 225,
+      "position": 214,
       "item": {
         "@type": "Service",
         "name": "FALDA GRANDE",
@@ -3605,7 +3429,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 226,
+      "position": 215,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COJIN",
@@ -3621,7 +3445,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 227,
+      "position": 216,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COJIN DE MUEBLE",
@@ -3637,7 +3461,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 228,
+      "position": 217,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON",
@@ -3653,7 +3477,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 229,
+      "position": 218,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON DELGADO",
@@ -3669,7 +3493,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 230,
+      "position": 219,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON DELGADO 2PLAZAS",
@@ -3685,7 +3509,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 231,
+      "position": 220,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON GRUESO",
@@ -3701,7 +3525,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 232,
+      "position": 221,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON KING",
@@ -3717,7 +3541,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 233,
+      "position": 222,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON QUEEN",
@@ -3733,7 +3557,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 234,
+      "position": 223,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON SIMPLE",
@@ -3749,7 +3573,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 235,
+      "position": 224,
       "item": {
         "@type": "Service",
         "name": "FORRO DE COLCHON SOLO LAVADO",
@@ -3765,7 +3589,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 236,
+      "position": 225,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLE CHICO",
@@ -3781,7 +3605,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 237,
+      "position": 226,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLE GRANDE",
@@ -3797,23 +3621,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 238,
-      "item": {
-        "@type": "Service",
-        "name": "FORRO DE MUEBLE GRANDE",
-        "category": "Ropa de mueble",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 16.0,
-          "url": "https://lavanderiajpprowash.com/servicios#forro-de-mueble-grande",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 239,
+      "position": 227,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLE GRANDE TELA GRUESA",
@@ -3829,7 +3637,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 240,
+      "position": 228,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLE MEDIANO",
@@ -3845,23 +3653,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 241,
-      "item": {
-        "@type": "Service",
-        "name": "FORRO DE MUEBLE MEDIANO",
-        "category": "Hogar",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 13.0,
-          "url": "https://lavanderiajpprowash.com/servicios#forro-de-mueble-mediano",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 242,
+      "position": 229,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLE MEDIANOS TELA GRUESA",
@@ -3877,7 +3669,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 243,
+      "position": 230,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLE SINTETICO",
@@ -3893,7 +3685,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 244,
+      "position": 231,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLES 3 2 1",
@@ -3909,7 +3701,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 245,
+      "position": 232,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLES 3-2-1 SOLO LAVADO",
@@ -3925,7 +3717,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 246,
+      "position": 233,
       "item": {
         "@type": "Service",
         "name": "FORRO DE MUEBLES INDIVIDUAL M",
@@ -3941,7 +3733,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 247,
+      "position": 234,
       "item": {
         "@type": "Service",
         "name": "FORRO DE SILLAS",
@@ -3957,7 +3749,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 248,
+      "position": 235,
       "item": {
         "@type": "Service",
         "name": "FORRO DE SILLAS X10",
@@ -3973,7 +3765,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 249,
+      "position": 236,
       "item": {
         "@type": "Service",
         "name": "FORRO PEQUEÑO SEC",
@@ -3989,7 +3781,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 250,
+      "position": 237,
       "item": {
         "@type": "Service",
         "name": "FORRO SECCIONAL",
@@ -4005,7 +3797,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 251,
+      "position": 238,
       "item": {
         "@type": "Service",
         "name": "FORROS DE SILLAS LAVADO",
@@ -4021,7 +3813,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 252,
+      "position": 239,
       "item": {
         "@type": "Service",
         "name": "FRAZADA 1 1/2 PLZ",
@@ -4037,7 +3829,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 253,
+      "position": 240,
       "item": {
         "@type": "Service",
         "name": "FRAZADA 1 1/2 PLZ. DELGADO SOLO SECADO",
@@ -4053,7 +3845,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 254,
+      "position": 241,
       "item": {
         "@type": "Service",
         "name": "FRAZADA DE PLUSH CON FORRO DE CARNERO",
@@ -4069,7 +3861,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 255,
+      "position": 242,
       "item": {
         "@type": "Service",
         "name": "FRAZADA DELGADA TIGRE 2 PLAZAS",
@@ -4085,7 +3877,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 256,
+      "position": 243,
       "item": {
         "@type": "Service",
         "name": "FRAZADA LAVADO Y SECADO",
@@ -4101,7 +3893,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 257,
+      "position": 244,
       "item": {
         "@type": "Service",
         "name": "FRAZADA PLUSH",
@@ -4117,7 +3909,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 258,
+      "position": 245,
       "item": {
         "@type": "Service",
         "name": "FRAZADA PLUSH FORRO DE CARNERO",
@@ -4133,7 +3925,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 259,
+      "position": 246,
       "item": {
         "@type": "Service",
         "name": "FRAZADA POLAR 1 1/2 PLZ.",
@@ -4149,7 +3941,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 260,
+      "position": 247,
       "item": {
         "@type": "Service",
         "name": "FRAZADA POLAR 2 PLAZAS",
@@ -4165,7 +3957,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 261,
+      "position": 248,
       "item": {
         "@type": "Service",
         "name": "FRAZADA POLAR CON FORRO DE CARNERO 1.5 PLAZAS",
@@ -4181,7 +3973,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 262,
+      "position": 249,
       "item": {
         "@type": "Service",
         "name": "FRAZADA POLAR GRUESA 2 PLAZAS",
@@ -4197,7 +3989,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 263,
+      "position": 250,
       "item": {
         "@type": "Service",
         "name": "FRAZADA SOLO SECADO",
@@ -4213,7 +4005,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 264,
+      "position": 251,
       "item": {
         "@type": "Service",
         "name": "FRAZADA TIGRE 11/2 PLZ.",
@@ -4229,7 +4021,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 265,
+      "position": 252,
       "item": {
         "@type": "Service",
         "name": "FRAZADA TIGRE 2 PLZ.",
@@ -4245,7 +4037,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 266,
+      "position": 253,
       "item": {
         "@type": "Service",
         "name": "FRAZADA TIGRE SOLO LAVADO",
@@ -4261,7 +4053,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 267,
+      "position": 254,
       "item": {
         "@type": "Service",
         "name": "FUNDA DE GUITARRA SIMPLE",
@@ -4277,7 +4069,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 268,
+      "position": 255,
       "item": {
         "@type": "Service",
         "name": "FUNDAS",
@@ -4293,7 +4085,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 269,
+      "position": 256,
       "item": {
         "@type": "Service",
         "name": "FUNDAS LAVADO Y SECADO 2",
@@ -4309,7 +4101,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 270,
+      "position": 257,
       "item": {
         "@type": "Service",
         "name": "Frazada 1.5plz",
@@ -4325,7 +4117,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 271,
+      "position": 258,
       "item": {
         "@type": "Service",
         "name": "GABAN DE DAMA",
@@ -4341,7 +4133,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 272,
+      "position": 259,
       "item": {
         "@type": "Service",
         "name": "GABAN HOMBRE",
@@ -4357,7 +4149,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 273,
+      "position": 260,
       "item": {
         "@type": "Service",
         "name": "GABARDINA AGAMUZAD A",
@@ -4373,7 +4165,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 274,
+      "position": 261,
       "item": {
         "@type": "Service",
         "name": "GABARDINA DE MUJER LAVADO AL SECO",
@@ -4389,7 +4181,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 275,
+      "position": 262,
       "item": {
         "@type": "Service",
         "name": "GABARDINA SIMPLE",
@@ -4405,7 +4197,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 276,
+      "position": 263,
       "item": {
         "@type": "Service",
         "name": "GORRO CON VISERA",
@@ -4421,7 +4213,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 277,
+      "position": 264,
       "item": {
         "@type": "Service",
         "name": "GORRO CON VISERA SIMPLE",
@@ -4437,7 +4229,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 278,
+      "position": 265,
       "item": {
         "@type": "Service",
         "name": "JUEGO DE SABANA LAVADO Y SECADO",
@@ -4453,7 +4245,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 279,
+      "position": 266,
       "item": {
         "@type": "Service",
         "name": "JUEGO DE SABANA QUEEN",
@@ -4469,7 +4261,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 280,
+      "position": 267,
       "item": {
         "@type": "Service",
         "name": "JUEGO DE SABANA SOLO LAVADO",
@@ -4485,7 +4277,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 281,
+      "position": 268,
       "item": {
         "@type": "Service",
         "name": "JUEGO DE SABANAS DE POLAR 1.5 PLZ.",
@@ -4501,7 +4293,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 282,
+      "position": 269,
       "item": {
         "@type": "Service",
         "name": "JUEGO DE SABANAS SOLO SECADO",
@@ -4517,7 +4309,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 283,
+      "position": 270,
       "item": {
         "@type": "Service",
         "name": "KEPI",
@@ -4533,23 +4325,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 284,
-      "item": {
-        "@type": "Service",
-        "name": "KEPI",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 6.0,
-          "url": "https://lavanderiajpprowash.com/servicios#kepi",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 285,
+      "position": 271,
       "item": {
         "@type": "Service",
         "name": "LAVADO AL SECO DE UNIFORME",
@@ -4565,7 +4341,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 286,
+      "position": 272,
       "item": {
         "@type": "Service",
         "name": "LAVADO AL SECO PANTALON DE POLICIA",
@@ -4581,7 +4357,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 287,
+      "position": 273,
       "item": {
         "@type": "Service",
         "name": "LAVADO AL SECO TERNO AZUL",
@@ -4597,7 +4373,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 288,
+      "position": 274,
       "item": {
         "@type": "Service",
         "name": "LAVADO DE CAMISA",
@@ -4613,7 +4389,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 289,
+      "position": 275,
       "item": {
         "@type": "Service",
         "name": "LAVADO DE CAMISA POLICIAL",
@@ -4629,7 +4405,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 290,
+      "position": 276,
       "item": {
         "@type": "Service",
         "name": "LAVADO DE CORTINAS DE TECHO A PISO DE OFICINA DEL EQUIPO COMERCIAL - COBROS DEL CS COMAS.",
@@ -4645,7 +4421,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 291,
+      "position": 277,
       "item": {
         "@type": "Service",
         "name": "LAVADO DE CORTINAS DE TECHO ABAJO DE VENTANA OFICINA DEL EQUIPO COMERCIAL - COBROS DE CS COMAS",
@@ -4661,7 +4437,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 292,
+      "position": 278,
       "item": {
         "@type": "Service",
         "name": "LAVADO DE INDUMENTARIA DE PERSONAL",
@@ -4677,23 +4453,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 293,
-      "item": {
-        "@type": "Service",
-        "name": "LAVADO DE INDUMENTARIA DE PERSONAL",
-        "category": "Lavado",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 4.5,
-          "url": "https://lavanderiajpprowash.com/servicios#lavado-de-indumentaria-de-personal",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 294,
+      "position": 279,
       "item": {
         "@type": "Service",
         "name": "LAVADO DE INDUMENTARIAS AL PERSONAL",
@@ -4709,7 +4469,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 295,
+      "position": 280,
       "item": {
         "@type": "Service",
         "name": "LAVADO PANTALON DE BUZO",
@@ -4725,7 +4485,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 296,
+      "position": 281,
       "item": {
         "@type": "Service",
         "name": "LAVADO SECADO POLO",
@@ -4741,7 +4501,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 297,
+      "position": 282,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y PLANCHADO DE TUNICAS",
@@ -4757,7 +4517,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 298,
+      "position": 283,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO",
@@ -4773,7 +4533,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 299,
+      "position": 284,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO DE PRENDAS INDUSTRIAL Y CORPORATIVO",
@@ -4789,7 +4549,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 300,
+      "position": 285,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO ESPECIAL",
@@ -4805,7 +4565,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 301,
+      "position": 286,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO LONCHERA",
@@ -4821,7 +4581,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 302,
+      "position": 287,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO MANTA",
@@ -4837,7 +4597,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 303,
+      "position": 288,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO MANTA POLAR 1 1/2 PLZ.",
@@ -4853,7 +4613,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 304,
+      "position": 289,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO MANTEL MESA",
@@ -4869,7 +4629,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 305,
+      "position": 290,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO ROPA",
@@ -4885,7 +4645,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 306,
+      "position": 291,
       "item": {
         "@type": "Service",
         "name": "LAVADO Y SECADO TOALLA",
@@ -4901,7 +4661,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 307,
+      "position": 292,
       "item": {
         "@type": "Service",
         "name": "MALETA",
@@ -4917,7 +4677,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 308,
+      "position": 293,
       "item": {
         "@type": "Service",
         "name": "MALETIN",
@@ -4933,7 +4693,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 309,
+      "position": 294,
       "item": {
         "@type": "Service",
         "name": "MAMELUCO - OVEROLL",
@@ -4949,7 +4709,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 310,
+      "position": 295,
       "item": {
         "@type": "Service",
         "name": "MANTA  PEQUEÑA DE MASCOTA",
@@ -4965,7 +4725,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 311,
+      "position": 296,
       "item": {
         "@type": "Service",
         "name": "MANTA 1.1/2 PLZ.",
@@ -4981,7 +4741,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 312,
+      "position": 297,
       "item": {
         "@type": "Service",
         "name": "MANTA 2 PLZ.",
@@ -4997,7 +4757,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 313,
+      "position": 298,
       "item": {
         "@type": "Service",
         "name": "MANTA 2 PLZS SOLO SECADO",
@@ -5013,7 +4773,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 314,
+      "position": 299,
       "item": {
         "@type": "Service",
         "name": "MANTA CHICA",
@@ -5029,7 +4789,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 315,
+      "position": 300,
       "item": {
         "@type": "Service",
         "name": "MANTA CHICA DE MASCOTA",
@@ -5045,7 +4805,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 316,
+      "position": 301,
       "item": {
         "@type": "Service",
         "name": "MANTA DE LANA",
@@ -5061,7 +4821,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 317,
+      "position": 302,
       "item": {
         "@type": "Service",
         "name": "MANTA DE MASCOTA",
@@ -5077,7 +4837,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 318,
+      "position": 303,
       "item": {
         "@type": "Service",
         "name": "MANTA DELGADA",
@@ -5093,23 +4853,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 319,
-      "item": {
-        "@type": "Service",
-        "name": "MANTA DELGADA",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 8.0,
-          "url": "https://lavanderiajpprowash.com/servicios#manta-delgada",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 320,
+      "position": 304,
       "item": {
         "@type": "Service",
         "name": "MANTA GRANDE 2.5 PLAZAS",
@@ -5125,7 +4869,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 321,
+      "position": 305,
       "item": {
         "@type": "Service",
         "name": "MANTA MEDIANA",
@@ -5141,7 +4885,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 322,
+      "position": 306,
       "item": {
         "@type": "Service",
         "name": "MANTA MEDIANA CON FORRO CARNERO",
@@ -5157,7 +4901,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 323,
+      "position": 307,
       "item": {
         "@type": "Service",
         "name": "MANTA PLUSH CON FORRO DE CARNERO",
@@ -5173,7 +4917,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 324,
+      "position": 308,
       "item": {
         "@type": "Service",
         "name": "MANTA POLAR 1 PLAZA",
@@ -5189,7 +4933,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 325,
+      "position": 309,
       "item": {
         "@type": "Service",
         "name": "MANTA POLAR 1.5 PLAZA",
@@ -5205,7 +4949,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 326,
+      "position": 310,
       "item": {
         "@type": "Service",
         "name": "MANTA POLAR 1.5 PLZ",
@@ -5221,7 +4965,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 327,
+      "position": 311,
       "item": {
         "@type": "Service",
         "name": "MANTA POLAR 2 PLZ.",
@@ -5237,23 +4981,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 328,
-      "item": {
-        "@type": "Service",
-        "name": "MANTA POLAR 2 PLZ.",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 12.0,
-          "url": "https://lavanderiajpprowash.com/servicios#manta-polar-2-plz",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 329,
+      "position": 312,
       "item": {
         "@type": "Service",
         "name": "MANTA QUEEN",
@@ -5269,7 +4997,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 330,
+      "position": 313,
       "item": {
         "@type": "Service",
         "name": "MANTA SOLO LAVADO",
@@ -5285,7 +5013,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 331,
+      "position": 314,
       "item": {
         "@type": "Service",
         "name": "MANTA TEJIDA 1 1/2 PLZ",
@@ -5301,7 +5029,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 332,
+      "position": 315,
       "item": {
         "@type": "Service",
         "name": "MANTAS DELGADA 2 PLAZAS",
@@ -5317,7 +5045,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 333,
+      "position": 316,
       "item": {
         "@type": "Service",
         "name": "MANTAS GRANDES",
@@ -5333,7 +5061,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 334,
+      "position": 317,
       "item": {
         "@type": "Service",
         "name": "MANTEL 1.20 X 1.20",
@@ -5349,7 +5077,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 335,
+      "position": 318,
       "item": {
         "@type": "Service",
         "name": "MANTEL 1.5 X 1.20",
@@ -5365,7 +5093,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 336,
+      "position": 319,
       "item": {
         "@type": "Service",
         "name": "MANTEL 2.5 x 2",
@@ -5381,7 +5109,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 337,
+      "position": 320,
       "item": {
         "@type": "Service",
         "name": "MANTEL MEDIANO",
@@ -5397,7 +5125,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 338,
+      "position": 321,
       "item": {
         "@type": "Service",
         "name": "MANTELES CHICOS",
@@ -5413,7 +5141,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 339,
+      "position": 322,
       "item": {
         "@type": "Service",
         "name": "MANTELES DE MESA 3.20x1.60",
@@ -5429,7 +5157,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 340,
+      "position": 323,
       "item": {
         "@type": "Service",
         "name": "MANTELES DE MESA 4Mx2M",
@@ -5445,7 +5173,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 341,
+      "position": 324,
       "item": {
         "@type": "Service",
         "name": "MANTELES PEQUEÑOS",
@@ -5461,7 +5189,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 342,
+      "position": 325,
       "item": {
         "@type": "Service",
         "name": "MINI FALDA DE CUERINA",
@@ -5477,7 +5205,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 343,
+      "position": 326,
       "item": {
         "@type": "Service",
         "name": "MOCHILA + CARTUCHERA",
@@ -5493,7 +5221,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 344,
+      "position": 327,
       "item": {
         "@type": "Service",
         "name": "MOCHILA CHICA",
@@ -5509,7 +5237,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 345,
+      "position": 328,
       "item": {
         "@type": "Service",
         "name": "MOCHILA CON RUEDA",
@@ -5525,7 +5253,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 346,
+      "position": 329,
       "item": {
         "@type": "Service",
         "name": "MOCHILA GRANDE",
@@ -5541,7 +5269,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 347,
+      "position": 330,
       "item": {
         "@type": "Service",
         "name": "MOCHILA GRANDE 1",
@@ -5557,7 +5285,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 348,
+      "position": 331,
       "item": {
         "@type": "Service",
         "name": "MOCHILA JUVENIL LAVADO Y SECADO",
@@ -5573,7 +5301,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 349,
+      "position": 332,
       "item": {
         "@type": "Service",
         "name": "MOCHILA MEDIANA",
@@ -5589,7 +5317,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 350,
+      "position": 333,
       "item": {
         "@type": "Service",
         "name": "MOCHILA SECADO",
@@ -5605,7 +5333,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 351,
+      "position": 334,
       "item": {
         "@type": "Service",
         "name": "MOCHILA, CARTUCHERA Y LONCHERA LAVADO",
@@ -5621,7 +5349,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 352,
+      "position": 335,
       "item": {
         "@type": "Service",
         "name": "MORRAL SIMPLE",
@@ -5637,7 +5365,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 353,
+      "position": 336,
       "item": {
         "@type": "Service",
         "name": "OTROS",
@@ -5653,7 +5381,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 354,
+      "position": 337,
       "item": {
         "@type": "Service",
         "name": "PANATALON DAMA LAVADO AL SECO",
@@ -5669,7 +5397,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 355,
+      "position": 338,
       "item": {
         "@type": "Service",
         "name": "PANTALON CHAVITO",
@@ -5685,7 +5413,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 356,
+      "position": 339,
       "item": {
         "@type": "Service",
         "name": "PANTALON DAMA AL SECO",
@@ -5701,23 +5429,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 357,
-      "item": {
-        "@type": "Service",
-        "name": "PANTALON DAMA AL SECO",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 7.0,
-          "url": "https://lavanderiajpprowash.com/servicios#pantalon-dama-al-seco",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 358,
+      "position": 340,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE CUERINA",
@@ -5733,7 +5445,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 359,
+      "position": 341,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE NIÑO LAVADO AL SECO",
@@ -5749,7 +5461,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 360,
+      "position": 342,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR AL SECO HOMBRE",
@@ -5765,7 +5477,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 361,
+      "position": 343,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR AZUL DE DAMA LAVADO AL SECO",
@@ -5781,7 +5493,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 362,
+      "position": 344,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR AZUL NOCHE CABALLERO LAVADO AL SECO",
@@ -5797,7 +5509,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 363,
+      "position": 345,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR BLANCO DE DAMA LAVADO AL SECO",
@@ -5813,7 +5525,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 364,
+      "position": 346,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR CABALLERO LAVADO AL SECO",
@@ -5829,7 +5541,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 365,
+      "position": 347,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR GRIS CLARO CABALLERO LAVADO AL SECO",
@@ -5845,7 +5557,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 366,
+      "position": 348,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR GRIS OSCURO CABALLERO LAVADO AL SECO",
@@ -5861,7 +5573,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 367,
+      "position": 349,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR HOMBRE AL SECO",
@@ -5877,7 +5589,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 368,
+      "position": 350,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR LAVADO AL SECO",
@@ -5893,7 +5605,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 369,
+      "position": 351,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR MARRON DE DAMA LAVADO AL SECO",
@@ -5909,23 +5621,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 370,
-      "item": {
-        "@type": "Service",
-        "name": "PANTALON DE VESTIR MARRON DE DAMA LAVADO AL SECO",
-        "category": "Lavado",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 7.0,
-          "url": "https://lavanderiajpprowash.com/servicios#pantalon-de-vestir-marron-de-dama-lavado-al-seco",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 371,
+      "position": 352,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR NEGRO CABALLERO LAVADO AL SECO",
@@ -5941,7 +5637,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 372,
+      "position": 353,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR NEGRO DAMA LAVADO AL SECO",
@@ -5957,7 +5653,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 373,
+      "position": 354,
       "item": {
         "@type": "Service",
         "name": "PANTALON DE VESTIR NEGRO DE DAMA LAVADO AL SECO",
@@ -5973,7 +5669,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 374,
+      "position": 355,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL",
@@ -5989,7 +5685,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 375,
+      "position": 356,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL AZUL DE DAMA LAVADO AL SECO",
@@ -6005,7 +5701,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 376,
+      "position": 357,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL BLANCO CABALLERO LAVADO AL SECO",
@@ -6021,7 +5717,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 377,
+      "position": 358,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL BLANCO DE DAMA LAVADO AL SECO",
@@ -6037,7 +5733,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 378,
+      "position": 359,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL CABALLERO LAVADO AL SECO",
@@ -6053,7 +5749,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 379,
+      "position": 360,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL MARRON DE DAMA LAVADO AL SECO",
@@ -6069,7 +5765,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 380,
+      "position": 361,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL NEGRO CABALLERO LAVADO AL SECO",
@@ -6085,7 +5781,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 381,
+      "position": 362,
       "item": {
         "@type": "Service",
         "name": "PANTALON DRILL NEGRO DE DAMA LAVADO AL SECO",
@@ -6101,7 +5797,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 382,
+      "position": 363,
       "item": {
         "@type": "Service",
         "name": "PANTALON JEANS ADULTO",
@@ -6117,7 +5813,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 383,
+      "position": 364,
       "item": {
         "@type": "Service",
         "name": "PANTALON JEAN´S",
@@ -6133,7 +5829,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 384,
+      "position": 365,
       "item": {
         "@type": "Service",
         "name": "PANTALON NEGRO LAVADO AL SECO",
@@ -6149,7 +5845,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 385,
+      "position": 366,
       "item": {
         "@type": "Service",
         "name": "PANTALON POLAR",
@@ -6165,7 +5861,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 386,
+      "position": 367,
       "item": {
         "@type": "Service",
         "name": "PANTALON POLAR LAVADO AL SECO",
@@ -6181,7 +5877,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 387,
+      "position": 368,
       "item": {
         "@type": "Service",
         "name": "PANTALÓN DE VESTIR HOMBRE",
@@ -6197,7 +5893,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 388,
+      "position": 369,
       "item": {
         "@type": "Service",
         "name": "PANTUFLAS LAVADO AL SECO",
@@ -6213,7 +5909,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 389,
+      "position": 370,
       "item": {
         "@type": "Service",
         "name": "PASHMINA",
@@ -6229,7 +5925,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 390,
+      "position": 371,
       "item": {
         "@type": "Service",
         "name": "PATAS DE MUÑECO",
@@ -6245,7 +5941,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 391,
+      "position": 372,
       "item": {
         "@type": "Service",
         "name": "PATINES CANILLERAS Y RODILLERAS",
@@ -6261,7 +5957,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 392,
+      "position": 373,
       "item": {
         "@type": "Service",
         "name": "PELUCHE",
@@ -6277,7 +5973,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 393,
+      "position": 374,
       "item": {
         "@type": "Service",
         "name": "PELUCHE DE OVEJA BLANCO LAVADO AL SECO",
@@ -6293,7 +5989,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 394,
+      "position": 375,
       "item": {
         "@type": "Service",
         "name": "PELUCHE GRANDE",
@@ -6309,7 +6005,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 395,
+      "position": 376,
       "item": {
         "@type": "Service",
         "name": "PELUCHE MUÑECO  VARIOS AL SECO",
@@ -6325,7 +6021,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 396,
+      "position": 377,
       "item": {
         "@type": "Service",
         "name": "PIZA PIES",
@@ -6341,7 +6037,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 397,
+      "position": 378,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO CAMISA",
@@ -6357,7 +6053,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 398,
+      "position": 379,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO DE BLUSA",
@@ -6373,7 +6069,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 399,
+      "position": 380,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO DE TERNO COMPLETO",
@@ -6389,7 +6085,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 400,
+      "position": 381,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO DE TERNO COMPLETO EXPRESS",
@@ -6405,7 +6101,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 401,
+      "position": 382,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO DE VESTIDO LARGO",
@@ -6421,7 +6117,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 402,
+      "position": 383,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO PANTALON",
@@ -6437,7 +6133,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 403,
+      "position": 384,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO SACO DE PAÑO",
@@ -6453,7 +6149,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 404,
+      "position": 385,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO SACO LARGO",
@@ -6469,7 +6165,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 405,
+      "position": 386,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO SACON",
@@ -6485,7 +6181,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 406,
+      "position": 387,
       "item": {
         "@type": "Service",
         "name": "PLANCHADO TERNO COMPLETO",
@@ -6501,7 +6197,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 407,
+      "position": 388,
       "item": {
         "@type": "Service",
         "name": "PLUMON 2PLZ",
@@ -6517,7 +6213,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 408,
+      "position": 389,
       "item": {
         "@type": "Service",
         "name": "POLERA DELICADA",
@@ -6533,7 +6229,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 409,
+      "position": 390,
       "item": {
         "@type": "Service",
         "name": "POLERA LAVADO AL SECO",
@@ -6549,7 +6245,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 410,
+      "position": 391,
       "item": {
         "@type": "Service",
         "name": "POLERA SIMPLE",
@@ -6565,7 +6261,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 411,
+      "position": 392,
       "item": {
         "@type": "Service",
         "name": "POLERA TEÑIDO",
@@ -6581,7 +6277,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 412,
+      "position": 393,
       "item": {
         "@type": "Service",
         "name": "POLERA Y BUZO LAVADO AL SECO",
@@ -6597,7 +6293,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 413,
+      "position": 394,
       "item": {
         "@type": "Service",
         "name": "POLO CUELLO CAMISERO",
@@ -6613,7 +6309,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 414,
+      "position": 395,
       "item": {
         "@type": "Service",
         "name": "POLO LAVADO AL SECO",
@@ -6629,7 +6325,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 415,
+      "position": 396,
       "item": {
         "@type": "Service",
         "name": "POLO MANGA LARGA",
@@ -6645,7 +6341,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 416,
+      "position": 397,
       "item": {
         "@type": "Service",
         "name": "POLO TENIS",
@@ -6661,7 +6357,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 417,
+      "position": 398,
       "item": {
         "@type": "Service",
         "name": "POLOS CUELLOS CAMISEROS",
@@ -6677,7 +6373,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 418,
+      "position": 399,
       "item": {
         "@type": "Service",
         "name": "PONCHO ALPACA",
@@ -6693,7 +6389,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 419,
+      "position": 400,
       "item": {
         "@type": "Service",
         "name": "PONCHO CHALL BVD",
@@ -6709,7 +6405,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 420,
+      "position": 401,
       "item": {
         "@type": "Service",
         "name": "ROPA",
@@ -6725,7 +6421,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 421,
+      "position": 402,
       "item": {
         "@type": "Service",
         "name": "ROPA DE BEBE",
@@ -6741,7 +6437,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 422,
+      "position": 403,
       "item": {
         "@type": "Service",
         "name": "ROPA DE BEBE LAVADO Y SECADO",
@@ -6757,7 +6453,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 423,
+      "position": 404,
       "item": {
         "@type": "Service",
         "name": "ROPA DE DEPORTE",
@@ -6773,7 +6469,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 424,
+      "position": 405,
       "item": {
         "@type": "Service",
         "name": "ROPA DE KARATE COLOR BLANCO",
@@ -6789,7 +6485,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 425,
+      "position": 406,
       "item": {
         "@type": "Service",
         "name": "ROPA DE MASCOTA",
@@ -6805,39 +6501,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 426,
-      "item": {
-        "@type": "Service",
-        "name": "ROPA DE MASCOTA",
-        "category": "Mascotas",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#ropa-de-mascota",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 427,
-      "item": {
-        "@type": "Service",
-        "name": "ROPA DE MASCOTA",
-        "category": "Mascotas",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 4.5,
-          "url": "https://lavanderiajpprowash.com/servicios#ropa-de-mascota",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 428,
+      "position": 407,
       "item": {
         "@type": "Service",
         "name": "ROPA SOLO LAVADO",
@@ -6853,7 +6517,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 429,
+      "position": 408,
       "item": {
         "@type": "Service",
         "name": "ROPA SOLO SECADO",
@@ -6869,7 +6533,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 430,
+      "position": 409,
       "item": {
         "@type": "Service",
         "name": "SABANA 3 UNIDADES",
@@ -6885,7 +6549,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 431,
+      "position": 410,
       "item": {
         "@type": "Service",
         "name": "SABANA DE ALGODON 280 HILOS",
@@ -6901,7 +6565,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 432,
+      "position": 411,
       "item": {
         "@type": "Service",
         "name": "SABANA DOBLE 2 PLAZAS",
@@ -6917,7 +6581,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 433,
+      "position": 412,
       "item": {
         "@type": "Service",
         "name": "SABANA POLAR",
@@ -6933,7 +6597,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 434,
+      "position": 413,
       "item": {
         "@type": "Service",
         "name": "SABANA UNIDAD",
@@ -6949,7 +6613,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 435,
+      "position": 414,
       "item": {
         "@type": "Service",
         "name": "SABANAS 1.5 PLAZAS JUEGO",
@@ -6965,7 +6629,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 436,
+      "position": 415,
       "item": {
         "@type": "Service",
         "name": "SABANAS QUEEN LAVADO AL SECO",
@@ -6981,7 +6645,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 437,
+      "position": 416,
       "item": {
         "@type": "Service",
         "name": "SABANAS, TOALLAS Y OTROS.",
@@ -6997,7 +6661,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 438,
+      "position": 417,
       "item": {
         "@type": "Service",
         "name": "SACO",
@@ -7013,7 +6677,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 439,
+      "position": 418,
       "item": {
         "@type": "Service",
         "name": "SACO BLAZER DAMA TELA DELGADA",
@@ -7029,7 +6693,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 440,
+      "position": 419,
       "item": {
         "@type": "Service",
         "name": "SACO BLAZER HOMBRE",
@@ -7045,7 +6709,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 441,
+      "position": 420,
       "item": {
         "@type": "Service",
         "name": "SACO CON CAPUCHA",
@@ -7061,7 +6725,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 442,
+      "position": 421,
       "item": {
         "@type": "Service",
         "name": "SACO CORTO DAMA",
@@ -7077,7 +6741,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 443,
+      "position": 422,
       "item": {
         "@type": "Service",
         "name": "SACO CORTO DE DAMA LAVADO AL SECO",
@@ -7093,7 +6757,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 444,
+      "position": 423,
       "item": {
         "@type": "Service",
         "name": "SACO CORTO DELGADO DAMA",
@@ -7109,23 +6773,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 445,
-      "item": {
-        "@type": "Service",
-        "name": "SACO CORTO DELGADO DAMA",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#saco-corto-delgado-dama",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 446,
+      "position": 424,
       "item": {
         "@type": "Service",
         "name": "SACO CORTO DRILL",
@@ -7141,7 +6789,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 447,
+      "position": 425,
       "item": {
         "@type": "Service",
         "name": "SACO DAMA SOLO PLANCHADO",
@@ -7157,7 +6805,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 448,
+      "position": 426,
       "item": {
         "@type": "Service",
         "name": "SACO DAMA TELA DELGADA",
@@ -7173,7 +6821,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 449,
+      "position": 427,
       "item": {
         "@type": "Service",
         "name": "SACO DAMA TELA GRUESA",
@@ -7189,7 +6837,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 450,
+      "position": 428,
       "item": {
         "@type": "Service",
         "name": "SACO DE  LANILLA",
@@ -7205,7 +6853,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 451,
+      "position": 429,
       "item": {
         "@type": "Service",
         "name": "SACO DE CABALLERO LAVADO AL SECO",
@@ -7221,7 +6869,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 452,
+      "position": 430,
       "item": {
         "@type": "Service",
         "name": "SACO DE CORDELINA",
@@ -7237,7 +6885,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 453,
+      "position": 431,
       "item": {
         "@type": "Service",
         "name": "SACO DE DAMA GAMUZA",
@@ -7253,7 +6901,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 454,
+      "position": 432,
       "item": {
         "@type": "Service",
         "name": "SACO DE DAMA LAVADO AL SECO",
@@ -7269,39 +6917,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 455,
-      "item": {
-        "@type": "Service",
-        "name": "SACO DE DAMA LAVADO AL SECO",
-        "category": "Lavado",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#saco-de-dama-lavado-al-seco",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 456,
-      "item": {
-        "@type": "Service",
-        "name": "SACO DE DAMA LAVADO AL SECO",
-        "category": "Lavado",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 10.0,
-          "url": "https://lavanderiajpprowash.com/servicios#saco-de-dama-lavado-al-seco",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 457,
+      "position": 433,
       "item": {
         "@type": "Service",
         "name": "SACO DE DAMA NEGRO LAVADO AL SECO",
@@ -7317,7 +6933,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 458,
+      "position": 434,
       "item": {
         "@type": "Service",
         "name": "SACO DE GALA BLANCO",
@@ -7333,7 +6949,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 459,
+      "position": 435,
       "item": {
         "@type": "Service",
         "name": "SACO DE HOMBRE CON CODERA DE CUERINA",
@@ -7349,7 +6965,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 460,
+      "position": 436,
       "item": {
         "@type": "Service",
         "name": "SACO DE HOMBRE LAVADO AL SECO",
@@ -7365,7 +6981,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 461,
+      "position": 437,
       "item": {
         "@type": "Service",
         "name": "SACO DE LANA",
@@ -7381,7 +6997,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 462,
+      "position": 438,
       "item": {
         "@type": "Service",
         "name": "SACO DE LANILLA LARGO LAVADO AL SECO",
@@ -7397,7 +7013,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 463,
+      "position": 439,
       "item": {
         "@type": "Service",
         "name": "SACO DE LINO GRUESO",
@@ -7413,7 +7029,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 464,
+      "position": 440,
       "item": {
         "@type": "Service",
         "name": "SACO DE MUJER CADERA TELA DELGADA",
@@ -7429,7 +7045,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 465,
+      "position": 441,
       "item": {
         "@type": "Service",
         "name": "SACO DE NIÑO",
@@ -7445,7 +7061,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 466,
+      "position": 442,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO",
@@ -7461,7 +7077,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 467,
+      "position": 443,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO CON FORRO LAVADO AL SECO",
@@ -7477,7 +7093,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 468,
+      "position": 444,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO DEBAJO DE LA CADERA",
@@ -7493,7 +7109,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 469,
+      "position": 445,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO DEBAJO DE LA RODILLA",
@@ -7509,7 +7125,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 470,
+      "position": 446,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO HOMBRE",
@@ -7525,7 +7141,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 471,
+      "position": 447,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO LARGO",
@@ -7541,7 +7157,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 472,
+      "position": 448,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO LARGO LAVADO AL SECO",
@@ -7557,7 +7173,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 473,
+      "position": 449,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO LAVADO AL SECO",
@@ -7573,7 +7189,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 474,
+      "position": 450,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO MEDIANO LAVADO AL SECO",
@@ -7589,7 +7205,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 475,
+      "position": 451,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO NIÑA",
@@ -7605,7 +7221,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 476,
+      "position": 452,
       "item": {
         "@type": "Service",
         "name": "SACO DE PAÑO SIN FORRO LAVADO AL SECO",
@@ -7621,7 +7237,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 477,
+      "position": 453,
       "item": {
         "@type": "Service",
         "name": "SACO DE PELUCHE",
@@ -7637,23 +7253,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 478,
-      "item": {
-        "@type": "Service",
-        "name": "SACO DE PELUCHE",
-        "category": "Otros",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 15.0,
-          "url": "https://lavanderiajpprowash.com/servicios#saco-de-peluche",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 479,
+      "position": 454,
       "item": {
         "@type": "Service",
         "name": "SACO DE POLICIA",
@@ -7669,7 +7269,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 480,
+      "position": 455,
       "item": {
         "@type": "Service",
         "name": "SACO DE SERENO",
@@ -7685,23 +7285,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 481,
-      "item": {
-        "@type": "Service",
-        "name": "SACO DE SERENO",
-        "category": "Saco varón",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 9.0,
-          "url": "https://lavanderiajpprowash.com/servicios#saco-de-sereno",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 482,
+      "position": 456,
       "item": {
         "@type": "Service",
         "name": "SACO DE TELA AZUL ACERO DE CABALLERO",
@@ -7717,7 +7301,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 483,
+      "position": 457,
       "item": {
         "@type": "Service",
         "name": "SACO DE TELA AZUL NOCHE CABALLERO LAVADO AL SECO",
@@ -7733,7 +7317,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 484,
+      "position": 458,
       "item": {
         "@type": "Service",
         "name": "SACO DE TELA NEGRO CABALLERO LAVADO AL SECO",
@@ -7749,7 +7333,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 485,
+      "position": 459,
       "item": {
         "@type": "Service",
         "name": "SACO DE TERNO SOLO PLANCHADO",
@@ -7765,7 +7349,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 486,
+      "position": 460,
       "item": {
         "@type": "Service",
         "name": "SACO DE TERNO T. DELGADA GRIS CLARO AL SECO",
@@ -7781,7 +7365,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 487,
+      "position": 461,
       "item": {
         "@type": "Service",
         "name": "SACO DELGADO LARGO",
@@ -7797,7 +7381,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 488,
+      "position": 462,
       "item": {
         "@type": "Service",
         "name": "SACO DRILL CON CAPUCHA",
@@ -7813,7 +7397,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 489,
+      "position": 463,
       "item": {
         "@type": "Service",
         "name": "SACO LANILLA LAVA AL SECO",
@@ -7829,7 +7413,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 490,
+      "position": 464,
       "item": {
         "@type": "Service",
         "name": "SACO LARGO DAMA LAVADO AL SECO",
@@ -7845,7 +7429,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 491,
+      "position": 465,
       "item": {
         "@type": "Service",
         "name": "SACO LARGO DRILL DAMA LAVADO AL SECO",
@@ -7861,7 +7445,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 492,
+      "position": 466,
       "item": {
         "@type": "Service",
         "name": "SACO LAVADO AL SECO",
@@ -7877,7 +7461,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 493,
+      "position": 467,
       "item": {
         "@type": "Service",
         "name": "SACO NIÑO",
@@ -7893,7 +7477,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 494,
+      "position": 468,
       "item": {
         "@type": "Service",
         "name": "SACO PAÑO BAJO CADERA",
@@ -7909,7 +7493,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 495,
+      "position": 469,
       "item": {
         "@type": "Service",
         "name": "SACO SIMPLE",
@@ -7925,7 +7509,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 496,
+      "position": 470,
       "item": {
         "@type": "Service",
         "name": "SACO TELA DELGADO",
@@ -7941,7 +7525,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 497,
+      "position": 471,
       "item": {
         "@type": "Service",
         "name": "SACO VARON LAVADO AL SECO",
@@ -7957,7 +7541,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 498,
+      "position": 472,
       "item": {
         "@type": "Service",
         "name": "SACON DE HOMBRE",
@@ -7973,7 +7557,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 499,
+      "position": 473,
       "item": {
         "@type": "Service",
         "name": "SACON DE PAÑO MUJER",
@@ -7989,7 +7573,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 500,
+      "position": 474,
       "item": {
         "@type": "Service",
         "name": "SACON HOMBRE",
@@ -8005,7 +7589,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 501,
+      "position": 475,
       "item": {
         "@type": "Service",
         "name": "SALIDA DE BAÑO",
@@ -8021,7 +7605,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 502,
+      "position": 476,
       "item": {
         "@type": "Service",
         "name": "SANDALIA LAVADO",
@@ -8037,7 +7621,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 503,
+      "position": 477,
       "item": {
         "@type": "Service",
         "name": "SASTRE DAMA LAVADO AL SECO",
@@ -8053,7 +7637,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 504,
+      "position": 478,
       "item": {
         "@type": "Service",
         "name": "SECADO DE ROPA",
@@ -8069,7 +7653,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 505,
+      "position": 479,
       "item": {
         "@type": "Service",
         "name": "SECADO EDREDON 105 PLAZAS",
@@ -8085,7 +7669,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 506,
+      "position": 480,
       "item": {
         "@type": "Service",
         "name": "SHALL",
@@ -8101,7 +7685,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 507,
+      "position": 481,
       "item": {
         "@type": "Service",
         "name": "SHORT JEANS LAVADO AL SECO",
@@ -8117,7 +7701,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 508,
+      "position": 482,
       "item": {
         "@type": "Service",
         "name": "SLEEPING DE PELUCHE",
@@ -8133,7 +7717,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 509,
+      "position": 483,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO",
@@ -8149,7 +7733,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 510,
+      "position": 484,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO CUBRECAMA",
@@ -8165,7 +7749,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 511,
+      "position": 485,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO EDREDON 1 PLZ.",
@@ -8181,7 +7765,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 512,
+      "position": 486,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO EDREDON 11/2 PLZ.",
@@ -8197,7 +7781,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 513,
+      "position": 487,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO EDREDON 2 PLZ.",
@@ -8213,7 +7797,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 514,
+      "position": 488,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO ROPA",
@@ -8229,7 +7813,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 515,
+      "position": 489,
       "item": {
         "@type": "Service",
         "name": "SOLO LAVADO Y PLANCHADO",
@@ -8245,7 +7829,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 516,
+      "position": 490,
       "item": {
         "@type": "Service",
         "name": "SOLO SECADO EDREDON 1.5PLAZAS",
@@ -8261,7 +7845,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 517,
+      "position": 491,
       "item": {
         "@type": "Service",
         "name": "SOLO SECADO EDREDON 2 PLZAS",
@@ -8277,7 +7861,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 518,
+      "position": 492,
       "item": {
         "@type": "Service",
         "name": "SOLO SECADO JEANS",
@@ -8293,7 +7877,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 519,
+      "position": 493,
       "item": {
         "@type": "Service",
         "name": "TAPETE  CHICO LAVADO Y SECADO",
@@ -8309,7 +7893,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 520,
+      "position": 494,
       "item": {
         "@type": "Service",
         "name": "TAPETE DE ARBOL ORLADO GRANDE",
@@ -8325,7 +7909,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 521,
+      "position": 495,
       "item": {
         "@type": "Service",
         "name": "TERNO DE  TELA COLOR GRIS CLARO LAVADO AL SECO",
@@ -8341,7 +7925,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 522,
+      "position": 496,
       "item": {
         "@type": "Service",
         "name": "TERNO DE LANILLA GRIS OSCURO LAVADO AL SECO",
@@ -8357,7 +7941,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 523,
+      "position": 497,
       "item": {
         "@type": "Service",
         "name": "TERNO DE LANILLA MARRON LAVADO AL SECO",
@@ -8373,7 +7957,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 524,
+      "position": 498,
       "item": {
         "@type": "Service",
         "name": "TERNO DE LANILLA NEGRO LAVADO AL SECO",
@@ -8389,7 +7973,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 525,
+      "position": 499,
       "item": {
         "@type": "Service",
         "name": "TERNO DE NIÑO LAVADO AL SECO",
@@ -8405,7 +7989,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 526,
+      "position": 500,
       "item": {
         "@type": "Service",
         "name": "TERNO LAVADO AL SECO",
@@ -8421,7 +8005,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 527,
+      "position": 501,
       "item": {
         "@type": "Service",
         "name": "TERNO LAVADO EXPRESS",
@@ -8437,7 +8021,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 528,
+      "position": 502,
       "item": {
         "@type": "Service",
         "name": "TERNO TELA DELGADA AZUL NOCHE LAVADO AL SECO",
@@ -8453,7 +8037,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 529,
+      "position": 503,
       "item": {
         "@type": "Service",
         "name": "TERNO TELA DELGADA GRIS OSCURO LAVADO AL SECO",
@@ -8469,7 +8053,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 530,
+      "position": 504,
       "item": {
         "@type": "Service",
         "name": "TERNO TELA DELGADA NEGRO LAVADO AL SECO",
@@ -8485,7 +8069,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 531,
+      "position": 505,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO BOLSO",
@@ -8501,7 +8085,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 532,
+      "position": 506,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO DE CASACA",
@@ -8517,7 +8101,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 533,
+      "position": 507,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO DE FALDA",
@@ -8533,7 +8117,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 534,
+      "position": 508,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO DE VESTIDO",
@@ -8549,7 +8133,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 535,
+      "position": 509,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO GABAN",
@@ -8565,7 +8149,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 536,
+      "position": 510,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO PANTALON",
@@ -8581,7 +8165,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 537,
+      "position": 511,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO SHOR",
@@ -8597,7 +8181,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 538,
+      "position": 512,
       "item": {
         "@type": "Service",
         "name": "TEÑIDO SHORT",
@@ -8613,7 +8197,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 539,
+      "position": 513,
       "item": {
         "@type": "Service",
         "name": "TOALLA",
@@ -8629,7 +8213,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 540,
+      "position": 514,
       "item": {
         "@type": "Service",
         "name": "TOALLA DE BAÑO",
@@ -8645,7 +8229,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 541,
+      "position": 515,
       "item": {
         "@type": "Service",
         "name": "TOALLA DE BAÑO GRANDE",
@@ -8661,7 +8245,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 542,
+      "position": 516,
       "item": {
         "@type": "Service",
         "name": "TOALLA DE MANO",
@@ -8677,7 +8261,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 543,
+      "position": 517,
       "item": {
         "@type": "Service",
         "name": "TRAJE DE BOMBERO",
@@ -8693,7 +8277,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 544,
+      "position": 518,
       "item": {
         "@type": "Service",
         "name": "TRAJE DE GALA AZUL EXPRES",
@@ -8709,7 +8293,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 545,
+      "position": 519,
       "item": {
         "@type": "Service",
         "name": "TRAJE DE POLICIA",
@@ -8725,7 +8309,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 546,
+      "position": 520,
       "item": {
         "@type": "Service",
         "name": "TRAJE DE SERENOS",
@@ -8741,7 +8325,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 547,
+      "position": 521,
       "item": {
         "@type": "Service",
         "name": "TRUZA",
@@ -8757,7 +8341,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 548,
+      "position": 522,
       "item": {
         "@type": "Service",
         "name": "UNIFORME DE GALA LAVADO AL SECO",
@@ -8773,7 +8357,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 549,
+      "position": 523,
       "item": {
         "@type": "Service",
         "name": "VESTIDO CON ORLAS DE COMUNION",
@@ -8789,7 +8373,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 550,
+      "position": 524,
       "item": {
         "@type": "Service",
         "name": "VESTIDO CORTO LAVADO AL SECO",
@@ -8805,7 +8389,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 551,
+      "position": 525,
       "item": {
         "@type": "Service",
         "name": "VESTIDO CORTO SIN ORLAS",
@@ -8821,7 +8405,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 552,
+      "position": 526,
       "item": {
         "@type": "Service",
         "name": "VESTIDO DE FIESTA CON PEDRERIA NIÑA",
@@ -8837,7 +8421,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 553,
+      "position": 527,
       "item": {
         "@type": "Service",
         "name": "VESTIDO DE FIESTA LAVADO AL SECO",
@@ -8853,7 +8437,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 554,
+      "position": 528,
       "item": {
         "@type": "Service",
         "name": "VESTIDO DE NIÑA",
@@ -8869,7 +8453,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 555,
+      "position": 529,
       "item": {
         "@type": "Service",
         "name": "VESTIDO LARGO DE FIESTA CON DETALLES LAVADO AL SECO",
@@ -8885,7 +8469,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 556,
+      "position": 530,
       "item": {
         "@type": "Service",
         "name": "VESTIDO LARGO DE FIESTA SIN ORLAS",
@@ -8901,7 +8485,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 557,
+      "position": 531,
       "item": {
         "@type": "Service",
         "name": "VESTIDO LARGO LAVADO AL SECO",
@@ -8917,7 +8501,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 558,
+      "position": 532,
       "item": {
         "@type": "Service",
         "name": "VESTIDO NIÑA  - 4 AÑOS",
@@ -8933,7 +8517,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 559,
+      "position": 533,
       "item": {
         "@type": "Service",
         "name": "VESTIDOS LARGOS",
@@ -8949,7 +8533,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 560,
+      "position": 534,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLA BOTIN LAVADO Y SECADO",
@@ -8965,7 +8549,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 561,
+      "position": 535,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLA DE NIÑO",
@@ -8981,7 +8565,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 562,
+      "position": 536,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLA LAVADO Y SECADO",
@@ -8997,7 +8581,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 563,
+      "position": 537,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLA NIÑO",
@@ -9013,7 +8597,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 564,
+      "position": 538,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLA NIÑOS LAVADO Y SECADO",
@@ -9029,7 +8613,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 565,
+      "position": 539,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLA OSCURA",
@@ -9045,7 +8629,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 566,
+      "position": 540,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLAS BLANCA DE DAMA",
@@ -9061,7 +8645,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 567,
+      "position": 541,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLAS BLANCA DE HOMBRE",
@@ -9077,7 +8661,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 568,
+      "position": 542,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLAS BLANCAS DE CUERO LAVADO AL SECO",
@@ -9093,7 +8677,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 569,
+      "position": 543,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLAS SOLO LAVADO",
@@ -9109,7 +8693,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 570,
+      "position": 544,
       "item": {
         "@type": "Service",
         "name": "ZAPATILLAS SOLO SECADO",
@@ -9125,23 +8709,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 571,
-      "item": {
-        "@type": "Service",
-        "name": "ZAPATILLAS SOLO SECADO",
-        "category": "Zapatillas",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 5.0,
-          "url": "https://lavanderiajpprowash.com/servicios#zapatillas-solo-secado",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 572,
+      "position": 545,
       "item": {
         "@type": "Service",
         "name": "bata 1 pieza",
@@ -9157,7 +8725,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 573,
+      "position": 546,
       "item": {
         "@type": "Service",
         "name": "lavado de uniforme",
@@ -9173,7 +8741,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 574,
+      "position": 547,
       "item": {
         "@type": "Service",
         "name": "mantas delgadas 1.5 plazas",
@@ -9189,23 +8757,7 @@
     },
     {
       "@type": "ListItem",
-      "position": 575,
-      "item": {
-        "@type": "Service",
-        "name": "saco de niño",
-        "category": "Saco",
-        "offers": {
-          "@type": "Offer",
-          "priceCurrency": "PEN",
-          "price": 8.0,
-          "url": "https://lavanderiajpprowash.com/servicios#saco-de-niño",
-          "availability": "https://schema.org/InStock"
-        }
-      }
-    },
-    {
-      "@type": "ListItem",
-      "position": 576,
+      "position": 548,
       "item": {
         "@type": "Service",
         "name": "zapatillas lavado y secado",
