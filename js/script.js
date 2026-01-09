@@ -916,4 +916,155 @@ document.addEventListener('DOMContentLoaded', () => {
             chatbotToggle.focus();
         }
     });
+
+    function initPricingSection() {
+        const pricingSection = document.getElementById('precios');
+        if (!pricingSection) return;
+
+        const featuredEl = document.getElementById('pricing-featured');
+        const resultsEl = document.getElementById('pricing-results');
+        const categoriesEl = document.getElementById('pricing-categories');
+        const searchInput = document.getElementById('pricing-search');
+        const emptyEl = document.getElementById('pricing-empty');
+
+        if (!featuredEl || !resultsEl || !categoriesEl || !searchInput || !emptyEl) return;
+
+        const paths = {
+            featured: 'assets/images/Precios/servicios_principales.json',
+            all: 'assets/images/Precios/servicios_all_normalizado.json',
+            categories: 'assets/images/Precios/servicios_por_categoria.json',
+            jsonldFeatured: 'assets/images/Precios/jsonld_servicios_principales.json',
+            jsonldFull: 'assets/images/Precios/jsonld_servicios_completo.json'
+        };
+
+        const state = {
+            category: 'all',
+            query: ''
+        };
+
+        function normalizeText(value) {
+            return value
+                .toLowerCase()
+                .normalize('NFD')
+                .replace(/[\u0300-\u036f]/g, '');
+        }
+
+        function renderCards(items, target) {
+            target.innerHTML = '';
+            const fragment = document.createDocumentFragment();
+            items.forEach((item) => {
+                const formattedPrice = item.priceFormatted ? String(item.priceFormatted) : 'Consultar';
+                const card = document.createElement('div');
+                card.className = 'pricing-card';
+                card.innerHTML = `
+                    <span class="pricing-meta">${item.category}</span>
+                    <h4>${item.name}</h4>
+                    <span class="pricing-price">${formattedPrice}</span>
+                `;
+                fragment.appendChild(card);
+            });
+            target.appendChild(fragment);
+        }
+
+        function renderEmpty(isEmpty) {
+            emptyEl.hidden = !isEmpty;
+        }
+
+        function buildCategoryButtons(categories) {
+            categoriesEl.innerHTML = '';
+            const fragment = document.createDocumentFragment();
+
+            const allButton = document.createElement('button');
+            allButton.className = 'pricing-category-btn active';
+            allButton.type = 'button';
+            allButton.dataset.category = 'all';
+            allButton.textContent = 'Todas';
+            fragment.appendChild(allButton);
+
+            categories.forEach((category) => {
+                const button = document.createElement('button');
+                button.className = 'pricing-category-btn';
+                button.type = 'button';
+                button.dataset.category = category;
+                button.textContent = category;
+                fragment.appendChild(button);
+            });
+
+            categoriesEl.appendChild(fragment);
+        }
+
+        function setActiveCategory(category) {
+            categoriesEl.querySelectorAll('.pricing-category-btn').forEach((btn) => {
+                btn.classList.toggle('active', btn.dataset.category === category);
+            });
+        }
+
+        function filterItems(items) {
+            if (!state.query) return items;
+            const query = normalizeText(state.query);
+            return items.filter((item) => {
+                const name = normalizeText(item.name);
+                const category = normalizeText(item.category);
+                return name.includes(query) || category.includes(query);
+            });
+        }
+
+        function updateResults(allItems, categoryMap) {
+            let items = [];
+            if (state.category === 'all') {
+                items = allItems;
+            } else {
+                items = categoryMap[state.category] || [];
+            }
+            const filtered = filterItems(items);
+            renderCards(filtered, resultsEl);
+            renderEmpty(filtered.length === 0);
+        }
+
+        function injectJsonLd(path, id) {
+            if (document.getElementById(id)) return;
+            fetch(path)
+                .then((response) => response.json())
+                .then((data) => {
+                    const script = document.createElement('script');
+                    script.type = 'application/ld+json';
+                    script.id = id;
+                    script.textContent = JSON.stringify(data);
+                    document.head.appendChild(script);
+                })
+                .catch(() => {});
+        }
+
+        Promise.all([
+            fetch(paths.featured).then((response) => response.json()),
+            fetch(paths.all).then((response) => response.json()),
+            fetch(paths.categories).then((response) => response.json())
+        ])
+            .then(([featured, allItems, categoryMap]) => {
+                renderCards(featured, featuredEl);
+                buildCategoryButtons(Object.keys(categoryMap).sort());
+                updateResults(allItems, categoryMap);
+
+                categoriesEl.addEventListener('click', (event) => {
+                    const button = event.target.closest('.pricing-category-btn');
+                    if (!button) return;
+                    state.category = button.dataset.category;
+                    setActiveCategory(state.category);
+                    updateResults(allItems, categoryMap);
+                });
+
+                searchInput.addEventListener('input', (event) => {
+                    state.query = event.target.value.trim();
+                    updateResults(allItems, categoryMap);
+                });
+
+                injectJsonLd(paths.jsonldFeatured, 'pricing-jsonld-featured');
+                injectJsonLd(paths.jsonldFull, 'pricing-jsonld-full');
+            })
+            .catch(() => {
+                renderEmpty(true);
+            });
+    }
+
+    initPricingSection();
 });

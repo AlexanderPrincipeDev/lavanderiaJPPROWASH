@@ -1,0 +1,4610 @@
+[
+  {
+    "id": "FOR-25508749",
+    "name": "FORRO DE MUEBLES 3-2-1 SOLO LAVADO",
+    "category": "Lavado",
+    "price": 22.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 22,00"
+  },
+  {
+    "id": "SAC-45013245",
+    "name": "SACO DE LINO GRUESO",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-08647769",
+    "name": "CASACA DE CUERINA CON FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "JUE-05072739",
+    "name": "JUEGO DE SABANAS SOLO SECADO",
+    "category": "Secado",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "COR-87595306",
+    "name": "CORTINA GRANDE LABRADA",
+    "category": "Cortinas",
+    "price": 60.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 60,00"
+  },
+  {
+    "id": "JUE-27170464",
+    "name": "JUEGO DE SABANAS DE POLAR 1.5 PLZ.",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CUB-47402508",
+    "name": "CUBRECAMA DELGADA DOBLE CARA 11/2 PLZ.",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "MAN-72526746",
+    "name": "MANTA TEJIDA 1 1/2 PLZ",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAM-50523876",
+    "name": "CAMISA JEAN LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PAT-22360517",
+    "name": "PATINES CANILLERAS Y RODILLERAS",
+    "category": "Otros",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "PLA-20907327",
+    "name": "PLANCHADO DE VESTIDO LARGO",
+    "category": "Planchado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "FOR-07092489",
+    "name": "FORRO DE MUEBLE CHICO",
+    "category": "Hogar",
+    "price": 11.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 11,00"
+  },
+  {
+    "id": "FOR-87619932",
+    "name": "FORRO DE MUEBLE MEDIANO",
+    "category": "Hogar",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "EDR-31405857",
+    "name": "EDREDON PLUSH CON FORRO DE CARNERO 2 PLAZ.",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "SAN-10384769",
+    "name": "SANDALIA LAVADO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "EDR-97056248",
+    "name": "EDREDON  DOBLE CARA 1.5 PLZ",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CHA-56920131",
+    "name": "CHALECO DE LANA",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "GOR-05483827",
+    "name": "GORRO CON VISERA SIMPLE",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "CAS-29786159",
+    "name": "CASACA IMPERMEABLE FORRO SIMPLE",
+    "category": "Hogar",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PLA-70591609",
+    "name": "PLANCHADO DE TERNO COMPLETO EXPRESS",
+    "category": "Planchado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-97510206",
+    "name": "SACO DE PAÑO DEBAJO DE LA CADERA",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "MOR-21609074",
+    "name": "MORRAL SIMPLE",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "CAS-35868219",
+    "name": "CASACA JEANS SIMPLE",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-24905132",
+    "name": "SACO DE PAÑO DEBAJO DE LA RODILLA",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "FUN-21952346",
+    "name": "FUNDA DE GUITARRA SIMPLE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-97164482",
+    "name": "LAVADO DE INDUMENTARIA DE PERSONAL",
+    "category": "Lavado",
+    "price": 4.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,50"
+  },
+  {
+    "id": "EDR-28076359",
+    "name": "EDREDON PLUSH 2 PLZ",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAN-60923718",
+    "name": "MANTA PLUSH CON FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "FRA-21509374",
+    "name": "FRAZADA PLUSH",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "EDR-78244016",
+    "name": "EDREDON PLUSH CON FORRO",
+    "category": "Ropa de cama",
+    "price": 22.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 22,00"
+  },
+  {
+    "id": "SAC-43588632",
+    "name": "SACO CORTO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAB-72160562",
+    "name": "SABANA DE ALGODON 280 HILOS",
+    "category": "Ropa de cama",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "EDR-25657108",
+    "name": "EDREDON 2 PLZ LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAN-30931068",
+    "name": "MANTA GRANDE 2.5 PLAZAS",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "SOL-31724048",
+    "name": "SOLO LAVADO EDREDON 11/2 PLZ.",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-75852402",
+    "name": "CASACA IMPERMEABLE CON CAPUCHA CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CAS-49291477",
+    "name": "CASACA CORDELINA CON FORRO DE PELUCHE CABALLERO",
+    "category": "Hogar",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SOL-17382675",
+    "name": "SOLO LAVADO EDREDON 1 PLZ.",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PAN-26049673",
+    "name": "PANTALON DE VESTIR NEGRO DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "ROP-94356430",
+    "name": "ROPA DE BEBE LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "SAC-06891547",
+    "name": "SACO CORTO DRILL",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "VES-70831795",
+    "name": "VESTIDO CON ORLAS DE COMUNION",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "SAC-07480629",
+    "name": "SACO DE CORDELINA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CHA-67872460",
+    "name": "CHALECO DE PAÑO",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CAS-09211854",
+    "name": "CASACA DE MARCA DELICADA",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "FOR-38640738",
+    "name": "FORRO DE MUEBLE GRANDE TELA GRUESA",
+    "category": "Hogar",
+    "price": 24.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 24,00"
+  },
+  {
+    "id": "FOR-33510929",
+    "name": "FORRO DE COJIN DE MUEBLE",
+    "category": "Hogar",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "FOR-36146905",
+    "name": "FORRO DE MUEBLE MEDIANOS TELA GRUESA",
+    "category": "Hogar",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "FOR-96573948",
+    "name": "FORRO DE SILLAS X10",
+    "category": "Hogar",
+    "price": 48.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 48,00"
+  },
+  {
+    "id": "SAC-50971934",
+    "name": "SACO SIMPLE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-10827550",
+    "name": "CASACA DE CUERO HOMBRE",
+    "category": "Otros",
+    "price": 70.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 70,00"
+  },
+  {
+    "id": "PAN-77205396",
+    "name": "PANTALON DRILL",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "MAN-33850687",
+    "name": "MANTA  PEQUEÑA DE MASCOTA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MAN-48913257",
+    "name": "MANTEL MEDIANO",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "CAS-23508205",
+    "name": "CASACA DRILL",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "FOR-36076249",
+    "name": "FORRO DE COLCHON SIMPLE",
+    "category": "Ropa de cama",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "FOR-20297759",
+    "name": "FORRO DE COLCHON QUEEN",
+    "category": "Ropa de cama",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "EDR-97356076",
+    "name": "EDREDON 2PLZ SOLO LAVADO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TE-49684952",
+    "name": "TEÑIDO GABAN",
+    "category": "Tintorería",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "TER-15483774",
+    "name": "TERNO DE  TELA COLOR GRIS CLARO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CHA-27237186",
+    "name": "CHALECO IMPERMEABLE CABALLERO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "EDR-31996504",
+    "name": "EDREDON CON FORRO  2PLZ.",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "EDR-84182263",
+    "name": "EDREDON DE PLUMAS QUEEN",
+    "category": "Ropa de cama",
+    "price": 36.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 36,00"
+  },
+  {
+    "id": "FOR-20692315",
+    "name": "FORRO DE SILLAS",
+    "category": "Hogar",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "EDR-34927240",
+    "name": "EDREDON PLUSH CON FORRO DE CARNERO 1.5 PLAZ.",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAS-34502164",
+    "name": "CASACA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-40330621",
+    "name": "CASACA JEAN CON FORRO DE CARNERO CABALLERO",
+    "category": "Hogar",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-83286097",
+    "name": "SACO CON CAPUCHA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-46405037",
+    "name": "CASACA JEANS DAMA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PAS-87069752",
+    "name": "PASHMINA",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "POL-54361728",
+    "name": "POLERA TEÑIDO",
+    "category": "Tintorería",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "FOR-92616718",
+    "name": "FORRO DE COLCHON DELGADO",
+    "category": "Ropa de cama",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "TRA-50382176",
+    "name": "TRAJE DE BOMBERO",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-05977139",
+    "name": "SACO DE PAÑO HOMBRE",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "GOR-38441157",
+    "name": "GORRO CON VISERA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-58697467",
+    "name": "CASACA IMPERMEABLE TIPO PARKA",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SOL-30210655",
+    "name": "SOLO LAVADO CUBRECAMA",
+    "category": "Lavado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "FOR-94732412",
+    "name": "FORRO DE COLCHON SOLO LAVADO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-68750562",
+    "name": "CASACA IMPERMEABLE GRANDE CON CAPUCHA",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-51328099",
+    "name": "SACON DE PAÑO MUJER",
+    "category": "Otros",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "EDR-53700497",
+    "name": "EDREDON 2PLAZAS PLUSH",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "PLA-03896481",
+    "name": "PLANCHADO DE TERNO COMPLETO",
+    "category": "Planchado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-50790874",
+    "name": "SACON HOMBRE",
+    "category": "Otros",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "TAP-07215864",
+    "name": "TAPETE DE ARBOL ORLADO GRANDE",
+    "category": "Alfombras",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAN-57804542",
+    "name": "MANTA MEDIANA",
+    "category": "Otros",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CAS-24801290",
+    "name": "CASACA JEAN",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "ROP-01103467",
+    "name": "ROPA DE MASCOTA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "BUF-92164378",
+    "name": "BUFANDA",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "SAC-19505849",
+    "name": "SACO DRILL CON CAPUCHA",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "EDR-96385051",
+    "name": "EDREDON GRUESO 2 PLZ +",
+    "category": "Ropa de cama",
+    "price": 22.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 22,00"
+  },
+  {
+    "id": "CAS-15797839",
+    "name": "CASACA IMPERMEABLE NEGRO CON FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CUB-13568153",
+    "name": "CUBRECAMA 1 PLZ LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "ZAP-12429587",
+    "name": "ZAPATILLAS SOLO LAVADO",
+    "category": "Lavado",
+    "price": 0.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 0,00"
+  },
+  {
+    "id": "CUB-52218769",
+    "name": "CUBRECAMA 11/2 PLZ. SOLO LAVADO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-90267235",
+    "name": "CASACA DEPORTIVA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "EDR-40708847",
+    "name": "EDREDON 2PLZ +",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "CON-43522648",
+    "name": "CONJUNTO DAMA DOS PIEZAS SACO LARGO",
+    "category": "Otros",
+    "price": 22.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 22,00"
+  },
+  {
+    "id": "COR-10893906",
+    "name": "CORTINAS PESADAS DE TECHO A PISO 1.5 M",
+    "category": "Cortinas",
+    "price": 24.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 24,00"
+  },
+  {
+    "id": "TE-12857352",
+    "name": "TEÑIDO BOLSO",
+    "category": "Tintorería",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-59448813",
+    "name": "SACO DE NIÑO",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "SAC-64502387",
+    "name": "SACO DE PAÑO LARGO",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "SAC-55769918",
+    "name": "SACO DE TELA AZUL ACERO DE CABALLERO",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-19321007",
+    "name": "CASACA IMPERMEABLE CON FORRO",
+    "category": "Hogar",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "MAN-81287543",
+    "name": "MANTA CHICA DE MASCOTA",
+    "category": "Otros",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "ZAP-38180470",
+    "name": "ZAPATILLA NIÑOS LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "LAV-93050914",
+    "name": "LAVADO Y SECADO DE PRENDAS INDUSTRIAL Y CORPORATIVO",
+    "category": "Secado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "COL-30718664",
+    "name": "COLCHA 1 PLZ",
+    "category": "Ropa de cama",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "BAT-07726998",
+    "name": "BATA BLANCA MEDICO",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-92493572",
+    "name": "CASACA DE PAÑO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-27462371",
+    "name": "CASACA JEAN AZUL DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-76405476",
+    "name": "CASACA DE PAÑO DE DAMA",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "CAS-92188067",
+    "name": "CASACA JEAN CON CORREA NEGRA DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAS-70354560",
+    "name": "CASACA BOMBER MUJER",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CUB-29776480",
+    "name": "CUBRECAMA QUEEN CON FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 25.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 25,00"
+  },
+  {
+    "id": "CUB-95031871",
+    "name": "CUBRECAMA POLAR CON FORRO DE CARNERO 2 PLZ.",
+    "category": "Hogar",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "CUB-49893645",
+    "name": "CUBRECAMA POLAR 11/2 PLZ SOLO LAVADO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MOC-07982174",
+    "name": "MOCHILA + CARTUCHERA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "FRA-47037068",
+    "name": "FRAZADA PLUSH FORRO DE CARNERO",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MIN-22498675",
+    "name": "MINI FALDA DE CUERINA",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "POL-25589137",
+    "name": "POLO MANGA LARGA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "FRA-99170122",
+    "name": "FRAZADA DE PLUSH CON FORRO DE CARNERO",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "FUN-59109134",
+    "name": "FUNDAS",
+    "category": "Otros",
+    "price": 0.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 0,50"
+  },
+  {
+    "id": "PAN-04958613",
+    "name": "PANTALON DAMA AL SECO",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "GAB-14272735",
+    "name": "GABARDINA SIMPLE",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "GAB-34810514",
+    "name": "GABARDINA AGAMUZAD A",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "PAN-11974565",
+    "name": "PANTALON DE CUERINA",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "MAN-81970427",
+    "name": "MANTEL 1.5 X 1.20",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MAL-45031392",
+    "name": "MALETA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "POL-08291254",
+    "name": "POLERA DELICADA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-00379485",
+    "name": "CASACA IMPERMEABLE GRUESA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "PEL-04235638",
+    "name": "PELUCHE DE OVEJA BLANCO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-30867534",
+    "name": "CASACA IMPERMEABLE DEPORTIVA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-94358521",
+    "name": "CASACA IMPERMEABLE ROSADO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-85993480",
+    "name": "CASACA IMPERMEABLE BLANCO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-54928729",
+    "name": "CASACA LARGA CON CAPUCHA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAS-46060894",
+    "name": "CASACA PLUSH NIÑA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-95718430",
+    "name": "SACO DE PELUCHE",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "TER-27595681",
+    "name": "TERNO LAVADO EXPRESS",
+    "category": "Lavado",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "EDR-91214587",
+    "name": "EDREDON 1.5 PLAZ ENJUAGUE Y SECADO",
+    "category": "Secado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-26079743",
+    "name": "CASACA CON FORRO POLAR",
+    "category": "Hogar",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "COR-98767213",
+    "name": "CORTINA ONCE PAÑOS",
+    "category": "Cortinas",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "VES-49610372",
+    "name": "VESTIDO NIÑA  - 4 AÑOS",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "EDR-68521370",
+    "name": "EDREDON QUEEN CON FORRO DE CARNERO",
+    "category": "Ropa de cama",
+    "price": 25.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 25,00"
+  },
+  {
+    "id": "FOR-79238531",
+    "name": "FORRO DE COLCHON",
+    "category": "Ropa de cama",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "SAB-69091845",
+    "name": "SABANA 3 UNIDADES",
+    "category": "Ropa de cama",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CUB-17807296",
+    "name": "CUBRECAMA DELGADO 2 PLZ",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-26340572",
+    "name": "SACO DE  LANILLA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-32813105",
+    "name": "CASACA DE HOMBRE LARGE O EXTRA LARGE",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAS-71733594",
+    "name": "CASACA CORDUROY HOMBRE",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "GAB-56473290",
+    "name": "GABARDINA DE MUJER LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "FRA-71252446",
+    "name": "FRAZADA TIGRE 11/2 PLZ.",
+    "category": "Ropa de cama",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CUB-03091176",
+    "name": "CUBRECAMA 2PLAZA CON FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "EDR-37079841",
+    "name": "EDREDON DE PELUCHE CON FORRO POLAR",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "ROP-27439650",
+    "name": "ROPA DE KARATE COLOR BLANCO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "ZAP-41249193",
+    "name": "ZAPATILLAS BLANCAS DE CUERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "BLA-95548277",
+    "name": "BLAZER CORDELINA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "PAN-70491251",
+    "name": "PANTALON DRILL MARRON DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-42054673",
+    "name": "PANTALON DE VESTIR LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "ROP-27566534",
+    "name": "ROPA DE BEBE",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SAC-13164580",
+    "name": "SACO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "ROP-48557937",
+    "name": "ROPA DE DEPORTE",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-31304578",
+    "name": "CASACA FORRO POLAR",
+    "category": "Hogar",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "PAN-60052485",
+    "name": "PANTALÓN DE VESTIR HOMBRE",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-94273752",
+    "name": "CASACA DE  MARCA O DE FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "SAB-84708369",
+    "name": "SABANA DOBLE 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "SAC-68904397",
+    "name": "SACO NIÑO",
+    "category": "Otros",
+    "price": 0.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 0,00"
+  },
+  {
+    "id": "LAV-77938316",
+    "name": "LAVADO DE INDUMENTARIA DE PERSONAL",
+    "category": "Lavado",
+    "price": 4.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,50"
+  },
+  {
+    "id": "DES-07564342",
+    "name": "DESMANCHADO",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "ZAP-78624279",
+    "name": "ZAPATILLA NIÑO",
+    "category": "Calzado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SAC-73446120",
+    "name": "SACO DE PAÑO NIÑA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "CAS-61079019",
+    "name": "CASACA DEPORTIVA DELGADA AL AGUA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "CAS-51726372",
+    "name": "CASACA GRUESA C CAPUCHA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "FOR-30629907",
+    "name": "FORRO DE COJIN",
+    "category": "Hogar",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "FOR-04399620",
+    "name": "FORRO PEQUEÑO SEC",
+    "category": "Hogar",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "FOR-68127179",
+    "name": "FORRO SECCIONAL",
+    "category": "Hogar",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CON-38259106",
+    "name": "CONJUNTO SACO, PANTALON Y CHALECO DAMA",
+    "category": "Otros",
+    "price": 25.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 25,00"
+  },
+  {
+    "id": "PLA-52187491",
+    "name": "PLANCHADO DE BLUSA",
+    "category": "Planchado",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "MAN-45114325",
+    "name": "MANTA 2 PLZS SOLO SECADO",
+    "category": "Secado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SAC-08310781",
+    "name": "SACO TELA DELGADO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TER-61024716",
+    "name": "TERNO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-94638736",
+    "name": "SACO DAMA TELA DELGADA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-76120536",
+    "name": "SACO DE HOMBRE CON CODERA DE CUERINA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "PAN-81583079",
+    "name": "PANTALON DE VESTIR HOMBRE AL SECO",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-41193275",
+    "name": "PANTALON DE VESTIR AL SECO HOMBRE",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAN-27296478",
+    "name": "PANTALON DAMA AL SECO",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-42372401",
+    "name": "PANATALON DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-08651527",
+    "name": "CASACA DEPORTIVA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-78616200",
+    "name": "CASACA DE MUJER",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "PON-18399747",
+    "name": "PONCHO ALPACA",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "FOR-81413596",
+    "name": "FORRO DE COLCHON KING",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-16945080",
+    "name": "SACO BLAZER DAMA TELA DELGADA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SOL-74658090",
+    "name": "SOLO SECADO EDREDON 1.5PLAZAS",
+    "category": "Secado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CHO-18628349",
+    "name": "CHOMPA AL AGUA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "SLE-43739465",
+    "name": "SLEEPING DE PELUCHE",
+    "category": "Otros",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "TOA-85930178",
+    "name": "TOALLA DE MANO",
+    "category": "Otros",
+    "price": 3.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,00"
+  },
+  {
+    "id": "CUB-31752486",
+    "name": "CUBRECAMA 1.5 PLAZAS",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "PAN-35359817",
+    "name": "PANTALON NEGRO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SAC-74423072",
+    "name": "SACO DELGADO LARGO",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "CUB-35472729",
+    "name": "CUBRECAMA DELGADO SIMPLE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-69531134",
+    "name": "CASACA CON DESCUENTO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-22748715",
+    "name": "SACO PAÑO BAJO CADERA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAS-93623425",
+    "name": "CASACA SIMPLE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "FOR-30931742",
+    "name": "FORRO DE MUEBLES 3 2 1",
+    "category": "Hogar",
+    "price": 30.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 30,00"
+  },
+  {
+    "id": "1SA-96734215",
+    "name": "1 SABANA",
+    "category": "Ropa de cama",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "TER-58146961",
+    "name": "TERNO DE LANILLA GRIS OSCURO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "TER-65538197",
+    "name": "TERNO DE LANILLA MARRON LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "TER-93576692",
+    "name": "TERNO TELA DELGADA GRIS OSCURO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "TER-04686523",
+    "name": "SACO DE TERNO T. DELGADA GRIS CLARO AL SECO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TER-29723417",
+    "name": "TERNO TELA DELGADA AZUL NOCHE LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "PAN-72196033",
+    "name": "PANTALON DRILL AZUL DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-36107993",
+    "name": "PANTALON DE VESTIR MARRON DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAN-25136680",
+    "name": "PANTALON DRILL BLANCO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-04382621",
+    "name": "PANTALON DE VESTIR BLANCO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAN-69162734",
+    "name": "PANTALON DE VESTIR AZUL DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-94281830",
+    "name": "PANTALON DE VESTIR MARRON DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-85068141",
+    "name": "PANTALON DRILL CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-95126683",
+    "name": "PANTALON DRILL BLANCO CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-59928804",
+    "name": "PANTALON DRILL NEGRO CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-57151382",
+    "name": "PANTALON DE VESTIR CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAN-82960047",
+    "name": "PANTALON DE VESTIR GRIS OSCURO CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-86137430",
+    "name": "PANTALON DE VESTIR GRIS CLARO CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAN-71417582",
+    "name": "PANTALON DE VESTIR AZUL NOCHE CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "BAT-45182408",
+    "name": "bata 1 pieza",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CUB-23045738",
+    "name": "CUBRECAMA SIMPLE",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAM-21352750",
+    "name": "CAMA DE MASCOTA CON DESINFECCION",
+    "category": "Otros",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "VES-34795750",
+    "name": "VESTIDO DE NIÑA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "POL-31082691",
+    "name": "POLERA SIMPLE",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "SAC-31618724",
+    "name": "SACO CORTO DELGADO DAMA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "FOR-39021614",
+    "name": "FORRO DE MUEBLE GRANDE",
+    "category": "Hogar",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "ZAP-35642376",
+    "name": "ZAPATILLA DE NIÑO",
+    "category": "Calzado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-40023471",
+    "name": "CASACA SOLO LAVADO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SAC-37290806",
+    "name": "SACO CORTO DELGADO DAMA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "EDR-84470951",
+    "name": "EDREDON POLAR 2    PLZ.",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CUB-21645567",
+    "name": "CUBRECAMA 2 PLZ",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAN-69336414",
+    "name": "MANTA DELGADA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "CAS-75437019",
+    "name": "CASACA DE POLICIA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-78291655",
+    "name": "SACO DE PAÑO LARGO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "BAT-34720957",
+    "name": "BATA JUEGO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "TAP-03467152",
+    "name": "TAPETE  CHICO LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "CHO-25013896",
+    "name": "CHOMPA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "EDR-32349257",
+    "name": "EDREDON POLAR CON FORRO DE CARNERO 1.5PLZ",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CUB-39786895",
+    "name": "CUBRECAMA 2PLZ SOLO LAVADO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-29593818",
+    "name": "SACO DE LANA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-54862130",
+    "name": "CASACA LARGA IMPERMEABLE CON CAPUCHA Y PELUCHE",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SEC-67972413",
+    "name": "SECADO DE ROPA",
+    "category": "Secado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "ZAP-74210251",
+    "name": "zapatillas lavado y secado",
+    "category": "Secado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "PAN-85909481",
+    "name": "PANTALON CHAVITO",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-81643592",
+    "name": "CASACA DE TELA Y APLICACION IMPERMEABLE",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CUB-68512463",
+    "name": "CUBRECAMA SOLO SECADO",
+    "category": "Secado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CAS-79890025",
+    "name": "CASACA LARGA CON CAPUCHA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CHA-42011863",
+    "name": "CHALECO CON FORRO DE HOMBRE LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MAN-43182679",
+    "name": "MANTA CHICA",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CHO-93574160",
+    "name": "CHOMPITAS DELGADAS",
+    "category": "Otros",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "SAC-82653439",
+    "name": "SACO DE LANILLA LARGO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "EDR-22349145",
+    "name": "EDREDON DOBLE CARA 2 PLZ.",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "MOC-79310685",
+    "name": "MOCHILA, CARTUCHERA Y LONCHERA LAVADO",
+    "category": "Lavado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "MAN-91615228",
+    "name": "mantas delgadas 1.5 plazas",
+    "category": "Otros",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "SAC-24907386",
+    "name": "SACO DE DAMA GAMUZA",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "FRA-57293869",
+    "name": "FRAZADA TIGRE SOLO LAVADO",
+    "category": "Lavado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "PAN-10496775",
+    "name": "PANTALON POLAR LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "SAC-49805605",
+    "name": "SACO DE PAÑO CON FORRO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CON-72953691",
+    "name": "CONJUNTO BUSO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "MAN-72549816",
+    "name": "MANTA QUEEN",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CUB-01432736",
+    "name": "CUBRECAMA QUEEN",
+    "category": "Otros",
+    "price": 22.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 22,00"
+  },
+  {
+    "id": "CUB-95830659",
+    "name": "CUBRECAMA CUNA",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "TE-53030466",
+    "name": "TEÑIDO DE VESTIDO",
+    "category": "Tintorería",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CUB-55332821",
+    "name": "CUBRECAMA 1 PLZ. SOLO LAVADO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "JUE-43785043",
+    "name": "JUEGO DE SABANA SOLO LAVADO",
+    "category": "Lavado",
+    "price": 3.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,50"
+  },
+  {
+    "id": "EDR-91472064",
+    "name": "EDREDON 1.1/2 PLZ. NIÑO",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "ENT-26344813",
+    "name": "ENTERIZO SOLO LAVADO",
+    "category": "Lavado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "CUB-38154571",
+    "name": "CUBRECAMA CON FORRO DE CARNERO 2 PLZ.",
+    "category": "Hogar",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "LAV-32861596",
+    "name": "LAVADO Y SECADO MANTA",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "VES-84692551",
+    "name": "VESTIDO DE FIESTA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "FOR-31420587",
+    "name": "FORROS DE SILLAS LAVADO",
+    "category": "Lavado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CAM-51758322",
+    "name": "CAMISON LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "BLU-78709836",
+    "name": "BLUSA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "SAC-71048536",
+    "name": "SACO DE TELA NEGRO CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PEL-88653747",
+    "name": "PELUCHE MUÑECO  VARIOS AL SECO",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PAN-17046302",
+    "name": "PANTUFLAS LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "MAN-87330416",
+    "name": "MANTA 2 PLZ.",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-71864253",
+    "name": "SACO DAMA SOLO PLANCHADO",
+    "category": "Planchado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "CAM-38768971",
+    "name": "CAMA DE MASCOTA MEDIANA",
+    "category": "Otros",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "SOL-32507921",
+    "name": "SOLO LAVADO EDREDON 2 PLZ.",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "MAN-53457089",
+    "name": "MANTA DELGADA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "LAV-39801807",
+    "name": "LAVADO Y SECADO TOALLA",
+    "category": "Secado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "LAV-78713604",
+    "name": "LAVADO Y SECADO MANTA POLAR 1 1/2 PLZ.",
+    "category": "Secado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "LAV-83750632",
+    "name": "LAVADO Y SECADO MANTEL MESA",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-22790631",
+    "name": "LAVADO Y SECADO LONCHERA",
+    "category": "Secado",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "FUN-10658929",
+    "name": "FUNDAS LAVADO Y SECADO 2",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-06386985",
+    "name": "LAVADO Y SECADO ROPA",
+    "category": "Secado",
+    "price": 3.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,50"
+  },
+  {
+    "id": "MAN-88902472",
+    "name": "MANTA POLAR 2 PLZ.",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "FRA-91986278",
+    "name": "FRAZADA SOLO SECADO",
+    "category": "Secado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "MAN-19436850",
+    "name": "MANTA POLAR 1.5 PLZ",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "EDR-86297695",
+    "name": "EDREDON CON FORRO POLAR 2 PLZ. LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "FRA-36780315",
+    "name": "FRAZADA 1 1/2 PLZ",
+    "category": "Ropa de cama",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "MAN-22890448",
+    "name": "MANTA DE LANA",
+    "category": "Otros",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "SAL-91710605",
+    "name": "SALIDA DE BAÑO",
+    "category": "Otros",
+    "price": 3.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,00"
+  },
+  {
+    "id": "ZAP-38875654",
+    "name": "ZAPATILLAS SOLO SECADO",
+    "category": "Secado",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "TE-15298044",
+    "name": "TEÑIDO DE FALDA",
+    "category": "Tintorería",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "VES-39205871",
+    "name": "VESTIDO LARGO DE FIESTA CON DETALLES LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 70.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 70,00"
+  },
+  {
+    "id": "MAN-15276985",
+    "name": "MANTA SOLO LAVADO",
+    "category": "Lavado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "OTR-38515072",
+    "name": "OTROS",
+    "category": "Otros",
+    "price": 46.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 46,00"
+  },
+  {
+    "id": "VES-64088952",
+    "name": "VESTIDOS LARGOS",
+    "category": "Otros",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "TRU-74969854",
+    "name": "TRUZA",
+    "category": "Otros",
+    "price": 2.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,50"
+  },
+  {
+    "id": "VES-96987825",
+    "name": "VESTIDO LARGO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "SHA-80365197",
+    "name": "SHALL",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "BOL-73249705",
+    "name": "BOLSO DE DORMIR",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "COJ-48036159",
+    "name": "COJIN LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "POL-39822073",
+    "name": "POLERA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "COL-10569942",
+    "name": "COLCHA 1 1/2 PLZ. LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "MAL-54791335",
+    "name": "MALETIN",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "SAB-95078453",
+    "name": "SABANAS, TOALLAS Y OTROS.",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SOL-03235914",
+    "name": "SOLO LAVADO Y PLANCHADO",
+    "category": "Planchado",
+    "price": 19.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 19,00"
+  },
+  {
+    "id": "ENT-43758811",
+    "name": "ENTERIZO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "COL-45908523",
+    "name": "COLCHON CON ALMOHADA",
+    "category": "Ropa de cama",
+    "price": 23.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 23,00"
+  },
+  {
+    "id": "FOR-97945321",
+    "name": "FORRO DE COLCHON GRUESO",
+    "category": "Ropa de cama",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "POL-36822355",
+    "name": "POLOS CUELLOS CAMISEROS",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "CON-07556238",
+    "name": "CONJUNTO SACO Y FALDA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAS-38011703",
+    "name": "CASACA CUERINA CON FORRO SIMPLE",
+    "category": "Hogar",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "SOL-72035354",
+    "name": "SOLO SECADO EDREDON 2 PLZAS",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SOL-00681983",
+    "name": "SOLO SECADO JEANS",
+    "category": "Secado",
+    "price": 3.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,00"
+  },
+  {
+    "id": "FRA-80113057",
+    "name": "FRAZADA POLAR 1 1/2 PLZ.",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-75071492",
+    "name": "SACO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-72376245",
+    "name": "CASACA DE PELUCHE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "COR-89453654",
+    "name": "CORTINAS CON BORDADO",
+    "category": "Cortinas",
+    "price": 49.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 49,00"
+  },
+  {
+    "id": "MAN-03562808",
+    "name": "MANTA POLAR 2 PLZ.",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "LAV-08771869",
+    "name": "LAVADO DE INDUMENTARIAS AL PERSONAL",
+    "category": "Lavado",
+    "price": 4.489,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,49"
+  },
+  {
+    "id": "FRA-25438661",
+    "name": "FRAZADA 1 1/2 PLZ. DELGADO SOLO SECADO",
+    "category": "Secado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "PON-75970944",
+    "name": "PONCHO CHALL BVD",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "ALM-79602907",
+    "name": "ALMOHADA CUELLO",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "EDR-16507215",
+    "name": "EDREDON 1 1/2 PLZ POLAR",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CUB-07964825",
+    "name": "CUBRECAMA POLAR C/FORRO DE CARNERO",
+    "category": "Hogar",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "BUZ-89265043",
+    "name": "BUZO COMPLETO DE FRANELA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "BUZ-65023975",
+    "name": "BUZO COMPLETO DE FRANELA NEGRO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SHO-40673567",
+    "name": "SHORT JEANS LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CHA-05843652",
+    "name": "CHAQUETA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "CAS-65648707",
+    "name": "CASACA JEAN LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-58749672",
+    "name": "CASACA DE GALA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "UNI-60493407",
+    "name": "UNIFORME DE GALA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "SAC-76591710",
+    "name": "SACO DE PELUCHE",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SAC-39234874",
+    "name": "SACO DE DAMA NEGRO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TOA-84673420",
+    "name": "TOALLA",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "LAV-41634387",
+    "name": "LAVADO DE CORTINAS DE TECHO ABAJO DE VENTANA OFICINA DEL EQUIPO COMERCIAL - COBROS DE CS COMAS",
+    "category": "Lavado",
+    "price": 40.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 40,00"
+  },
+  {
+    "id": "LAV-25594930",
+    "name": "LAVADO DE CORTINAS DE TECHO A PISO DE OFICINA DEL EQUIPO COMERCIAL - COBROS DEL CS COMAS.",
+    "category": "Lavado",
+    "price": 176.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 176,00"
+  },
+  {
+    "id": "CUB-84902597",
+    "name": "CUBRECAMA DELGADA SOLO SECADO",
+    "category": "Secado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "CUB-36097405",
+    "name": "CUBRECAMA 2 PLAZAS",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CAS-20136832",
+    "name": "CASACA IMPERMEABLE CON CAPUCHA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "VES-97625053",
+    "name": "VESTIDO DE FIESTA CON PEDRERIA NIÑA",
+    "category": "Otros",
+    "price": 38.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 38,00"
+  },
+  {
+    "id": "MAN-96709255",
+    "name": "MANTA 1.1/2 PLZ.",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-94647581",
+    "name": "SACO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MAN-64315400",
+    "name": "MANTA DE MASCOTA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "EDR-69711893",
+    "name": "EDREDON QUEEN CON FORRO DE CARNERO",
+    "category": "Ropa de cama",
+    "price": 24.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 24,00"
+  },
+  {
+    "id": "EDR-06944326",
+    "name": "EDREDON DELGADO 1.5 PLAZA",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "COR-44535362",
+    "name": "CORTINAS MEDIANA",
+    "category": "Cortinas",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "TER-70312198",
+    "name": "TERNO DE NIÑO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "PIZ-84857622",
+    "name": "PIZA PIES",
+    "category": "Otros",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "CUB-54439822",
+    "name": "CUBRECAMA DELGADO Y SABANAS SOLO SECADO",
+    "category": "Secado",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAS-05849657",
+    "name": "CASACA DE HOMBRE LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "MAN-92579678",
+    "name": "MANTELES DE MESA 3.20x1.60",
+    "category": "Otros",
+    "price": 30.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 30,00"
+  },
+  {
+    "id": "LAV-06453509",
+    "name": "LAVADO AL SECO DE UNIFORME",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "FOR-40707911",
+    "name": "FORRO DE MUEBLES INDIVIDUAL M",
+    "category": "Hogar",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "LAV-32317059",
+    "name": "TERNO DE LANILLA NEGRO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CHO-31564122",
+    "name": "CHOMPA DE PELUCHE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-86590312",
+    "name": "SACO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "FAL-53842593",
+    "name": "FALDA DE MESA",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAM-64851033",
+    "name": "CAMINO DE MESA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "CAS-41033867",
+    "name": "CASACA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "EDR-26571950",
+    "name": "EDREDON 1.5 PLAZAS DELGADO CON FORRO DE CARNERO",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "EDR-56948937",
+    "name": "EDREDON 1.5 PLAZAS SOLO LAVADO",
+    "category": "Lavado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CUB-91346025",
+    "name": "CUBRECAMA 1.5 PLAZAS SOLO LAVADO",
+    "category": "Lavado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CAS-94580734",
+    "name": "CASACA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MAN-41808325",
+    "name": "MANTELES PEQUEÑOS",
+    "category": "Otros",
+    "price": 3.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,50"
+  },
+  {
+    "id": "LAV-73593508",
+    "name": "LAVADO Y PLANCHADO DE TUNICAS",
+    "category": "Planchado",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "EDR-37893948",
+    "name": "EDREDON DELGADO",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAS-11746869",
+    "name": "CASACA PARCA CON FORRO DE CARNERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "FOR-36602294",
+    "name": "FORRO DE MUEBLE MEDIANO",
+    "category": "Hogar",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "SAC-11646837",
+    "name": "SACO LANILLA LAVA AL SECO",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "EDR-94215502",
+    "name": "EDREDON CON FORRO DE CARNERO 1 1/2 PLZ.",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "EDR-06214689",
+    "name": "EDREDON DELGADO 2 PLAZAS CON FORRO DE CARNERO",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "MAN-36973524",
+    "name": "MANTA POLAR 1.5 PLAZA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CHA-69655342",
+    "name": "CHAQUETA MANGA CORTA BLANCO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CUB-24405381",
+    "name": "CUBRECAMA CON PELUCHE",
+    "category": "Otros",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "SAC-40831976",
+    "name": "SACO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "POL-80344385",
+    "name": "POLO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "MOC-88757029",
+    "name": "MOCHILA SECADO",
+    "category": "Secado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "JUE-45726890",
+    "name": "JUEGO DE SABANA QUEEN",
+    "category": "Ropa de cama",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "SAC-62241689",
+    "name": "SACO DE CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "ZAP-46965103",
+    "name": "ZAPATILLAS BLANCA DE HOMBRE",
+    "category": "Calzado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CAS-13876520",
+    "name": "CASACA REVERSIBLE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TE-07638936",
+    "name": "TEÑIDO SHOR",
+    "category": "Tintorería",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "LAV-77543226",
+    "name": "LAVADO AL SECO PANTALON DE POLICIA",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SOL-06353817",
+    "name": "SOLO LAVADO ROPA",
+    "category": "Lavado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "PAN-31244066",
+    "name": "PANTALON JEANS ADULTO",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SOL-21908453",
+    "name": "SOLO LAVADO",
+    "category": "Lavado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "SAC-59471810",
+    "name": "SACO DE PAÑO MEDIANO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "LAV-54266094",
+    "name": "LAVADO DE CAMISA POLICIAL",
+    "category": "Lavado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "FRA-63847595",
+    "name": "FRAZADA DELGADA TIGRE 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "SAC-95096115",
+    "name": "SACO DE TELA AZUL NOCHE CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "FOR-28089566",
+    "name": "FORRO DE COLCHON DELGADO 2PLAZAS",
+    "category": "Ropa de cama",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "ALM-53269108",
+    "name": "ALMOHADA LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CUB-61959274",
+    "name": "CUBRECAMA QUEEN",
+    "category": "Otros",
+    "price": 25.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 25,00"
+  },
+  {
+    "id": "CUB-12140075",
+    "name": "CUBRECAMA CARNERO 1.5 PLAZAS",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "LAV-85791801",
+    "name": "LAVADO SECADO POLO",
+    "category": "Secado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "EDR-32606319",
+    "name": "EDREDON CON FORRO POLAR 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "EDR-76599282",
+    "name": "EDREDON C/FORRO POLAR 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "SAC-02198397",
+    "name": "SACO DE PAÑO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "EDR-28606534",
+    "name": "EDREDON CARNERO 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAN-46813202",
+    "name": "MANTAS DELGADA 2 PLAZAS",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-75305129",
+    "name": "CASACA CUERINA CON CARNERO",
+    "category": "Otros",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAN-26959376",
+    "name": "MANTELES DE MESA 4Mx2M",
+    "category": "Otros",
+    "price": 30.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 30,00"
+  },
+  {
+    "id": "MAN-86289927",
+    "name": "MANTELES CHICOS",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "ROP-30576492",
+    "name": "ROPA",
+    "category": "Otros",
+    "price": 3.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,00"
+  },
+  {
+    "id": "POL-35590176",
+    "name": "POLO TENIS",
+    "category": "Calzado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "BLE-63815793",
+    "name": "BLEISER",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "COR-04891795",
+    "name": "CORTINA DELGADA",
+    "category": "Cortinas",
+    "price": 30.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 30,00"
+  },
+  {
+    "id": "CUB-22695487",
+    "name": "CUBRECAMA POLAR",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "LAV-24869279",
+    "name": "LAVADO DE CAMISA",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PAN-44797868",
+    "name": "PANTALON DE VESTIR NEGRO CABALLERO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SAC-15338047",
+    "name": "SACO DE HOMBRE LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-10794753",
+    "name": "CASACA DE ENFERMERA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-85341517",
+    "name": "LAVADO Y SECADO ESPECIAL",
+    "category": "Secado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "PAN-47061899",
+    "name": "PANTALON POLAR",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "PEL-81765679",
+    "name": "PELUCHE GRANDE",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "VES-13359627",
+    "name": "VESTIDO CORTO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "CAS-07585421",
+    "name": "CASACA CON PELUCHE",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "PAN-49940201",
+    "name": "PANTALON DE VESTIR NEGRO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-64143080",
+    "name": "CASACA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "ZAP-09328771",
+    "name": "ZAPATILLAS BLANCA DE DAMA",
+    "category": "Calzado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "ZAP-50968642",
+    "name": "ZAPATILLA OSCURA",
+    "category": "Calzado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "EDR-93794712",
+    "name": "EDREDON DE PLUMAS QUEEN",
+    "category": "Ropa de cama",
+    "price": 32.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 32,00"
+  },
+  {
+    "id": "CAS-78679694",
+    "name": "CASACA",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "PAN-37292487",
+    "name": "PANTALON DRILL NEGRO DE DAMA LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "EDR-49364687",
+    "name": "EDREDON MORADO",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "EDR-37240628",
+    "name": "EDREDON POLAR 1.5 PLZ",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAS-86495512",
+    "name": "CASACA DE PELUCHE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAS-86019236",
+    "name": "CASACA BLANCA DE ENFERMERA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAP-02011782",
+    "name": "CAPA",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "TER-43021537",
+    "name": "TERNO TELA DELGADA NEGRO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CAS-89201354",
+    "name": "CASACA DE CUERINA LARGA",
+    "category": "Otros",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "LAV-91281640",
+    "name": "lavado de uniforme",
+    "category": "Lavado",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "FRA-84461289",
+    "name": "FRAZADA LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CON-06128172",
+    "name": "CONJUNTO SACO Y PANTALON LAVADO AL SECO",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "MOC-62484695",
+    "name": "MOCHILA MEDIANA",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "CAS-11482846",
+    "name": "CASACA DE TELA DRILL",
+    "category": "Casacas",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-31762899",
+    "name": "CASACA DE CUERO MANTENIMIENTO",
+    "category": "Casacas",
+    "price": 75.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 75,00"
+  },
+  {
+    "id": "ABR-49409873",
+    "name": "ABRIGO LARGO LAVADO AL SECO",
+    "category": "Saco",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SAC-30518509",
+    "name": "SACO DE POLICIA",
+    "category": "Uniformes",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-27529847",
+    "name": "saco de niño",
+    "category": "Saco",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAT-41608207",
+    "name": "PATAS DE MUÑECO",
+    "category": "Otros",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "CAS-73190071",
+    "name": "CASACA CON CAPUCHA LAVADO AL SECO",
+    "category": "Casacas",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAN-73450460",
+    "name": "CANGURO GRANDE",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "COR-82931901",
+    "name": "CORTINA BEGUI",
+    "category": "Cortina",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "PEL-18174533",
+    "name": "PELUCHE",
+    "category": "Peluches",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "SAB-31561927",
+    "name": "SABANA UNIDAD",
+    "category": "Ropa de cama",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "FRA-47942901",
+    "name": "FRAZADA POLAR 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "BLU-63854722",
+    "name": "BLUSA GASA SIMPLE",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAS-96560249",
+    "name": "CASACON DAMA",
+    "category": "Saco mujer",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SAB-07427568",
+    "name": "SABANA POLAR",
+    "category": "Ropa de cama",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "FOR-50436810",
+    "name": "FORRO DE MUEBLE GRANDE",
+    "category": "Ropa de mueble",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "GAB-19549862",
+    "name": "GABAN HOMBRE",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SEC-87739501",
+    "name": "SECADO EDREDON 105 PLAZAS",
+    "category": "Edredones",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "MAN-21700638",
+    "name": "MANTA POLAR 1 PLAZA",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "FAL-35897461",
+    "name": "FALDA CORTA",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "KEP-48100232",
+    "name": "KEPI",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "KEP-48670224",
+    "name": "KEPI",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "BAN-43787409",
+    "name": "BANDERA 1M X 1.20",
+    "category": "Otros",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SAC-93388759",
+    "name": "SACO DE SERENO",
+    "category": "Uniformes",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "SAC-92753144",
+    "name": "SACO DE SERENO",
+    "category": "Saco varón",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "TRA-42892108",
+    "name": "TRAJE DE SERENOS",
+    "category": "Uniformes",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "EDR-76048192",
+    "name": "EDREDON CON FORRO DE CARNERO 2 PLAZAS",
+    "category": "Edredones",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "FRA-33841660",
+    "name": "FRAZADA POLAR GRUESA 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "SAC-43118679",
+    "name": "SACON DE HOMBRE",
+    "category": "Saco varón",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "TRA-24053752",
+    "name": "TRAJE DE GALA AZUL EXPRES",
+    "category": "Saco",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "SAC-15921300",
+    "name": "SACO DE GALA BLANCO",
+    "category": "Saco varón",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CHA-80118743",
+    "name": "CHALECO DAMA LAVADO AL SECO",
+    "category": "Chalecos",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-33494767",
+    "name": "SACO LARGO DAMA LAVADO AL SECO",
+    "category": "Saco varón",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "MAM-16474823",
+    "name": "MAMELUCO - OVEROLL",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "COL-50668354",
+    "name": "COLCHA 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "FAL-08564176",
+    "name": "FALDA GRANDE",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "ROP-01432326",
+    "name": "ROPA DE MASCOTA",
+    "category": "Mascotas",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MAN-11978264",
+    "name": "MANTEL 2.5 x 2",
+    "category": "Otros",
+    "price": 30.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 30,00"
+  },
+  {
+    "id": "SAC-70638493",
+    "name": "SACO BLAZER HOMBRE",
+    "category": "Saco varón",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-40072158",
+    "name": "SACO CORTO DAMA",
+    "category": "Saco mujer",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "CAS-81396003",
+    "name": "CASACA LAVADO AL AGUA",
+    "category": "Casacas",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "COB-62673398",
+    "name": "COBERTOR ATIGRADO",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "ROP-74361275",
+    "name": "ROPA DE MASCOTA",
+    "category": "Mascotas",
+    "price": 4.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,50"
+  },
+  {
+    "id": "CHO-33266850",
+    "name": "CHOMPA DE LANA LAVADO AL SECO",
+    "category": "Casacas",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "GAB-83051526",
+    "name": "GABAN DE DAMA",
+    "category": "Otros",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "TE-59608439",
+    "name": "TEÑIDO DE CASACA",
+    "category": "Teñidos",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "BUZ-83307114",
+    "name": "BUZO COMPLETO ALGODON",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-22065619",
+    "name": "SACO DE PAÑO SIN FORRO LAVADO AL SECO",
+    "category": "Saco",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CAS-13506910",
+    "name": "CASACA POLAR LAVADO AL SECO",
+    "category": "Casacas",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-04074616",
+    "name": "SACO DE PAÑO",
+    "category": "Saco",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CAS-14738210",
+    "name": "Casaca amarilla",
+    "category": "Casacas",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "JUE-25527436",
+    "name": "JUEGO DE SABANA LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "FRA-16027347",
+    "name": "FRAZADA POLAR CON FORRO DE CARNERO 1.5 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "SAC-33201028",
+    "name": "SACO DAMA TELA GRUESA",
+    "category": "Saco mujer",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CUB-47061534",
+    "name": "CUBRECAMA 2.5 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 22.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 22,00"
+  },
+  {
+    "id": "MOC-69457086",
+    "name": "MOCHILA CON RUEDA",
+    "category": "Mochilas",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "ALM-18240593",
+    "name": "ALMOHADA CHICA",
+    "category": "Ropa de cama",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MOC-30247606",
+    "name": "MOCHILA GRANDE 1",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "MOC-05335784",
+    "name": "MOCHILA GRANDE",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "COL-26010768",
+    "name": "COLCHA CON POLAR",
+    "category": "Ropa de cama",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "MOC-80650139",
+    "name": "MOCHILA JUVENIL LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "BOL-74188994",
+    "name": "BOLSON",
+    "category": "Otros",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "POL-08374842",
+    "name": "POLO CUELLO CAMISERO",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "CAM-77510099",
+    "name": "CAMISA LAVADO AL SECO",
+    "category": "Lavado al seco",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PLU-93547466",
+    "name": "PLUMON 2PLZ",
+    "category": "Ropa de cama",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "UNF-81057765",
+    "name": "FORRO DE MUEBLE SINTETICO",
+    "category": "Ropa de mueble",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "VES-80619017",
+    "name": "VESTIDO CORTO SIN ORLAS",
+    "category": "Vestidos",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TOA-37234829",
+    "name": "TOALLA DE BAÑO GRANDE",
+    "category": "Toallas",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "LAV-18056472",
+    "name": "LAVADO PANTALON DE BUZO",
+    "category": "Lavado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "MAN-78096657",
+    "name": "MANTEL 1.20 X 1.20",
+    "category": "Otros",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "VES-54127383",
+    "name": "VESTIDO LARGO DE FIESTA SIN ORLAS",
+    "category": "Vestidos",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "CAM-10569753",
+    "name": "CAMISA LAVADO Y SECADO",
+    "category": "Camisas",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "MOC-67052448",
+    "name": "MOCHILA CHICA",
+    "category": "Otros",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "POL-57609361",
+    "name": "POLERA Y BUZO LAVADO AL SECO",
+    "category": "Lavado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "COJ-35074802",
+    "name": "COJIN EXTRA GRANDE",
+    "category": "Ropa de cama",
+    "price": 24.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 24,00"
+  },
+  {
+    "id": "TE-54336018",
+    "name": "TEÑIDO PANTALON",
+    "category": "Teñidos",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CUB-16485329",
+    "name": "CUBRECAMA SIMPLE DELGADO",
+    "category": "Ropa de cama",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CUB-80792263",
+    "name": "CUBRECAMA 2 PLAZAS",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "CUB-88799532",
+    "name": "CUBRECAMA 1.5 PLAZAS CON FORRO",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CUB-35710753",
+    "name": "CUBRECAMA 1.5 PLZ.",
+    "category": "Ropa de cama",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "TOA-22984368",
+    "name": "TOALLA DE BAÑO",
+    "category": "Toallas",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "MAN-84490173",
+    "name": "MANTAS GRANDES",
+    "category": "Otros",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAC-02475397",
+    "name": "SACO DE MUJER CADERA TELA DELGADA",
+    "category": "Saco mujer",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "SAB-99702416",
+    "name": "SABANAS 1.5 PLAZAS JUEGO",
+    "category": "Ropa de cama",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "TRA-04161733",
+    "name": "TRAJE DE POLICIA",
+    "category": "Uniformes",
+    "price": 14.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 14,00"
+  },
+  {
+    "id": "CAR-47048326",
+    "name": "CARTERA",
+    "category": "Otros",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "CAR-66974845",
+    "name": "CARTERA",
+    "category": "Otros",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "SAC-94863322",
+    "name": "SACO LARGO DRILL DAMA LAVADO AL SECO",
+    "category": "Saco mujer",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "SAC-87299025",
+    "name": "SACO VARON LAVADO AL SECO",
+    "category": "Saco varón",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CHA-38175280",
+    "name": "CHALECO DE TELA",
+    "category": "Chalecos",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PAN-50277891",
+    "name": "PANTALON JEAN´S",
+    "category": "Otros",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "SEC-12255899",
+    "name": "ZAPATILLAS SOLO SECADO",
+    "category": "Zapatillas",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "MAN-56827176",
+    "name": "MANTA MEDIANA CON FORRO CARNERO",
+    "category": "Hogar",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "COR-62416913",
+    "name": "CORTINA LAVADO Y SECADO",
+    "category": "Cortina",
+    "price": 35.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 35,00"
+  },
+  {
+    "id": "SAB-07819348",
+    "name": "SABANAS QUEEN LAVADO AL SECO",
+    "category": "Ropa de cama",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "TE-68731594",
+    "name": "TEÑIDO SHORT",
+    "category": "Teñidos",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CUB-81704091",
+    "name": "CUBRECAMA 2 PLAZAS CON FORRO",
+    "category": "Ropa de cama",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "LAV-94016779",
+    "name": "ZAPATILLA BOTIN LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "CAM-14352950",
+    "name": "CAMA DE MASCOTA GRANDE",
+    "category": "Mascotas",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "CAM-49071528",
+    "name": "Cama de mascota pequeña",
+    "category": "Mascotas",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "SAS-06942254",
+    "name": "SASTRE DAMA LAVADO AL SECO",
+    "category": "Lavado al seco",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CHA-19580943",
+    "name": "CHALECO CON FORRO POLAR",
+    "category": "Chalecos",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CHA-16248707",
+    "name": "CHALECO FORRO SIMPLE LAVADO AL SECO",
+    "category": "Chalecos",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "COR-98421178",
+    "name": "CORBATA LAVADO ALSECO",
+    "category": "Lavado al seco",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "CAS-39164807",
+    "name": "Casaca de plumas",
+    "category": "Casacas",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "CAS-17289490",
+    "name": "CASACA DE CUERINA DAMA",
+    "category": "Casacas",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "CAS-19475860",
+    "name": "Casaca de corduroy",
+    "category": "Casacas",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-26697350",
+    "name": "CASACA IMPERMEABLE  LAVADO AL SECO",
+    "category": "Casacas",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "CAS-85702213",
+    "name": "CASACA PUMA",
+    "category": "Casacas",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "EDR-77602693",
+    "name": "Edredon de plumas 2plz",
+    "category": "Edredones",
+    "price": 28.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 28,00"
+  },
+  {
+    "id": "EDR-64610847",
+    "name": "Edredon de plumas 1.5plz",
+    "category": "Edredones",
+    "price": 24.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 24,00"
+  },
+  {
+    "id": "EDR-11526490",
+    "name": "EDREDON KING",
+    "category": "Edredones",
+    "price": 24.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 24,00"
+  },
+  {
+    "id": "EDR-07689364",
+    "name": "EDREDON QUEEN CON FORRO DE CARNERO",
+    "category": "Edredones",
+    "price": 25.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 25,00"
+  },
+  {
+    "id": "EDR-96735488",
+    "name": "EDREDON CON FORRO DE CARNERO 2 PLZ.",
+    "category": "Edredones",
+    "price": 20.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 20,00"
+  },
+  {
+    "id": "EDR-48830945",
+    "name": "EDREDON FORRO DE CARNERO 1.5plz",
+    "category": "Edredones",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "EDR-20281483",
+    "name": "EDREDON DE PELUCHE 2 PLAZAS",
+    "category": "Edredones",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "EDR-44906775",
+    "name": "EDREDON PLUSH 1.5 PLAZA",
+    "category": "Edredones",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "FRA-81003622",
+    "name": "FRAZADA TIGRE 2 PLZ.",
+    "category": "Frazadas",
+    "price": 17.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 17,00"
+  },
+  {
+    "id": "FRA-68541353",
+    "name": "Frazada 1.5plz",
+    "category": "Frazadas",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "LAV-97530980",
+    "name": "ZAPATILLA LAVADO Y SECADO",
+    "category": "Zapatillas",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "LAV-50629387",
+    "name": "LAVADO Y SECADO",
+    "category": "Lavado y secado",
+    "price": 3.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,50"
+  },
+  {
+    "id": "LAV-58872463",
+    "name": "PANTALON DE NIÑO LAVADO AL SECO",
+    "category": "Lavado al seco",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "LAV-97569723",
+    "name": "CAMISA LAV. SEC. Y PLANCHADO",
+    "category": "Lavado al seco",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "LAV-41576189",
+    "name": "LAVADO AL SECO TERNO AZUL",
+    "category": "Lavado al seco",
+    "price": 16.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 16,00"
+  },
+  {
+    "id": "PLA-91313782",
+    "name": "PLANCHADO SACON",
+    "category": "Planchado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PLA-92356413",
+    "name": "PLANCHADO SACO LARGO",
+    "category": "Planchado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "PLA-88065473",
+    "name": "PLANCHADO SACO DE PAÑO",
+    "category": "Planchado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "PLA-01859361",
+    "name": "PLANCHADO TERNO COMPLETO",
+    "category": "Planchado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PLA-87022561",
+    "name": "PLANCHADO CAMISA",
+    "category": "Planchado",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "SAC-85968312",
+    "name": "SACO DE TERNO SOLO PLANCHADO",
+    "category": "Lavado al seco",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "PAN-35901502",
+    "name": "PLANCHADO PANTALON",
+    "category": "Planchado",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "SOL-31086047",
+    "name": "ROPA SOLO SECADO",
+    "category": "Solo secado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "SOL-05399341",
+    "name": "ROPA SOLO LAVADO",
+    "category": "Solo lavado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  }
+]

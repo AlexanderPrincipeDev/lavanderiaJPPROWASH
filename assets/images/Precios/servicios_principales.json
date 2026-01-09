@@ -1,0 +1,250 @@
+[
+  {
+    "id": "ALM-53269108",
+    "name": "ALMOHADA LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "CAM-10569753",
+    "name": "CAMISA LAVADO Y SECADO",
+    "category": "Camisas",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "COL-10569942",
+    "name": "COLCHA 1 1/2 PLZ. LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 15.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 15,00"
+  },
+  {
+    "id": "COR-62416913",
+    "name": "CORTINA LAVADO Y SECADO",
+    "category": "Cortina",
+    "price": 35.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 35,00"
+  },
+  {
+    "id": "CUB-13568153",
+    "name": "CUBRECAMA 1 PLZ LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 13.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 13,00"
+  },
+  {
+    "id": "EDR-25657108",
+    "name": "EDREDON 2 PLZ LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "FRA-84461289",
+    "name": "FRAZADA LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "FUN-10658929",
+    "name": "FUNDAS LAVADO Y SECADO 2",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "JUE-25527436",
+    "name": "JUEGO DE SABANA LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "LAV-50629387",
+    "name": "LAVADO Y SECADO",
+    "category": "Lavado y secado",
+    "price": 3.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,50"
+  },
+  {
+    "id": "LAV-93050914",
+    "name": "LAVADO Y SECADO DE PRENDAS INDUSTRIAL Y CORPORATIVO",
+    "category": "Secado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "LAV-85341517",
+    "name": "LAVADO Y SECADO ESPECIAL",
+    "category": "Secado",
+    "price": 18.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 18,00"
+  },
+  {
+    "id": "LAV-22790631",
+    "name": "LAVADO Y SECADO LONCHERA",
+    "category": "Secado",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "LAV-32861596",
+    "name": "LAVADO Y SECADO MANTA",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-78713604",
+    "name": "LAVADO Y SECADO MANTA POLAR 1 1/2 PLZ.",
+    "category": "Secado",
+    "price": 12.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 12,00"
+  },
+  {
+    "id": "LAV-83750632",
+    "name": "LAVADO Y SECADO MANTEL MESA",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-06386985",
+    "name": "LAVADO Y SECADO ROPA",
+    "category": "Secado",
+    "price": 3.5,
+    "currency": "PEN",
+    "priceFormatted": "S/ 3,50"
+  },
+  {
+    "id": "LAV-39801807",
+    "name": "LAVADO Y SECADO TOALLA",
+    "category": "Secado",
+    "price": 7.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 7,00"
+  },
+  {
+    "id": "MOC-80650139",
+    "name": "MOCHILA JUVENIL LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "PLA-87022561",
+    "name": "PLANCHADO CAMISA",
+    "category": "Planchado",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "PAN-35901502",
+    "name": "PLANCHADO PANTALON",
+    "category": "Planchado",
+    "price": 5.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 5,00"
+  },
+  {
+    "id": "ROP-94356430",
+    "name": "ROPA DE BEBE LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 4.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 4,00"
+  },
+  {
+    "id": "SOL-05399341",
+    "name": "ROPA SOLO LAVADO",
+    "category": "Solo lavado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "SOL-31086047",
+    "name": "ROPA SOLO SECADO",
+    "category": "Solo secado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "SEC-67972413",
+    "name": "SECADO DE ROPA",
+    "category": "Secado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "SOL-06353817",
+    "name": "SOLO LAVADO ROPA",
+    "category": "Lavado",
+    "price": 2.3,
+    "currency": "PEN",
+    "priceFormatted": "S/ 2,30"
+  },
+  {
+    "id": "TAP-03467152",
+    "name": "TAPETE  CHICO LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 6.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 6,00"
+  },
+  {
+    "id": "LAV-94016779",
+    "name": "ZAPATILLA BOTIN LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 10.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 10,00"
+  },
+  {
+    "id": "LAV-97530980",
+    "name": "ZAPATILLA LAVADO Y SECADO",
+    "category": "Zapatillas",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  },
+  {
+    "id": "ZAP-38180470",
+    "name": "ZAPATILLA NIÑOS LAVADO Y SECADO",
+    "category": "Secado",
+    "price": 8.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 8,00"
+  },
+  {
+    "id": "ZAP-74210251",
+    "name": "zapatillas lavado y secado",
+    "category": "Secado",
+    "price": 9.0,
+    "currency": "PEN",
+    "priceFormatted": "S/ 9,00"
+  }
+]

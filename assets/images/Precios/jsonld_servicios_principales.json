@@ -1,0 +1,503 @@
+{
+  "@context": "https://schema.org",
+  "@type": "ItemList",
+  "name": "Servicios y precios - JP Pro Wash",
+  "itemListElement": [
+    {
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@type": "Service",
+        "name": "ALMOHADA LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 15.0,
+          "url": "https://lavanderiajpprowash.com/servicios#almohada-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@type": "Service",
+        "name": "CAMISA LAVADO Y SECADO",
+        "category": "Camisas",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 4.0,
+          "url": "https://lavanderiajpprowash.com/servicios#camisa-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@type": "Service",
+        "name": "COLCHA 1 1/2 PLZ. LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 15.0,
+          "url": "https://lavanderiajpprowash.com/servicios#colcha-1-12-plz-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@type": "Service",
+        "name": "CORTINA LAVADO Y SECADO",
+        "category": "Cortina",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 35.0,
+          "url": "https://lavanderiajpprowash.com/servicios#cortina-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 5,
+      "item": {
+        "@type": "Service",
+        "name": "CUBRECAMA 1 PLZ LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 13.0,
+          "url": "https://lavanderiajpprowash.com/servicios#cubrecama-1-plz-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 6,
+      "item": {
+        "@type": "Service",
+        "name": "EDREDON 2 PLZ LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 18.0,
+          "url": "https://lavanderiajpprowash.com/servicios#edredon-2-plz-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 7,
+      "item": {
+        "@type": "Service",
+        "name": "FRAZADA LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 18.0,
+          "url": "https://lavanderiajpprowash.com/servicios#frazada-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 8,
+      "item": {
+        "@type": "Service",
+        "name": "FUNDAS LAVADO Y SECADO 2",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 10.0,
+          "url": "https://lavanderiajpprowash.com/servicios#fundas-lavado-y-secado-2",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 9,
+      "item": {
+        "@type": "Service",
+        "name": "JUEGO DE SABANA LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 8.0,
+          "url": "https://lavanderiajpprowash.com/servicios#juego-de-sabana-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 10,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO",
+        "category": "Lavado y secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 3.5,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 11,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO DE PRENDAS INDUSTRIAL Y CORPORATIVO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 6.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-de-prendas-industrial-y-corporativo",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 12,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO ESPECIAL",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 18.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-especial",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 13,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO LONCHERA",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 5.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-lonchera",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 14,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO MANTA",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 10.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-manta",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 15,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO MANTA POLAR 1 1/2 PLZ.",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 12.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-manta-polar-1-12-plz",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 16,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO MANTEL MESA",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 10.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-mantel-mesa",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 17,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO ROPA",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 3.5,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-ropa",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 18,
+      "item": {
+        "@type": "Service",
+        "name": "LAVADO Y SECADO TOALLA",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 7.0,
+          "url": "https://lavanderiajpprowash.com/servicios#lavado-y-secado-toalla",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 19,
+      "item": {
+        "@type": "Service",
+        "name": "MOCHILA JUVENIL LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 10.0,
+          "url": "https://lavanderiajpprowash.com/servicios#mochila-juvenil-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 20,
+      "item": {
+        "@type": "Service",
+        "name": "PLANCHADO CAMISA",
+        "category": "Planchado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 4.0,
+          "url": "https://lavanderiajpprowash.com/servicios#planchado-camisa",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 21,
+      "item": {
+        "@type": "Service",
+        "name": "PLANCHADO PANTALON",
+        "category": "Planchado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 5.0,
+          "url": "https://lavanderiajpprowash.com/servicios#planchado-pantalon",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 22,
+      "item": {
+        "@type": "Service",
+        "name": "ROPA DE BEBE LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 4.0,
+          "url": "https://lavanderiajpprowash.com/servicios#ropa-de-bebe-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 23,
+      "item": {
+        "@type": "Service",
+        "name": "ROPA SOLO LAVADO",
+        "category": "Solo lavado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 2.3,
+          "url": "https://lavanderiajpprowash.com/servicios#ropa-solo-lavado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 24,
+      "item": {
+        "@type": "Service",
+        "name": "ROPA SOLO SECADO",
+        "category": "Solo secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 2.3,
+          "url": "https://lavanderiajpprowash.com/servicios#ropa-solo-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 25,
+      "item": {
+        "@type": "Service",
+        "name": "SECADO DE ROPA",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 2.3,
+          "url": "https://lavanderiajpprowash.com/servicios#secado-de-ropa",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 26,
+      "item": {
+        "@type": "Service",
+        "name": "SOLO LAVADO ROPA",
+        "category": "Lavado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 2.3,
+          "url": "https://lavanderiajpprowash.com/servicios#solo-lavado-ropa",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 27,
+      "item": {
+        "@type": "Service",
+        "name": "TAPETE  CHICO LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 6.0,
+          "url": "https://lavanderiajpprowash.com/servicios#tapete-chico-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 28,
+      "item": {
+        "@type": "Service",
+        "name": "ZAPATILLA BOTIN LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 10.0,
+          "url": "https://lavanderiajpprowash.com/servicios#zapatilla-botin-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 29,
+      "item": {
+        "@type": "Service",
+        "name": "ZAPATILLA LAVADO Y SECADO",
+        "category": "Zapatillas",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 9.0,
+          "url": "https://lavanderiajpprowash.com/servicios#zapatilla-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 30,
+      "item": {
+        "@type": "Service",
+        "name": "ZAPATILLA NIÑOS LAVADO Y SECADO",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 8.0,
+          "url": "https://lavanderiajpprowash.com/servicios#zapatilla-niños-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    },
+    {
+      "@type": "ListItem",
+      "position": 31,
+      "item": {
+        "@type": "Service",
+        "name": "zapatillas lavado y secado",
+        "category": "Secado",
+        "offers": {
+          "@type": "Offer",
+          "priceCurrency": "PEN",
+          "price": 9.0,
+          "url": "https://lavanderiajpprowash.com/servicios#zapatillas-lavado-y-secado",
+          "availability": "https://schema.org/InStock"
+        }
+      }
+    }
+  ]
+}
