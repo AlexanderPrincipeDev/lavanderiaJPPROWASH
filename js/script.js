@@ -927,6 +927,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const categoriesEl = document.getElementById('pricing-categories');
         const searchInput = document.getElementById('pricing-search');
         const emptyEl = document.getElementById('pricing-empty');
+        const clearButton = document.querySelector('.pricing-clear-btn');
 
         if (!resultsEl || !searchInput || !emptyEl) return;
 
@@ -1097,8 +1098,27 @@ document.addEventListener('DOMContentLoaded', () => {
                         state.category = 'all';
                         setActiveCategory('all');
                     }
+                    if (searchInput.parentElement) {
+                        searchInput.parentElement.classList.toggle('has-value', state.query.length > 0);
+                    }
                     updateResults(allItems, categoryMap);
                 });
+
+                if (clearButton) {
+                    clearButton.addEventListener('click', () => {
+                        searchInput.value = '';
+                        state.query = '';
+                        if (searchInput.parentElement) {
+                            searchInput.parentElement.classList.remove('has-value');
+                        }
+                        updateResults(allItems, categoryMap);
+                        searchInput.focus();
+                    });
+                }
+
+                if (window.innerWidth <= 768) {
+                    searchInput.focus();
+                }
 
                 injectJsonLd(paths.jsonldFeatured, 'pricing-jsonld-featured');
                 injectJsonLd(paths.jsonldFull, 'pricing-jsonld-full');
