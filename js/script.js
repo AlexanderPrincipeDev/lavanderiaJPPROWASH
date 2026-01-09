@@ -928,7 +928,7 @@ document.addEventListener('DOMContentLoaded', () => {
         const searchInput = document.getElementById('pricing-search');
         const emptyEl = document.getElementById('pricing-empty');
 
-        if (!resultsEl || !categoriesEl || !searchInput || !emptyEl) return;
+        if (!resultsEl || !searchInput || !emptyEl) return;
 
         const paths = {
             featured: 'assets/images/Precios/servicios_principales.json',
@@ -974,6 +974,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function buildCategoryButtons(categories) {
+            if (!categoriesEl) return;
             categoriesEl.innerHTML = '';
             const fragment = document.createDocumentFragment();
 
@@ -997,6 +998,7 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function setActiveCategory(category) {
+            if (!categoriesEl) return;
             categoriesEl.querySelectorAll('.pricing-category-btn').forEach((btn) => {
                 btn.classList.toggle('active', btn.dataset.category === category);
             });
@@ -1079,13 +1081,15 @@ document.addEventListener('DOMContentLoaded', () => {
                 buildCategoryButtons(Object.keys(categoryMap).sort());
                 updateResults(allItems, categoryMap);
 
-                categoriesEl.addEventListener('click', (event) => {
-                    const button = event.target.closest('.pricing-category-btn');
-                    if (!button) return;
-                    state.category = button.dataset.category;
-                    setActiveCategory(state.category);
-                    updateResults(allItems, categoryMap);
-                });
+                if (categoriesEl) {
+                    categoriesEl.addEventListener('click', (event) => {
+                        const button = event.target.closest('.pricing-category-btn');
+                        if (!button) return;
+                        state.category = button.dataset.category;
+                        setActiveCategory(state.category);
+                        updateResults(allItems, categoryMap);
+                    });
+                }
 
                 searchInput.addEventListener('input', (event) => {
                     state.query = event.target.value.trim();
