@@ -139,6 +139,12 @@
             margin-bottom: 1.5rem;
         }
 
+        .pricing-cta {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 1.5rem;
+        }
+
         .pricing-search input {
             width: 100%;
             padding: 0.8rem 1rem;
@@ -278,6 +284,14 @@
                 background: var(--color-bg-light);
             }
 
+            .pricing-cta {
+                position: sticky;
+                top: 170px;
+                z-index: 45;
+                padding-bottom: 0.5rem;
+                background: var(--color-bg-light);
+            }
+
             .pricing-search input {
                 font-size: 1rem;
                 padding: 0.9rem 1rem;
@@ -314,6 +328,7 @@
                         alt="JP Pro Wash Logo" width="150" height="54">
                 </picture>
             </a>
+            <a href="index.html" class="mobile-home-link" aria-label="Volver al inicio">Inicio</a>
             <nav class="nav">
                 <ul class="nav-list">
                     <li><a href="index.html" class="nav-link">Inicio</a></li>
@@ -329,6 +344,7 @@
         <section class="page-header">
             <div class="container">
                 <h1 class="page-title">Precios de Lavandería en Breña</h1>
+
                 <p class="page-subtitle">
                     Consulta el listado completo de servicios y precios. Busca por nombre o filtra por categoría.
                 </p>
@@ -346,6 +362,10 @@
                     </div>
                     <div id="pricing-categories" class="pricing-categories"></div>
                 </div>
+                <div class="pricing-cta">
+                    <a href="https://wa.me/51978673626?text=Hola%20JP%20Pro%20Wash,%20quiero%20consultar%20los%20precios"
+                        class="btn btn-primary">Cotizar por WhatsApp</a>
+                </div>
 
                 <div class="pricing-list-wrapper">
                     <div id="pricing-results" class="pricing-grid"></div>
@@ -362,6 +382,7 @@
             </p>
         </div>
     </footer>
+
 
     <script defer src="js/script.js"></script>
 </body>
