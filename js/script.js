@@ -922,12 +922,13 @@ document.addEventListener('DOMContentLoaded', () => {
         if (!pricingSection) return;
 
         const featuredEl = document.getElementById('pricing-featured');
+        const featuredBlockEl = document.getElementById('pricing-featured-block');
         const resultsEl = document.getElementById('pricing-results');
         const categoriesEl = document.getElementById('pricing-categories');
         const searchInput = document.getElementById('pricing-search');
         const emptyEl = document.getElementById('pricing-empty');
 
-        if (!featuredEl || !resultsEl || !categoriesEl || !searchInput || !emptyEl) return;
+        if (!featuredEl || !featuredBlockEl || !resultsEl || !categoriesEl || !searchInput || !emptyEl) return;
 
         const paths = {
             featured: 'assets/images/Precios/servicios_principales.json',
@@ -1011,7 +1012,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         function updateResults(allItems, categoryMap) {
             let items = [];
-            if (state.category === 'all') {
+            if (state.query) {
+                items = allItems;
+            } else if (state.category === 'all') {
                 items = allItems;
             } else {
                 items = categoryMap[state.category] || [];
@@ -1019,6 +1022,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const filtered = filterItems(items);
             renderCards(filtered, resultsEl);
             renderEmpty(filtered.length === 0);
+            featuredBlockEl.style.display = state.query ? 'none' : '';
         }
 
         function injectJsonLd(path, id) {
@@ -1055,6 +1059,10 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 searchInput.addEventListener('input', (event) => {
                     state.query = event.target.value.trim();
+                    if (state.query) {
+                        state.category = 'all';
+                        setActiveCategory('all');
+                    }
                     updateResults(allItems, categoryMap);
                 });
 

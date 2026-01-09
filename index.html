@@ -2928,17 +2928,17 @@
 
         @media (min-width: 900px) {
             .pricing-tools {
-                flex-direction: row;
+                flex-direction: column;
                 align-items: center;
-                justify-content: space-between;
+                justify-content: center;
             }
 
             .pricing-search {
-                width: 40%;
+                width: min(520px, 70%);
             }
 
             .pricing-categories {
-                justify-content: flex-end;
+                justify-content: center;
             }
         }
 
@@ -3615,7 +3615,7 @@
                     Consulta nuestros servicios y precios actualizados. Busca por nombre o filtra por categoría.
                 </p>
 
-                <div class="pricing-block">
+                <div class="pricing-block" id="pricing-featured-block">
                     <h3 class="pricing-subtitle">Servicios principales</h3>
                     <div id="pricing-featured" class="pricing-grid"></div>
                 </div>
