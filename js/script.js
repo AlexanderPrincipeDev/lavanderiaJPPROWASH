@@ -1011,18 +1011,24 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         function updateResults(allItems, categoryMap) {
+            const hasQuery = state.query.length >= 3;
             let items = [];
-            if (state.query) {
+            if (hasQuery) {
                 items = allItems;
             } else if (state.category === 'all') {
-                items = allItems;
+                items = [];
             } else {
                 items = categoryMap[state.category] || [];
             }
-            const filtered = filterItems(items);
+            const filtered = hasQuery ? filterItems(items) : items;
             renderCards(filtered, resultsEl);
+            if (!hasQuery && state.category === 'all') {
+                emptyEl.textContent = 'Escribe al menos 3 letras para buscar servicios.';
+            } else {
+                emptyEl.textContent = 'No se encontraron servicios.';
+            }
             renderEmpty(filtered.length === 0);
-            featuredBlockEl.style.display = state.query ? 'none' : '';
+            featuredBlockEl.style.display = !hasQuery && state.category === 'all' ? '' : 'none';
         }
 
         function injectJsonLd(path, id) {
@@ -1059,7 +1065,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
                 searchInput.addEventListener('input', (event) => {
                     state.query = event.target.value.trim();
-                    if (state.query) {
+                    if (state.query.length >= 3) {
                         state.category = 'all';
                         setActiveCategory('all');
                     }
